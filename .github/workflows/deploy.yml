@@ -1,4 +1,7 @@
+# This file was created automatically with `myst init --gh-pages` 🪄 💚
+# Optimized: Node 24, cancel-in-progress concurrency, no npm cache (no lockfile)
 name: MyST GitHub Pages Deploy
+
 on:
   push:
     branches: [main]
@@ -19,7 +22,6 @@ on:
         type: environment
         required: true
 
-# BASE_URL: 你的仓库名作为子路径，私有 repo + public Pages 时尤其重要
 env:
   BASE_URL: /${{ github.event.repository.name }}
 
@@ -29,8 +31,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages-${{ github.ref }}   # 按分支隔离，比单 group 'pages' 更精细
-  cancel-in-progress: true         # 关键：新 push 取消旧 run，避免排队叠加 artifact
+  group: pages-${{ github.ref }}      # 按分支隔离，避免多分支互相锁
+  cancel-in-progress: true            # 新 push 顶掉旧 run → 防 artifact 翻倍
 
 jobs:
   deploy:
@@ -42,12 +44,12 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5     # v3→v5，适配 Node 24 runner
+        uses: actions/configure-pages@v5       # v3→v5，适配 Node 24 runner
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20                  # 18→20，避 punycode 警告 + 长期支持
-          cache: npm                        # 给全局 npm 包加缓存（下面 install -g 也能吃到些）
+          node-version: 24                    # 18→24，消 Node 20 deprecation + punycode 警告
+          # 不写 cache：仓库无 package-lock.json，cache: npm 会直接 Error
 
       - name: Install MyST
         run: npm install -g mystmd
@@ -55,10 +57,10 @@ jobs:
       - name: Build HTML Assets
         run: |
           echo "Using BASE_URL=$BASE_URL"
-          myst build --html --execute
+          BASE_URL=$BASE_URL myst build --html --execute
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4   # v3→v4，与 deploy-pages@v4 配套
+        uses: actions/upload-pages-artifact@v4 # v3→v4，与 deploy-pages@v4 同代
         with:
           path: './_build/html'
 
