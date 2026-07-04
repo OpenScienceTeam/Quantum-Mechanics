@@ -1,0 +1,6 @@
+# MyST build outputs
+_build
+_backup
+_figures
+_tables
+.ipynb_checkpoints
