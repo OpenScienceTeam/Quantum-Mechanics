@@ -1,0 +1,283 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: a5ae4263-ce88-42d9-950c-81c20e000455
+  math:
+    \Ai: \operatorname{Ai}
+    \AA: \text{Å}
+    \Amat: \mathbf{A}
+    \Ar: '[\text{Ar}]\,'
+    \AS: \mathcal{A}
+    \Aslash: A\!\!\!/
+    \Aspace: \mathcal{A}
+    \Avec: \mathbf{A}
+    \Bi: \operatorname{Bi}
+    \Bmat: \mathbf{B}
+    \Bspace: \mathcal{B}
+    \Bvec: \mathbf{B}
+    \Cmat: \mathbf{C}
+    \Complexes: \mathbb{C}
+    \Cvec: \mathbf{C}
+    \Dvec: \mathbf{D}
+    \ES: \mathcal{E}
+    \Espace: \mathcal{E}
+    \Evec: \mathbf{E}
+    \Fvec: \mathbf{F}
+    \G: \quad\text{(G)}
+    \Ghat: \hat{G}
+    \HS: \mathcal{H}
+    \Hdensity: \mathcal{H}
+    \Hhat: \hat{H}
+    \Hvec: \mathbf{H}
+    \Im: \operatorname{Im}
+    \Imat: \mathbf{1}
+    \Ivec: \mathbf{I}
+    \Jmat: \mathbf{J}
+    \Jmatvec: \mathbf{J}
+    \Jvec: \mathbf{J}
+    \Khat: \hat{K}
+    \Kmat: \mathbf{K}
+    \Kmatvec: \mathbf{K}
+    \Kvec: \mathbf{K}
+    \Lambdamat: \boldsymbol{\Lambda}
+    \Ldensity: \mathcal{L}
+    \Lvec: \mathbf{L}
+    \Mmat: \mathbf{M}
+    \Mvec: \mathbf{M}
+    \Omegamat: \boldsymbol{\Omega}
+    \Phat: \hat{P}
+    \Pmat: \mathbf{P}
+    \Prob: \mathrm{Prob}
+    \Pvec: \mathbf{P}
+    \Qhat: \hat{Q}
+    \Re: \operatorname{Re}
+    \Reals: \mathbb{R}
+    \Rmat: \mathbf{R}
+    \Rn: '[\text{Rn}]\,'
+    \Rvec: \mathbf{R}
+    \SI: \quad\text{(SI)}
+    \SIG: \quad\text{(SI,G)}
+    \SS: \mathcal{S}
+    \Sigmavec: \boldsymbol{\Sigma}
+    \Sspace: \mathcal{S}
+    \Svec: \mathbf{S}
+    \Tmat: \mathbf{T}
+    \Tvec: \mathbf{T}
+    \Uvec: \mathbf{U}
+    \Vvec: \mathbf{V}
+    \Wvec: \mathbf{W}
+    \Xhat: \hat{X}
+    \Xslash: X\!\!\!/
+    \Xvec: \mathbf{X}
+    \Yhat: \hat{Y}
+    \Yvec: \mathbf{Y}
+    \alphavec: \boldsymbol{\alpha}
+    \aslash: a\!\!\!/
+    \avec: \mathbf{a}
+    \avechat: \hat{\mathbf{a}}
+    \braket: '\langle #1 | #2 \rangle'
+    \bslash: b\!\!\!/
+    \bvec: \mathbf{b}
+    \bvechat: \hat{\mathbf{b}}
+    \cc: \dagger
+    \cobaltfiftyseven: '{}^{57}\text{Co}'
+    \cross: \times
+    \cslash: c\!\!\!/
+    \cvec: \mathbf{c}
+    \cvechat: \hat{\mathbf{c}}
+    \dAlembertian: \Box
+    \dag: \dagger
+    \del: \nabla
+    \det: \operatorname{det}
+    \diag: \operatorname{diag}
+    \dod: \frac{d#1}{d#2}
+    \ds: \displaystyle
+    \dslash: d\!\!\!/
+    \dvec: \mathbf{d}
+    \ellvec: \boldsymbol{\ell}
+    \epsilonslash: \epsilon\!\!\!/
+    \epsilonvec: \boldsymbol{\epsilon}
+    \epsilonvechat: \hat{\boldsymbol{\epsilon}}
+    \evec: \mathbf{e}
+    \evechat: \hat{\mathbf{e}}
+    \even: \mathcal{E}
+    \ffract: \frac
+    \fract: \frac
+    \fvec: \mathbf{f}
+    \gammavec: \boldsymbol{\gamma}
+    \gmat: \mathbf{g}
+    \gvec: \mathbf{g}
+    \hbox: \text
+    \ironfiftyseven: '{}^{57}\text{Fe}'
+    \ketbra: \ket{#1}\bra{#2}
+    \khat: \hat{k}
+    \kslash: k\!\!\!/
+    \kvec: \mathbf{k}
+    \kvechat: \hat{\mathbf{k}}
+    \lambdavec: \boldsymbol{\lambda}
+    \mathcolon: ':'
+    \mathspan: \operatorname{span}
+    \matrixelement: \bra{#1}#2\ket{#3}
+    \mset: \ket{\text{$m$-set}}
+    \muvec: \boldsymbol{\mu}
+    \mvec: \mathbf{m}
+    \mvechat: \hat{\mathbf{m}}
+    \nvec: \mathbf{n}
+    \nvechat: \hat{\mathbf{n}}
+    \odd: \mathcal{O}
+    \omegavec: \boldsymbol{\omega}
+    \ordminus: '-'
+    \ordplus: +
+    \ordpm: \pm
+    \partialslash: \partial\!\!\!/
+    \pdot: \dot{p}
+    \phat: \hat{p}
+    \phivechat: \hat{\boldsymbol{\phi}}
+    \pibar: \bar{\pi}
+    \pivec: \boldsymbol{\pi}
+    \pop: '\frac{\partial #1}{\partial #2}'
+    \principalvalue: \mathcal{P}
+    \psibar: \bar{\psi}
+    \pslash: p\!\!\!/
+    \pvec: \mathbf{p}
+    \pvechat: \hat{\mathbf{p}}
+    \qdot: \dot{q}
+    \qvec: \mathbf{q}
+    \reducedme: '\langle #1 \| #2 \| #3\rangle'
+    \rhovec: \boldsymbol{\rho}
+    \rhovechat: \hat{\boldsymbol{\rho}}
+    \rvec: \mathbf{r}
+    \rvechat: \hat{\mathbf{r}}
+    \sgn: \operatorname{sgn}
+    \sigmavec: \boldsymbol{\sigma}
+    \sign: \operatorname{sgn}
+    \sslash: s\!\!\!/
+    \svec: \mathbf{s}
+    \svechat: \hat{\mathbf{s}}
+    \thetavec: \boldsymbol{\theta}
+    \thetavechat: \hat{\boldsymbol{\theta}}
+    \tr: \operatorname{tr}
+    \transformsby: \Longrightarrow
+    \ubar: \bar{u}
+    \uvec: \mathbf{u}
+    \vbar: \bar{v}
+    \vhat: \hat{v}
+    \vvec: \mathbf{v}
+    \xbar: \bar{x}
+    \xdot: \dot{x}
+    \xhat: \hat{x}
+    \xivec: \boldsymbol{\xi}
+    \xpecval: '\langle #1\rangle'
+    \xvec: \mathbf{x}
+    \xvechat: \hat{\mathbf{x}}
+    \yhat: \hat{y}
+    \yvechat: \hat{\mathbf{y}}
+    \zvechat: \hat{\mathbf{z}}
+    \zerovec: \mathbf{0}
+    \zhat: \hat{z}
+    \hc: \dagger
+    \Gvec: \mathbf{G}
+    \yvec: \mathbf{y}
+    \moplus: '+'
+    \mominus: '-'
+    \Rop: \hat{R}
+    \ydot: \dot{y}
+    \lcolon: \mathrel{:}
+    \rcolon: \mathrel{:}
+    \sevenrm: \scriptsize
+    \rightarrowfill: \longrightarrow
+    \spaceit: \qquad
+    \textthe: \text{the}
+    \textbut: \text{but}
+  toc:
+  - file: index.md
+  - file: 00-preface.md
+  - file: 01-hilbert.md
+  - file: 02-postulat.md
+  - file: 03-density.md
+  - file: 04-spatialdof.md
+  - file: 05-tevolut.md
+  - file: 06-topicsoned.md
+  - file: 07-wkb.md
+  - file: 08-harmosc.md
+  - file: 09-pathint.md
+  - file: 10-magfield.md
+  - file: 11-classrot.md
+  - file: 12-spinrot.md
+  - file: 13-repsamos.md
+  - file: 14-spinmagf.md
+  - file: 15-orbamsph.md
+  - file: 16-cenforce.md
+  - file: 17-hydrogen.md
+  - file: 18-jjcouple.md
+  - file: 19-transfop.md
+  - file: 20-wigeck.md
+  - file: 21-parity.md
+  - file: 22-timerev.md
+  - file: 23-pertth.md
+  - file: 24-stark.md
+  - file: 25-finestruc.md
+  - file: 26-zeeman.md
+  - file: 27-hyperfine.md
+  - file: 28-variational.md
+  - file: 29-identpart.md
+  - file: 30-helium.md
+  - file: 31-thomferm.md
+  - file: 32-hartfock.md
+  - file: 33-atomstruc.md
+  - file: 34-tdpt.md
+  - file: 35-photelec.md
+  - file: 36-introscatt.md
+  - file: 37-greensfuns.md
+  - file: 38-lippschw.md
+  - file: 39-adiab.md
+  - file: 40-classemf.md
+  - file: 41-quantemf.md
+  - file: 42-radnmatt.md
+  - file: 43-photscatt.md
+  - file: 44-nlw.md
+  - file: 45-kleing.md
+  - file: 46-dirac.md
+  - file: 47-lorentz.md
+  - file: 48-covariance.md
+  - file: 49-foldyw.md
+  - file: 50-spdirac.md
+  - file: 51-holedirac.md
+  - file: 52-emdirac.md
+  - file: A-emunits.md
+  - file: B-classmech.md
+  - file: C-gaussint.md
+  - file: D-vecident.md
+  - file: E-tensor.md
+  # title:
+  # description:
+  authors: [OpenScienceTeam]
+  # authors: []
+  # github:
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+  jupyter:
+    binder:
+      repo: https://github.com/OpenScienceTeam/Quantum-Mechanics # default repo
+site:
+  template: book-theme
+  title: Quantum Mechanics
+  options:
+    hide_toc: false  # Hide the table of contents in the sidebar
+    hide_outline: false  # Hide the outline (the floating table of contents)
+    logo_text: Quantum Mechanics
+    logo: favicon.ico
+    style: ./css/footer.css
+    favicon: favicon.ico
+    base_url: /Quantum-Mechanics/
+  nav:
+    - title: Book
+      url: /preface
+    - title: OpenScience
+      url: https://openscienceteam.github.io/OpenScience/
+  actions:
+    - title: OpenScienceTeam
+      url: https://github.com/OpenScienceTeam
+  parts:
+    footer: footer.md
+    primary_sidebar_footer: primary-sidebar-footer.md
+  domains: []
