@@ -1,10 +1,6 @@
-# This file was created automatically with `myst init --gh-pages` 🪄 💚
-# Ensure your GitHub Pages settings for this repository are set to deploy with **GitHub Actions**.
-
 name: MyST GitHub Pages Deploy
 on:
   push:
-    # Runs on pushes targeting the default branch
     branches: [main]
   workflow_dispatch:
     inputs:
@@ -13,10 +9,7 @@ on:
         required: true
         default: 'warning'
         type: choice
-        options:
-        - info
-        - warning
-        - debug
+        options: [info, warning, debug]
       tags:
         description: 'Test scenario tags'
         required: false
@@ -25,22 +18,20 @@ on:
         description: 'Environment to run tests against'
         type: environment
         required: true
+
+# BASE_URL: 你的仓库名作为子路径，私有 repo + public Pages 时尤其重要
 env:
-  # `BASE_URL` determines, relative to the root of the domain, the URL that your site is served from.
-  # E.g., if your site lives at `https://mydomain.org/myproject`, set `BASE_URL=/myproject`.
-  # If, instead, your site lives at the root of the domain, at `https://mydomain.org`, set `BASE_URL=''`.
   BASE_URL: /${{ github.event.repository.name }}
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+
 concurrency:
-  group: 'pages'
-  cancel-in-progress: false
+  group: pages-${{ github.ref }}   # 按分支隔离，比单 group 'pages' 更精细
+  cancel-in-progress: true         # 关键：新 push 取消旧 run，避免排队叠加 artifact
+
 jobs:
   deploy:
     environment:
@@ -49,21 +40,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5     # v3→v5，适配 Node 24 runner
+
       - uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 20                  # 18→20，避 punycode 警告 + 长期支持
+          cache: npm                        # 给全局 npm 包加缓存（下面 install -g 也能吃到些）
+
       - name: Install MyST
         run: npm install -g mystmd
+
       - name: Build HTML Assets
         run: |
           echo "Using BASE_URL=$BASE_URL"
-          BASE_URL=$BASE_URL myst build --html --execute
+          myst build --html --execute
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4   # v3→v4，与 deploy-pages@v4 配套
         with:
           path: './_build/html'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
