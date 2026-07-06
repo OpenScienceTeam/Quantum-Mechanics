@@ -382,7 +382,7 @@ We now consider the hydrogen molecule $H_2$, in which the nuclei are protons (or
 
 The Hamiltonian is still {eq}`eq-identpart-1`, with the proton mass $m$ and Born-Oppenheimer potential $V$ for hydrogen. In particular, there are no spin-dependent terms in the Hamiltonian, which is a purely spatial operator. More precisely, the energy of the system does depend to a small extent on the orientation of the proton spins (for example, through the dipole-dipole interaction of the two protons), but this energy is extremely small compared to the terms present in {eq}`eq-identpart-1`. The neglect of these spin-dependent terms in no way affects any of the major conclusions of the following argument, in which we find a dramatic dependence of the behavior of the hydrogen molecule, depending on the spin state. This is the normal situation in nonrelativistic quantum mechanics: the direct magnetic interactions of spins involve only very small energies, but due to the requirements of the symmetrization postulate, spin ends up having a much bigger effect than the magnetic energy alone would indicate.
 
-Since the Hamiltonian has the same form as in the case of the ${}^{12}C_2$ molecule, most of the analysis of its eigenfunctions and eigenvalues goes through exactly as in \secridentpart-6. The only difference is that the wave function must be multiplied by a spin part, that is, the total Hilbert space is
+Since the Hamiltonian has the same form as in the case of the ${}^{12}C_2$ molecule, most of the analysis of its eigenfunctions and eigenvalues goes through exactly as in {ref}`sec-identpart-6`. The only difference is that the wave function must be multiplied by a spin part, that is, the total Hilbert space is
 
 :::{math}
 :label: eq-identpart-40
@@ -509,31 +509,39 @@ Experimental measurements of the rotational spectrum of $*H*_2$ at low temperatu
 
 These experiments were carried out by Hori in Copenhagen in 1927, and gave results that did not agree with the theory previously worked out by Hund (because Hori's hydrogen gas was not in thermal equilibrium). The discrepancy was resolved by Dennison shortly afterward, who called attention to the long equilibration time. Dennison at first did not realize the importance of his result; only as an afterthought, he published another paper in which he pointed out that the data and its correct interpretation showed that the proton has spin $\frac{1}{2}$ and that it obeys Fermi statistics (antisymmetric wave functions). This was a big breakthrough in the appreciation of the general relation between spin and statistics. The episode is recounted in *The Story of Spin*, by Sin-itiro Tomonaga.
 
-\problems
+(sec-identpart-problems)=
+
+## Problems
 
 (prob-identpart-1)=
 
-**Problem \prbdidentpart-1..** 
+**Problem 1.** 
 
-\problempart{(a)} In classical statistical mechanics, each degree of freedom contributes an amount $\frac{1}{2}Nk$ to the specific heat $C_v$, where $N$ is the number of particles and $k$ is the Boltzmann constant. In this context, a “degree of freedom” means a quadratic term in the Hamiltonian, for example, $p^2/2$ or $x^2/2$. For example, the three translational degrees of freedom of a molecule contribute $\frac{3}{2}Nk$, and the two rotational degrees of freedom of a diatomic contribute $Nk$ more (the third rotational degree of freedom about the axis of the molecule is frozen out because of the small moment of inertia).
+A problem on the hydrogen molecule.
+
+**(a)**  In classical statistical mechanics, each degree of freedom contributes an amount $\frac{1}{2}Nk$ to the specific heat $C_v$, where $N$ is the number of particles and $k$ is the Boltzmann constant. In this context, a “degree of freedom” means a quadratic term in the Hamiltonian, for example, $p^2/2$ or $x^2/2$. For example, the three translational degrees of freedom of a molecule contribute $\frac{3}{2}Nk$, and the two rotational degrees of freedom of a diatomic contribute $Nk$ more (the third rotational degree of freedom about the axis of the molecule is frozen out because of the small moment of inertia).
 
 Use quantum statistical mechanics to compute the rotational contribution to the specific heat $C_v$ of $H_2$ gas in both the low and high temperature limits. In each case, just give the dominant term at low or high temperatures. Give a quantitative condition as to what “low” and “high” temperatures mean in this case, and work out a characteristic temperature in Kelvins that separates the two temperature regimes. Hint: in the high temperature limit, evaluate the sum by regarding it as a Riemann sum approximation to an integral. Then do the integral. The bond length of the hydrogen molecule is 0.74 Angstrom.
 
-\problempart{(b)} Do the same for $D_2$ gas (deuterium).
+**(b)**  Do the same for $D_2$ gas (deuterium).
 
 (prob-identpart-2)=
 
-**Problem \prbdidentpart-2.} In working the previous problem, you may have noticed that when you combine equal spins, say, $j_1=j_2=j$, according to $\Svec=\Jvec_1+\Jvec_2$, then the states $s=2j$, that is, the states $\ket{s m_s}$ for $s=2j$, are symmetric under exchange $E_{12}$, the states $s=2j-1$ are antisymmetric, etc.  In the following problem you must not use any properties of the Clebsch-Gordan coefficients, only general properties of operators such as $S^2$, $S_z$, $E_{12.** 
+**Problem 2.** 
 
-\problempart{(a)} Prove that the states }$s=2j$ are symmetric under exchange (all of them, that is, all $2s+1$ of them).
+In working the previous problem, you may have noticed that when you combine equal spins, say, $j_1=j_2=j$, according to $\Svec=\Jvec_1+\Jvec_2$, then the states $s=2j$, that is, the states $\ket{s m_s}$ for $s=2j$, are symmetric under exchange $E_{12}$, the states $s=2j-1$ are antisymmetric, etc.  In the following problem you must not use any properties of the Clebsch-Gordan coefficients, only general properties of operators such as $S^2$, $S_z$, $E_{12}$, etc.
 
-\problempart{(b)} Prove that as the total value of $s$ is decreased from its maximum of $2j$ to its minimum of 0, the states $\ket{s m_s}$ alternate between symmetric and antisymmetric under exchange. Hint: Review the general proof for the addition of angular momenta, that says when you combine angular momenta according to $\Svec = \Jvec_1 + \Jvec_2$, you get $j=|j_1-j_2|, \ldots, j_1+j_2$. In the present case we are interested in $j_1=j_2=j$. Think of the square of $(2j+1)^2$ lattice points in the $m_1$-$m_2$ plane, representing the uncoupled basis $\ket{m_1}\ket{ m_2}$.
+**(a)**  Prove that the states }$s=2j$ are symmetric under exchange (all of them, that is, all $2s+1$ of them).
+
+**(b)**  Prove that as the total value of $s$ is decreased from its maximum of $2j$ to its minimum of 0, the states $\ket{s m_s}$ alternate between symmetric and antisymmetric under exchange. Hint: Review the general proof for the addition of angular momenta, that says when you combine angular momenta according to $\Svec = \Jvec_1 + \Jvec_2$, you get $j=|j_1-j_2|, \ldots, j_1+j_2$. In the present case we are interested in $j_1=j_2=j$. Think of the square of $(2j+1)^2$ lattice points in the $m_1$-$m_2$ plane, representing the uncoupled basis $\ket{m_1}\ket{ m_2}$.
 
 (prob-identpart-3)=
 
-**Problem \prbdidentpart-3..** 
+**Problem 3.** 
 
-\problempart{(a)} Consider hydrogen gas at STP (one atmosphere pressure, $T=273K$). Let us estimate the time required for the proton spin in an individual hydrogen molecule to flip, thereby converting a molecule of orthohydrogen into parahydrogen, or vice versa. The proton spin in a given hydrogen molecule responds to magnetic fields which are produced by the protons in another hydrogen molecule during collisions. Estimate the cross for collision of two hydrogen molecules as $\sigma=2\pi a_0^2$, where $a_0$ is the Bohr radius. This will be a rough calculation so one or two significant figures will be enough. Calculate the number of collisions per second that a given hydrogen molecule will experience.
+A problem about ortho and parahydrogen.
+
+**(a)**  Consider hydrogen gas at STP (one atmosphere pressure, $T=273K$). Let us estimate the time required for the proton spin in an individual hydrogen molecule to flip, thereby converting a molecule of orthohydrogen into parahydrogen, or vice versa. The proton spin in a given hydrogen molecule responds to magnetic fields which are produced by the protons in another hydrogen molecule during collisions. Estimate the cross for collision of two hydrogen molecules as $\sigma=2\pi a_0^2$, where $a_0$ is the Bohr radius. This will be a rough calculation so one or two significant figures will be enough. Calculate the number of collisions per second that a given hydrogen molecule will experience.
 
 During the collision, the protons in one molecule and those in the other never come much closer together than $a_0$, because they are cushioned by the electron clouds. Ignoring all angle dependence, estimate the magnetic field one proton will experience at a distance of $a_0$ from the other proton (in Gauss). Estimate the time of collision $\tau$ as $a_0/v$, where $v$ is the average velocity of the molecules at the temperature given. Then use this to estimate $\Delta \theta$, the angle by which the spin on one proton changes during the collision time $\tau$, due to the magnetic field of the proton in the other molecule.
 
@@ -613,6 +621,8 @@ Finally, given that the angles accumulate between collisions by a random walk, e
 :::
 (prob-identpart-4)=
 
-**Problem (b)} Hydrogen gas at room temperature is lowered to $20{\rm K.** 
+**Problem (b).**
+
+Hydrogen gas at room temperature is lowered to $20{\rm K}$, as measured by a thermometer inserted into the gas.  We do this on a time scale much shorter than the time scale needed to flip spins, as investigated in part~(a).  We reduce the pressure enough so that the cold gas can be considered an ideal gas (and to avoid liquification).
 
 We keep the hydrogen thermally insulated and wait for it to come to thermal equilibrium. What temperature does the thermometer register when equilibrium is achieved? Use {ref}`tbl-identpart-2` to make a reasonable estimate. Take the bond length of the hydrogen molecule to be 0.74 Angstrom.

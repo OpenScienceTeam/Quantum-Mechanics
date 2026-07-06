@@ -889,7 +889,7 @@ where the final matrix element is just the $D$-matrix,
 \matrixelement{\gamma jm}{U}{\gamma jm'} =D^j_{mm'}(U).
 :::
 
-Not only is this independent of $\gamma$, it is the same $D$-matrix we defined in \secrrepsamos-6.
+Not only is this independent of $\gamma$, it is the same $D$-matrix we defined in {ref}`sec-repsamos-6`.
 
 A practical way of thinking about these conclusions is to say that in standard angular momentum basis $\ket{\gamma jm}$, the extra index $\gamma$ just goes along for the ride insofar as angular momentum or rotation operators are concerned.
 
@@ -999,11 +999,15 @@ U_0 U({\hat{\mathbf{n}}},\theta) U_0^\hc = U(\Rmat_0{\hat{\mathbf{n}}},\theta),
 
 where $U_0$ and $\Rmat_0$ are corresponding quantum and classical rotations. This is an exponentiated version of the adjoint formula, similar to Eq.~({eq}`eq-classrot-51`. Notice again that the left hand side is quadratic in $U_0$, so that in the case of double-valued representations it does not matter which $U_0$ operator we choose to represent the rotation $\Rmat_0$. {eq}`eq-repsamos-96` is an exponentiated version of the adjoint formula {eq}`eq-repsamos-91`.
 
-\problems
+(sec-repsamos-problems)=
+
+## Problems
 
 (prob-repsamos-1)=
 
-**Problem \prbdrepsamos-1.}  A molecule is approximately a rigid body. Consider a molecule such as $H_2O$, $NH_3$, or $CH.** 
+**Problem 1.** 
+
+A molecule is approximately a rigid body. Consider a molecule such as ${\rm H}_2{\rm O}$, ${\rm NH}_3$, or ${\rm CH}_4$, which is not a diatomic.  First let us talk classical mechanics.  Then the kinetic energy of a rigid body is
 
 :::{math}
 :label: eq-repsamos-97
@@ -1033,7 +1037,7 @@ Finally, the equations of motion for the angular velocity or angular momentum in
 
 By using {eq}`eq-repsamos-99` to eliminate either $\omegavec$ or $\Lvec$, {eq}`eq-repsamos-100` can be regarded as an equation for either $\Lvec$ or $\omegavec$. The Euler equations are trivial for a spherical top ($I_x=I_y=I_z$), they are easily solvable in terms of trigonometric functions for a symmetric top ($I_x=I_y=I_\perp \ne I_z$), and they are solvable in terms of elliptic functions for an asymmetric top ($I_x$, $I_y$, $I_z$ all unequal). The symmetric top is studied in all undergraduate courses in classical mechanics.
 
-\problempart{(a)} In quantum mechanics, it turns out that the Hamiltonian operator for a rigid body has exactly the form {eq}`eq-repsamos-97`. The angular momentum $\Lvec$ satisfies the commutation relations,
+**(a)**  In quantum mechanics, it turns out that the Hamiltonian operator for a rigid body has exactly the form {eq}`eq-repsamos-97`. The angular momentum $\Lvec$ satisfies the commutation relations,
 
 :::{math}
 :label: eq-repsamos-101
@@ -1042,11 +1046,13 @@ By using {eq}`eq-repsamos-99` to eliminate either $\omegavec$ or $\Lvec$, {eq}`e
 
 with a minus sign relative to the familiar commutation relations because the components of $\Lvec$ are (in this problem) measured relative to the body frame. (We will not justify this. If the components of $\Lvec$ were measured with respect to the space or inertial frame, then there would be the usual plus sign in {eq}`eq-repsamos-101`.) Compute the Heisenberg equations of motion for $\Lvec$, and compare them with the classical Euler equations. You may take {eq}`eq-repsamos-98` or {eq}`eq-repsamos-99` over into quantum mechanics, in order to define an operator $\omegavec$ to make the Heisenberg equations look more like the classical Euler equations. (Just get the equation for $L_x$, then cycle indices to get the others.) Make your answer look like {eq}`eq-repsamos-100` as much as possible.
 
-\problempart{(b)} It is traditional in the theory of molecules to let the quantum number of $L_z$ (referred to the body frame) be $k$. Write the rotational energy levels of a symmetric top ($I_x=I_y=I_\perp \ne I_z$) in terms of a suitable set of quantum numbers. Indicate any degeneracies. How is the oblate case ($I_z > I_\perp$) qualitatively different from the prolate case ($I_\perp > I_z$)? Hint: In order to deal with standard commutation relations, you may wish to write $\tilde\Lvec=-\Lvec$, so that $[\tilde L_i, \tilde L_j] = i\hbar\,\epsilon_{ ijk}\,\tilde L_k$.
+**(b)**  It is traditional in the theory of molecules to let the quantum number of $L_z$ (referred to the body frame) be $k$. Write the rotational energy levels of a symmetric top ($I_x=I_y=I_\perp \ne I_z$) in terms of a suitable set of quantum numbers. Indicate any degeneracies. How is the oblate case ($I_z > I_\perp$) qualitatively different from the prolate case ($I_\perp > I_z$)? Hint: In order to deal with standard commutation relations, you may wish to write $\tilde\Lvec=-\Lvec$, so that $[\tilde L_i, \tilde L_j] = i\hbar\,\epsilon_{ ijk}\,\tilde L_k$.
 
 (prob-repsamos-2)=
 
 **Problem 2..** 
+
+A spin-1 particle has the component of its spin in the direction
 
 :::{math}
 :label: eq-repsamos-102
@@ -1067,5 +1073,7 @@ Express the aforementioned probabilities in terms of the matrix, $D^1_{mm'}(\Rma
 (prob-repsamos-3)=
 
 **Problem 3..** 
+
+The adjoint formula (\eqr\cn.91) is important in applications.  The proof above uses a differential equation in the angle $\theta$.  The following is a more pictorial approach.  It is based on the idea that finite rotations can be built up as the product of a large number of small rotations.
 
 First show that if {eq}`eq-repsamos-91` is true for two rotation operators $U_1$ and $U_2$, and the corresponding classical rotations $\Rmat_1$ and $\Rmat_2$, then it is true for the products $U=U_1U_2$ and $\Rmat=\Rmat_1\Rmat_2$. Then show that {eq}`eq-repsamos-91` is true for infinitesimal rotations. This is sufficient to prove the formula.

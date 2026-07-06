@@ -740,17 +740,23 @@ The Baker-Campbell-Hausdorff theorem concerns this series, and asserts that the 
 
 For example, in the case of the rotations, knowledge of the commutation relations {eq}`eq-classrot-34` or {eq}`eq-classrot-35` allows us to compute all the terms of the Taylor series {eq}`eq-classrot-70` and thus obtain the multiplication law for finite rotations in terms of axis-angle parameters, at least in principle. We do not intend to do this in practice, and in fact we shall use the Baker-Campbell-Hausdorff theorem only for its suggestive and intuitive value. But the point is that all the complexity of the noncommutative multiplication law for finite rotations is implicitly contained in the commutation relations of infinitesimal rotations, that is, of the $\Jmatvec$ matrices. This explains the emphasis placed on commutation relations in these notes and in physics in general.
 
-\problems
+(sec-classrot-problems)=
+
+## Problems
 
 (prob-classrot-1)=
 
-**Problem \prbdclassrot-1.} Prove the commutation relations {eq}`eq-classrot-34`, using {eq}`eq-classrot-23` and the properties of the Levi-Civita symbol $\epsilon_{ijk.** 
+**Problem 1.** 
+
+Prove the commutation relations (\eqr\cn.34), using Eq.~(\eqr\cn.23) and the properties of the Levi-Civita symbol $\epsilon_{ijk}$.  See Sec.~\secr\tensor.16.
 
 (prob-classrot-2)=
 
-**Problem \prbdclassrot-2..** 
+**Problem 2.** 
 
-\problempart{(a)} Show that if }$\Rmat\in O(3)$, then
+Some useful identities.
+
+**(a)**  Show that if }$\Rmat\in O(3)$, then
 
 :::{math}
 :label: eq-classrot-71
@@ -766,7 +772,7 @@ Also show that
 
 These formulas hold for all vectors $\avec$ and $\bvec$.
 
-\problempart{(b)} Show that if $\Rmat\in SO(3)$, then
+**(b)**  Show that if $\Rmat\in SO(3)$, then
 
 :::{math}
 :label: eq-classrot-73
@@ -791,16 +797,22 @@ valid for all $\Rmat\in SO(3)$ and all vectors $\avec$, $\bvec$ and $\cvec$.
 
 (prob-classrot-3)=
 
-**Problem \prbdclassrot-3..** 
+**Problem 3.** 
+
+The geometrical meaning of Eq.~(\eqr\cn.44) is illustrated in Fig.~\figr\cn.4.  The rotation leaves the component of $\uvec$ along the axis $\nvechat$ invariant, while rotating the orthogonal component in the plane perpendicular to $\nvechat$.
 
 By expressing powers of the $\Jmatvec$ matrices in terms of lower powers, sum the exponential series {eq}`eq-classrot-40` and obtain another proof of {eq}`eq-classrot-44`.
 
 (prob-classrot-4)=
 
-**Problem \prbdclassrot-4..** 
+**Problem 4.** 
+
+The axis $\nvechat$ of a proper rotation $\Rmat$ is invariant under the action of $\Rmat$, that is, $\Rmat\nvechat =\nvechat$.  Therefore $\nvechat$ is a real, normalized eigenvector of $\Rmat$ with eigenvalue $+1$.
 
 Prove that every proper rotation has an axis. Show that the axis is unique (apart from the change in sign, ${\hat{\mathbf{n}}}\to-{\hat{\mathbf{n}}}$) as long as the angle of rotation is nonzero. This proof is the essential step in showing that every rotation can be expressed in axis-angle form. Do proper rotations in 4 dimensions have an axis?
 
 (prob-classrot-5)=
 
-**Problem \prbdclassrot-5..**
+**Problem 5.**
+
+It is claimed that every proper rotation can be written in Euler angle form.  Find the Euler angles $(\alpha,\beta,\gamma)$ for the rotation $\Rmat(\xvechat,\pi/2)$.

@@ -268,7 +268,7 @@ The coefficients $c_n$ are complex, so we want to vary with respect to their rea
 
 The second equation is the complex conjugate of the first equation and gives no additional information. The first equation shows that the Lagrange multiplier $\beta$ is the eigenvalue of the truncated, $N\times N$ matrix of matrix elements of $H$ with respect to the given basis, while the coefficients $c_n$ are the eigenvectors of this matrix. The third equation shows that the eigenvectors are normalized. Let us denote the eigenvalues of this matrix by $\beta_n$, ordered so that $\beta_0\le\beta_1\le\ldots\le\beta_{N-1}$. We see that the eigenvalues of truncated matrix and the corresponding, normalized eigenvectors are critical points of the energy function {eq}`eq-variational-26`. The minimum eigenvalue $\beta_0$ and corresponding eigenvector are a true minimum of the functional.
 
-When finding the energy eigenvalues of a Hamiltonian on a computer it is natural to truncate an infinite basis set to some finite size and to diagonalize that matrix, because there is little choice. It is also natural to hope that the eigenvalues of the truncated matrix will be good approximations to the exact eigenvalues of the Hamiltonian, and to hope that they will converge to those exact eigenvalues as $N\to\infty$. What the theorem proved in \secrvariational-2 adds to this is the fact that the minimum eigenvalue of the truncated matrix, $\beta_0$, is actually an upper bound to the true ground state energy, $\beta_0 \ge E_0$. Moreover, if we increase the size of the truncation, this minimum eigenvalue can only decrease, thereby coming closer to the true eigenvalue. This is because when we increase $N$ we are considering a larger family of trial wave functions that includes all the trial wave functions at a lower level of truncation. The minimum energy of the larger set must be less than or equal to the minimum energy of the smaller set contained in it.
+When finding the energy eigenvalues of a Hamiltonian on a computer it is natural to truncate an infinite basis set to some finite size and to diagonalize that matrix, because there is little choice. It is also natural to hope that the eigenvalues of the truncated matrix will be good approximations to the exact eigenvalues of the Hamiltonian, and to hope that they will converge to those exact eigenvalues as $N\to\infty$. What the theorem proved in {ref}`sec-variational-2` adds to this is the fact that the minimum eigenvalue of the truncated matrix, $\beta_0$, is actually an upper bound to the true ground state energy, $\beta_0 \ge E_0$. Moreover, if we increase the size of the truncation, this minimum eigenvalue can only decrease, thereby coming closer to the true eigenvalue. This is because when we increase $N$ we are considering a larger family of trial wave functions that includes all the trial wave functions at a lower level of truncation. The minimum energy of the larger set must be less than or equal to the minimum energy of the smaller set contained in it.
 
 The variational parameters $c_n$ in the example {eq}`eq-variational-25` can be regarded as *linear* parameters, that is, coefficients in a linear combination of wave functions, while the parameter $a$ in the example {eq}`eq-variational-14` can be regarded as a *nonlinear* parameter, because the trial wave function depends nonlinearly on it. The parameters of trial wave functions can be of either kind, and in general the set of trial wave functions is not a vector subspace of the Hilbert space but rather some other type of subset.
 
@@ -276,7 +276,7 @@ The variational parameters $c_n$ in the example {eq}`eq-variational-25` can be r
 
 ## The Hylleraas-Undheim Theorem
 
-In the case of purely linear parameters, as in the trial wavefunction {eq}`eq-variational-25`, a theorem proved by Hylleraas and Undheim goes considerably beyond the simple theorem proved in \secrvariational-2. In the following it is convenient to reinterpret the notation $E_n$, by indicating degeneracies by repetitions of the values $E_n$ for successive $n$. For example, if the ground state were 2-fold degenerate and the first excited state nondegenerate, then we would have $E_0=E_1<E_2<E_3$, etc. Then it turns out that not only is $\beta_0$ an upper bound to $E_0$, but in fact $\beta_n \ge E_n$ for all $n=0,\ldots,N-1$. That is, all the eigenvalues of the truncated matrix are upper bounds to the corresponding exact eigenvalues.
+In the case of purely linear parameters, as in the trial wavefunction {eq}`eq-variational-25`, a theorem proved by Hylleraas and Undheim goes considerably beyond the simple theorem proved in {ref}`sec-variational-2`. In the following it is convenient to reinterpret the notation $E_n$, by indicating degeneracies by repetitions of the values $E_n$ for successive $n$. For example, if the ground state were 2-fold degenerate and the first excited state nondegenerate, then we would have $E_0=E_1<E_2<E_3$, etc. Then it turns out that not only is $\beta_0$ an upper bound to $E_0$, but in fact $\beta_n \ge E_n$ for all $n=0,\ldots,N-1$. That is, all the eigenvalues of the truncated matrix are upper bounds to the corresponding exact eigenvalues.
 
 Moreover, if we consider two different truncations of the exact expansion {eq}`eq-variational-24`, one with the first $M$ basis states and the second with the first $N$ basis states, with $M<N$, then it can be shown that
 
@@ -313,11 +313,15 @@ Sometimes however it is possible to find trial wave functions that are orthogona
 
 More generally in any system with an exact symmetry the variational method can be used to obtain an upper bound to the minimum energy level in each symmetry class, for example, in each set of wave functions with a given value $j$, in a system with rotational invariance (where $j$ is the quantum number of the total angular momentum of the system).
 
-\problems
+(sec-variational-problems)=
+
+## Problems
 
 (prob-variational-1)=
 
-**Problem \prbdvariational-1..** 
+**Problem 1.** 
+
+I borrowed this problem from Professor Eugene Commins.  First some background.  The Coulomb potential gives to an infinite number of bound states, because it is a long-range potential. Other, short range, potentials have only a finite number of bound states.  In a 3-dimensional problem, the number of bound states can range from zero to infinity.  If the potential is weak enough and short range enough, there may not be any bound states at all.  In one dimension, however, a potential which is overall attractive, in a certain sense, always possesses at least one bound state, even if it is very weak.
 
 Consider a 1-dimensional problem, with Hamiltonian
 
@@ -351,12 +355,16 @@ Now try the same trick in 3 dimensions and show that it does not work. Assume $V
 
 (prob-variational-2)=
 
-**Problem \prbdvariational-2..** 
+**Problem 2.** 
+
+Consider a central force problem in three dimensions, with potential $V(r)$.  Suppose that it has at least one bound state.  Use the variational principle to prove that the ground state is an $s$-wave.
 
 (prob-variational-3)=
 
-**Problem \prbdvariational-3.} Consider a system with a nondegenerate ground state.  According to nondegenerate perturbation theory (see {eq}`eq-pertth-23`, the second order correction to the ground state energy is always $\le0$.  Does this imply that the first order estimate to the energy, $\epsilon_0+\matrixelement{0}{H_1}{0.** 
+**Problem 3.** 
 
-\problempart{(a)} Find a proof that the first order estimate to the ground state energy is actually an upper bound to the true ground state energy.
+Consider a system with a nondegenerate ground state.  According to nondegenerate perturbation theory (see Eq.~(\eqr\pertth.23)), the second order correction to the ground state energy is always $\le0$.  Does this imply that the first order estimate to the energy, $\epsilon_0+\matrixelement{0}{H_1}{0}$, is an upper bound to the ground state energy?  No, because we have no control over the higher order terms of the series, which in any case may not converge.
 
-\problempart{(b)} Now allow the ground state to be degenerate. When we turn on the perturbation }$H_1$, the ground state will in general split. Show that the estimate in first order perturbation theory for the lowest of these levels is a rigorous upper bound to the ground state energy.
+**(a)**  Find a proof that the first order estimate to the ground state energy is actually an upper bound to the true ground state energy.
+
+**(b)**  Now allow the ground state to be degenerate. When we turn on the perturbation }$H_1$, the ground state will in general split. Show that the estimate in first order perturbation theory for the lowest of these levels is a rigorous upper bound to the ground state energy.

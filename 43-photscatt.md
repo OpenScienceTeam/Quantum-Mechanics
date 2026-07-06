@@ -627,11 +627,15 @@ A typical example consists of passing optical radiation, for example, a laser be
 
 The spectral lines that are shifted down from the incident frequency $\omega$ are called *Stokes lines*, and those that are shifted up are called *anti-Stokes lines*. In practice Stokes lines tend to be stronger than anti-Stokes lines because the Boltzmann factor suppresses the populations of higher vibrational states. For example, if the gas is at a low enough temperature that almost all the vibrational modes are in the ground state, then one will see only Stokes lines.
 
-\problems
+(sec-photscatt-problems)=
+
+## Problems
 
 (prob-photscatt-1)=
 
-**Problem \prbdphotscatt-1.} This is a variation on Sakurai, *Advanced Quantum Mechanics.** 
+**Problem 1.** 
+
+This is a variation on Sakurai, {\it Advanced Quantum Mechanics}, problem 2-6, p.~72.
 
 Consider the $2s \to 1s$ transition in hydrogen. The matrix elements for single photon emission are very small, so ignore them, and consider the emission of two photons. This in fact is the dominant mechanism for the $2s \to 1s$ decay. It is sufficient to use the electrostatic model (ignore the spin of the electron, the fine structure, etc), so the atomic states are $\ket{n\ell m*}$. Use the Hamiltonian $K=K_0+K_1+K_2$, given by {eq}`eq-photscatt-5a`, with $U(r)=-e^2/r$ so that it applies to hydrogen, and drop the spin-dependent term in $K_1$. Also use the dipole approximation, so $e^{i\kvec\cdot\xvec}=1$. See {eq}`eq-photscatt-17` for the effective transition amplitude in second order time-dependent perturbation theory. Remember that $H_1$ in must be identified with $K_1 + K_2$ in our application. Let $B$ stand for the $2s$ state, $A$ for the $1s$ state, and $I$ for an intermediate state. Obtain an expression for the differential transition rate,
 
@@ -653,12 +657,16 @@ Indicate which intermediate states contribute to the sum. Simplify the expressio
 
 (prob-photscatt-2)=
 
-**Problem \prbdphotscatt-2..** 
+**Problem 2.** 
+
+In Sec.~\secr\cn.13 we derived the Thomson cross section for the scattering of photons by free electrons as a limit of the Kramers-Heisenberg formula when $\hbar\omega$ is much greater than atomic energy scales (but much less than $mc^2$).  Unfortunately, that derivation disguises the fact that the Thomson cross section is valid also for low energy photons.  Make a direct derivation of the Thomson cross section, working with free electrons.  Work in the center of mass frame of the electron-photon system.  Show that one Feynman diagram is larger than the others, which are smaller by a factor of $v/c\ll 1$.  Neglect these.  Because we are using nonrelativistic quantum mechanics for the electron, we must assume that the photon energy satisfies $\hbar\omega\ll mc^2$.  Be careful, you cannot make the dipole approximation because there is no atom to refer the photon wavelength to.  However, you may ignore the term $\Svec\cdot\Bvec$, which is higher order in $\alpha$ (the fine structure constant) than the term $\pvec\cdot\Avec$.
 
 (prob-photscatt-3)=
 
-**Problem \prbdphotscatt-3.}  When we direct photons at an atom, we can choose the frequency of the incident photon $\omega$ to be anything we want.   Depending on the atomic states $\ket{A}$ and $\ket{B.** 
+**Problem 3.** 
 
-\problempart{(a)} Show that if the first term is resonant, then the intermediate state }$I$ must be higher in energy than both states $\ket{A}$ and $\ket{B}$. Show that if $\omega$ is resonant with an atomic transition, then so is $\omega'$. Is there any necessary relation between $E_A$ and $E_B$ (must one be higher than the other, or vice versa)? What states $A$ and $B$ would you choose and what frequency $\omega$ if you wanted to guarantee that the first term could not be resonant for any $I$?
+When we direct photons at an atom, we can choose the frequency of the incident photon $\omega$ to be anything we want.   Depending on the atomic states $\ket{A}$ and $\ket{B}$ and the frequency $\omega$, we may have a resonance in one or the other of the two terms in the sum in Eq.~(\eqr\cn.34).
 
-\problempart{(b)} Show that if the second term is resonant, then the intermediate state $I$ must be lower in energy than both states $\ket{A}$ and $\ket{B}$. Show that if the second term is resonant for some $\omega$, $A$ and $B$, then both $\omega$ and $\omega'$ are resonant with some atomic transition. Is there any necessary relation between $E_A$ and $E_B$ (must one be higher than the other, or vice versa)? What states $A$ and $B$ would you choose and what frequency $\omega$ if you wanted to guarantee that the second term in {eq}`eq-photscatt-34` could not be resonant for any $I$?
+**(a)**  Show that if the first term is resonant, then the intermediate state }$I$ must be higher in energy than both states $\ket{A}$ and $\ket{B}$. Show that if $\omega$ is resonant with an atomic transition, then so is $\omega'$. Is there any necessary relation between $E_A$ and $E_B$ (must one be higher than the other, or vice versa)? What states $A$ and $B$ would you choose and what frequency $\omega$ if you wanted to guarantee that the first term could not be resonant for any $I$?
+
+**(b)**  Show that if the second term is resonant, then the intermediate state $I$ must be lower in energy than both states $\ket{A}$ and $\ket{B}$. Show that if the second term is resonant for some $\omega$, $A$ and $B$, then both $\omega$ and $\omega'$ are resonant with some atomic transition. Is there any necessary relation between $E_A$ and $E_B$ (must one be higher than the other, or vice versa)? What states $A$ and $B$ would you choose and what frequency $\omega$ if you wanted to guarantee that the second term in {eq}`eq-photscatt-34` could not be resonant for any $I$?

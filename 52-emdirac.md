@@ -1068,11 +1068,15 @@ Courses on quantum field theory normally begin with covariant quantization and p
 
 Perhaps the biggest question left unanswered by these notes is why the first quantized Dirac equation gives such good results, if we ignore the negative energy solutions. We have explained that the first quantized theory, prior to the introduction of hole theory, is physically incomplete, becuase of a lack of interpretation of the negative energy solutions. And we have indicated how those interpretational problems are solved by the introduction of field theory. But from a logical standpoint it would be nice to show how and in what sense the first quantized theory is an approximation to field theory. That is an interesting subject that is not usually covered in courses in quantum field theory, which mostly deal with problems that can be solved by the Born approximation. It is perhaps a question that will be covered in a future set of notes.
 
-\problems
+(sec-emdirac-problems)=
+
+## Problems
 
 (prob-emdirac-1)=
 
-**Problem \prbdemdirac-1..** 
+**Problem 1.** 
+
+The purpose of this problem is to derive the equations of motion (\eqr\cn.50) from the Lagrangian (\eqr\cn.57), for which the independent fields are $\psi$, $\psibar$ and $\Avec$, the last of which is understood to be transverse.  The work is carried out in Coulomb gauge.
 
 It is best not to use the Euler-Lagrange equations {eq}`eq-holedirac-12`, but rather to vary the action $S=\int L\,dt$ with respect to the independent fields, and to demand that $\delta S=0$ for all such variations. For practice on this you may see how we obtained Maxwell's equations in {ref}`sec-holedirac-7`. Note that when we vary $\psi$ or $\psibar$, there is a nonvanishing variation $\delta\rho$, because of {eq}`eq-emdirac-52`, which causes a nonvanishing variation $\delta\Phi$, because of {eq}`eq-emdirac-51`. If we write $S_\text{Coul}$ for the Coulomb contribution to the action,
 
@@ -1110,7 +1114,9 @@ This calculation is an example of how Coulomb gauge takes us through noncovarian
 
 (prob-emdirac-2)=
 
-**Problem \prbdemdirac-2.} Positrons were first observed by Anderson in 1932 in cosmic ray tracks in a cloud chamber.  The experimental apparatus consisted of a series of parallel plates of lead (a high $Z$ material), separated by air gaps.  Cosmic rays at the earth's surface are mainly muons, some of which have very high energies.  In the Anderson apparatus, a high energy muon, passing close to a nucleus of lead and being accelerated in the electric field, produced a gamma ray.  This process is called *Bremsstrahlung.** 
+**Problem 2.** 
+
+Positrons were first observed by Anderson in 1932 in cosmic ray tracks in a cloud chamber.  The experimental apparatus consisted of a series of parallel plates of lead (a high $Z$ material), separated by air gaps.  Cosmic rays at the earth's surface are mainly muons, some of which have very high energies.  In the Anderson apparatus, a high energy muon, passing close to a nucleus of lead and being accelerated in the electric field, produced a gamma ray.  This process is called {\it Bremsstrahlung} (German for ``braking radiation'').  The gamma ray, in turn, passing near a lead nucleus in one of the lower plates, produced an electron-positron pair.
 
 To model this process, we add a term to the perturbing Hamiltonian $H_1=H_\text{Coul}*+H_T$, given by {eq}`eq-emdirac-64a`, to account for the interaction with the nucleus,
 
@@ -1119,14 +1125,14 @@ To model this process, we add a term to the perturbing Hamiltonian $H_1=H_\text{
 H_ext = \int d^3\xvec\, \mathcolon\rho(\xvec)\Phi_ext(\xvec)\mathcolon = -e \int d^3\xvec \mathcolon\psibar(\xvec)\gamma^0 \Phi_ext(\xvec)\psi(\xvec):.
 :::
 
-This is exactly how we treated the field of the nucleus Mott scattering (see {eq}`eq-emdirac-12` and \secremdirac-3). In effect, we are dividing the electromagnetic field into a $c$-number field (from the nucleus) plus the quantized field. If we wish to model the lead nucleus as a point charge, we can take $\Phi_ext(\xvec)= Ze/r$, but for this problem we will leave $\Phi_ext$ unspecified. Thus, the perturbing Hamiltonian is now
+This is exactly how we treated the field of the nucleus Mott scattering (see {eq}`eq-emdirac-12` and {ref}`sec-emdirac-3`). In effect, we are dividing the electromagnetic field into a $c$-number field (from the nucleus) plus the quantized field. If we wish to model the lead nucleus as a point charge, we can take $\Phi_ext(\xvec)= Ze/r$, but for this problem we will leave $\Phi_ext$ unspecified. Thus, the perturbing Hamiltonian is now
 
 :::{math}
 :label: eq-emdirac-112
 H_1=H_\text{Coul} + H_T + H_\text{ext}.
 :::
 
-\problempart{(a)} Consider a process in which a photon passes close to a nucleus, and an electron-positron pair is produced. (This process cannot happen in free space because of energy-momentum conservation.) Let $(ps)$ be the 4-momentum and spin of the outgoing electron, let $(p's')$ be the 4-momentum and spin of the outgoing positron, let $\lambda = (\kvec,\epsilonvec)$ be the mode of the incident photon. Also write
+**(a)**  Consider a process in which a photon passes close to a nucleus, and an electron-positron pair is produced. (This process cannot happen in free space because of energy-momentum conservation.) Let $(ps)$ be the 4-momentum and spin of the outgoing electron, let $(p's')$ be the 4-momentum and spin of the outgoing positron, let $\lambda = (\kvec,\epsilonvec)$ be the mode of the incident photon. Also write
 
 :::{math}
 \begin{aligned}
@@ -1149,8 +1155,8 @@ k^\mu &= (\omega,\kvec).
 
 Find and draw all Feynman diagrams which contribute to this process at lowest order in $\alpha =e^2$. Count the external potential $\Phi$ as containing one power of $e$ (since we are thinking of $\Phi=Ze/r$). Indicate the interaction with the nucleus by an $\times$ drawn next to an electron or positron line, as in {ref}`fig-emdirac-1`.
 
-\problempart{(b)} Write the transition probability as in {eq}`eq-emdirac-68`, which defines $M$. Pick out two Feynman diagrams which differ from one another only in the time ordering of the creation of the outgoing electron and positron. Work out in detail the contribution to $M$ from each of these Feynman diagrams. Express your answer in terms of the Fourier transform of the potential $\tilde\Phi(\qvec)$, as we did with Mott scattering.
+**(b)**  Write the transition probability as in {eq}`eq-emdirac-68`, which defines $M$. Pick out two Feynman diagrams which differ from one another only in the time ordering of the creation of the outgoing electron and positron. Work out in detail the contribution to $M$ from each of these Feynman diagrams. Express your answer in terms of the Fourier transform of the potential $\tilde\Phi(\qvec)$, as we did with Mott scattering.
 
-\problempart{(c)} Combine the two terms, and express the result in terms of the Feynman electron propagator {eq}`eq-emdirac-104`.
+**(c)**  Combine the two terms, and express the result in terms of the Feynman electron propagator {eq}`eq-emdirac-104`.
 
 The steps remaining to convert $M$ into a cross are straightforward but tedious so we will stop at this point.

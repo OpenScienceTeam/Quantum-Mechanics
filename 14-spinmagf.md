@@ -395,7 +395,7 @@ We turn now to some cases in which {eq}`eq-spinmagf-30` can be solved explicitly
 \Bvec = B {\hat{\mathbf{b}}} = const.
 :::
 
-The Hamiltonian is now time-independent, so $W$ only depends on the elapsed time $t$. We borrow notation from \secrspinmagf-6, writing,
+The Hamiltonian is now time-independent, so $W$ only depends on the elapsed time $t$. We borrow notation from {ref}`sec-spinmagf-6`, writing,
 
 :::{math}
 :label: eq-spinmagf-39
@@ -728,11 +728,15 @@ P_{\ffract1/2 \to -\ffract1/2} = \sin^2 \theta \sin^2 {\Omega t\over 2}.
 
 In the resonant case, $\omega_1=\omega_0$, we have $B_eff = B_{10}$ and $\theta=\pi/2$, so that the axis of the rotating cone lies in the $x$-$y$ plane. In this case, the transition probability {eq}`eq-spinmagf-75` reaches a maximum value of unity when $t = \pi/\Omega$.
 
-\problems
+(sec-spinmagf-problems)=
+
+## Problems
 
 (prob-spinmagf-1)=
 
-**Problem \prbdspinmagf-1..** 
+**Problem 1.** 
+
+Consider a particle of spin 1 and magnetic moment $\muvec=-\gamma \Svec$ in the magnetic field,
 
 :::{math}
 :label: eq-spinmagf-76
@@ -743,7 +747,9 @@ employed in magnetic resonance experiments (assume $\gamma>0$). If at $t=0$, the
 
 (prob-spinmagf-2)=
 
-**Problem \prbdspinmagf-2..** 
+**Problem 2.** 
+
+As noted in Sec.~\secr\cn.6, the evolution of a spin in a magnetic field, with an arbitrary time dependence, is a rotation.  That is, we can write
 
 :::{math}
 :label: eq-spinmagf-77
@@ -763,19 +769,23 @@ Find equations of motion for the Euler angles, assuming $\omegavec(t)$ is given.
 
 (prob-spinmagf-3)=
 
-**Problem \prbdspinmagf-3..** 
+**Problem 3.** 
 
-\problempart{(a)} A spin in a bulk sample is only partially aligned with a background magnetic field, because thermal agitation is always disrupting the alignment. The partial alignment of a spin in a magnetic field is a standard problem in statistical mechanics. The alignment can be increased by going to lower temperatures, but this is obviously not feasible in medical imaging.
+In this problem we look at some numbers that are relevant in practice for magnetic resonance on protons.   Protons are the usual nucleus of interest in medical imaging.
+
+**(a)**  A spin in a bulk sample is only partially aligned with a background magnetic field, because thermal agitation is always disrupting the alignment. The partial alignment of a spin in a magnetic field is a standard problem in statistical mechanics. The alignment can be increased by going to lower temperatures, but this is obviously not feasible in medical imaging.
 
 Consider a biological sample at 300K in a magnetic field of 6T (for example, you in an MRI device). After a certain relaxation time, the nuclear spins will reach thermal equilibrium with their environment (a heat bath). Calculate the fractional magnetization of protons under such circumstances (the magnetization compared to the maximum we would have at 0K). Finally, for a sample of water under the conditions indicated, compute the magnetization due to protons in Gauss. The magnetization is the magnetic dipole moment per unit volume.
 
-\problempart{(b)} Compute the spin precession frequency of protons in a field of 6T. Express your answer in Hz.
+**(b)**  Compute the spin precession frequency of protons in a field of 6T. Express your answer in Hz.
 
-\problempart{(c)} An RF electromagnetic wave is used to create the rotating magnetic field $\Bvec_1$ [see {eq}`eq-spinmagf-47`.] If the power flux of the wave is $1KW/m^2$, what is the Rabi flopping frequency $\Omega$ when the wave is in resonance with the precession? Express your answer in Hertz. Remember that we do not want to cook the patient.
+**(c)**  An RF electromagnetic wave is used to create the rotating magnetic field $\Bvec_1$ [see {eq}`eq-spinmagf-47`.] If the power flux of the wave is $1KW/m^2$, what is the Rabi flopping frequency $\Omega$ when the wave is in resonance with the precession? Express your answer in Hertz. Remember that we do not want to cook the patient.
 
 (prob-spinmagf-4)=
 
-**Problem \prbdspinmagf-4..** 
+**Problem 4.** 
+
+In this problem we seek to understand the circumstances under which the magnetic moment is proportional to the angular momentum, working with a classical model.   The case of a single charged particle in a circular orbit was covered in the notes (see Eq.~(\eqr\cn.11)).
 
 Consider a system of classical charged particles of masses $m_i$ and charges $q_i$, $i=1,\ldots,N$. Let the positions and velocities of the particles be $\rvec_i$ and $\vvec_i$. We assume the classical Hamiltonian is invariant under rotations, so the total classical angular momentum,
 

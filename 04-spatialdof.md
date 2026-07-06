@@ -1031,15 +1031,21 @@ The minimum uncertainty wave packet is a Gaussian. If we allow $\xpecval{\xhat}=
 
 where $\gamma$ is a phase. The wave packet is still a Gaussian, but it has been shifted in position and momentum.
 
-\problems
+(sec-spatialdof-problems)=
+
+## Problems
 
 (prob-spatialdof-1)=
 
-**Problem \prbdspatialdof-1.} Let $\ket{\psi}$ be the state of a spinless particle in three dimensions, and let $\phi(\pvec) = \braket{\pvec}{\psi}$ be its momentum space wave function.  Find the momentum space wave function of the state $T(\avec)\ket{\psi.** 
+**Problem 1.** 
+
+Let $\ket{\psi}$ be the state of a spinless particle in three dimensions, and let $\phi(\pvec) = \braket{\pvec}{\psi}$ be its momentum space wave function.  Find the momentum space wave function of the state $T(\avec)\ket{\psi}$, that is, find the action of the translation operator $T(\avec)$ in the momentum representation.
 
 (prob-spatialdof-2)=
 
-**Problem \prbdspatialdof-2..** 
+**Problem 2.** 
+
+Consider a particle moving in one dimension.  In classical mechanics, the state of the particle is given by its position $x$ and momentum $p$, and other observables such as energy are functions of these.  The classical position and momentum are ordinary numbers, and obey the usual (commutative) rules of algebra, for example, $xp=px$.  In quantum mechanics, we have the operators $\xhat$ and $\phat$ which are analogous to the classical $x$ and $p$, and other observables such as the Hamiltonian are functions of $\xhat$ and $\phat$.  On the other hand, $\xhat$ and $\phat$ do not obey a commutative algebra, in view of the relation $\xhat\phat = \phat\xhat + i\hbar$.
 
 A question that has exercised various people is the relation between classical observables (that is, functions of }$x$ and $p$) and quantum observables (that is, functions of $\xhat$ and $\phat$). One problem is to *quantize* a classical observable, that is, given a classical function $A(x,p)$, what is the corresponding quantum observable? Dirac suggested that $x$ and $p$ should be associated with $\xhat$ and $\phat$, but this gives rise to an ambiguity in cases like the classical function $xp$. Should it correspond to $\xhat\phat$ or to $\phat\xhat$, or maybe to their average (which at least would be Hermitian)?
 
@@ -1056,9 +1062,9 @@ A(x,p) = \int_{-\infty}^{+\infty} ds \, e^{-ips/\hbar} \, \matrixelement{x+s/2}{
 
 Here the notation $\ket{x-s/2}$, for example, means the eigenket of $\hat x$ with eigenvalue $x-s/2$. It is useful to think of $A(x,p)$ as a function defined on the classical $(x,p)$ phase space which is in some sense the classical observable corresponding to the quantum operator $\hat A$.
 
-\problempart{(a)} Show that if $A(x,p)$ is the Weyl transform of operator $\hat A$, then $A(x,p)^\cc$ is the Weyl transform of $\hat A^\hc$. In particular, this shows that the Weyl transform of a Hermitian operator is a real function on phase space.
+**(a)**  Show that if $A(x,p)$ is the Weyl transform of operator $\hat A$, then $A(x,p)^\cc$ is the Weyl transform of $\hat A^\hc$. In particular, this shows that the Weyl transform of a Hermitian operator is a real function on phase space.
 
-\problempart{(b)} Show that if operators $\hat A$ and $\hat B$ have Weyl transforms $A(x,p)$ and $B(x,p)$, respectively, then
+**(b)**  Show that if operators $\hat A$ and $\hat B$ have Weyl transforms $A(x,p)$ and $B(x,p)$, respectively, then
 
 :::{math}
 :label: eq-spatialdof-104
@@ -1067,9 +1073,9 @@ Here the notation $\ket{x-s/2}$, for example, means the eigenket of $\hat x$ wit
 
 Notice how the right hand side looks like the “scalar product” of two classical observables on phase space.
 
-\problempart{(c)} Find the Weyl transforms of the following operators: $1$ (the identity operator); $\hat x$; $\hat p$; $\hat x \hat p$; $\hat p \hat x$; $\hat p^2/2m + V(\hat x)$.
+**(c)**  Find the Weyl transforms of the following operators: $1$ (the identity operator); $\hat x$; $\hat p$; $\hat x \hat p$; $\hat p \hat x$; $\hat p^2/2m + V(\hat x)$.
 
-\problempart{(d)} The classical probability density $\rho(x,p)$ in phase space (see {ref}`sec-classmech-24`) describes a system whose dynamical state can only be described statistically. Since $\rho(x,p)$ is a probability density, it is nonnegative, $\rho(x,p)\ge0$, and it is normalized,
+**(d)**  The classical probability density $\rho(x,p)$ in phase space (see {ref}`sec-classmech-24`) describes a system whose dynamical state can only be described statistically. Since $\rho(x,p)$ is a probability density, it is nonnegative, $\rho(x,p)\ge0$, and it is normalized,
 
 :::{math}
 :label: eq-spatialdof-105
@@ -1119,12 +1125,18 @@ These results suggest that $W(x,p)$ is a distribution function of particles in p
 
 (prob-spatialdof-3)=
 
-**Problem \prbdspatialdof-3.} Given that the range of the nuclear forces is approximately $10^{-13}$~cm, estimate the velocity of the proton or neutron in a deuteron (a bound state of a proton and a neutron). Compare this $v/c$ to the $v/c$ of the electron in the ground state of hydrogen.  It is believed that nuclear forces are independent of the charge state of the nucleon; thus, two protons should feel the same nuclear force as two neutrons.  Calculate the nuclear force between two protons at a distance of $10^{-13.** 
+**Problem 3.** 
+
+Given that the range of the nuclear forces is approximately $10^{-13}$~cm, estimate the velocity of the proton or neutron in a deuteron (a bound state of a proton and a neutron). Compare this $v/c$ to the $v/c$ of the electron in the ground state of hydrogen.  It is believed that nuclear forces are independent of the charge state of the nucleon; thus, two protons should feel the same nuclear force as two neutrons.  Calculate the nuclear force between two protons at a distance of $10^{-13}$~cm and compare to the electrostatic force.
 
 (prob-spatialdof-4)=
 
-**Problem \prbdspatialdof-4..** 
+**Problem 4.** 
+
+Let $f(\xvec)$ be an arbitrary function of $\xvec$ and $g(\pvec)$ and arbitrary function of $\pvec$.  Evaluate the commutators, $[p_i,f(\xvec)]$ and $[x_i,g(\pvec)]$.
 
 (prob-spatialdof-5)=
 
-**Problem \prbdspatialdof-5.} The Large Hadron Collider is designed to reach an energy of 7~TeV ($7\times 10^{12.**
+**Problem 5.**
+
+The Large Hadron Collider is designed to reach an energy of 7~TeV ($7\times 10^{12}$~eV).  What is the smallest distance scale that can be probed at these energies?  How does it compare to the Planck length, at which the effects of quantum gravity are expected to be important?

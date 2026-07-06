@@ -845,7 +845,7 @@ We are collecting several examples of different kinds of fields and how they tra
 | $\mathrm{Pseudovector}$ | $W^{\mu}(x) \xrightarrow{\Lambda} (\det \Lambda) \Lambda^{\mu}_{\ \nu} W^{\nu}(\Lambda^{-1}x)$ |
 
 :::
-The table shows the transformation law for a generic 4-vector field $V^\mu(x)$; examples include the 4-vector potential $A^\mu$ in electromagnetism (see {eq}`eq-covariance-10`, the Klein-Gordon probability current (see {eq}`eq-kleing-27` and the Dirac probability current (which we have gone to some trouble in these notes to show is a genuine 4-vector, see \secrcovariance-12).
+The table shows the transformation law for a generic 4-vector field $V^\mu(x)$; examples include the 4-vector potential $A^\mu$ in electromagnetism (see {eq}`eq-covariance-10`, the Klein-Gordon probability current (see {eq}`eq-kleing-27` and the Dirac probability current (which we have gone to some trouble in these notes to show is a genuine 4-vector, see {ref}`sec-covariance-12`).
 
 The table also refers to a generic second-rank, relativistic tensor $T^{\mu\nu}$ and its transformation law. Such tensors occur in electromagnetic theory, for example, the field tensor $F^{\mu\nu}$ and the stress-energy tensor. A second-rank, antisymmetric tensor occurs in the Dirac theory; it is $\psibar(x) \sigma^{\mu\nu}\psi(x)$. This is proportional to a relativistic generalization of the magnetization $\Mvec$ (the dipole moment per unit volume), which in the nonrelativistic Pauli theory of the electron can be written as $\psi^\dagger \muvec \psi$, where $\muvec$ is the magnetic moment operator for the electron. See {ref}`sec-jjcouple-6`. We will see this tensor appear in the Gordon decomposition of the current, which is discussed in {ref}`sec-spdirac-10`.
 
@@ -887,7 +887,7 @@ where $D(\Pmat)$ is a spin matrix to be determined. Notice that the transformati
 
 which makes the transformation law under parity a generalization of {eq}`eq-covariance-26`, which was originally intended to apply to proper Lorentz transformations only.
 
-We determine $D(\Pmat)$ by requiring that parity map free particle solutions of the Dirac equation into other free particle solutions. The analysis of this question proceeds exactly as in \secrcovariance-6, and it leads to a conclusion of the same form as {eq}`eq-covariance-42`, that is, $D(\Pmat)$ must satisfy
+We determine $D(\Pmat)$ by requiring that parity map free particle solutions of the Dirac equation into other free particle solutions. The analysis of this question proceeds exactly as in {ref}`sec-covariance-6`, and it leads to a conclusion of the same form as {eq}`eq-covariance-42`, that is, $D(\Pmat)$ must satisfy
 
 :::{math}
 :label: eq-covariance-94
@@ -1153,29 +1153,37 @@ where $\pvec=-i\hbar\del$ and $\Lvec=\xvec\cross\pvec$. This is essentially the 
 
 for the entire angular momentum of the Dirac particle. This is an obvious generalization of the angular momentum $\Jvec =\Lvec+ (\hbar/2)\sigmavec$ of a spin-$\frac{1}{2}$ particle in the Pauli theory.
 
-\problems
+(sec-covariance-problems)=
+
+## Problems
 
 (prob-covariance-1)=
 
-**Problem \prbdcovariance-1.} The generators $\sigma^{\mu\nu}$ of the Dirac representation of Lorentz transformations must satisfy {eq}`eq-covariance-53`, which is a version of {eq}`eq-covariance-42` when the Lorentz transformation is infinitesimal.   We guess that $\sigma^{\mu\nu.** 
+**Problem 1.** 
+
+The generators $\sigma^{\mu\nu}$ of the Dirac representation of Lorentz transformations must satisfy Eq.~(\eqr\cn.53), which is a version of Eq.~(\eqr\cn.42) when the Lorentz transformation is infinitesimal.   We guess that $\sigma^{\mu\nu} = k[\gamma^\mu,\gamma^\nu]$ for some constant $k$, since both sides are antisymmetric tensors of Dirac matrices.   Substitute this guess into Eq.~(\eqr\cn.53) and verify that for an appropriate choice of $k$ the guess is correct.   This will give you some practice with working with Dirac matrices; you must pay attention to what is a matrix and what is a number.
 
 (prob-covariance-2)=
 
-**Problem \prbdcovariance-2..** 
+**Problem 2.** 
 
-\problempart{(a)} Show that }$\psibar(x)\psi(x)$ transforms as a scalar under proper Lorentz transformations.
+The transformation properties of fields constructed out of the Dirac wave function $\psi(x)$ under Lorentz transformations.  All examples in this problem consist of complete contractions over spin indices, that is, the quantities are scalars as far as the spin indices are concerned.  However, they still have a space-time dependence (in this problem $x$ means $(ct,\xvec)$), and they may have space-time indices such as $\mu$, $\nu$ etc.
 
-\problempart{(b)} Show that $\psibar(x)\sigma^{\mu\nu}\psi(x)$ transforms as a second rank tensor under proper Lorentz transformations.
+**(a)**  Show that }$\psibar(x)\psi(x)$ transforms as a scalar under proper Lorentz transformations.
 
-\problempart{(c)} Show that $\psibar(x)\psi(x)$ transforms as a scalar (not a pseudoscalar) under parity. Show that the Dirac current transforms transforms as a vector (not a pseudovector) under parity.
+**(b)**  Show that $\psibar(x)\sigma^{\mu\nu}\psi(x)$ transforms as a second rank tensor under proper Lorentz transformations.
 
-\problempart{(d)} Show that $\psibar(x)\gamma_5\psi(x)$ transforms as a pseudoscalar, and that $\psibar(x)\gamma_5\gamma^\mu\psi(x)$ transforms as a pseudovector.
+**(c)**  Show that $\psibar(x)\psi(x)$ transforms as a scalar (not a pseudoscalar) under parity. Show that the Dirac current transforms transforms as a vector (not a pseudovector) under parity.
+
+**(d)**  Show that $\psibar(x)\gamma_5\psi(x)$ transforms as a pseudoscalar, and that $\psibar(x)\gamma_5\gamma^\mu\psi(x)$ transforms as a pseudovector.
 
 (prob-covariance-3)=
 
-**Problem \prbdcovariance-3.}  A continuation of Problem {ref}`prob-dirac-1`.  A fact not mentioned in that earlier problem is that the representation of the Dirac algebra in $2+1$ dimensions has two *inequivalent.** 
+**Problem 3.** 
 
-\problempart{(a)* Assume that the 2-component Dirac wave function transforms under proper Lorentz transformations }$\Lambda$ in $2+1$ dimensions according to
+A continuation of Problem~{ref}`prob-dirac-1`.  A fact not mentioned in that earlier problem is that the representation of the Dirac algebra in $2+1$ dimensions has two {\it inequivalent} two-dimensional representations.  Recall that in $3+1$ dimensions, the four-dimensional representation found by Dirac is the only one at that dimensionality (all others are equivalent).  To do Problem~{ref}`prob-dirac-1` or this one, it does not matter which of the two-dimensional representations you use.
+
+**(a)**  Assume that the 2-component Dirac wave function transforms under proper Lorentz transformations }$\Lambda$ in $2+1$ dimensions according to
 
 :::{math}
 :label: eq-covariance-115
@@ -1184,13 +1192,15 @@ for the entire angular momentum of the Dirac particle. This is an obvious genera
 
 where $D(\Lambda)$ is some (as yet unknown) $2\times2$ representation of the proper Lorentz transformations in $2+1$ dimensions and $x=(ct,x_1,x_2)$ (1,2 mean $x$, $y$). Assuming that $\psi(x)$ satisfies the free particle Dirac equation, and that $\psi'(x)$ is given by {eq}`eq-covariance-115`, demand that $\psi'(x)$ also satisfy the free particle Dirac equation and thereby derive a condition that the representation $D(\Lambda)$ must satisfy.
 
-\problempart{(b)} Write out explicitly the matrices $D({\hat{\mathbf{z}}},\theta)$ for the case of pure rotations and $D({\hat{\mathbf{b}}},\lambda)$ for the case of pure boosts, where ${\hat{\mathbf{b}}}$ lies in the $x$-$y$ plane. Do this in the Dirac-Pauli representation. Show that if you work in the Maiorana representation, the $D$-matrices are purely real.
+**(b)**  Write out explicitly the matrices $D({\hat{\mathbf{z}}},\theta)$ for the case of pure rotations and $D({\hat{\mathbf{b}}},\lambda)$ for the case of pure boosts, where ${\hat{\mathbf{b}}}$ lies in the $x$-$y$ plane. Do this in the Dirac-Pauli representation. Show that if you work in the Maiorana representation, the $D$-matrices are purely real.
 
-\problempart{(c)} Show that in $2+1$ dimensions, the spatial inversion operation is a proper Lorentz transformation, that is, it can be continuously connected with the identity. Thus there is no problem of determining $D(\Pmat)$ as in $3+1$ dimensions; it is already taken care of by the proper Lorentz transformations worked out in part~(b).
+**(c)**  Show that in $2+1$ dimensions, the spatial inversion operation is a proper Lorentz transformation, that is, it can be continuously connected with the identity. Thus there is no problem of determining $D(\Pmat)$ as in $3+1$ dimensions; it is already taken care of by the proper Lorentz transformations worked out in part~(b).
 
 (prob-covariance-4)=
 
-**Problem \prbdcovariance-4.}  This problem is borrowed from Bjorken and Drell, *Relativistic Quantum Mechanics.** 
+**Problem 4.** 
+
+This problem is borrowed from Bjorken and Drell, {\it Relativistic Quantum Mechanics}, chapter~4.
 
 We have seen that the Dirac equation with minimal coupling to the electromagnetic field gives a $g$-factor of $2$, very close to the experimental value for the electron. What do we do with spin-$\frac{1}{2}$ particles such as the proton and neutron, which have “anomalous” $g$-factors?
 
@@ -1210,9 +1220,9 @@ F_{\mu\nu} = \frac{\partial A_\nu}{\partial x^\mu}-\frac{\partial A_\mu}{\partia
 
 which agrees with Jackson. See also {ref}`sec-classmech-13`, and {eq}`eq-classmech-56` and {eq}`eq-classmech-57`.
 
-\problempart{(a)} Write out the modified Dirac Hamiltonian, and show that it is Hermitian.
+**(a)**  Write out the modified Dirac Hamiltonian, and show that it is Hermitian.
 
-\problempart{(b)} Show that probability is conserved, i.e.,
+**(b)**  Show that probability is conserved, i.e.,
 
 :::{math}
 :label: eq-covariance-118
@@ -1221,7 +1231,7 @@ which agrees with Jackson. See also {ref}`sec-classmech-13`, and {eq}`eq-classme
 
 where $J^\mu$ is defined exactly as for the unmodified Dirac equation, $J^\mu = \bar\psi\gamma^\mu\psi$.
 
-\problempart{(c)} Covariance. Suppose $\psi(x)$ satisfies the modified Dirac equation {eq}`eq-covariance-116`, and let
+**(c)**  Covariance. Suppose $\psi(x)$ satisfies the modified Dirac equation {eq}`eq-covariance-116`, and let
 
 :::{math}
 :label: eq-covariance-119
@@ -1235,4 +1245,4 @@ F^{\prime\mu\nu}(x) &= \Lambda^\mu{}_\alpha \, \Lambda^\nu{}_\beta \, F^{\alpha\
 
 Then show that $\psi'(x)$ satisfies the modified Dirac equation {eq}`eq-covariance-116`, but with Lorentz transformed fields $A^{\prime\mu}(x)$ and $F^{\prime\mu\nu}(x)$ instead of the original fields.
 
-\problempart{(d)} Assume $\Evec=0$, $\Bvec\ne0$ (in order to see what the effective magnetic moment of the particle is). Perform a simple nonrelativistic approximation as in {ref}`sec-dirac-9`, and show that you get the right $g$-factors for the proton and neutron.
+**(d)**  Assume $\Evec=0$, $\Bvec\ne0$ (in order to see what the effective magnetic moment of the particle is). Perform a simple nonrelativistic approximation as in {ref}`sec-dirac-9`, and show that you get the right $g$-factors for the proton and neutron.

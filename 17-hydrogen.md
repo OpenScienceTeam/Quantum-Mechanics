@@ -433,13 +433,17 @@ The method that has been used in these notes to derive the energy eigenvalues an
 
 We will mention, however, that the algebraic techniques in question involve a mapping from the bound states of hydrogen onto the spherical harmonics in four dimensions, that is, the harmonics that live on the 3-dimensional surface of a sphere in 4-dimensional, Euclidean space. The $SO(4)$ symmetry group acts on this sphere by 4-dimensional, orthogonal transformations. As for the unbound states of hydrogen with $E>0$, these correspond to harmonics on the unit mass hyperboloid in 4-dimensional Minkowski space. For these the symmetry group is $SO(3,1)$, that is, the Lorentz group. The appearance of the Lorentz group here has nothing to do with relativity in a physical sense, it is just that the mathematics of the positive energy solutions of hydrogen gives rise to it.
 
-\problems
+(sec-hydrogen-problems)=
+
+## Problems
 
 (prob-hydrogen-1)=
 
-**Problem \prbdhydrogen-1..** 
+**Problem 1.** 
 
-\problempart{(a)} Write out the radial Schr\"odinger equation for a hydrogen-like atom. (“Hydrogen-like” means $V(r)=-Ze^2/r$.) Show that if $a=\hbar^2/\mu Ze^2$, then
+This problem involves some exercise with expectation values of powers of $r$ in hy\-dro\-gen-like atoms.  These expectation values are useful in perturbation theory and other places.  There are various ways to evaluate these expectation values; for example, one can use the generating function of the Laguerre polynomials.  But I think the following method is somewhat easier, once you get it going.
+
+**(a)**  Write out the radial Schr\"odinger equation for a hydrogen-like atom. (“Hydrogen-like” means $V(r)=-Ze^2/r$.) Show that if $a=\hbar^2/\mu Ze^2$, then
 
 :::{math}
 :label: eq-hydrogen-30
@@ -455,7 +459,7 @@ where $u$ is the normalized radial wave function corresponding to quantum number
 
 In the integrations, you may assume that $k>-2\ell-1$, which will cause the boundary terms to vanish.
 
-\problempart{(b)} Now multiply {eq}`eq-hydrogen-30` by $r^k u$ and do more integration by parts, and combine the result with {eq}`eq-hydrogen-31` to show that
+**(b)**  Now multiply {eq}`eq-hydrogen-30` by $r^k u$ and do more integration by parts, and combine the result with {eq}`eq-hydrogen-31` to show that
 
 :::{math}
 :label: eq-hydrogen-32
@@ -464,7 +468,7 @@ In the integrations, you may assume that $k>-2\ell-1$, which will cause the boun
 
 This is called the *Kramer's relation*.
 
-\problempart{(c)} Use {eq}`eq-hydrogen-32` to find $\xpecval{r^k}$ for $k=-1$, $k=1$, and $k=2$. Notice that you cannot evaluate $\xpecval{1/r^2}$ by this method. For that you need to face up to generating functions, or some other method. However, given that
+**(c)**  Use {eq}`eq-hydrogen-32` to find $\xpecval{r^k}$ for $k=-1$, $k=1$, and $k=2$. Notice that you cannot evaluate $\xpecval{1/r^2}$ by this method. For that you need to face up to generating functions, or some other method. However, given that
 
 :::{math}
 :label: eq-hydrogen-33
@@ -475,4 +479,6 @@ find $\xpecval{1/r^3}$. The latter is needed for the fine structure perturbation
 
 (prob-hydrogen-2)=
 
-**Problem \prbdhydrogen-2..**
+**Problem 2.**
+
+Look up the energies of the $4d$ and $4f$ levels of sodium on the NIST data base, and compare to the theoretical energy of the $n=4$ level of hydrogen.  You will see that some of the levels of sodium are actually close doublets; this is the fine structure, which does not appear in Fig.~\figr\cn.3 because it is too small on the scale of the figure.

@@ -589,7 +589,7 @@ E_{nj}=mc^2\biggl[1-{(Z\alpha)^2\over 2n^2} + {(Z\alpha)^4\over 2n^4}\biggl( {3\
 
 The first term in this expansion is the rest mass-energy, $mc^2$, the next contains the nonrelativistic Bohr energy levels $-(1/2n^2)(Z^2e^2/a_0)$, and the third contains the fine structure corrections {eq}`eq-finestruc-49`. Each term is of order $(Z\alpha)^2$ times the previous term.
 
-There is no point in expanding the solution of the Dirac equation beyond the fine structure term, because there are other physical effects that are not incorporated into the Dirac equation that are larger than the next term after the fine structure term. Most important of these are the hyperfine effects, discussed in a subsequent set of notes, and the Lamb shift, discussed in \secrfinestruc-17.
+There is no point in expanding the solution of the Dirac equation beyond the fine structure term, because there are other physical effects that are not incorporated into the Dirac equation that are larger than the next term after the fine structure term. Most important of these are the hyperfine effects, discussed in a subsequent set of notes, and the Lamb shift, discussed in {ref}`sec-finestruc-17`.
 
 (sec-finestruc-15)=
 
@@ -656,7 +656,7 @@ The most important manifestation of the Lamb shift is in the $n=2$ levels of hyd
 
 ## Fine Structure in Alkali Atoms
 
-Most of the analysis presented above for hydrogen-like atoms goes through for the alkali atoms, with $V(r)$ replaced by the appropriate screened Coulomb potential. The unperturbed (nonrelativistic) energy levels of the alkalis have the form $E_{n\ell}$, and are already strongly split by the $\ell$ values because of the non-Coulomb nature of the central force. See Fig.~\figr\hydrogen.3 for the case of sodium. The three fine structure terms present in hydrogen are also present in the alkalis, but the relativistic kinetic energy and Darwin terms are not very interesting, because they cause only small shifts in the energy levels of $H_0$, without splitting them. That is, the energy shifts produced by these terms have the form $\Delta E_{n\ell}$, and the energies already depend on $n$ and $\ell$. These terms are more interesting in hydrogen, because of the degeneracy among the different $\ell$ values. However, the spin-orbit term does split the alkali levels according to their $j$ values, much as in hydrogen, and produces overall energy levels of the form $E_{n\ell j}$. The analysis of the spin-orbit splitting in the alkalis proceeds much as with hydrogen in \secrfinestruc-12, yielding
+Most of the analysis presented above for hydrogen-like atoms goes through for the alkali atoms, with $V(r)$ replaced by the appropriate screened Coulomb potential. The unperturbed (nonrelativistic) energy levels of the alkalis have the form $E_{n\ell}$, and are already strongly split by the $\ell$ values because of the non-Coulomb nature of the central force. See Fig.~\figr\hydrogen.3 for the case of sodium. The three fine structure terms present in hydrogen are also present in the alkalis, but the relativistic kinetic energy and Darwin terms are not very interesting, because they cause only small shifts in the energy levels of $H_0$, without splitting them. That is, the energy shifts produced by these terms have the form $\Delta E_{n\ell}$, and the energies already depend on $n$ and $\ell$. These terms are more interesting in hydrogen, because of the degeneracy among the different $\ell$ values. However, the spin-orbit term does split the alkali levels according to their $j$ values, much as in hydrogen, and produces overall energy levels of the form $E_{n\ell j}$. The analysis of the spin-orbit splitting in the alkalis proceeds much as with hydrogen in {ref}`sec-finestruc-12`, yielding
 
 :::{math}
 :label: eq-finestruc-56
@@ -667,15 +667,19 @@ The expectation value is with respect to the wave function $\psi_{n\ell 0}$; it 
 
 The levels of sodium displayed in Fig.~\figr\hydrogen.3 do not show the fine structure splitting, because it is too small on the scale of that diagram. But, for example, if the $3p$ level is examined closely, it will be found to be split into a $3p_{1/2}$ level and a $3p_{3/2}$ level, with the $j=3/2$ level lying 0.00213~eV above the $j=1/2$ level. This causes the $3p \to 3s$ transition (the yellow sodium $D$-line) to be a close doublet. The selection rules in the alkali atoms depend only on the angular momentum quantum numbers, and are the same as in hydrogen.
 
-\problems
+(sec-finestruc-problems)=
+
+## Problems
 
 (prob-finestruc-1)=
 
-**Problem \prbdfinestruc-1.} If a hydrogen atom finds itself in the $2p$ state (either $2p_{1/2}$ or $2p_{3/2}$) it will emit a photon and decay into the ground state in about $10^{-9}$ seconds.   If it finds itself in the $2s_{1/2.** 
+**Problem 1.** 
 
-\problempart{(a)} Explain why the transition }$2s_{1/2} \to 1s_{1/2}$ is not allowed as an electric dipole transition. However, due to the Lamb shift, the $2p_{1/2}$ state is 1.0 GHz below the $2s_{1/2}$ state, and the electric dipole transition $2s_{1/2} \to 2p_{1/2}$ is allowed. If the atom makes this transition, it will almost immediately drop into the ground state, so the rate of the transition $2s_{1/2} \to 2p_{1/2}$ is effectively the decay rate $2s_{1/2} \to 1s_{1/2}$ via this mechanism.
+If a hydrogen atom finds itself in the $2p$ state (either $2p_{1/2}$ or $2p_{3/2}$) it will emit a photon and decay into the ground state in about $10^{-9}$ seconds.   If it finds itself in the $2s_{1/2}$ state, however, it will remain there much longer.
 
-\problempart{(b)} It can be shown that rate for an electric dipole transition $B\to A$ (in $\rm{sec}^{-1}$) is
+**(a)**  Explain why the transition }$2s_{1/2} \to 1s_{1/2}$ is not allowed as an electric dipole transition. However, due to the Lamb shift, the $2p_{1/2}$ state is 1.0 GHz below the $2s_{1/2}$ state, and the electric dipole transition $2s_{1/2} \to 2p_{1/2}$ is allowed. If the atom makes this transition, it will almost immediately drop into the ground state, so the rate of the transition $2s_{1/2} \to 2p_{1/2}$ is effectively the decay rate $2s_{1/2} \to 1s_{1/2}$ via this mechanism.
+
+**(b)**  It can be shown that rate for an electric dipole transition $B\to A$ (in $\rm{sec}^{-1}$) is
 
 :::{math}
 :label: eq-finestruc-57
@@ -697,4 +701,6 @@ I suggest you first express the matrix elements of $x_q$ with respect to the hyd
 
 (prob-finestruc-2)=
 
-**Problem \prbdfinestruc-2..**
+**Problem 2.**
+
+When a spectral line of hydrogen associated with a transition between two states of the electrostatic model, for example, $2p\to 1s$, is examined under high resolution, it appears as a multiplet, due to the fine structure.  How many lines will be seen associated with $2p\to 1s$?  The $4p\to 3s$ transition has the same energy as $4p\to 3d$, in the electrostatic model.  How many lines will be seen when the fine structure is taken into account?

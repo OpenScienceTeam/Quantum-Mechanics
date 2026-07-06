@@ -25,7 +25,7 @@ For the sake of generality we do not at first assume that the potential $V(\xvec
 \lim_{r\to\infty} V(\xvec) = 0,
 :::
 
-where $r=|\xvec|$. In fact, the simplest case is the one in which $V\to0$ faster than $1/r$ as $r\to\infty$ (see \secrintroscatt-10). This excludes the case of the Coulomb potential or potentials with a Coulomb tail, which are important in practice but which require special techniques.
+where $r=|\xvec|$. In fact, the simplest case is the one in which $V\to0$ faster than $1/r$ as $r\to\infty$ (see {ref}`sec-introscatt-10`). This excludes the case of the Coulomb potential or potentials with a Coulomb tail, which are important in practice but which require special techniques.
 
 We will speak of the scattering of a particle by the potential $V(\xvec)$, as if it were a fixed potential in space, but in reality the beam particle interacts with a target, which often is another particle. Then a proper treatment requires us to take into account the dynamics of both particles. The changes necessary to do this were discussed in some detail in {ref}`ch-tdpt`. For now we simply note that if the target is very massive, then it can be thought of as producing a potential for the beam particle that is fixed in space (that is, in an inertial frame), as we shall assume in these notes.
 
@@ -69,7 +69,7 @@ We wish the wave packet at the initial time to lie far enough upstream that is h
 Quantum scattering by a potential $V(\xvec)$. Incident and scattered waves are shown.
 :::
 
-Thus there are several interlocking limits that must be taken at once, but when $\Delta p$ is small and we wait until the center of the wave packet has reached the scatterer, then for some time around this time and for some distance away from the scatterer we have a nearly steady state, in which a wave that locally looks like a plane wave is incident on the scatterer, and a scattered wave is radiating outward from the scatterer. In the limit we achieve a quantum steady state that is illustrated in {ref}`fig-introscatt-2` and that resembles the classical steady state described in \secrintroscatt-2. The quantum steady state that results in the limit depends only on the initial momentum $\pvec$.
+Thus there are several interlocking limits that must be taken at once, but when $\Delta p$ is small and we wait until the center of the wave packet has reached the scatterer, then for some time around this time and for some distance away from the scatterer we have a nearly steady state, in which a wave that locally looks like a plane wave is incident on the scatterer, and a scattered wave is radiating outward from the scatterer. In the limit we achieve a quantum steady state that is illustrated in {ref}`fig-introscatt-2` and that resembles the classical steady state described in {ref}`sec-introscatt-2`. The quantum steady state that results in the limit depends only on the initial momentum $\pvec$.
 
 (sec-introscatt-4)=
 
@@ -118,7 +118,7 @@ As for the scattered wave, we only have an asymptotic form for it, so it must sa
 
 where the ellipses indicate terms that die off faster as $r\to\infty$ than the terms shown. Notice that the angular derivatives in the Laplacian operator are of higher order in $1/r$ than the radial derivatives. Thus we find that the asymptotic form of the scattered wave does satisfy the free-particle Schr\"odinger equation to leading asymptotic order, with an energy given by the free-particle relation {eq}`eq-introscatt-6`. That is, the $k$ parameter of the asymptotic form of the scattered wave equals $|\kvec|$, where $\kvec$ is the wave vector of the incident wave. This is the expression of conservation of energy in the scattering process in in quantum mechanics.
 
-Many books write down the asymptotic form {eq}`eq-introscatt-5` of the scattered wave as if it were obvious. In fact, it is not always true (see \secrintroscatt-10), and it takes some effort to understand why it is reasonable and what its conditions of its validity are.
+Many books write down the asymptotic form {eq}`eq-introscatt-5` of the scattered wave as if it were obvious. In fact, it is not always true (see {ref}`sec-introscatt-10`), and it takes some effort to understand why it is reasonable and what its conditions of its validity are.
 
 The intuitive arguments presented suggest that the Schr\"odinger equation {eq}`eq-introscatt-1` has a unique solution satisfying the boundary conditions indicated by {eq}`eq-introscatt-3`--{eq}`eq-introscatt-5`. If the potential $V$ falls off more rapidly than $1/r$ then this is true, as can be proven with the theory of integral equations. An introduction to the latter is given in {ref}`ch-lippschw`. Thus, the unique solution is parameterized by the momentum $\pvec=\hbar\kvec$ of the incident wave. We will henceforth write the solution as $\psi_\kvec(\xvec)$ when we wish to emphasize this dependence.
 
@@ -211,7 +211,7 @@ a simple result. This equation explains the interest in finding $f(\theta,\phi)$
 
 Now for some comments about this calculation. Notice that we computed the flux of the scattered particles intercepted by the detector, but we ignored the incident particles. In realistic scattering experiments the detector is usually located outside the beam, so incident particles do not enter it. Our incident wave {eq}`eq-introscatt-4` fills all of space, but that is an artifact of our model. In reality the beam will be cut off at some finite transverse size, and if the scattering angle is not too small, the detector can be located outside the beam.
 
-If the scattering angle is very small, however, then the detector will have to be inside the beam and it will detect incident particles as well as scattered ones. The counting rate is still the particle flux intercepted by the aperture of the detector, but the flux is neither the incident flux nor the scattered flux nor the sum of the two, but rather the flux computed from the total wave function $\psi=\psi_inc + \psi_scatt$. Since the current is quadratic in the wave function, there are cross terms or interference terms between the incident wave and the scattered wave. Taking all these effects into account leads to the *optical theorem*, which we take up in \secrintroscatt-17.
+If the scattering angle is very small, however, then the detector will have to be inside the beam and it will detect incident particles as well as scattered ones. The counting rate is still the particle flux intercepted by the aperture of the detector, but the flux is neither the incident flux nor the scattered flux nor the sum of the two, but rather the flux computed from the total wave function $\psi=\psi_inc + \psi_scatt$. Since the current is quadratic in the wave function, there are cross terms or interference terms between the incident wave and the scattered wave. Taking all these effects into account leads to the *optical theorem*, which we take up in {ref}`sec-introscatt-17`.
 
 (sec-introscatt-7)=
 
@@ -351,7 +351,7 @@ This equation is exact. But the $Y_{\ell m}$'s are linearly independent so {eq}`
 A_{\ell m}\, R_{k\ell}(r) = 4\pi \, i^\ell \, j_\ell(kr) \, Y_{\ell m}^\cc({\hat{\mathbf{k}}}) +S_{\ell m}(r).
 :::
 
-Now we extract the leading asymptotic forms of the three terms in {eq}`eq-introscatt-30` as $r\to\infty$. As for the total wave function, we need the asymptotic form of $R_{k\ell}(r)$. We argue that if $V(r)$ falls off rapidly enough then at large $r$ it can be ignored and $R_{k\ell}(r)$ must be a linear combination of the free particle solutions $j_\ell(kr)$ and $y_\ell(kr)$. Precisely how fast $V(r)$ must fall off for this to be true is examined in \secrintroscatt-10. Actually, it is more convenient to use the spherical Hankel functions and to write
+Now we extract the leading asymptotic forms of the three terms in {eq}`eq-introscatt-30` as $r\to\infty$. As for the total wave function, we need the asymptotic form of $R_{k\ell}(r)$. We argue that if $V(r)$ falls off rapidly enough then at large $r$ it can be ignored and $R_{k\ell}(r)$ must be a linear combination of the free particle solutions $j_\ell(kr)$ and $y_\ell(kr)$. Precisely how fast $V(r)$ must fall off for this to be true is examined in {ref}`sec-introscatt-10`. Actually, it is more convenient to use the spherical Hankel functions and to write
 
 :::{math}
 :label: eq-introscatt-31
@@ -705,7 +705,7 @@ The total cross is four times as large as the geometrical cross-al area of the s
 
 ## $s$-wave Scattering
 
-When the partial wave $\ell=0$ dominates the expansion of the scattering amplitude, we speak of *$s$-wave scattering*. The scattered wave is isotropic and has an equal intensity in all directions, including the forward direction. Since $a\ll\lambda$ the sphere is too small to create a shadow; instead, the incident wave effectively wraps all the way around the scatterer. As we will see later, $s$-wave scattering applies to any localized potential whose characteristic size $a$ satisfies $a\ll\lambda$, that is, $ka\gg 1$ (not just hard spheres). The fundamental reason was given in \secrintroscatt-12: for $\ell>0$ the radial wave functions must tunnel through the centrifugal potential to reach the scatterer, and the tunneling is deeper the higher the $\ell$ value. We see from {eq}`eq-introscatt-65` that when $ka\ll 1$ the phase shifts are indeed an exponentially decreasing function of $\ell$ (in fact, including the factorials, even faster than exponential).
+When the partial wave $\ell=0$ dominates the expansion of the scattering amplitude, we speak of *$s$-wave scattering*. The scattered wave is isotropic and has an equal intensity in all directions, including the forward direction. Since $a\ll\lambda$ the sphere is too small to create a shadow; instead, the incident wave effectively wraps all the way around the scatterer. As we will see later, $s$-wave scattering applies to any localized potential whose characteristic size $a$ satisfies $a\ll\lambda$, that is, $ka\gg 1$ (not just hard spheres). The fundamental reason was given in {ref}`sec-introscatt-12`: for $\ell>0$ the radial wave functions must tunnel through the centrifugal potential to reach the scatterer, and the tunneling is deeper the higher the $\ell$ value. We see from {eq}`eq-introscatt-65` that when $ka\ll 1$ the phase shifts are indeed an exponentially decreasing function of $\ell$ (in fact, including the factorials, even faster than exponential).
 
 There are many physical examples in which $s$-wave scattering is important. For example, a Bose-Einstein condensate is a dilute gas of atoms at a temperature at which the de~Broglie wavelength $\lambda$ of the atoms due to their thermal motion is larger than the interparticle separation. Since the gas is dilute, the interparticle separation in turn is much larger than the atomic size, call it $a$, so we have $\lambda\gg a$, or $ka\ll 1$. Thus the interactions of the atoms with one another is described by $s$-wave scattering, and scattering of atoms by atoms, in all its complexity, is described by a single parameter, which is the phase shift $\delta_0$.
 
@@ -912,7 +912,7 @@ It is a constant vector whose integral over sphere vanishes,
 
 as is obvious from {ref}`fig-introscatt-10`.
 
-The scattered current was already computed in \secrintroscatt-6. It is
+The scattered current was already computed in {ref}`sec-introscatt-6`. It is
 
 :::{math}
 :label: eq-introscatt-84
@@ -974,15 +974,19 @@ We see that the interference flux comes in from the forward direction, where it 
 
 The optical theorem has many generalizations. One version of it applies for the scattering of classical electromagnetic waves (vector waves, in contrast to the scalar waves considered here). Another applies to inelastic scattering in quantum mechanics, in which $\sigma$ is the total cross , including both elastic and inelastic scattering, while $f(0)$ refers only to the forward amplitude for elastic scattering. This is because only the wave for elastic scattering can interfere with the incident wave. There are many other applications in fields ranging from quantum mechanics to black hole physics.
 
-\problems
+(sec-introscatt-problems)=
+
+## Problems
 
 (prob-introscatt-1)=
 
-**Problem \prbdintroscatt-1..** 
+**Problem 1.** 
 
-\problempart{(a)} Work out the classical differential cross $d\sigma/d\Omega$ for a hard sphere of radius $a$, and integrate it to get the total cross $\sigma$.
+The strange thing about scattering from a hard sphere in the limit $ka\gg 1$ is that the total cross section is $2\pi r^2$, not $\pi r^2$, the geometrical cross section.  When the wave length is short, we expect quantum mechanics to agree with classical mechanics, but it does not in this case.
 
-\problempart{(b)} In problem {ref}`prob-pathint-1`, you worked out the far field wave function $\psi(x,y,z)$, for $z\gg ka^2$, when a plane wave $e^{ikz}$ traveling in the positive $z$-direction strikes a screen in the $x$-$y$ plane with a circular hole of radius $a$ cut out. In that problem the hole was centered on the origin. The solution was worked out for $\theta=\rho/z \ll 1$ (the paraxial approximation), where $\rho = \sqrt{x^2+y^2}$.
+**(a)**  Work out the classical differential cross $d\sigma/d\Omega$ for a hard sphere of radius $a$, and integrate it to get the total cross $\sigma$.
+
+**(b)**  In problem {ref}`prob-pathint-1`, you worked out the far field wave function $\psi(x,y,z)$, for $z\gg ka^2$, when a plane wave $e^{ikz}$ traveling in the positive $z$-direction strikes a screen in the $x$-$y$ plane with a circular hole of radius $a$ cut out. In that problem the hole was centered on the origin. The solution was worked out for $\theta=\rho/z \ll 1$ (the paraxial approximation), where $\rho = \sqrt{x^2+y^2}$.
 
 By subtracting this solution from the incident wave $e^{ikz}$, you get the far field wave function when a plane wave $e^{ikz}$ strikes the *complementary* screen, that is, just a disk of radius $a$ at the origin.
 
@@ -990,7 +994,7 @@ It turns out this wave field is the same as the wave field in hard sphere (of ra
 
 Write the scattered wave as $(e^{ikr}/r)f(\theta)$, express $r$ as a function of $z$ and $\theta$ for small $\theta$, expand out to lowest order in $\theta$, and compare to the asymptotic wave field to get an expression for the scattering amplitude for small angles $\theta$. Use the optical theorem, {eq}`eq-introscatt-75`, to compute $\sigma$.
 
-\problempart{(c)} Show that $d\sigma/d\Omega$ in the forward direction has a narrow peak of width $\Delta\theta \sim 1/ka \ll 1$. Write down an integral giving the contribution of this forward peak to the total cross in terms of the first root $b$ of the Bessel function $J_1$. You can approximate $\sin\theta = \theta$ in this integral, since $\theta$ is small. It turns out that the value of this integral does not change much if the upper limit is extended to infinity. Use the integral
+**(c)**  Show that $d\sigma/d\Omega$ in the forward direction has a narrow peak of width $\Delta\theta \sim 1/ka \ll 1$. Write down an integral giving the contribution of this forward peak to the total cross in terms of the first root $b$ of the Bessel function $J_1$. You can approximate $\sin\theta = \theta$ in this integral, since $\theta$ is small. It turns out that the value of this integral does not change much if the upper limit is extended to infinity. Use the integral
 
 :::{math}
 :label: eq-introscatt-91
@@ -1001,7 +1005,9 @@ to find the contribution of the forward peak to the total cross . (See Gradshtey
 
 (prob-introscatt-2)=
 
-**Problem \prbdintroscatt-2..** 
+**Problem 2.** 
+
+This problem is borrowed from Sakurai. Consider a potential
 
 :::{math}
 :label: eq-introscatt-92
@@ -1029,7 +1035,9 @@ Obtain an approximate expression for $B/A$.
 
 (prob-introscatt-3)=
 
-**Problem \prbdintroscatt-3..** 
+**Problem 3.** 
+
+This problem is best done after some experience with scattering of particles with spin, such as Problem~{ref}`prob-tdpt-2`.
 
 Consider the scattering of a polarized, spin~$\frac{1}{2}$ particle by a target, such as a neutron by the nucleus of an atom (we may assume that the nucleus is polarized, too). There is some amplitude for scattering that does not flip the spin, and some for scattering that does.
 

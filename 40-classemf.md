@@ -442,7 +442,7 @@ and
 \delta_{\kvec,\kvec'} \to {(2\pi)^3\over V} \delta(\kvec-\kvec').
 :::
 
-This makes the results conform with the conventions for Fourier transforms presented in \secrclassemf-7.
+This makes the results conform with the conventions for Fourier transforms presented in {ref}`sec-classemf-7`.
 
 (sec-classemf-10)=
 
@@ -886,7 +886,7 @@ We turn now to the case of the electromagnetic field interacting with matter. Fo
 
 Notice that $\xvec$ is the field point, that is, the point of space where the charge or current density is measured, while $\rvec_\alpha$ is the position of the particle. We will henceforth maintain this notational distinction between field points ($\xvec$) and particle positions ($\rvec_\alpha$). Notice that $\rho(\xvec,t)$ acquires its time dependence because the particle positions $\rvec_\alpha$ depend on time; $\Jvec$ depends on time additionally through the particle velocity $\vvec_\alpha$. These charge and current densities satisfy the continuity equation {eq}`eq-classemf-3`.
 
-For the interacting field the equations of motion for the potentials in Coulomb gauge are {eq}`eq-classemf-26a`. As noted in \secrclassemf-8, the scalar potential $\Phi$ satisfies a non-retarded Poisson equation, with solution in terms of $\rho$ given by {eq}`eq-classemf-27`. With {eq}`eq-classemf-77` for the charge density, the integral can be done, giving
+For the interacting field the equations of motion for the potentials in Coulomb gauge are {eq}`eq-classemf-26a`. As noted in {ref}`sec-classemf-8`, the scalar potential $\Phi$ satisfies a non-retarded Poisson equation, with solution in terms of $\rho$ given by {eq}`eq-classemf-27`. With {eq}`eq-classemf-77` for the charge density, the integral can be done, giving
 
 :::{math}
 :label: eq-classemf-79
@@ -1082,7 +1082,7 @@ and
 H_em = {1\over 8\pi} \int_V d^3\xvec\, (E_\perp^2 + B^2) = \sum_\lambda {\omega_\lambda \over 2} (Q_\lambda^2 + P_\lambda^2).
 :::
 
-Again, we have made several guesses and must check that this Hamiltonian gives the correct equations of motion, according to Hamilton's equations. The equations of motion are the Newton-Lorentz equations {eq}`eq-classemf-91` for the matter, and {eq}`eq-classemf-89` for the mode amplitudes, which, as shown in \secrclassemf-17, are equivalent to the driven wave equation {eq}`eq-classemf-84` for $\Avec$, which is equivalent to the full Maxwell equations. This check will be left as an exercise.
+Again, we have made several guesses and must check that this Hamiltonian gives the correct equations of motion, according to Hamilton's equations. The equations of motion are the Newton-Lorentz equations {eq}`eq-classemf-91` for the matter, and {eq}`eq-classemf-89` for the mode amplitudes, which, as shown in {ref}`sec-classemf-17`, are equivalent to the driven wave equation {eq}`eq-classemf-84` for $\Avec$, which is equivalent to the full Maxwell equations. This check will be left as an exercise.
 
 (sec-classemf-19)=
 
@@ -1166,13 +1166,17 @@ and
 \Bvec(\xvec) = \del\cross\Avec = \sqrt{{2\pi\hbar c^2\over V}} \sum_\lambda {1\over\sqrt{\omega_\lambda}} \Bigl[ ia_\lambda (\kvec\cross\epsilonvec_\lambda) e^{i\kvec\cdot\xvec} + \\textc.c.\Bigr].
 :::
 
-\problems
+(sec-classemf-problems)=
+
+## Problems
 
 (prob-classemf-1)=
 
-**Problem \prbdclassemf-1..** 
+**Problem 1.** 
 
-\problempart{(a)} Calculate, as a function of $\rvec(t)$, the electric field $\Evec_\parallel(\xvec,t)$ at point $\xvec$ and time $t$ from charge $q$. Show that $\Evec_\parallel(\xvec,t)$ can be written,
+Retardation in the Coulomb gauge.  A particle with charge $q$ is located at the origin of the coordinates.  In the interval 0 to $T$ the particle is displaced from the origin to $\rvec(T)$ along a path $\rvec(t)$ ($0\le t \le T$).  Let $\xvec$ be a point distant from the origin at which we make measurements of the field.  Assume $R=|\xvec| \gg r=|\rvec(t)|$.  Also assume $R\gg cT$, which means that an observer at position $\xvec$ cannot know that the particle has moved, since the light signal from the particle cannot have reached the observer in time $T$.  The purpose of this exercise is to prove, starting with Maxwell's equations, that the instantaneous variations of the longitudinal electric field created by charge $q$ at $\rvec$ are exactly compensated by the instantaneous component of the transverse electric field produced by the displacement of the particle.
+
+**(a)**  Calculate, as a function of $\rvec(t)$, the electric field $\Evec_\parallel(\xvec,t)$ at point $\xvec$ and time $t$ from charge $q$. Show that $\Evec_\parallel(\xvec,t)$ can be written,
 
 :::{math}
 :label: eq-classemf-107
@@ -1181,19 +1185,21 @@ and
 
 where $\delta\Evec_\parallel$ is given by a power series in $|\rvec(t)|/R$. Show that the lowest order term of this expansion can be expressed as a function of $q\rvec(t)$ and of the transverse $\delta$-function, $\Delta^\perp_{ij}(\xvec)$.
 
-\problempart{(b)} Find the current $\Jvec(\xvec,t)$ associated with the motion of the particle. Express the transverse current $\Jvec_\perp(\xvec,t)$ at the point of observation $\xvec$ as a function of $q\dot\rvec(t)$ and the transverse $\delta$-function $\Delta^\perp_{ij}(\xvec-\rvec(t))$. Explain why to the lowest order in $|\rvec(t)|/R$, one can replace $\Delta^\perp_{ij}(\xvec-\rvec(t))$ by $\Delta^\perp_{ij}(\xvec)$. Write the Maxwell equation giving $\partial \Evec_\perp(\xvec,t)/\partial t$ in terms of $\Jvec_\perp(\xvec,t)$ and $\Bvec(\xvec,t)$. Begin by ignoring the contribution of $\Bvec$ to $\partial \Evec_\perp/\partial t$. Integrate the equation between $0$ and $t$. Show that the transverse electric field $\Evec_\perp(\xvec,t)$ produced by $\Jvec_\perp(\xvec,t)$ compensates exactly (to lowest order in $|\rvec(t)|/R$) the field $\delta\Evec_\parallel(\xvec,t)$ found in part (a). The small parameter here is $r/R$, not $v/c$; the particle motion could be fast (relativistic).
+**(b)**  Find the current $\Jvec(\xvec,t)$ associated with the motion of the particle. Express the transverse current $\Jvec_\perp(\xvec,t)$ at the point of observation $\xvec$ as a function of $q\dot\rvec(t)$ and the transverse $\delta$-function $\Delta^\perp_{ij}(\xvec-\rvec(t))$. Explain why to the lowest order in $|\rvec(t)|/R$, one can replace $\Delta^\perp_{ij}(\xvec-\rvec(t))$ by $\Delta^\perp_{ij}(\xvec)$. Write the Maxwell equation giving $\partial \Evec_\perp(\xvec,t)/\partial t$ in terms of $\Jvec_\perp(\xvec,t)$ and $\Bvec(\xvec,t)$. Begin by ignoring the contribution of $\Bvec$ to $\partial \Evec_\perp/\partial t$. Integrate the equation between $0$ and $t$. Show that the transverse electric field $\Evec_\perp(\xvec,t)$ produced by $\Jvec_\perp(\xvec,t)$ compensates exactly (to lowest order in $|\rvec(t)|/R$) the field $\delta\Evec_\parallel(\xvec,t)$ found in part (a). The small parameter here is $r/R$, not $v/c$; the particle motion could be fast (relativistic).
 
-\problempart{(c)} By eliminating the electric field from Maxwell's equations, find the equation of motion for the magnetic field $\Bvec$. Justify the approximation made above of neglecting the contribution of $\Bvec$ to $\partial\Evec_\perp/\partial t$ over short periods ($T\ll R/c$).
+**(c)**  By eliminating the electric field from Maxwell's equations, find the equation of motion for the magnetic field $\Bvec$. Justify the approximation made above of neglecting the contribution of $\Bvec$ to $\partial\Evec_\perp/\partial t$ over short periods ($T\ll R/c$).
 
 (prob-classemf-2)=
 
-**Problem \prbdclassemf-2..** 
+**Problem 2.** 
+
+Several guesses were made in deriving the classical Hamiltonian for the matter-field system, Eqs.~(\eqr\cn.96)--(\eqr\cn.98), so we should check the answer to see that it give the correct equations of motion.  This Hamiltonian is a function of the $(\rvec_\alpha,\pvec_\alpha)$ and the $(Q_\lambda,P_\lambda)$, which are the $q$'s and $p$'s of the system. All dynamical variables are considered to be functions of the $q$'s and $p$'s.  For example, $\Avec$, $\Evec_\perp$ and $\Bvec$ are defined by Eqs.~(\eqr\cn.103), (\eqr\cn.105) and (\eqr\cn.106), in which the Fourier series contain $a_\lambda$ and $a_\lambda^\cc$, which in turn are defined in terms of $Q_\lambda$ and $P_\lambda$ by Eq.~(\eqr\cn.101).  For the purposes of this problem, it will be better to indicate explicitly that the fields depend not only on the field point but also on the $a_\lambda$ and $a^\cc_\lambda$.   For example, we will write $\Avec(\xvec;a_\lambda,a^\cc_\lambda)$ for the vector potential evaluated at a field point $\xvec$.
 
 Please note the difference between $\xvec$, an arbitrary point of space at which a field may be evaluated, and $\rvec_\alpha$, the position of particle $\alpha$. The field point $\xvec$ is not a dynamical variable; it does not have an equation of evolution. The point $\rvec_\alpha$ is a dynamical variable; it does have an equation of motion.
 
 The quantity $a_\lambda$ is classical, in spite of the $\hbar$. We could have written $\Avec$ in terms of the mode amplitude $C_\lambda$, defined by {eq}`eq-classemf-88`, but $a_\lambda$, which is proportional to $C_\lambda$, is more convenient since it carries over to the annihilation operator in quantum mechanics.
 
-\problempart{(a)} Use the chain rule to show that Hamilton's classical equations for $Q_\lambda$ and $P_\lambda$ are equivalent to
+**(a)**  Use the chain rule to show that Hamilton's classical equations for $Q_\lambda$ and $P_\lambda$ are equivalent to
 
 :::{math}
 :label: eq-classemf-108
@@ -1206,14 +1212,14 @@ The quantity $a_\lambda$ is classical, in spite of the $\hbar$. We could have wr
 
 which are more convenient for the following work. Notice that these equations are complex conjugates of each other.
 
-\problempart{(b)} Now use Hamilton's equations for $\rvec_\alpha$ to obtain
+**(b)**  Now use Hamilton's equations for $\rvec_\alpha$ to obtain
 
 :::{math}
 :label: eq-classemf-109
 m_\alpha\vvec_\alpha = m_\alpha{\dot\rvec}_\alpha = \pvec_\alpha - {q_\alpha\over c}\Avec(\rvec_\alpha).
 :::
 
-\problempart{(c)} What we mean by $\partial \Avec(\xvec)/\partial t$ is the time derivative of the field $\Avec$, evaluated at some field point $\xvec$, holding $\xvec$ fixed. We also call this $\dot \Avec(\xvec)$. The time evolution is due to the time dependence of the $a_\lambda$ and $a^\cc_\lambda$, upon which $\Avec$ depends. With this understanding, we have
+**(c)**  What we mean by $\partial \Avec(\xvec)/\partial t$ is the time derivative of the field $\Avec$, evaluated at some field point $\xvec$, holding $\xvec$ fixed. We also call this $\dot \Avec(\xvec)$. The time evolution is due to the time dependence of the $a_\lambda$ and $a^\cc_\lambda$, upon which $\Avec$ depends. With this understanding, we have
 
 :::{math}
 :label: eq-classemf-110
@@ -1229,7 +1235,7 @@ where we have shown explicitly that $\Avec$ depends on the $a_\lambda$ and $a^\c
 
 This is equivalent to {eq}`eq-classemf-62b`, with the coefficients $C_\lambda$ replaced by $a_\lambda$ according to {eq}`eq-classemf-102`. Hint: Notice the resolution of identity, {eq}`eq-classemf-53`, which allows you to do the polarization ($\mu$) sum.
 
-\problempart{(d)} Now show that
+**(d)**  Now show that
 
 :::{math}
 :label: eq-classemf-112
@@ -1245,7 +1251,7 @@ where $\Evec$ is the total electric field, longitudinal plus transverse. Notice 
 
 since the field is evaluated at the particle position, and the particle position is moving.
 
-\problempart{(e)} Finally show that
+**(e)**  Finally show that
 
 :::{math}
 :label: eq-classemf-114
@@ -1256,4 +1262,6 @@ This equation is equivalent to Maxwell's equations.
 
 (prob-classemf-3)=
 
-**Problem \prbdclassemf-3..**
+**Problem 3.**
+
+Equation~(\eqr\cn.99) gives the total momentum $\Pvec$ of the matter-field system.  Using Newton's laws for the particles and Maxwell's equations for the field, show that $d\Pvec/dt=0$.  Hint:  You can integrate by parts, throwing away boundary terms, assuming that all fields die off at spatial infinity. If you are astute you will see the appearance of the stress-energy tensor in this calculation.

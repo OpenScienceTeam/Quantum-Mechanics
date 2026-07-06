@@ -676,11 +676,15 @@ It is a fact that for a spin-$\frac{1}{2}$ system, every spinor “points in” 
 
 This concludes what we have to say about rotations on spin-$\frac{1}{2}$ systems. In the next notes we consider the general problem of constructing representations of the angular momentum commutation relations and the corresponding representations of rotations.
 
-\problems
+(sec-spinrot-problems)=
+
+## Problems
 
 (prob-spinrot-1)=
 
-**Problem \prbdspinrot-1.} This is problem~3.8 of Sakurai, *Modern Quantum Mechanics.** 
+**Problem 1.** 
+
+This is problem~3.8 of Sakurai, {\it Modern Quantum Mechanics}.  Let
 
 :::{math*
 :label: eq-spinrot-64
@@ -691,7 +695,9 @@ be the Euler angle representation of a rotation on a spin-$\frac{1}{2}$ system. 
 
 (prob-spinrot-2)=
 
-**Problem \prbdspinrot-2..** 
+**Problem 2.** 
+
+The Pauli matrices combined with the $2\times2$ identity matrix span the space of $2\times2$ matrices, that is, an arbitrary $2\times2$ matrix $A$ can be written in the form,
 
 :::{math}
 :label: eq-spinrot-65
@@ -739,11 +745,13 @@ Use these results to prove {eq}`eq-spinrot-44`.
 
 (prob-spinrot-3)=
 
-**Problem \prbdspinrot-3..** 
+**Problem 3.** 
 
-\problempart{(a)} The spinor “pointing in” the ${\hat{\mathbf{n}}}$ direction was defined by {eq}`eq-spinrot-58`. Show that every spinor “points” in some direction. For this, it is sufficient to show that for every normalized spinor $\ket{\chi}$, $\matrixelement{\chi}{\sigmavec}{\chi}$ is a unit vector. You can prove this directly, or use the formalism based on {eq}`eq-spinrot-70` above. This property only holds for spin-$\frac{1}{2}$ particles.
+This problem concerns the polarization states of classical electromagnetic waves, which can be described by the same mathematical formalism used for spinors of spin-$\fract1/2$ particles.  It is also provides a good background for the subject of the polarization states of photons, which we will take up later in the course.
 
-\problempart{(b)} Consider now the phenomenon of polarization in classical electromagnetic theory. The most general physical electric field of a plane light wave of frequency $\omega$ travelling in the $z$-direction can be written in the form
+**(a)**  The spinor “pointing in” the ${\hat{\mathbf{n}}}$ direction was defined by {eq}`eq-spinrot-58`. Show that every spinor “points” in some direction. For this, it is sufficient to show that for every normalized spinor $\ket{\chi}$, $\matrixelement{\chi}{\sigmavec}{\chi}$ is a unit vector. You can prove this directly, or use the formalism based on {eq}`eq-spinrot-70` above. This property only holds for spin-$\frac{1}{2}$ particles.
+
+**(b)**  Consider now the phenomenon of polarization in classical electromagnetic theory. The most general physical electric field of a plane light wave of frequency $\omega$ travelling in the $z$-direction can be written in the form
 
 :::{math}
 :label: eq-spinrot-71
@@ -818,9 +826,9 @@ s_1^2 + s_2^2 + s_3^2=1,
 
 so that ${\hat{\mathbf{s}}}=(s_1,s_2,s_3)$ is a unit vector. The sphere upon which this unit vector lies is called the *Poincar\'e sphere*; points on this sphere correspond to polarization states. Notice that the Stokes' parameters are independent of the overall phase of the wave, being bilinear in the field amplitudes $(E_x,E_y)$. Indicate which points on the Poincar\'e sphere correspond to linear $x$- and $y$-polarization, and which to right and left circular polarization. What kind of polarization does the positive $2$-axis in $\svec$-space correspond to? What about the negative $2$-axis? (We will refer to directions in $\svec$-space by the indices 1,2,3, to avoid confusion with $x$, $y$, $z$ in real space).
 
-\problempart{(c)} Compute the expectation value $\matrixelement {\chi}{\sigmavec}{\chi}={\hat{\mathbf{n}}}$ for the spinor {eq}`eq-spinrot-73`, and relate the components of ${\hat{\mathbf{n}}}$ to the Stokes' parameters. You will see that Stokes and Poincar\'e didn't exactly follow quantum mechanical conventions (since quantum mechanics had not yet been invented in their day), but the basic idea is that the point on the Poincar\'e sphere indicates the direction in which the spinor {eq}`eq-spinrot-73` is “pointing.”
+**(c)**  Compute the expectation value $\matrixelement {\chi}{\sigmavec}{\chi}={\hat{\mathbf{n}}}$ for the spinor {eq}`eq-spinrot-73`, and relate the components of ${\hat{\mathbf{n}}}$ to the Stokes' parameters. You will see that Stokes and Poincar\'e didn't exactly follow quantum mechanical conventions (since quantum mechanics had not yet been invented in their day), but the basic idea is that the point on the Poincar\'e sphere indicates the direction in which the spinor {eq}`eq-spinrot-73` is “pointing.”
 
-\problempart{(d)} Now suppose we have a quarter-wave plate with its fast and slow axes in the $x$- and $y$-direction, respectively. This causes a relative phase shift in the $x$- and $y$-components of the spinor {eq}`eq-spinrot-73` by $\pi/2$, that is,
+**(d)**  Now suppose we have a quarter-wave plate with its fast and slow axes in the $x$- and $y$-direction, respectively. This causes a relative phase shift in the $x$- and $y$-components of the spinor {eq}`eq-spinrot-73` by $\pi/2$, that is,
 
 :::{math}
 :label: eq-spinrot-78

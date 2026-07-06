@@ -506,11 +506,15 @@ This is the first of a series of miraculous successes of the Dirac equation that
 
 Although there remain some interpretational difficulties with the Dirac equation, including the negative energy solutions and some others we will discuss later, these successes are so striking that we continue with the theory to see where it will lead. The next step is to see how the Dirac equation transforms under Lorentz transformations.
 
-\problems
+(sec-dirac-problems)=
+
+## Problems
 
 (prob-dirac-1)=
 
-**Problem \prbddirac-1.} The Dirac equation in two space dimensions. Suppose we lived in a world with two space dimensions ($x$ and $y$) and one time dimension.  Let $x^\mu = (ct,x,y)$, and otherwise use the obvious restrictions of ordinary relativity theory to two spatial dimensions (for example, $g_{\mu\nu.** 
+**Problem 1.** 
+
+The Dirac equation in two space dimensions. Suppose we lived in a world with two space dimensions ($x$ and $y$) and one time dimension.  Let $x^\mu = (ct,x,y)$, and otherwise use the obvious restrictions of ordinary relativity theory to two spatial dimensions (for example, $g_{\mu\nu} = \diag(+1,-1,-1)$).  In two spatial dimensions, the vector potential $\Avec$ has two components $(A_x,A_y)$, but the magnetic field is a scalar,
 
 :::{math}
 :label: eq-dirac-53
@@ -519,17 +523,19 @@ B=\frac{\partial A_y}{\partial x} - \frac{\partial A_x}{\partial y}.
 
 More generally, true vectors in three dimensions become 2-vectors when restricted to two dimensions, but pseudo-vectors in three dimensions become (pseudo) scalars in two dimensions. You will find that in some respects the Dirac equation in two spatial dimensions is very similar to what was done in lecture in three spatial dimensions, and in other respects it is different.
 
-\problempart{(a)} Carry out Dirac's program of finding a relativistic wave equation that is first order in both space and time. Show that the Dirac algebra of }$\alphavec=(\alpha_1,\alpha_2)$ and $\beta$ matrices can be satisfied by $2\times2$ Hermitian matrices. This is the simplest solution for the Dirac algebra in $2+1$ dimensional space-time. Thus, the Dirac spinor has two components. The solution is not unique, because you can change the basis (conjugate any solution with some unitary matrix to create another representation of the algebra), so let your primary solution be one in which $\beta$ is diagonal. Call this the “Dirac-Pauli” representation. Also compute the matrices $\gamma^\mu$ in the Dirac-Pauli representation. The Dirac-Pauli representation is most convenient for studying the nonrelativistic limit.
+**(a)**  Carry out Dirac's program of finding a relativistic wave equation that is first order in both space and time. Show that the Dirac algebra of }$\alphavec=(\alpha_1,\alpha_2)$ and $\beta$ matrices can be satisfied by $2\times2$ Hermitian matrices. This is the simplest solution for the Dirac algebra in $2+1$ dimensional space-time. Thus, the Dirac spinor has two components. The solution is not unique, because you can change the basis (conjugate any solution with some unitary matrix to create another representation of the algebra), so let your primary solution be one in which $\beta$ is diagonal. Call this the “Dirac-Pauli” representation. Also compute the matrices $\gamma^\mu$ in the Dirac-Pauli representation. The Dirac-Pauli representation is most convenient for studying the nonrelativistic limit.
 
 Now find a representation in which the matrices $\gamma^\mu$ are purely imaginary. See {eq}`eq-covariance-5` for the definition of the matrices $\gamma^\mu$. Call this the “Maiorana representation.” The Maiorana representation makes Lorentz transformations on the spinors look most simple.
 
-\problempart{(b)} Write out the Dirac equation including minimal coupling to the electromagnetic field, and show that it possesses a positive definite probability density with an associated probability current that taken together satisfy the continuity equation.
+**(b)**  Write out the Dirac equation including minimal coupling to the electromagnetic field, and show that it possesses a positive definite probability density with an associated probability current that taken together satisfy the continuity equation.
 
-\problempart{(c)} Work out the Heisenberg equations of motion for $\xvec$ and $\pivec=\pvec -(q/c)\Avec$.
+**(c)**  Work out the Heisenberg equations of motion for $\xvec$ and $\pivec=\pvec -(q/c)\Avec$.
 
 (prob-dirac-2)=
 
 **Problem (d).** 
+
+Using the Dirac-Pauli representation, write the 2-component Dirac spinor as
 
 :::{math}
 :label: eq-dirac-54

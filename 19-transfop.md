@@ -93,7 +93,7 @@ If an operator commutes with all rotations, then it commutes in particular with 
 \boxed{[\Jvec,K]=0.}
 :::
 
-The most important example of a scalar operator is the Hamiltonian for an isolated system, not interacting with any external fields. The consequences of this for the eigenvalues and eigenstates of the Hamiltonian are discussed in Secs.~\secrtransfop-9 and \secrtransfop-12 below.
+The most important example of a scalar operator is the Hamiltonian for an isolated system, not interacting with any external fields. The consequences of this for the eigenvalues and eigenstates of the Hamiltonian are discussed in Secs.~{ref}`sec-transfop-9` and {ref}`sec-transfop-12` below.
 
 (sec-transfop-4)=
 
@@ -559,7 +559,7 @@ and the “spins” of the various nuclear states shown in {ref}`fig-transfop-1`
 
 This model is more or less crude, due to the fact that protons and neutrons are composite particles, each made up of three quarks, which interact with the quark and gluon fields via the strong interactions. For our purposes the only thing that matters is that rotations act upon the state space of the system by means of unitary operators, and that these commute with the Hamiltonian. The model {eq}`eq-transfop-47` at least gives us something concrete to think about.
 
-Each nuclear energy eigenstate consists of a single irreducible subspace under rotations for the same reasons discussed in connection with central force motion in \secrtransfop-9. That is, extra degeneracy requires extra symmetry or else an unlikely accident, and neither of these is to be expected in nuclei. Therefore each energy level is characterized by a unique angular momentum value, as indicated in the figure.
+Each nuclear energy eigenstate consists of a single irreducible subspace under rotations for the same reasons discussed in connection with central force motion in {ref}`sec-transfop-9`. That is, extra degeneracy requires extra symmetry or else an unlikely accident, and neither of these is to be expected in nuclei. Therefore each energy level is characterized by a unique angular momentum value, as indicated in the figure.
 
 We can summarize these accumulated facts by stating an addendum to Theorem~{ref}`thm-transfop-1`.
 
@@ -567,11 +567,15 @@ We can summarize these accumulated facts by stating an addendum to Theorem~{ref}
 
 We can now understand why the Hilbert space for spins in magnetic fields consists of a single irreducible subspace under rotations for a large class of particles, a question that was raised in {ref}`ch-spinmagf`. For example, if we place the $\ironfiftyseven$ nucleus in a magnetic field that is strong by laboratory standards, say, 10T, then the energy splitting between the two magnetic substates $m=\pm\frac{1}{2}$ will be of the order of 100~MHz in frequency units, or about $4\times10^{-7}eV$, or roughly $3\times10^{-11}$ times smaller than the energy separation from the first excited state $\ironfiftyseven^\cc$. Therefore it is an excellent approximation to ignore the state $\ironfiftyseven^\cc$ and all other excited states of the $\ironfiftyseven$ nucleus, and to treat the Hilbert space of the nucleus as if it were a single irreducible subspace with $s=\frac{1}{2}$, that is, the ground eigenspace. In other words, in the case of nuclei, the $2s+1$-dimensional Hilbert space used in our study of spins in magnetic fields in {ref}`ch-spinmagf`{} is actually a subspace of a larger Hilbert space. It is, in fact, an energy eigenspace of an isolated system. This in turn explains why the magnetic moment is proportional to the spin [see Prob. {ref}`prob-wigeck-2`(a)].
 
-\problems
+(sec-transfop-problems)=
+
+## Problems
 
 (prob-transfop-1)=
 
-**Problem \prbdtransfop-1..** 
+**Problem 1.** 
+
+Some questions on the M\"ossbauer effect and the Pound-Rebka experiment.
 
 The gravitational red shift is a prediction of general relativity, but the basic physics behind it can be understood in elementary terms. In the Pound-Rebka experiment, photons were launched upward from the ground, just outside a building at Harvard University. These photons were then received by a detector just outside the window of an upper floor of the building, approximately 20~meters above the ground.
 
@@ -581,16 +585,18 @@ It turns out that the gravitational red shift and the blue shift due to the fall
 
 This situation is similar to that illustrated in the “shoot the monkey” demonstration used in elementary physics classes, except that instead of an arrow shot at the monkey particles of light are used. The basic physical reasoning used here is close to that employed by Einstein in his 1911 paper which first predicted the gravitational red shift.
 
-\problempart{(a)} If an atom is free (not a part of a crystal lattice or otherwise bound to anything else), then it suffers some recoil on emitting a photon, which produces a shift $\Delta\omega$ in the frequency of the emitted photon. In the case of the 14.4~KeV photon emitted by the ${}^{57}Fe$ nucleus, calculate the fractional shift $\Delta\omega/\omega$ due to this recoil and compare to the natural line width.
+**(a)**  If an atom is free (not a part of a crystal lattice or otherwise bound to anything else), then it suffers some recoil on emitting a photon, which produces a shift $\Delta\omega$ in the frequency of the emitted photon. In the case of the 14.4~KeV photon emitted by the ${}^{57}Fe$ nucleus, calculate the fractional shift $\Delta\omega/\omega$ due to this recoil and compare to the natural line width.
 
-\problempart{(b)} If the ${}^{57}Fe$ atom is free-floating in a gas at 300~K, calculate the average $\Delta\omega/\omega$ due to the Doppler shift due to the thermal motion of the atom.
+**(b)**  If the ${}^{57}Fe$ atom is free-floating in a gas at 300~K, calculate the average $\Delta\omega/\omega$ due to the Doppler shift due to the thermal motion of the atom.
 
-\problempart{(c)} Calculate the $\Delta\omega/\omega$ for the gravitational red shift of the same photon climbing (as in the Pound-Rebka experiment) about 20 meters in the earth's gravitational field, and compare to the $\Delta\omega/\omega$ due to the natural line width. You will see that the experiment was a delicate one that required careful measurement and attention to systematic errors.
+**(c)**  Calculate the $\Delta\omega/\omega$ for the gravitational red shift of the same photon climbing (as in the Pound-Rebka experiment) about 20 meters in the earth's gravitational field, and compare to the $\Delta\omega/\omega$ due to the natural line width. You will see that the experiment was a delicate one that required careful measurement and attention to systematic errors.
 
 (prob-transfop-2)=
 
-**Problem \prbdtransfop-2.} Consider a vector operator $\Vvec$ and a tensor operator $T_{ij.** 
+**Problem 2.** 
 
-\problempart{(a)} Show that if one component of }$\Vvec$ vanishes, then they all do.
+Consider a vector operator $\Vvec$ and a tensor operator $T_{ij}$.
 
-\problempart{(b)} Is this true for a tensor operator $T_{ij}$?
+**(a)**  Show that if one component of }$\Vvec$ vanishes, then they all do.
+
+**(b)**  Is this true for a tensor operator $T_{ij}$?

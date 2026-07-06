@@ -776,7 +776,7 @@ The coherent states form a 2-parameter family of minimum uncertainty wave packet
 
 ## Time Evolution of Coherent States
 
-Since a coherent state is the quantum state that is as close as we can come to a classical state, it is of interest to compare the time evolution of a coherent state in quantum mechanics to the corresponding classical time evolution. We know part of the answer already, for as shown in \secrharmosc-7, the expectation values of the time-evolved quantum state follow the classical motion. But does the initial coherent state remain a minimum uncertainty wave packet? And what about the other details of the quantum evolution?
+Since a coherent state is the quantum state that is as close as we can come to a classical state, it is of interest to compare the time evolution of a coherent state in quantum mechanics to the corresponding classical time evolution. We know part of the answer already, for as shown in {ref}`sec-harmosc-7`, the expectation values of the time-evolved quantum state follow the classical motion. But does the initial coherent state remain a minimum uncertainty wave packet? And what about the other details of the quantum evolution?
 
 To answer these questions, we will consider an initial state that is a coherent state, $\ket{\psi(0)} = \ket{x_0p_0}=W(x_0,p_0)\ket{0}$, where we make the replacements, $a\to x_0$, $b\to p_0$ to represent an initial point in phase space. The coherent state itself can be thought of as a blob in phase space centered on $(x_0,p_0)$, as in {ref}`fig-harmosc-4`.
 
@@ -915,11 +915,15 @@ We have just shown, however, that in the case of the harmonic oscillator, an ini
 
 In the case of Hamiltonians that are quadratic polynomials in $\xhat_i$ and $\phat_i$, such as the harmonic oscillator, not only are the Ehrenfest relations exact, but all the properties of the quantum time evolution bear an especially close relationship to the classical motion. For example, the spreading or breathing of wave packets can be understood in terms of ensembles of particles in the classical phase space.
 
-\problems
+(sec-harmosc-problems)=
+
+## Problems
 
 (prob-harmosc-1)=
 
-**Problem \prbdharmosc-1..** 
+**Problem 1.** 
+
+The eigenfunctions $\psi_n(x)$ of the harmonic oscillator in configuration space are given by Eq.~(\eqr\cn.45).  In this problem you may use dimensionless units, as described in Sec.~\secr\cn.3.  Find the corresponding momentum space wave eigenfunctions, $\phi_n(p)$, which are defined by
 
 :::{math}
 :label: eq-harmosc-99
@@ -930,7 +934,9 @@ Get the phases right.
 
 (prob-harmosc-2)=
 
-**Problem \prbdharmosc-2..** 
+**Problem 2.** 
+
+Consider the Hamiltonian for a particle of mass $m$ moving in the $x_1$-$x_2$ plane,
 
 :::{math}
 :label: eq-harmosc-100
@@ -980,7 +986,7 @@ where we let Greek indices run over 1,2. These obey a generalization of the comm
 
 which is just a statement that each oscillator has commutation relations like {eq}`eq-harmosc-19`, and the variables of one oscillator commute with the variables of the other.
 
-\problempart{(a)} Define number operators as in {eq}`eq-harmosc-21`,
+**(a)**  Define number operators as in {eq}`eq-harmosc-21`,
 
 :::{math}
 :label: eq-harmosc-106
@@ -1005,7 +1011,7 @@ where $\sigma_i$ are the Pauli matrices and $i=1,2,3$.
 
 Find the energy eigenvalues and degeneracies of the Hamiltonian {eq}`eq-harmosc-103`, that is, find the spectrum of $H$ and the dimensions of the energy eigenspaces. Now let $j$ be an eigenvalue of $I$. What are the allowed values of $j$ (that is, what is the spectrum of $I$)?
 
-\problempart{(b)} Show that if $F_{\mu\nu}$ and $G_{\mu\nu}$ are $2\times2$ matrices of numbers, and if we define operators $f$ and $g$ by
+**(b)**  Show that if $F_{\mu\nu}$ and $G_{\mu\nu}$ are $2\times2$ matrices of numbers, and if we define operators $f$ and $g$ by
 
 :::{math}
 :label: eq-harmosc-109
@@ -1025,7 +1031,7 @@ then
 
 Use this result to evaluate the commutators $[I,J_i]$ and $[J_i,J_j]$. Explain why all three $J_i$ are constants of motion. Find a relationship between one of the $J_i$ and $L$ in {eq}`eq-harmosc-102`.
 
-\problempart{(c)} Show that
+**(c)**  Show that
 
 :::{math}
 :label: eq-harmosc-111
@@ -1041,17 +1047,19 @@ You may find it useful to use the identity,
 
 which is the solution to Prob. {ref}`prob-hilbert-3`(d).
 
-\problempart{(d)} Let $n_1$ and $n_2$ be the usual harmonic oscillator quantum numbers for oscillators 1 and 2 in {eq}`eq-harmosc-103`, and let the energy eigenstates be $\ket{n_1n_2}$. Show that $\ket{n_1n_2}$ is an eigenket of $J^2$ and $J_3$. Express the eigenvalue of $J^2$ in terms of $j$, and let the eigenvalue of $J_3$ be $m$ (not to be confused with the mass, which at this point we have set to unity). For a given value of $j$, what values of $m$ are allowed?
+**(d)**  Let $n_1$ and $n_2$ be the usual harmonic oscillator quantum numbers for oscillators 1 and 2 in {eq}`eq-harmosc-103`, and let the energy eigenstates be $\ket{n_1n_2}$. Show that $\ket{n_1n_2}$ is an eigenket of $J^2$ and $J_3$. Express the eigenvalue of $J^2$ in terms of $j$, and let the eigenvalue of $J_3$ be $m$ (not to be confused with the mass, which at this point we have set to unity). For a given value of $j$, what values of $m$ are allowed?
 
 You will see that this problem reproduces the beginnings of angular momentum theory. It can be extended to produce formulas for the Clebsch-Gordan coefficients, the rotation $d$-matrices (see {ref}`ch-repsamos`), and many other things, with everything based ultimately on harmonic oscillator creation and annihilation operators.
 
 (prob-harmosc-3)=
 
-**Problem \prbdharmosc-3..** 
+**Problem 3.** 
 
-\problempart{(a)} Find convenient expressions for $W(z_0)^\dagger aW(z_0)$ and $W(z_0)^\dagger a^\dagger W(z_0)$, where $W(z_0)$ is the Heisenberg operator {eq}`eq-harmosc-86` and $a$ and $a^\dagger$ are the annihilation and creation operators. **Hint:** See Prob. {ref}`prob-hilbert-2`(a). Then show that the coherent state $\ket{z_0} = W(z_0)\ket{0}$ is an eigenstate of the annihilation operator $a$ with eigenvalue $z_0$.
+A problem on coherent states.
 
-\problempart{(b)} The annihilation operator is not Hermitian, so its eigenvalues are not real in general, nor are its eigenstates orthonormal, that is, $\braket{z_0}{z_1} \ne 0$ when $z_0 \ne z_1$. Nevertheless, they are complete in a certain sense. Prove that
+**(a)**  Find convenient expressions for $W(z_0)^\dagger aW(z_0)$ and $W(z_0)^\dagger a^\dagger W(z_0)$, where $W(z_0)$ is the Heisenberg operator {eq}`eq-harmosc-86` and $a$ and $a^\dagger$ are the annihilation and creation operators. **Hint:** See Prob. {ref}`prob-hilbert-2`(a). Then show that the coherent state $\ket{z_0} = W(z_0)\ket{0}$ is an eigenstate of the annihilation operator $a$ with eigenvalue $z_0$.
+
+**(b)**  The annihilation operator is not Hermitian, so its eigenvalues are not real in general, nor are its eigenstates orthonormal, that is, $\braket{z_0}{z_1} \ne 0$ when $z_0 \ne z_1$. Nevertheless, they are complete in a certain sense. Prove that
 
 :::{math}
 :label: eq-harmosc-113
@@ -1060,7 +1068,7 @@ You will see that this problem reproduces the beginnings of angular momentum the
 
 This resolution of the identity shows that an arbitrary wave function can be expanded as a linear combination of coherent states, that is, Gaussian wave packets. However, the expansion is not unique, because the coherent states are actually overcomplete (they are not linearly independent). In fact, there are many vanishing linear combinations of coherent states (with nonzero coefficients). Nevertheless, the formula {eq}`eq-harmosc-113` looks neat. It can be used as the basis of a path integral.
 
-\problempart{(c)} Use the Heisenberg picture to obtain expressions for $U(t) a U(t)^\dagger$ and $U(t) a^\dagger U(t)^\dagger$, where $a$ and $a^\dagger$ are the usual annihilation and creation operators in the Schr\"odinger picture, and $U(t)$ is the time-evolution operator for the harmonic oscillator. Then use these to obtain a simple expression for
+**(c)**  Use the Heisenberg picture to obtain expressions for $U(t) a U(t)^\dagger$ and $U(t) a^\dagger U(t)^\dagger$, where $a$ and $a^\dagger$ are the usual annihilation and creation operators in the Schr\"odinger picture, and $U(t)$ is the time-evolution operator for the harmonic oscillator. Then use these to obtain a simple expression for
 
 :::{math}
 :label: eq-harmosc-114
@@ -1071,7 +1079,9 @@ Finally, use that to obtain a simple expression for $U(t) \ket{z_0}$. This appro
 
 (prob-harmosc-4)=
 
-**Problem \prbdharmosc-4..** 
+**Problem 4.** 
+
+Recoilless emission is an important part of the physics of the M\"ossbauer effect.  A simple one-dimensional model of the process is illustrated in Fig.~\figr\cn.5.
 
 :::{figure} images/harmosc-fig05.png
 :label: fig-harmosc-5

@@ -612,7 +612,7 @@ Similarly, working with $J_+$ we obtain,
 \end{aligned}
 :::
 
-The method of \secrjjcouple-12 for calculating the Clebsch-Gordan coefficients uses a slightly disguised version of these recursion relations.
+The method of {ref}`sec-jjcouple-12` for calculating the Clebsch-Gordan coefficients uses a slightly disguised version of these recursion relations.
 
 Other properties of the Clebsch-Gordan coefficients include the following identities:
 
@@ -650,7 +650,7 @@ We will not prove these identities here. If you ever have to use such identities
 
 ## Calculating the Clebsch-Gordan Coefficients
 
-The following method for calculating the Clebsch-Gordan coefficients differs slightly from the usual one taught in introductory courses, mainly in its method of handling the stretched states. We illustrate it with the example of \secrjjcouple-10, in which $j_1=\frac{5}{2}$ and $j_2=1$. Suppose we wish to obtain the Clebsch-Gordan coefficient $\braket{j_1j_2m_1m_2}{jm}=\braket{\frac{5}{2} 1 \frac{1}{2} 0}{\frac{3}{2}\frac{1}{2}}$. We begin by writing $\ket{jm}=\ket{\frac{3}{2}\frac{3}{2}}$, the stretched state in the irreducible subspace $j=\frac{3}{2}$, as a linear combination of basis vectors of the uncoupled basis with $m=m_1+m_2=\frac{3}{2}$:
+The following method for calculating the Clebsch-Gordan coefficients differs slightly from the usual one taught in introductory courses, mainly in its method of handling the stretched states. We illustrate it with the example of {ref}`sec-jjcouple-10`, in which $j_1=\frac{5}{2}$ and $j_2=1$. Suppose we wish to obtain the Clebsch-Gordan coefficient $\braket{j_1j_2m_1m_2}{jm}=\braket{\frac{5}{2} 1 \frac{1}{2} 0}{\frac{3}{2}\frac{1}{2}}$. We begin by writing $\ket{jm}=\ket{\frac{3}{2}\frac{3}{2}}$, the stretched state in the irreducible subspace $j=\frac{3}{2}$, as a linear combination of basis vectors of the uncoupled basis with $m=m_1+m_2=\frac{3}{2}$:
 
 :::{math}
 :label: eq-jjcouple-56
@@ -801,15 +801,19 @@ P_{\ell_1}(\cos\theta)P_{\ell_2}(\cos\theta) = \sum_\ell P_\ell(\cos\theta)\, |\
 
 which is sometimes useful.
 
-\problems
+(sec-jjcouple-problems)=
+
+## Problems
 
 (prob-jjcouple-1)=
 
-**Problem \prbdjjcouple-1..** 
+**Problem 1.** 
 
-\problempart{(a)} The wave function of a particle with spin was defined in {eq}`eq-jjcouple-12`. If $\psi_m(\rvec)$ is the wave function of a spinning particle in state $\ket{\psi}$, then what is the wave function of the particle in the rotated state, $U(\Rmat)\ket{\psi}$? The rotation operator $U(\Rmat)$ is the product of a spatial rotation times a spin rotation, both parameterized by the same $\Rmat$.
+About wave functions of particles, including spin.
 
-\problempart{(b)} Let us use the Pauli equation to describe the dynamics of an electron. The wave function is a 2-component spinor as in {eq}`eq-jjcouple-14`, and in the Pauli Hamiltonian {eq}`eq-jjcouple-27` we set $q=-e$ and $g=g_e$, the electron $g$-factor. Also note the sign in {eq}`eq-spinmagf-16`, that is, $\muvec=-g_e\mu_B(\Svec/\hbar)$, which comes from the fact that the charge on the electron is negative.
+**(a)**  The wave function of a particle with spin was defined in {eq}`eq-jjcouple-12`. If $\psi_m(\rvec)$ is the wave function of a spinning particle in state $\ket{\psi}$, then what is the wave function of the particle in the rotated state, $U(\Rmat)\ket{\psi}$? The rotation operator $U(\Rmat)$ is the product of a spatial rotation times a spin rotation, both parameterized by the same $\Rmat$.
+
+**(b)**  Let us use the Pauli equation to describe the dynamics of an electron. The wave function is a 2-component spinor as in {eq}`eq-jjcouple-14`, and in the Pauli Hamiltonian {eq}`eq-jjcouple-27` we set $q=-e$ and $g=g_e$, the electron $g$-factor. Also note the sign in {eq}`eq-spinmagf-16`, that is, $\muvec=-g_e\mu_B(\Svec/\hbar)$, which comes from the fact that the charge on the electron is negative.
 
 Consider an electron in a central force potential $V(r)$, plus a uniform magnetic field $\Bvec = B {\hat{\mathbf{b}}}$. Let $\omega_0 = eB/mc$. Use the gauge $\Avec = \frac{1}{2} \Bvec \cross \rvec$. Consider the time-dependent Pauli equation for the electron,
 
@@ -833,11 +837,15 @@ Find a frequency $\omega$ that eliminates the effect of the magnetic field on th
 
 (prob-jjcouple-2)=
 
-**Problem \prbdjjcouple-2.} In {ref}`ch-magfield`{.** 
+**Problem 2.** 
+
+In Notes~\magfield{} we worked out the energy levels of a ``spinless electron'' in a uniform magnetic field. Including the spin, find the energy levels of an electron in a uniform magnetic field.  You may approximate $g\approx 2$.  Express your answer in terms of $\omega_0 = eB/mc$, the orbital frequency of a classical electron in a uniform magnetic field.  Sketch the first few Landau energy levels on a vertical energy axis, first in the model in which we ignore the electron spin, and then after we take the spin into account.  Ignore the energy coming from the $z$-motion in this diagram.  Label the levels by their degeneracies.  What happens if you take into account the fact that $g$ is not exactly 2?  This is a short problem, and does not require any lengthy calculations.
 
 (prob-jjcouple-3)=
 
-**Problem \prbdjjcouple-3..** 
+**Problem 3.** 
+
+I won't ask you to work out any numerical values of Clebsch-Gordan coefficients, but you should be comfortable in doing so. The following is a related problem.
 
 Consider the angular momentum problem $\ell \otimes \frac{1}{2}$, where $\ell$ is arbitrary and could be very large. We write $j=\ell+\frac{1}{2}$ or $j=\ell-\frac{1}{2}$ for the resulting angular momentum. By beginning with the doubly stretched state,
 

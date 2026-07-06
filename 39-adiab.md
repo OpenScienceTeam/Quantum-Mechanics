@@ -389,11 +389,15 @@ In a more careful treatment of the Born-Oppenheimer approximation, in which the 
 
 The notion that the electronic eigenvalue is the potential energy for the nuclear motion leads to an immediate understanding of the nature of the chemical bond. The example of the $H_2$ molecule will be discussed in class.
 
-\problems
+(sec-adiab-problems)=
+
+## Problems
 
 (prob-adiab-1)=
 
-**Problem \prbdadiab-1..** 
+**Problem 1.** 
+
+Consider the spin system described by the Hamiltonian,
 
 :::{math}
 :label: eq-adiab-43
@@ -404,13 +408,15 @@ where $k$ is a constant and $\Bvec$ is a function of the slow time variable, $\t
 
 (prob-adiab-2)=
 
-**Problem \prbdadiab-2..** 
+**Problem 2.** 
+
+This is a practical problem which will reveal many of the features of the Born-Oppenheimer approximation.  Another point is made by this problem.  It is a fact that atoms can interfere with one another, i.e., one can create interference patterns with atoms.  What is the ``wave function'' of an atom, given that the atom consists of many constituent particles?  (Of course, one could ask the same of a proton or a neutron, which are not ``elementary'' either.) This problem will show how one can construct a quantum mechanical description of a composite particle.
 
 Consider a hydrogen atom in an external electric field. The field is produced by some experimental apparatus, so the scale length $L$ of the field is much greater than the size $\ell$ of the atom. However, the field is not uniform. The physics of the situation is that the external field polarizes the atom, so that the atom is attracted to regions of higher field strength. In this way, an electric field gradient can be use to deflect neutral atomic beams.
 
-\problempart{(a)} Write out the Hamiltonian for the atom, regarded as a proton-electron system, in some inertial frame. Transform to the center of mass position $\Rvec$ and relative position $\rvec$, and expand the potential energy in powers of $\ell/L$ out to the first nonvanishing term. (Let $\rvec$ be the electron position relative to the proton.) Notice that because of the electric field, this Hamiltonian is not separable; thus, the wave function $\Psi(\rvec,\Rvec)$ cannot be written as a product of functions of $\rvec$ and $\Rvec$ separately.
+**(a)**  Write out the Hamiltonian for the atom, regarded as a proton-electron system, in some inertial frame. Transform to the center of mass position $\Rvec$ and relative position $\rvec$, and expand the potential energy in powers of $\ell/L$ out to the first nonvanishing term. (Let $\rvec$ be the electron position relative to the proton.) Notice that because of the electric field, this Hamiltonian is not separable; thus, the wave function $\Psi(\rvec,\Rvec)$ cannot be written as a product of functions of $\rvec$ and $\Rvec$ separately.
 
-\problempart{(b)} Now define a Hamiltonian $H_atom (\rvec ,\pvec ;\Rvec)$ which is parameterized by the center of mass position $\Rvec$. (This Hamiltonian contains all the terms in the total Hamiltonian except the center of mass kinetic energy). Notice that it has the form of a Stark Hamiltonian for hydrogen. Let the eigenfunctions and eigenvalues of this Hamiltonian be $u_n(\rvec;\Rvec)$ and $E_n(\Rvec)$, respectively.
+**(b)**  Now define a Hamiltonian $H_atom (\rvec ,\pvec ;\Rvec)$ which is parameterized by the center of mass position $\Rvec$. (This Hamiltonian contains all the terms in the total Hamiltonian except the center of mass kinetic energy). Notice that it has the form of a Stark Hamiltonian for hydrogen. Let the eigenfunctions and eigenvalues of this Hamiltonian be $u_n(\rvec;\Rvec)$ and $E_n(\Rvec)$, respectively.
 
 Although the exact wave function $\Psi(\rvec,\Rvec)$ cannot be factored into a product of functions of $\rvec$ and $\Rvec$ separately, its $\rvec$ dependence can certainly be expanded as a linear combination of the $u_n(\rvec;\Rvec)$, which form a complete set of functions of $\rvec$ for each value of $\Rvec$. Let the expansion coefficients be $\phi_n$; these must be functions of the parameters $\Rvec$. Thus, without loss of generality, we can write
 
@@ -449,6 +455,6 @@ and where
 G(\Rvec) = {\hbar^2\over 2M} \sum_{n\ne0} |\matrixelement{u_n}{\del_\Rvec}{u_0}|^2.
 :::
 
-\problempart{(c)} Explain why, for hydrogen in the physical situation described, $\Avec(\Rvec)=0$. Hint: It would not be true if there were also a magnetic field.
+**(c)**  Explain why, for hydrogen in the physical situation described, $\Avec(\Rvec)=0$. Hint: It would not be true if there were also a magnetic field.
 
-\problempart{(d)} The term $G$ is normally very small and can be neglected. Use the results of second order perturbation theory for the Stark effect (see {ref}`ch-stark`) to write down the effective potential energy seen by the atom as a whole. The function $\phi(\Rvec)$ is the “wave function of the atom.”
+**(d)**  The term $G$ is normally very small and can be neglected. Use the results of second order perturbation theory for the Stark effect (see {ref}`ch-stark`) to write down the effective potential energy seen by the atom as a whole. The function $\phi(\Rvec)$ is the “wave function of the atom.”

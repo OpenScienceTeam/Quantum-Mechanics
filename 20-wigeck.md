@@ -507,7 +507,7 @@ We see that forming the commutator with $J_\pm$ plays the role of a raising or l
 
 The Wigner-Eckart theorem is not difficult to remember and it is quite easy to use. In this we discuss the statement of the theorem and ways of thinking about it and its applications, before turning to its proof.
 
-The Wigner-Eckart theorem concerns matrix elements of an irreducible tensor operator with respect to a standard angular momentum basis of kets, something we will write in a general notation as $\matrixelement {\gamma'j'm'} {T^k_q} {\gamma jm}$. As an example of such a matrix element, you may think of the dipole matrix elements $\matrixelement {n'\ell'm'} {x_q} {n\ell m}$ that we examined in \secrwigeck-3. In that case the operator (the position or dipole operator) is an irreducible tensor operator with $k=1$.
+The Wigner-Eckart theorem concerns matrix elements of an irreducible tensor operator with respect to a standard angular momentum basis of kets, something we will write in a general notation as $\matrixelement {\gamma'j'm'} {T^k_q} {\gamma jm}$. As an example of such a matrix element, you may think of the dipole matrix elements $\matrixelement {n'\ell'm'} {x_q} {n\ell m}$ that we examined in {ref}`sec-wigeck-3`. In that case the operator (the position or dipole operator) is an irreducible tensor operator with $k=1$.
 
 The matrix element $\matrixelement {\gamma'j'm'} {T^k_q} {\gamma jm}$ depends on 8 indices, $(\gamma'j'm';\gamma jm; kq)$, and in addition it depends on the specific operator $T$ in question. The Wigner-Eckart theorem concerns the dependence of this matrix element on the three magnetic quantum numbers $(m'mq)$, and states that that dependence is captured by a Clebsch-Gordan coefficient. More specifically, the Wigner-Eckart theorem states that $\matrixelement {\gamma'j'm'} {T^k_q} {\gamma jm}$ is proportional to the Clebsch-Gordan coefficient $\braket{j'm'}{jkmq}$, with a proportionality factor that is independent of the magnetic quantum numbers. That proportionality factor depends in general on everything else besides the magnetic quantum numbers, that is, $(\gamma'j';\gamma j;k)$ and the operator in question. The standard notation for the proportionality factor is $\reducedme{\gamma'j'}{T^k}{\gamma j}$, something that looks like the original matrix element except the magnetic quantum numbers are omitted and a double bar is used. The quantity $\reducedme{\gamma'j'}{T^k}{\gamma j}$ is called the *reduced matrix element*. With this notation, the Wigner-Eckart theorem states
 
@@ -533,7 +533,7 @@ Probably the most useful application of the Wigner-Eckart theorem is that it all
 
 Furthermore, suppose we actually have to evaluate the matrix \ \fi\fi $\matrixelement{\gamma' j'm'}{T^k_q}{\gamma jm}$ for all $(2k+1)(2j+1)$ possibilities we get by varying $q$ and $m$. We must do this, for example, in computing atomic transition rates. (We need not vary $m'$ independently, since the selection rules enforce $m'=m+q$.) Then the Wigner-Eckart theorem tells us that we actually only have to do one of these matrix elements (presumably, whichever is the easiest), because if we know the left hand side of {eq}`eq-wigeck-44` for one set of magnetic quantum numbers, and if we know the Clebsch-Gordan coefficient on the right-hand side, then we can determine the proportionality factor, that is, the reduced matrix element. Then all the other matrix elements for other values of the magnetic quantum numbers follow by computing (or looking up) Clebsch-Gordan coefficients. This procedure requires that the first matrix element we calculate be nonzero.
 
-In some other cases, we have analytic formulas for the reduced matrix element. That was the case of the application in \secrwigeck-3, where the three-$Y_{\ell m}$ formula allowed us to compute the proportionality factor explicitly.
+In some other cases, we have analytic formulas for the reduced matrix element. That was the case of the application in {ref}`sec-wigeck-3`, where the three-$Y_{\ell m}$ formula allowed us to compute the proportionality factor explicitly.
 
 (sec-wigeck-8)=
 
@@ -677,7 +677,7 @@ U\ket{X;JM} = \sum_{M'} \ket{X;JM'} \, D^J_{M'M}(U),
 
 exactly as in {eq}`eq-wigeck-54`. Equations~{eq}`eq-wigeck-56a` and {eq}`eq-wigeck-57` are equivalent because {eq}`eq-wigeck-56a` can be obtained from {eq}`eq-wigeck-57` by specializing to infinitesimal rotations, while {eq}`eq-wigeck-57` can be obtained from {eq}`eq-wigeck-56a` by building up finite rotations out of infinitesimal ones.
 
-In \secrwigeck-11 below we will prove that these guesses are correct. For now we merely explore the consequences. To begin, since $\ket{X;JM}$ is an eigenstate of $J^2$ and $J_z$ with quantum numbers $J$ and $M$, it can be expanded as a linear combination of the standard basis kets $\ket{\gamma j m}$ with the same values $j=J$ and $m=M$, but in general all possible values of $\gamma$. That is, we have an expansion of the form,
+In {ref}`sec-wigeck-11` below we will prove that these guesses are correct. For now we merely explore the consequences. To begin, since $\ket{X;JM}$ is an eigenstate of $J^2$ and $J_z$ with quantum numbers $J$ and $M$, it can be expanded as a linear combination of the standard basis kets $\ket{\gamma j m}$ with the same values $j=J$ and $m=M$, but in general all possible values of $\gamma$. That is, we have an expansion of the form,
 
 :::{math}
 :label: eq-wigeck-58
@@ -853,11 +853,15 @@ T^k_q = \sum_{q_1q_2} V_{q_1}W_{q_2} \braket{11q_1q_2}{kq}.
 
 This will yield the same decomposition of a second rank tensor discussed in {ref}`sec-transfop-8`, where we found a scalar ($k=0$), a vector ($k=1$), and a symmetric, traceless tensor ($k=2$).
 
-\problems
+(sec-wigeck-problems)=
+
+## Problems
 
 (prob-wigeck-1)=
 
-**Problem \prbdwigeck-1..** 
+**Problem 1.** 
+
+This will help you understand irreducible tensor operators better.  Let $\ES$ be a ket space for some system of interest, and let $\AS$ be the space of linear operators that act on $\ES$.  For example, the ordinary Hamiltonian is contained in $\AS$, as are the components of the angular momentum $\Jvec$, the rotation operators $U(\Rmat)$, etc.  The space $\AS$ is a vector space in its own right, just like $\ES$; operators can be added, multiplied by complex scalars, etc.  Furthermore, we may be interested in certain subspaces of $\AS$, such as the 3-dimensional space of operators spanned by the components $V_x$, $V_y$, $V_z$ of a vector operator $\Vvec$.
 
 Now let $\SS$ be the space of linear operators that act on $\AS$. We call an element of $\SS$ a “super” operator because it acts on ordinary operators; ordinary operators in $\AS$ act on kets in $\ES$. We will denote super-operators with a hat, to distinguish them from ordinary operators. (This terminology has nothing to do with supersymmetry.)
 
@@ -887,7 +891,7 @@ There are still other ways of associating an ordinary operator with a super-oper
 
 Again, $\hat U(\Rmat)$ is obviously a linear super-operator.
 
-\problempart{(a)} Show that $\hat U(\Rmat)$ forms a representation of the rotations, that is, that
+**(a)**  Show that $\hat U(\Rmat)$ forms a representation of the rotations, that is, that
 
 :::{math}
 :label: eq-wigeck-81
@@ -905,7 +909,7 @@ Now let $U(\Rmat)$ be infinitesimal as in {eq}`eq-transfop-16`, and let
 
 (Here the hat on ${\hat{\mathbf{n}}}$ denotes a unit vector, while that on $\hat\Jvec$ denotes a super-operator.) Express the super-operator $\hat\Jvec$ in terms of ordinary operators. Write {eq}`eq-wigeck-43a` in super-operator notation. Work out the commutation relations of the super-operators $\hat \Jvec$.
 
-\problempart{(b)} Now write out nine equations, specifying the action of the three super-operators $\hat J_i$ on the the basis operators $V_j$. Write the answers as linear combinations of the $V_j$'s. Then write out six more equations, specifying the action of the super raising and lowering operators, $\hat J_\pm$, on the three $V_j$.
+**(b)**  Now write out nine equations, specifying the action of the three super-operators $\hat J_i$ on the the basis operators $V_j$. Write the answers as linear combinations of the $V_j$'s. Then write out six more equations, specifying the action of the super raising and lowering operators, $\hat J_\pm$, on the three $V_j$.
 
 Now find the operator $A$ that is annihilated by $\hat J_+$. Do this by writing out the unknown operator as a linear combination of the $V_j$'s, in the form
 
@@ -925,9 +929,11 @@ and thereby “discover” the spherical basis.
 
 (prob-wigeck-2)=
 
-**Problem \prbdwigeck-2..** 
+**Problem 2.** 
 
-\problempart{(a)} In the case of a nucleus, the spin Hilbert space $\ES_spin = \mathspan\{\ket{sm}, m=-s, \ldots, +s\}$ is actually the ground state of the nucleus. It is customary to denote the angular momentum $j$ of the ground state by $s$. This state is $(2s+1)$-fold degenerate. The nuclear spin operator $\Svec$ is really the restriction of the total angular momentum of the nucleus $\Jvec$ to this subspace of the (much larger) nuclear Hilbert space.
+This problem concerns quadrupole moments and spins.  It provides some background for problem~{ref}`prob-wigeck-3`.
+
+**(a)**  In the case of a nucleus, the spin Hilbert space $\ES_spin = \mathspan\{\ket{sm}, m=-s, \ldots, +s\}$ is actually the ground state of the nucleus. It is customary to denote the angular momentum $j$ of the ground state by $s$. This state is $(2s+1)$-fold degenerate. The nuclear spin operator $\Svec$ is really the restriction of the total angular momentum of the nucleus $\Jvec$ to this subspace of the (much larger) nuclear Hilbert space.
 
 Let $A^k_q$ and $B^k_q$ be two irreducible tensor operators on $\ES_spin$. As explained in these notes, when we say “irreducible tensor operator” we are really talking about the collection of $2k+1$ operators obtained by setting $q=-k, \ldots, +k$. Use the Wigner-Eckart theorem to explain why any two such operators of the same order $k$ are proportional to one another. This need not be a long answer.
 
@@ -935,7 +941,7 @@ Thus, all scalars are proportional to a standard scalar ($1$ is convenient), and
 
 For a given $s$, what is the maximum value of $k$? What is the maximum order of an irreducible tensor operator that can exist on space $\ES_spin$ for a proton (nucleus of ordinary hydrogen)? A deuteron (heavy hydrogen)? An alpha particle (nucleus of helium)? These rules limit the electric and magnetic multipole moments that a nucleus is allowed to have, as is discussed more fully in {ref}`ch-hyperfine`.
 
-\problempart{(b)} Let $\Avec$ and $\Bvec$ be two vector operators (on any Hilbert space, not necessarily $\ES_spin$), with spherical components $A_q$, $B_q$, as in {eq}`eq-wigeck-31`. As explained in the notes, $A_q$ and $B_q$ are $k=1$ irreducible tensor operators. As explained in \secrwigeck-12, it is possible to construct irreducible tensor operators $T^k_q$ for $k=0,1,2$ out of the nine operators, $\{A_q B_{q'}, q,q'=-1,0,1\}$. Write out the three operators $T^0_0$, $T^1_1$ and $T^2_2$ in terms of the Cartesian products $A_i B_j$. Just look up the Clebsch-Gordan coefficients. There are nine operators in $T^0_0$, $T^1_q$ and $T^2_q$, but I'm only asking you to compute these three to save you some work.
+**(b)**  Let $\Avec$ and $\Bvec$ be two vector operators (on any Hilbert space, not necessarily $\ES_spin$), with spherical components $A_q$, $B_q$, as in {eq}`eq-wigeck-31`. As explained in the notes, $A_q$ and $B_q$ are $k=1$ irreducible tensor operators. As explained in {ref}`sec-wigeck-12`, it is possible to construct irreducible tensor operators $T^k_q$ for $k=0,1,2$ out of the nine operators, $\{A_q B_{q'}, q,q'=-1,0,1\}$. Write out the three operators $T^0_0$, $T^1_1$ and $T^2_2$ in terms of the Cartesian products $A_i B_j$. Just look up the Clebsch-Gordan coefficients. There are nine operators in $T^0_0$, $T^1_q$ and $T^2_q$, but I'm only asking you to compute these three to save you some work.
 
 Show that $T^0_0$ is proportional to $\Avec\cdot\Bvec$, that $T^1_1$ is proportional to a spherical component of $\Avec \cross \Bvec$, and that $T^2_2$ can be written in terms of the components of the symmetric and traceless part of the Cartesian tensor $A_iB_j$, which is
 
@@ -944,7 +950,7 @@ Show that $T^0_0$ is proportional to $\Avec\cdot\Bvec$, that $T^1_1$ is proporti
 {1\over2}(A_iB_j + A_jB_i) - {1\over 3}(\Avec\cdot\Bvec) \delta_{ij}.
 :::
 
-\problempart{(c}) In classical electrostatics, the quadrupole moment tensor $Q_{ij}$ of a charge distribution $\rho(\xvec)$ is defined by
+**(c)**  In classical electrostatics, the quadrupole moment tensor $Q_{ij}$ of a charge distribution $\rho(\xvec)$ is defined by
 
 :::{math}
 :label: eq-wigeck-86
@@ -1002,7 +1008,9 @@ Express the quantity $a$ in {eq}`eq-wigeck-89` in terms of $Q$, and derive a ver
 
 (prob-wigeck-3)=
 
-**Problem \prbdwigeck-3..** 
+**Problem 3.** 
+
+This is Sakurai, problem 3.29, p.~247; or Sakurai and Napolitano, problem 3.33, p.~261.
 
 A spin-$\frac{3}{2}$ nucleus situated at the origin is subjected to an external inhomogeneous electric field. The basic electric quadrupole interaction is given by {eq}`eq-wigeck-91` (but corrected), where as above $\phi$ satisfies the Laplace equation and the off-diagonal components $\partial^2\phi/\partial x_i\partial x_j$ vanish. Show that the interaction energy can be written
 

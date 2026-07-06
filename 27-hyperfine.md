@@ -558,15 +558,19 @@ The 21~cm line is quite important in radio astronomy. Spiral galaxies typically 
 
 Molecular hydrogen has a completely different hyperfine structure from atomic hydrogen, arising from the spin-spin interaction of the two protons in the molecule. The transitions between the hyperfine levels of molecular hydrogen are in the megahertz range of frequencies.
 
-\problems
+(sec-hyperfine-problems)=
+
+## Problems
 
 (prob-hyperfine-1)=
 
-**Problem \prbdhyperfine-1..** 
+**Problem 1.** 
 
-\problempart{(a)} {eq}`eq-hyperfine-50` was derived in the case $\ell\ne0$. Show that it also applies in the case $\ell=0$. Hint: Use the fact that the components of the tensor $T_{ij}$, defined in {eq}`eq-hyperfine-2`, are $r^2$ times linear combinations of the $Y_{2m}(\theta,\phi)$, for $m=-2, \ldots, +2$. This is related to the fact that $T_{ij}$ is the Cartesian version of an order 2 irreducible tensor.
+A problem on the hyperfine interaction in hydrogen.
 
-\problempart{(b)} Our analysis of the hyperfine interaction in hydrogen has included the energy of interaction of the electron with the magnetic dipole field produced by the proton, but it seems that we have not included the energy of interaction of the proton spin with the magnetic field produced by the electron. As seen by the proton, the electron produces a magnetic field for two reasons: first, it is a charge in motion, therefore a current, which makes a magnetic field. This is the magnetic field due to the orbital motion of the electron. Next, the electron has a magnetic moment of its own, which makes a dipole magnetic field. This is the magnetic field produced by the spin of the electron.
+**(a)**  {eq}`eq-hyperfine-50` was derived in the case $\ell\ne0$. Show that it also applies in the case $\ell=0$. Hint: Use the fact that the components of the tensor $T_{ij}$, defined in {eq}`eq-hyperfine-2`, are $r^2$ times linear combinations of the $Y_{2m}(\theta,\phi)$, for $m=-2, \ldots, +2$. This is related to the fact that $T_{ij}$ is the Cartesian version of an order 2 irreducible tensor.
+
+**(b)**  Our analysis of the hyperfine interaction in hydrogen has included the energy of interaction of the electron with the magnetic dipole field produced by the proton, but it seems that we have not included the energy of interaction of the proton spin with the magnetic field produced by the electron. As seen by the proton, the electron produces a magnetic field for two reasons: first, it is a charge in motion, therefore a current, which makes a magnetic field. This is the magnetic field due to the orbital motion of the electron. Next, the electron has a magnetic moment of its own, which makes a dipole magnetic field. This is the magnetic field produced by the spin of the electron.
 
 Work out an expression for the energy of interaction of the proton spin with the magnetic field produced by the orbital motion of the electron. Follow the analysis of the spin-orbit interaction in {ref}`sec-finestruc-2`, but run it backwards. That is, putting primes on the fields in the electron rest frame and no primes on fields in the proton rest frame, use Coulomb's law to write down the field $\Evec'$ of the electron in its own rest frame, then Lorentz transform to the lab frame to get $\Bvec$ (call this $\Bvec_orb$, the magnetic field due to the orbital motion of the electron). Then the energy of interaction of the proton with this magnetic field is $-\muvec_p \cdot \Bvec_orb$, where $\muvec_p$ is the proton magnetic moment. Notice that unlike the analysis of {ref}`sec-finestruc-2`, there is no factor of $\frac{1}{2}$ from Thomas precession, because the proton frame is not accelerated.
 
@@ -574,7 +578,7 @@ Now use {eq}`eq-hyperfine-21` in the limit $a \to 0$ to obtain the magnetic fiel
 
 If you add these terms to the Hamiltonian ({eq}`eq-hyperfine-29` plus {eq}`eq-hyperfine-30`), does it change the energy shifts {eq}`eq-hyperfine-50`? These energy shifts are confirmed experimentally (for example, by the 21~cm line). What is wrong?
 
-\problempart{(c)} Compute the hyperfine splitting of the ground state of positronium in wavelength units. Notice that in positronium, the fine structure and hyperfine structure are of the same order of magnitude.
+**(c)**  Compute the hyperfine splitting of the ground state of positronium in wavelength units. Notice that in positronium, the fine structure and hyperfine structure are of the same order of magnitude.
 
 Now some remarks about part (c). The interesting thing about this calculation is that the answer based on what you now know is actually wrong, because it omits a virtual process (a Feynman diagram) in which the positron and electron annihilate into a photon, which then materialize back into a positron and electron.
 
@@ -582,11 +586,15 @@ The analysis of this process requires quantum field theory. The Hamiltonians we 
 
 (prob-hyperfine-2)=
 
-**Problem \prbdhyperfine-2.} In our derivation of the energy shifts {eq}`eq-hyperfine-50`, we assumed that hyperfine effects were much smaller than the Lamb shift.  This is what allowed us to assume that the $\ell$ values on the two sides of the matrix element {eq}`eq-hyperfine-39` were the same.  Compute the hyperfine energy shifts for the $2s_{1/2}$ and $2p_{1/2}$ levels in hydrogen, and compare to the Lamb shift.  Make a sketch of the energy levels like that in Fig.~\figr\finestruc.3, including the hyperfine structure (but you can omit the $2p_{3/2.** 
+**Problem 2.** 
+
+In our derivation of the energy shifts (\eqr\cn.50), we assumed that hyperfine effects were much smaller than the Lamb shift.  This is what allowed us to assume that the $\ell$ values on the two sides of the matrix element (\eqr\cn.39) were the same.  Compute the hyperfine energy shifts for the $2s_{1/2}$ and $2p_{1/2}$ levels in hydrogen, and compare to the Lamb shift.  Make a sketch of the energy levels like that in Fig.~\figr\finestruc.3, including the hyperfine structure (but you can omit the $2p_{3/2}$ levels).  It's convenient to measure energies in GHz.
 
 (prob-hyperfine-3)=
 
-**Problem \prbdhyperfine-3..** 
+**Problem 3.** 
+
+Hyperfine transitions in alkali atoms, usually cesium or rubidium, are used in atomic clocks.  Atomic clocks can also be based on  hydrogen.  Hydrogen and alkali atoms have one unpaired electron, so $s=1/2$.  When this is coupled to the nuclear spin $i$, where $I^2=i(i+1)\hbar^2$, the resulting total angular momentum is $f=i\pm1/2$.  Thus, there are two hyperfine levels, characterized by their $f$ values.  For example, in cesium, where $i=7/2$, we have either $f=3$ or $f=4$.
 
 In the usual atomic clock an atomic beam is passed through a region of space with an oscillating magnetic field produced by an RF oscillator, much as in the magnetic resonance experiments discussed in {ref}`ch-spinmagf`. When the frequency of the oscillator is close enough to the hyperfine transition frequency, it causes the hyperfine state to change, thereby modifying the trajectory of the atom in a subsequent Stern-Gerlach apparatus. A feedback mechanism locks the frequency of the oscillator onto the hyperfine transition frequency, so that only atoms following a certain trajectory, corresponding to a certain }$f$ value, are passed. See R.~E.~Beehler, R.~C.~Mockler and J.~M.~Richardson, *Metrologia* **1**, 114(1965).
 
@@ -596,7 +604,7 @@ Unfortunately, to flip the hyperfine state we need a background field $\Bvec_0$,
 
 In this problem for simplicity we will work with hydrogen, but the theory is not much more complicated for atoms such as cesium.
 
-\problempart{(a)} Let $W$ be the energy difference between the two hyperfine states in hydrogen (the $f=0$ and $f=1$ states). This can be calculated from {eq}`eq-hyperfine-50`, or from the experimental value of $\nu_0$. (They should agree, and since you shouldn't believe everything you read you might want to check that they do.) To estimate the magnetic field strengths we will be talking about, let us note that the energy of interaction of an electon spin with a magnetic field $B$ is of the order of $\mu_B B$, and let us define a field strength $B_1$ by
+**(a)**  Let $W$ be the energy difference between the two hyperfine states in hydrogen (the $f=0$ and $f=1$ states). This can be calculated from {eq}`eq-hyperfine-50`, or from the experimental value of $\nu_0$. (They should agree, and since you shouldn't believe everything you read you might want to check that they do.) To estimate the magnetic field strengths we will be talking about, let us note that the energy of interaction of an electon spin with a magnetic field $B$ is of the order of $\mu_B B$, and let us define a field strength $B_1$ by
 
 :::{math}
 :label: eq-hyperfine-53
@@ -605,7 +613,7 @@ B_1={W\over \mu_B},
 
 where $\mu_B$ is the Bohr magneton. Evaluate $B_1$ in Gauss or Tesla (see {ref}`sec-emunits-7`). This is roughly the field strength at which the effect of an external field is comparable to the hyperfine interaction. When $B_0\approx B_1$ the hyperfine structure seen at $B_0=0$ is strongly modified by the external field. We will want to operate the atomic clock at field strengths $B_0\ll B_1$, so that the corrections due to $B_0$ are small.
 
-\problempart{(b)} Write the Hamiltonian for the hydrogen atom as $H=H_0+H_1$ where
+**(b)**  Write the Hamiltonian for the hydrogen atom as $H=H_0+H_1$ where
 
 :::{math}
 :label: eq-hyperfine-54
@@ -629,7 +637,7 @@ Write out an expression for $H_Z$, including the interaction of the proton spin 
 
 I suggest you use the gauge $\Avec_0=(1/2)\Bvec_0\cross\rvec$, so that $\Bvec_0=\del\cross\Avec_0$ and $\del\cdot\Avec_0=0$.
 
-\problempart{(c)} Find the energy shifts of the ground state ($1s$) of the hydrogen atom in the model represented by $H_0$ due to $H_1$.
+**(c)**  Find the energy shifts of the ground state ($1s$) of the hydrogen atom in the model represented by $H_0$ due to $H_1$.
 
 I suggest you write $\Delta E_0$ and $\Delta E_1$ for the energies of the hyperfine states $f=0$ and $f=1$, respectively, relative to the energy of the $1s$ level in the model represented by $H_0$. These are the energies computed from {eq}`eq-hyperfine-50` with $f=0$ and $f=1$. Note that
 
@@ -640,8 +648,8 @@ W=\Delta E_1-\Delta E_0.
 
 Sketch the behavior of the $1s$ energy levels as a function of $B_0$, as $B_0$ is varied from zero up to $B_1$ and beyond.
 
-\problempart{(d)} You will see that when $B_0\ll B_1$ the effect of $H_Z$ is to split the energy levels indicated by {eq}`eq-hyperfine-50` in proportion to their $m_f$ values, with an effective $g$-factor, as in the weak field Zeeman effect studied in {ref}`ch-zeeman`. Therefore when we operate the atomic clock, we have to decide which pair of magnetic substates we will use for the transition. Actual atomic clocks use the two $m_f=0$ substates (for example, in cesium it is the transition between $\ket{fm_f}=\ket{30}$ and $\ket{40}$). Explain why this is the best choice.
+**(d)**  You will see that when $B_0\ll B_1$ the effect of $H_Z$ is to split the energy levels indicated by {eq}`eq-hyperfine-50` in proportion to their $m_f$ values, with an effective $g$-factor, as in the weak field Zeeman effect studied in {ref}`ch-zeeman`. Therefore when we operate the atomic clock, we have to decide which pair of magnetic substates we will use for the transition. Actual atomic clocks use the two $m_f=0$ substates (for example, in cesium it is the transition between $\ket{fm_f}=\ket{30}$ and $\ket{40}$). Explain why this is the best choice.
 
-\problempart{(e)} Let $\nu_0=1,420,405,751.7667\pm0.001\,Hz$ be the hyperfine transition frequency in hydrogen in the absence of a background field $B_0$, as quoted above, let $\nu$ be the frequency of the transition when there is a background field $B_0$, and let $\nu=\nu_0+\Delta\nu$. When $B_0\ll B_1$, express $\Delta\nu/\nu_0$ as a function of the dimensionless ratio $B_0/B_1$.
+**(e)**  Let $\nu_0=1,420,405,751.7667\pm0.001\,Hz$ be the hyperfine transition frequency in hydrogen in the absence of a background field $B_0$, as quoted above, let $\nu$ be the frequency of the transition when there is a background field $B_0$, and let $\nu=\nu_0+\Delta\nu$. When $B_0\ll B_1$, express $\Delta\nu/\nu_0$ as a function of the dimensionless ratio $B_0/B_1$.
 
 Suppose $B_0=0.05G$, which is known to within an accuracy of $\delta B_0/B_0=1\%$. Find the corresponding accuracy $\delta(\Delta\nu/\nu_0)$. This is the limitation on the precision with which the clock can measure time, due to the accuracy in the measurement of $B_0$.

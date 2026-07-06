@@ -174,7 +174,7 @@ H_2 = \sum_{i=1}^N \xi(r_i) \Lvec_i \cdot \Svec_i,
 
 which is the sum of the spin-orbit interactions for each electron. The quantity $\xi(r)$ is a function of the radius of the electron (see {eq}`eq-finestruc-13` whose details will not concern us. The spin-orbit term is only one of several fine structure terms, most of which we are omitting for simplicity, and even the spin-orbit term is treated somewhat schematically. Our goal will be to give a qualitative understanding of the effects of the fine structure terms without going into detail.
 
-But to return to the question posed, what is the quantitative relation between $H_1$ and $H_2$? It turns out that the answer depends on $Z$. In low $Z$ atoms near the beginning of the periodic table, we have $H_2 \ll H_1 \ll H_0$. For such atoms, it makes sense to first treat $H_1$ as a perturbation on $H_0$, find the eigenstates of $H_0+H_1$, then to treat $H_2$ as a second perturbation on top of $H_0+H_1$. This scheme involves classifying the eigenstates of $H_0+H_1$ by their good quantum numbers, including $L$ and $S$, as discussed in \secratomstruc-7 below. This scheme is called $LS$- or *Russell-Saunders coupling*. For high $Z$ atoms, however, near the end of the periodic table, it turns out that $H_1 <\approx H_2 \ll H_0$. In this case it makes sense to first treat $H_2$ as a perturbation on top of $H_0$, then to treat $H_1$ as a perturbation on top of $H_0+H_2$. This scheme is called *$jj$-coupling*, on account of the quantum numbers that arise in it. In these notes we consider only $LS$-coupling.
+But to return to the question posed, what is the quantitative relation between $H_1$ and $H_2$? It turns out that the answer depends on $Z$. In low $Z$ atoms near the beginning of the periodic table, we have $H_2 \ll H_1 \ll H_0$. For such atoms, it makes sense to first treat $H_1$ as a perturbation on $H_0$, find the eigenstates of $H_0+H_1$, then to treat $H_2$ as a second perturbation on top of $H_0+H_1$. This scheme involves classifying the eigenstates of $H_0+H_1$ by their good quantum numbers, including $L$ and $S$, as discussed in {ref}`sec-atomstruc-7` below. This scheme is called $LS$- or *Russell-Saunders coupling*. For high $Z$ atoms, however, near the end of the periodic table, it turns out that $H_1 <\approx H_2 \ll H_0$. In this case it makes sense to first treat $H_2$ as a perturbation on top of $H_0$, then to treat $H_1$ as a perturbation on top of $H_0+H_2$. This scheme is called *$jj$-coupling*, on account of the quantum numbers that arise in it. In these notes we consider only $LS$-coupling.
 
 (sec-atomstruc-5)=
 
@@ -360,7 +360,7 @@ A similar argument does not work, however, for the operators $L^2$ and $S^2$. Th
 
 Let us denote the ground eigenspace of $H_0$ by $\ES_0$. This space is spanned by the Slater determinants $\mset$, where the $m$-sets run over all allowed by the incomplete subshells (for example, 15 in the case of carbon). Thus in first order perturbation theory we need in principle to diagonalize the matrix $\matrixelement{\\text{m}-set}{H_1}{\\text{m-set}^{\prime}}$ to find the energy shifts, which give us the energy eigenvalues of $H=H_0+H_1$ that grow out of $E_0$ as $H_1$ is switched on.
 
-This matrix may be large (for example, it is $15\times15$ in the case of carbon), so it will help to choose a good basis to simplify the diagonalization. The best basis is an eigenbasis of a set of commuting, good quantum numbers, such as $(L^2,S^2,L_z,S_z)$, as discussed in \secratomstruc-7. We omit $\pi$ from the list since it is constant on $\ES_0$ (all basis states $\mset$ have the same parity). The set of Slater determinants $\mset$ is not such a basis, since it is not an eigenbasis of $L^2$ or $S^2$, in general.
+This matrix may be large (for example, it is $15\times15$ in the case of carbon), so it will help to choose a good basis to simplify the diagonalization. The best basis is an eigenbasis of a set of commuting, good quantum numbers, such as $(L^2,S^2,L_z,S_z)$, as discussed in {ref}`sec-atomstruc-7`. We omit $\pi$ from the list since it is constant on $\ES_0$ (all basis states $\mset$ have the same parity). The set of Slater determinants $\mset$ is not such a basis, since it is not an eigenbasis of $L^2$ or $S^2$, in general.
 
 The operators $(L^2,S^2,L_z,S_z)$ commute with $H_0$ and so can be restricted to $\ES_0$ (see {ref}`sec-hilbert-23`). Also, since they commute with each other, they possess simultaneous eigenspaces inside $\ES_0$. These simultaneous eigenspaces are characterized by the quantum numbers $(L,S,M_L,M_S)$ of the operators $(L^2,S^2,L_z,S_z)$. If any of these eigenspaces are multidimensional, that is, if there is any degeneracy inside $\ES_0$ remaining after the quantum numbers $(L,S,M_L,M_S)$ are specified, then we can introduce an index $\gamma$ to label an arbitrarily chosen orthonormal basis inside the eigenspaces. In this way we conclude that there is an orthonormal basis inside $\ES_0$ that we can label by $\ket{\gamma LSM_LM_S}$. Furthermore, we can show that if $\gamma$, $L$ and $S$ are held fixed, then the basis vectors with different values of $M_L$ and $M_S$ are related by the raising and lowering operators, $L_\pm$ and $S_\pm$. This is a way of saying that $\ES_0$ breaks up into irreducible subspaces under both purely orbital and purely spin rotations, which in turn is a consequence of the fact that $\ES_0$ is invariant under both orbital and spin rotations.
 
@@ -510,21 +510,29 @@ The theory presented does not allow us to say which term in the ground state mul
 
 In the case of multiplets in which the incomplete subshell is exactly half filled, such as nitrogen, first order perturbation theory for the terms gives a vanishing result, and one must go on to second order theory. We omit the details.
 
-\problems
+(sec-atomstruc-problems)=
+
+## Problems
 
 (prob-atomstruc-1)=
 
-**Problem \prbdatomstruc-1.} Work out the multiplets ${}^{2S+1}L$ which result from 3 equivalent $d$ electrons.  (“Equivalent” means that they all belong to the same subshell.)  Check to make sure your answer adds up to the correct number of levels, based on the degeneracy expected in the central field approximation.  You will see the necessity of the index $\gamma$ in $\ket{\gamma LSM_LM_S}$, since some multiplets appear more than once.  In the case of vanadium, use Hund's rules to determine the ground state multiplet.  When spin-orbit coupling is turned on, the multiplets split, and the resulting levels are denoted ${}^{2S+1.** 
+**Problem 1.** 
+
+Work out the multiplets ${}^{2S+1}L$ which result from 3 equivalent $d$ electrons.  (``Equivalent'' means that they all belong to the same subshell.)  Check to make sure your answer adds up to the correct number of levels, based on the degeneracy expected in the central field approximation.  You will see the necessity of the index $\gamma$ in $\ket{\gamma LSM_LM_S}$, since some multiplets appear more than once.  In the case of vanadium, use Hund's rules to determine the ground state multiplet.  When spin-orbit coupling is turned on, the multiplets split, and the resulting levels are denoted ${}^{2S+1}L_J$.  Which of these represents the ground state of vanadium?
 
 (prob-atomstruc-2)=
 
-**Problem \prbdatomstruc-2.} Write out the ${}^2P$ wave functions explicitly for an $(np)^3$ configuration (e.g., nitrogen), that is, as linear combinations of Slater determinants that you may identify by their $m$-sets (the set of magnetic quantum numbers for electrons in incomplete subshells).  To help the grader, use the same ordering of magnetic quantum numbers as shown in {ref}`tbl-atomstruc-4`, for example, denote Slater determinant number~5 in that table by $\ket{100;\frac{1}{2},\frac{1}{2},-\frac{1}{2}.** 
+**Problem 2.** 
+
+Write out the ${}^2P$ wave functions explicitly for an $(np)^3$ configuration (e.g., nitrogen), that is, as linear combinations of Slater determinants that you may identify by their $m$-sets (the set of magnetic quantum numbers for electrons in incomplete subshells).  To help the grader, use the same ordering of magnetic quantum numbers as shown in Table~\tblr\cn.4, for example, denote Slater determinant number~5 in that table by $\ket{100;\fract1/2,\fract1/2,-\fract1/2}$.
 
 {ref}`tbl-atomstruc-4` effectively gives a standard ordering for the orbitals in the Slater determinant, one in which $m_{\ell1}\ge m_{\ell2} \ge m_{\ell3}$ and in which the $m_s$ values corresponding to a run of equal $m_\ell$ values are in descending order. Since there can be a maximum of two $m_\ell$ values in a row that are equal, that means $(\frac{1}{2},-\frac{1}{2})$ for the corresponding $m_s$ values in that case. This rule is followed in the table.
 
 (prob-atomstruc-3)=
 
-**Problem \prbdatomstruc-3..** 
+**Problem 3.** 
+
+A problem on $jj$-coupling.  The Hamiltonian (in atomic units) for a neutral atom ($N=Z$) can be written $H=H_0+H_2+H_1$, where the three terms are given by Eqs.~(\eqr\cn.8a), (\eqr\cn.8b) and (\eqr\cn.9).
 
 The energy eigenvalues $E_0$ of $H_0$ are determined by the electron configuration. We will be interested in lead (Pb, $Z=82$), with two $6p$ electrons outside closed subshells, and bismuth (Bi, $Z=83$), with three $6p$ electrons outside closed subshells. For such heavy atoms, $H_2$ is larger than $H_1$, so we first solve the Hamiltonian $H_0$, then successively add the terms $H_2$ and $H_1$, and see what happens to the energy levels and eigenstates.
 
@@ -569,8 +577,10 @@ Term diagram in $jj$-coupling for lead (Pb). Drawing is not to scale.
 
 Finally, when we turn on $H_1$, the individual $\Jvec_i$ operators no longer commute with the Hamiltonian, but $\Jvec = \sum_i \Jvec_i$ does. Therefore we must now organize the energy eigenstates according to the $(J,M_J)$ quantum numbers. In Pb, for example, the $(\frac{3}{2},\frac{3}{2})$ state splits into $J=0$ and $J=2$ states. The state $J=1$, which occurs in $\frac{3}{2}\otimes\frac{3}{2}$, is not allowed by the Pauli principle. Likewise, the $(\frac{3}{2},\frac{1}{2})$ level splits into $J=1$ and $J=2$ levels, because $\frac{3}{2}\otimes\frac{1}{2}=1\oplus2$. Here the Pauli principle causes no extra restriction, because $j_1\ne j_2$. Finally, the $(\frac{1}{2},\frac{1}{2})$ gives only a $J=0$ level. All these levels and their degeneracies (in parentheses) are indicated in the figure.
 
-\problempart{(a)} For the case of bismuth ($6p^3$ configuration), indicate the allowed $(j_1,j_2,j_3)$ terms and their degeneracies when $H_2$ is added to $H_0$. Make sure the degeneracies add up to the degeneracy of the $6p^3$ configuration. Indicate also the allowed $J$ values contained in each $(j_1,j_2,j_3)$ term.
+**(a)**  For the case of bismuth ($6p^3$ configuration), indicate the allowed $(j_1,j_2,j_3)$ terms and their degeneracies when $H_2$ is added to $H_0$. Make sure the degeneracies add up to the degeneracy of the $6p^3$ configuration. Indicate also the allowed $J$ values contained in each $(j_1,j_2,j_3)$ term.
 
 (prob-atomstruc-4)=
 
-**Problem (b)} The $(\frac{3}{2},\frac{3}{2},\frac{1}{2})$ term contains a $J=3/2$ component.  Find the normalized states $\ket{JM_J}$ in this component for $M_J=\frac{3}{2}$ and $M_J=\frac{1}{2}$.  Write your answers as linear combinations of Slater determinants composed of orbitals $\ket{\lambda}$; the Slater determinant will be identified by the $(j,m_j)$ quantum numbers of the last three orbitals, since the orbitals for the 80 core electrons are fixed.  To help the grader(s), identify these Slater determinants as $\ket{j_1j_2j_3;m_{j1}m_{j2}m_{j3}.**
+**Problem (b).**
+
+The $(\fract3/2,\fract3/2,\fract1/2)$ term contains a $J=3/2$ component.  Find the normalized states $\ket{JM_J}$ in this component for $M_J=\fract3/2$ and $M_J=\fract1/2$.  Write your answers as linear combinations of Slater determinants composed of orbitals $\ket{\lambda}$; the Slater determinant will be identified by the $(j,m_j)$ quantum numbers of the last three orbitals, since the orbitals for the 80 core electrons are fixed.  To help the grader(s), identify these Slater determinants as $\ket{j_1j_2j_3;m_{j1}m_{j2}m_{j3}}$.

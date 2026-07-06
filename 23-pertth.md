@@ -108,7 +108,7 @@ R=\sum_{\substack{k\ne n \\ \alpha}} {\ketbra{k\alpha}{k\alpha} \over E-\epsilon
 
 The operator $R$ is closely related to the Green's operators that we shall consider later in the course, when we take up scattering theory.
 
-It is possible that $E-\epsilon_n$ is not the only small or vanishing denominator in {eq}`eq-pertth-7`. For example, if there are other unperturbed energy levels $\epsilon_k$ lying close to $\epsilon_n$, then the perturbation could push the exact energy $E$ near to or past some of these other levels, and then other small denominators would result in {eq}`eq-pertth-7`. This will certainly happen if the perturbation is large enough. For the time being we will assume this does not happen, so that {eq}`eq-pertth-8` is free of small denominators. This is the situation illustrated in {ref}`fig-pertth-1`. When this is not the case we shall refer to “nearly degenerate perturbation theory,” which is discussed in \secrpertth-7.
+It is possible that $E-\epsilon_n$ is not the only small or vanishing denominator in {eq}`eq-pertth-7`. For example, if there are other unperturbed energy levels $\epsilon_k$ lying close to $\epsilon_n$, then the perturbation could push the exact energy $E$ near to or past some of these other levels, and then other small denominators would result in {eq}`eq-pertth-7`. This will certainly happen if the perturbation is large enough. For the time being we will assume this does not happen, so that {eq}`eq-pertth-8` is free of small denominators. This is the situation illustrated in {ref}`fig-pertth-1`. When this is not the case we shall refer to “nearly degenerate perturbation theory,” which is discussed in {ref}`sec-pertth-7`.
 
 The operator $R$ satisfies
 
@@ -367,13 +367,17 @@ In effect, we have merged the nearly degenerate levels $\epsilon_n$, $\epsilon_m
 
 An equivalent approach to nearly degenerate perturbation theory is to exclude both sets of terms $k=n$ and $k=m$ from the definition of $R$, and to proceed from there. Then $R$ becomes the inverse of $E-H_0$ on the space orthogonal to $\HS_n \oplus \HS_m$.
 
-\problems
+(sec-pertth-problems)=
+
+## Problems
 
 (prob-pertth-1)=
 
-**Problem \prbdpertth-1..** 
+**Problem 1.** 
 
-\problempart{(a)} Compute the shifts in the energy levels of a single-electron (hydrogen-like) atom of nuclear charge $Z$ due to the finite size of the nucleus. Treat the nucleus as a uniform sphere of charge of radius $r_0A^{1/3}$, where $r_0 = 1.3\times 10^{-13}$ cm and $A$ is the number of nucleons. Express your answer as some number of eV times some function of $Z$, $A$, and the quantum numbers of the atomic state. Only treat those atomic states for which the effect is the largest. This is called the *volume effect*. You may use
+This problem concerns the volume effect, which was discussed briefly in Sec.~\secr\hydrogen.8.
+
+**(a)**  Compute the shifts in the energy levels of a single-electron (hydrogen-like) atom of nuclear charge $Z$ due to the finite size of the nucleus. Treat the nucleus as a uniform sphere of charge of radius $r_0A^{1/3}$, where $r_0 = 1.3\times 10^{-13}$ cm and $A$ is the number of nucleons. Express your answer as some number of eV times some function of $Z$, $A$, and the quantum numbers of the atomic state. Only treat those atomic states for which the effect is the largest. This is called the *volume effect*. You may use
 
 :::{math}
 :label: eq-pertth-33
@@ -384,11 +388,13 @@ valid in hydrogen-like atoms, where $a_0=\hbar^2/me^2$ is the Bohr radius.
 
 The volume effect induces a splitting between the $2s$ and $2p$ levels of hydrogen. Compare this to the Lamb shift (another splitting of the same two levels). The Lamb shift raises the $2s$ level relative to the $2p$ level by approximately 1.05 GHz in frequency units.
 
-\problempart{(b)} A muonic atom is one in which the electron has been replaced by a negative muon $\mu^-$, a particle with a charge $q=-e$ and a mass of 105~$MeV/c^2$. Compute $\Delta E/E$ for the volume effect via first order perturbation theory for the $1s$ level of muonic uranium (${}^{238}U$). Is this calculation reliable?
+**(b)**  A muonic atom is one in which the electron has been replaced by a negative muon $\mu^-$, a particle with a charge $q=-e$ and a mass of 105~$MeV/c^2$. Compute $\Delta E/E$ for the volume effect via first order perturbation theory for the $1s$ level of muonic uranium (${}^{238}U$). Is this calculation reliable?
 
 (prob-pertth-2)=
 
-**Problem \prbdpertth-2..** 
+**Problem 2.** 
+
+In this problem, set $\hbar=1$ for simplicity.  The Hamiltonian for a rigid body is
 
 :::{math}
 :label: eq-pertth-34
@@ -477,7 +483,7 @@ You may find the following relations useful:
 
 but if you use {eq}`eq-pertth-43b` you must prove it.
 
-\problempart{(a)} Consider the state $m=0$. Find the first order of perturbation theory at which the energy shift does not vanish, and compute the energy shift at that order. In addition to the abbreviations {eq}`eq-pertth-40`, use
+**(a)**  Consider the state $m=0$. Find the first order of perturbation theory at which the energy shift does not vanish, and compute the energy shift at that order. In addition to the abbreviations {eq}`eq-pertth-40`, use
 
 :::{math}
 :label: eq-pertth-44
@@ -486,9 +492,9 @@ C={1\over 4I_\perp},
 
 and express your answer in terms of the constants $A$, $B$ and $C$.
 
-\problempart{(b)} Find the first order of perturbation theory at which the energy shifts for the $m=\pm1$ levels do not vanish, and compute them at that order.
+**(b)**  Find the first order of perturbation theory at which the energy shifts for the $m=\pm1$ levels do not vanish, and compute them at that order.
 
-\problempart{(c)} Find the first order of perturbation theory at which the energy shifts for the $m=\pm2$ levels do not vanish, and compute them at that order. Express your answer in terms of
+**(c)**  Find the first order of perturbation theory at which the energy shifts for the $m=\pm2$ levels do not vanish, and compute them at that order. Express your answer in terms of
 
 :::{math}
 :label: eq-pertth-45
@@ -497,4 +503,4 @@ X={\ell(\ell-1)(\ell+1)(\ell+2) \over 4B}, \qquad Y = {(\ell-3)(\ell-2)(\ell+3)(
 
 Notice the appearance of a sum over “intermediate states.”
 
-\problempart{(d)} What order of perturbation theory do you have to go to in order to find the first nonvanishing correction to the energy in the case of $m=\pm3$? $m=\pm4$?
+**(d)**  What order of perturbation theory do you have to go to in order to find the first nonvanishing correction to the energy in the case of $m=\pm3$? $m=\pm4$?

@@ -526,11 +526,15 @@ We see that the parity of the atomic state must change under an electric dipole 
 
 In the case of the matrix element {eq}`eq-parity-51`, the Wigner-Eckart theorem gives the selection rule $\Delta\ell = 0,\pm1$, that is, these are the values of $\Delta \ell$ allowed by rotational invariance alone. But parity excludes the value $\Delta\ell =0$, so the final selection rule is $\Delta\ell=\pm1$.
 
-\problems
+(sec-parity-problems)=
+
+## Problems
 
 (prob-parity-1)=
 
-**Problem \prbdparity-1..** 
+**Problem 1.** 
+
+This is essentially Sakurai's problem 4.4, p.~282 (revised edition), or problem~4.4, p.~300 (second edition), but I've rewritten it to make it more clear.
 
 We did not discuss the spin angular functions in class, but these are spinor functions on the unit sphere that arise when we combine orbital and spin angular momentum for a central force problem for a spinning particle. Here we will take the case $s=\frac{1}{2}$ (for example, in hydrogen). Let $\ket{n\ell m_\ell}$ be ket language for the wave function $R_{n\ell}(r) Y_{\ell m_\ell}(\theta,\phi)$, the solution of the Schr\"odinger equation for a spinless particle in a central force field, and let $\ket{s m_s}$ be the usual spin states (here $s=\frac{1}{2}$ and $m_s = \pm \frac{1}{2}$). We distinguish between $m_\ell$ and $m_s$, the two types of magnetic quantum numbers. We multiply the wave functions times the spin functions and form linear combinations with the Clebsch-Gordan coefficients to get eigenstates of $J^2$ and $J_z$, where $\Jvec=\Lvec+\Svec$. These are
 
@@ -546,17 +550,19 @@ The spatial wave functions $\psi_{n\ell m_\ell}(\xvec) =R_{n\ell}(r) Y_{\ell m_\
 \ket{\ell j m_j} = \sum_{m_\ell m_s} \ket{\ell m_\ell} \ket{s m_s} \braket{\ell s m_\ell m_s}{j m_j}.
 :::
 
-\problempart{(a)} For the case $\ell=0$, $j=\frac{1}{2}$, $m_j=\frac{1}{2}$, write out the two-component spinor ${\cal Y}^{j m_j}_\ell$ as functions of $(\theta,\phi)$.
+**(a)**  For the case $\ell=0$, $j=\frac{1}{2}$, $m_j=\frac{1}{2}$, write out the two-component spinor ${\cal Y}^{j m_j}_\ell$ as functions of $(\theta,\phi)$.
 
-\problempart{(b)} Multiply this by $\sigmavec\cdot\xvec$, and express the result as a linear combination of other spin angular functions ${\cal Y}^{j m_j}_\ell$.
+**(b)**  Multiply this by $\sigmavec\cdot\xvec$, and express the result as a linear combination of other spin angular functions ${\cal Y}^{j m_j}_\ell$.
 
-\problempart{(c)} Certain values of $j$, $m_j$ and $\ell$ occur in the sum, and certain others do not. Use symmetry principles to explain why the values that occur are allowed and the others are not.
+**(c)**  Certain values of $j$, $m_j$ and $\ell$ occur in the sum, and certain others do not. Use symmetry principles to explain why the values that occur are allowed and the others are not.
 
 **Hint:** It may help to think of three kinds of rotations: spin rotations, orbital rotations, and total (spin plus orbital) rotations.
 
 (prob-parity-2)=
 
-**Problem \prbdparity-2..** 
+**Problem 2.** 
+
+This is Sakurai, problem 4.5, p.~282 (revised edition), or problem~4.5, p.~300 (second edition).
 
 Because of weak (neutral-current) interactions, there is a parity-violating potential between the atomic electron and the nucleus as follows:
 
@@ -576,7 +582,9 @@ On the basis of symmetry considerations alone, what can you say about the values
 
 (prob-parity-3)=
 
-**Problem \prbdparity-3..** 
+**Problem 3.** 
+
+This problem concerns a system whose symmetry is an improper rotation.
 
 A collection of $N\ge3$ nuclei is distributed in the $x$-$y$ plane. They do not lie on a line. Nucleus $i$ has position $\Rvec_i=(R_{ix},R_{iy},0)$. The positions of the nuclei are fixed. An electron moves in the field of these nuclei.
 
@@ -629,7 +637,7 @@ or
 
 for short. This also follows by inspection of {ref}`fig-parity-1`.
 
-\problempart{(a)} Every improper rotation can be written as $\Pmat \Rmat({\hat{\mathbf{n}}},\theta)$, where $\Pmat$ is given by {eq}`eq-parity-1` and $\Rmat({\hat{\mathbf{n}}},\theta)$ is a proper rotation in axis-angle form. Write
+**(a)**  Every improper rotation can be written as $\Pmat \Rmat({\hat{\mathbf{n}}},\theta)$, where $\Pmat$ is given by {eq}`eq-parity-1` and $\Rmat({\hat{\mathbf{n}}},\theta)$ is a proper rotation in axis-angle form. Write
 
 :::{math}
 :label: eq-parity-64
@@ -638,9 +646,9 @@ for short. This also follows by inspection of {ref}`fig-parity-1`.
 
 and identify ${\hat{\mathbf{n}}}$ and $\theta$.
 
-\problempart{(b)} Is $\Phi(\xvec)$ a scalar operator? Is $\Evec(\xvec)$ a vector operator?
+**(b)**  Is $\Phi(\xvec)$ a scalar operator? Is $\Evec(\xvec)$ a vector operator?
 
-\problempart{(c)} In the electrostatic approximation the Hamiltonian for the electron is
+**(c)**  In the electrostatic approximation the Hamiltonian for the electron is
 
 :::{math}
 :label: eq-parity-65
@@ -691,7 +699,7 @@ W^\dagger H_0 W=H_0.
 
 If it does not, go back and change the definition so that it does. Notice that since you defined $W$ to be unitary, this is equivalent to $[W,H_0]=0$.
 
-\problempart{(d)} So the system is invariant under reflection in the plane, and we have found an operator corresponding to that reflection that commutes with the electrostatic Hamiltonian $H_0$. Now we will see if the symmetry persists when we include relativistic corrections.
+**(d)**  So the system is invariant under reflection in the plane, and we have found an operator corresponding to that reflection that commutes with the electrostatic Hamiltonian $H_0$. Now we will see if the symmetry persists when we include relativistic corrections.
 
 The spin-orbit Hamiltonian worked out in {ref}`ch-finestruc`{} [see {eq}`eq-finestruc-13`] applies only in the case of a radial electric field. The more general expression [see {eq}`eq-foldyw-49`] is
 
@@ -711,7 +719,7 @@ X^\dagger\begin{pmatrix}E_x(\xvec)\\ E_y(\xvec)\\ E_z(\xvec)\\\end{pmatrix}X \qq
 
 or $X^\dagger \Evec(\xvec)X$ and $X^\dagger\Svec X$ for short. Hint: notice that $[(\Rmat\Avec)\cross(\Rmat\Bvec)]\cdot(\Rmat\Cvec) = (\Avec\cross\Bvec)\cdot\Cvec$, for all proper rotations $\Rmat$ and all vectors $\Avec$, $\Bvec$, $\Cvec$. See Prob. {ref}`prob-classrot-2`.
 
-\problempart{(e)} In quantum mechanics we like Hermitian operators that commute with the Hamiltonian, because they possess simultaneous eigenbases, and for other reasons. The operator $X$ you found in part~(d) should be unitary. Find a simple expression for $X^2$.
+**(e)**  In quantum mechanics we like Hermitian operators that commute with the Hamiltonian, because they possess simultaneous eigenbases, and for other reasons. The operator $X$ you found in part~(d) should be unitary. Find a simple expression for $X^2$.
 
 Is the $X$ you found in part~(d) Hermitian? If not, make a simple modification to it to create a new operator, call it $K$, that is both unitary and Hermitian and that commutes with $H$. If no modification is necessary, then $K$ will be the same as $X$ obtained in part~(d). If $K$ is both unitary and Hermitian, then its its eigenvalues must be $\pm1$. Show that this is so.
 

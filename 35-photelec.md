@@ -420,11 +420,15 @@ The total cross can be written in various ways; for example, we can express it i
 
 where $\alpha$ is the fine structure constant. In this form the cross is manifestly an area, since $a_0^2$ is essentially the cross-al area of a hydrogen atom. This area is reduced by the very small factor $\alpha^8$, but magnified by the presumably large factor $(mc^2/E_0)^{7/2}$ (because of the nonrelativistic assumption $E\ll mc^2$), and by the possibly large factor $Z^5$. Although this formula was derived only for a hydrogen-like atom, it is valid in a semiquantitative way for the ejection of $K$-shell electrons by x-rays in any atom. The strong $Z$-dependence indicates that heavier atoms are more effective in stopping x-rays, and the strong inverse energy dependence indicates that hard x-rays are more penetrating than soft ones.
 
-\problems
+(sec-photelec-problems)=
+
+## Problems
 
 (prob-photelec-1)=
 
-**Problem \prbdphotelec-1..** 
+**Problem 1.** 
+
+X-rays of energy $E_0$ that are linearly polarized in the $x$-direction are incident upon positronium in the ground state.  The beam of x-rays is directed in the $+z$ direction.  The positronium ``atom'' is at rest. Find the differential cross section $d\sigma/d\Omega$ for the x-ray to break the ``atom'' apart, where $\Omega$ refers to the direction of the ejected electron.  Assume
 
 :::{math}
 :label: eq-photelec-49

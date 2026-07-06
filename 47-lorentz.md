@@ -737,7 +737,7 @@ and
 
 ## Active and Passive Lorentz Transformations
 
-In \secrlorentz-5 we made a few comments about how to interpret Lorentz transformations in an active sense. Here we will elaborate somewhat on this question. We mainly think in terms of boosts, since the active interpretation of rotations was covered in {ref}`ch-classrot`.
+In {ref}`sec-lorentz-5` we made a few comments about how to interpret Lorentz transformations in an active sense. Here we will elaborate somewhat on this question. We mainly think in terms of boosts, since the active interpretation of rotations was covered in {ref}`ch-classrot`.
 
 Let the world line of a particle be given by $x^\mu(\tau)$, where $\tau$ is the proper time. Then under an active, proper Lorentz transformation specified by matrix $\Lambda^\mu{}_\nu$, the state of motion of the particle specified by $x^\mu(\tau)$ mapped into a new state of motion $x^{\prime\,\mu}(\tau)$, given by
 
@@ -746,7 +746,7 @@ Let the world line of a particle be given by $x^\mu(\tau)$, where $\tau$ is the 
 x^{\prime\,\mu}(\tau) = \Lambda^\mu{}_\nu \, x^\nu(\tau).
 :::
 
-In \secrlorentz-5 we considered the special case in which the original motion $x^\mu(\tau)$ was that of a particle at rest, but here $x^\mu(\tau)$ can represent any state of motion, including accelerated motion. The momentum $p^\mu$ transforms by the same matrix $\Lambda^\mu{}_\nu$ as the space-time vector $x^\mu$, since
+In {ref}`sec-lorentz-5` we considered the special case in which the original motion $x^\mu(\tau)$ was that of a particle at rest, but here $x^\mu(\tau)$ can represent any state of motion, including accelerated motion. The momentum $p^\mu$ transforms by the same matrix $\Lambda^\mu{}_\nu$ as the space-time vector $x^\mu$, since
 
 :::{math}
 :label: eq-lorentz-79
@@ -869,15 +869,19 @@ F^{\prime\,\mu\nu}(x) = \Lambda^\mu{}_\alpha \, \Lambda^\nu{}_\beta \, F^{\alpha
 
 In the next set of notes we will consider how Dirac spinors transform under Lorentz transformations, a necessary step in discussing the covariance of the Dirac equation.
 
-\problems
+(sec-lorentz-problems)=
+
+## Problems
 
 (prob-lorentz-1)=
 
-**Problem \prbdlorentz-1..** 
+**Problem 1.** 
 
-\problempart{(a)} Show that if a matrix $\Lambdamat$ satisfies {eq}`eq-lorentz-8`, then the component $\Lambda^0{}_0$ satisfies {eq}`eq-lorentz-17`. Hint: Examine the $00$ component of {eq}`eq-lorentz-8`.
+Some general properties of Lorentz transformations, following from the definition (\eqr\cn.6) or (\eqr\cn.8).
 
-\problempart{(b)} Below {eq}`eq-lorentz-19` we referred to “the velocity $\vvec$ of the boost contained in $\Lambdamat$.” In this part of the problem we will explain what this phrase means. Let a particle have a world line specified by $y^\mu(\tau)$, where $\tau$ is the proper time, that is, the time as indicated by a clock carried by the particle. We allow the particle to be in any state of motion, in particular, the particle may be accelerated. When we apply a Lorentz transformation specified by $\Lambda^\mu{}_\nu$ to this particle, interpreted in the active sense, we obtain the same particle in a different state of motion specified by $x^\mu(\tau)$, where
+**(a)**  Show that if a matrix $\Lambdamat$ satisfies {eq}`eq-lorentz-8`, then the component $\Lambda^0{}_0$ satisfies {eq}`eq-lorentz-17`. Hint: Examine the $00$ component of {eq}`eq-lorentz-8`.
+
+**(b)**  Below {eq}`eq-lorentz-19` we referred to “the velocity $\vvec$ of the boost contained in $\Lambdamat$.” In this part of the problem we will explain what this phrase means. Let a particle have a world line specified by $y^\mu(\tau)$, where $\tau$ is the proper time, that is, the time as indicated by a clock carried by the particle. We allow the particle to be in any state of motion, in particular, the particle may be accelerated. When we apply a Lorentz transformation specified by $\Lambda^\mu{}_\nu$ to this particle, interpreted in the active sense, we obtain the same particle in a different state of motion specified by $x^\mu(\tau)$, where
 
 :::{math}
 :label: eq-lorentz-93
@@ -897,9 +901,11 @@ Now suppose the particle is at rest before the Lorentz transformation is applied
 
 (prob-lorentz-2)=
 
-**Problem \prbdlorentz-2..** 
+**Problem 2.** 
 
-\problempart{(a)} Consider a particle of charge $q$ whose trajectory through space is given by $\yvec(t)$. Let $\xvec$ be a field point. Then the charge and current densities are
+Boosting particles to get the boosted current. In this problem we choose units so that $c=1$.
+
+**(a)**  Consider a particle of charge $q$ whose trajectory through space is given by $\yvec(t)$. Let $\xvec$ be a field point. Then the charge and current densities are
 
 :::{math}
 :label: eq-lorentz-95
@@ -949,7 +955,7 @@ where if $X^\mu$ is a 4-vector then
 
 Hint: Use the $\tau$-integration to eliminate the delta function $\delta\bigl( x^0-y^0(\tau)\bigr)$.
 
-\problempart{(b)} If the particle motion $y^\mu(\tau)$ is mapped into a new motion $y^{\prime\,\mu}(\tau)$ by a Lorentz transformation $\Lambda^\mu {}_\nu$,
+**(b)**  If the particle motion $y^\mu(\tau)$ is mapped into a new motion $y^{\prime\,\mu}(\tau)$ by a Lorentz transformation $\Lambda^\mu {}_\nu$,
 
 :::{math}
 :label: eq-lorentz-101
@@ -972,7 +978,9 @@ Hint: Use the fact that if $M$ is a $4\times 4$ matrix and $X$ is a 4-vector, th
 
 (prob-lorentz-3)=
 
-**Problem \prbdlorentz-3..** 
+**Problem 3.** 
+
+Let $a^\mu$ and $b^\mu$ be two 4-vectors.  Let us write
 
 :::{math}
 :label: eq-lorentz-104

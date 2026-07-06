@@ -666,13 +666,17 @@ The completeness relation relation is
 
 This can be proved by a contour integration that inverts the definition of the Green's operators. We will not go into details here.
 
-\problems
+(sec-lippschw-problems)=
+
+## Problems
 
 (prob-lippschw-1)=
 
-**Problem \prbdlippschw-1.} This problem is a variation on Sakurai, *Modern Quantum Mechanics.** 
+**Problem 1.** 
 
-\problempart{(a)* Find the free-particle Green's function in one dimension,
+This problem is a variation on Sakurai, {\it Modern Quantum Mechanics}, problem 7.1.
+
+**(a)**  Find the free-particle Green's function in one dimension,
 
 :::{math}
 :label: eq-lippschw-72
@@ -709,7 +713,7 @@ and
 
 The Heaviside step function $\Theta(x)$ is defined by {eq}`eq-greensfuns-20`.
 
-\problempart{(b)} Write down a 1-dimensional version of the Lippmann-Schwinger equation for an exact scattering solution $\psi(x)$ associated with an incoming (from the left) free particle state $\phi(x)=e^{ikx}/\sqrt{2\pi}$. The exact solution $\psi(x)$ satisfies the Schr\"odinger equation in a potential $V(x)$, which you can consider to be localized. Consider asymptotic forms (large $|x|$) and find expressions for the transmission and reflection amplitudes $t$ and $r$ which are analogous to {eq}`eq-lippschw-32` in three dimensions. These amplitudes are defined by
+**(b)**  Write down a 1-dimensional version of the Lippmann-Schwinger equation for an exact scattering solution $\psi(x)$ associated with an incoming (from the left) free particle state $\phi(x)=e^{ikx}/\sqrt{2\pi}$. The exact solution $\psi(x)$ satisfies the Schr\"odinger equation in a potential $V(x)$, which you can consider to be localized. Consider asymptotic forms (large $|x|$) and find expressions for the transmission and reflection amplitudes $t$ and $r$ which are analogous to {eq}`eq-lippschw-32` in three dimensions. These amplitudes are defined by
 
 :::{math}
 \begin{aligned}
@@ -724,7 +728,7 @@ The Heaviside step function $\Theta(x)$ is defined by {eq}`eq-greensfuns-20`.
 \end{aligned}
 :::
 
-\problempart{(c)} Consider the potential,
+**(c)**  Consider the potential,
 
 :::{math}
 :label: eq-lippschw-78
@@ -742,7 +746,7 @@ D={m\lambda\over \hbar^2 k},
 
 as much as possible. Note that $D$ is dimensionless. Compute $t$ and $r$ in terms of $D$ and show explicitly that $|t|^2 + |r|^2 =1$.
 
-\problempart{(d)} The operator equation,
+**(d)**  The operator equation,
 
 :::{math}
 :label: eq-lippschw-80
@@ -753,7 +757,9 @@ was proved in lecture. It is a kind of Lippmann-Schwinger equation for the exact
 
 (prob-lippschw-2)=
 
-**Problem \prbdlippschw-2.} This is Sakurai, *Modern Quantum Mechanics.** 
+**Problem 2.** 
+
+This is Sakurai, {\it Modern Quantum Mechanics}, revised edition, problem 7.2.  A particle is scattered from a central force potential $V(r)$.  Show that
 
 :::{math*
 :label: eq-lippschw-81
@@ -762,13 +768,15 @@ was proved in lecture. It is a kind of Lippmann-Schwinger equation for the exact
 
 in each of the following ways:
 
-\problempart{(a)} By integrating the differential cross computed using the first Born approximation.
+**(a)**  By integrating the differential cross computed using the first Born approximation.
 
-\problempart{(b)} By applying the optical theorem to the forward scattering amplitude in the *second* Born approximation. Note that $f(0)$ is real if the first Born approximation is used.
+**(b)**  By applying the optical theorem to the forward scattering amplitude in the *second* Born approximation. Note that $f(0)$ is real if the first Born approximation is used.
 
 (prob-lippschw-3)=
 
-**Problem \prbdlippschw-3..** 
+**Problem 3.** 
+
+Consider $N$ static spherically symmetric scattering centers placed on a straight line such that the $n$-th scatterer is at point $(n-1)\avec$, for $n=1,\ldots,N$.  A particle with incident momentum $\hbar\kvec$ such that $\kvec\cdot\avec=0$ is scattered from the array.  Assuming the validity of the Born approximation, show that the elastic differential cross section is of the form,
 
 :::{math}
 :label: eq-lippschw-82
