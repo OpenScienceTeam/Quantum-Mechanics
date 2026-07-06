@@ -551,21 +551,27 @@ The best known example of this generalized uncertainty principle is the case $A=
 \Delta x \, \Delta p \ge {\hbar\over 2}.
 :::
 
-When using the uncertainty principle in the form of {eq}`eq-postulat-44`, it is important to realize that the measurements of observables $A$ and $B$ are carried out independently on a given ensemble, represented by $\ket{\psi}$. That is, first one measures $A$ on the ensemble, and computes $\xpecval{A}$ and $\Delta A$; then one measures $B$ on the same ensemble, and computes $\xpecval{B}$ and $\Delta B$. One does *not* measure $A$ and $B$ successively on individual systems in the ensemble. We talked about successive measurements in \secrpostulat-4 above, but that is not what we are talking about when using {eq}`eq-postulat-44`.
+When using the uncertainty principle in the form of {eq}`eq-postulat-44`, it is important to realize that the measurements of observables $A$ and $B$ are carried out independently on a given ensemble, represented by $\ket{\psi}$. That is, first one measures $A$ on the ensemble, and computes $\xpecval{A}$ and $\Delta A$; then one measures $B$ on the same ensemble, and computes $\xpecval{B}$ and $\Delta B$. One does *not* measure $A$ and $B$ successively on individual systems in the ensemble. We talked about successive measurements in {ref}`sec-postulat-4` above, but that is not what we are talking about when using {eq}`eq-postulat-44`.
 
-\problems
+(sec-postulat-problems)=
+
+## Problems
 
 (prob-postulat-1)=
 
-**Problem \prbdpostulat-1..** 
+**Problem 1.** 
 
-\problempart{(a)} Show that $[A,B]=0$ if and only if $[P_{An},P_{Bm}] =0$ for all $n$, $m$, where $P_{An}$ and $P_{Bm}$ are projectors defined below {eq}`eq-postulat-25`.
+Let $A$ and $B$ be observables, for simplicity with discrete spectra.
 
-\problempart{(b)} Show that the probabilities defined in {eq}`eq-postulat-29` and {eq}`eq-postulat-30` are equal for all $n$, $m$ and $\ket{\psi_0}$ if and only if $[A,B]=0$.
+**(a)**  Show that $[A,B]=0$ if and only if $[P_{An},P_{Bm}] =0$ for all $n$, $m$, where $P_{An}$ and $P_{Bm}$ are projectors defined below {eq}`eq-postulat-25`.
+
+**(b)**  Show that the probabilities defined in {eq}`eq-postulat-29` and {eq}`eq-postulat-30` are equal for all $n$, $m$ and $\ket{\psi_0}$ if and only if $[A,B]=0$.
 
 (prob-postulat-2)=
 
-**Problem \prbdpostulat-2..** 
+**Problem 2.** 
+
+This problem arose out of the thought that maybe the last, unknown sign multiplying $\mu_y$ in Eq.~(\eqr\cn.23) could be determined if we investigated tandem Stern-Gerlach measurements at all possible orientations, not just at right angles.
 
 In this problem we imagine that we know nothing about Pauli matrices or the formalism of spin, but we do know the measurement postulates of quantum mechanics, and we do know certain experimental facts.
 
@@ -592,11 +598,11 @@ We take $\gamma$ to lie in the range $0\le\gamma\le\pi$. The probability of meas
 
 We notice that all spin measurements produce only two possible results, so we take the Hilbert space of our quantum system to be 2-dimensional, so that the eigenspaces of the operators which corresponds to measurements of spin are nondegenerate. We let $S({\hat{\mathbf{n}}})$ or $S(\theta,\phi)$ be the operator corresponding to measuring spin with an apparatus pointing in the ${\hat{\mathbf{n}}}=(\theta,\phi)$ direction, and we let $\ket{S({\hat{\mathbf{n}}})\pm}$ or $\ket{S(\theta,\phi)\pm}$ be normalized eigenkets corresponding to the component of spin in the ${\hat{\mathbf{n}}}$ direction taking on the values $\pm\hbar/2$. These eigenkets are subject to phase conventions which we will have to specify further.
 
-\problempart{(a)} At first we are interested in expressing the kets $\ket{S(\theta,\phi)\pm}$ in terms of some standard eigenkets of the operator $S_z=S({\hat{\mathbf{z}}})=S(0,0)$, which we call $\ket{+}$ and $\ket{-}$. Therefore we consider the case that ${\hat{\mathbf{n}}}_1 ={\hat{\mathbf{n}}} =(\theta,\phi)$, and ${\hat{\mathbf{n}}}_2 ={\hat{\mathbf{z}}}$. Write the kets $\ket{S(\theta,\phi)\pm}$ as linear combinations of the kets $\ket{\pm}$ with unknown coefficients. Show that by using the experimental results {eq}`eq-postulat-51` and {eq}`eq-postulat-53`, and phase conventions for the kets $\ket{S(\theta,\phi)\pm}$, it is possible to make the coefficient of $\ket{+}$ real and nonnegative in the expression for $\ket{S(\theta,\phi)+}$, and the coefficient of $\ket{-}$ real and nonnegative in the expression for $\ket{S(\theta,\phi)-}$, and to determine all coefficients apart from a single phase factor, say, $e^{i\beta}$, where $\beta$ is an as-yet-unknown function of $(\theta,\phi)$. Show that with these phase conventions, we have $\ket{S(0,0)+}=\ket{+}$, and $\ket{S(0,0)-}=\ket{-}$.
+**(a)**  At first we are interested in expressing the kets $\ket{S(\theta,\phi)\pm}$ in terms of some standard eigenkets of the operator $S_z=S({\hat{\mathbf{z}}})=S(0,0)$, which we call $\ket{+}$ and $\ket{-}$. Therefore we consider the case that ${\hat{\mathbf{n}}}_1 ={\hat{\mathbf{n}}} =(\theta,\phi)$, and ${\hat{\mathbf{n}}}_2 ={\hat{\mathbf{z}}}$. Write the kets $\ket{S(\theta,\phi)\pm}$ as linear combinations of the kets $\ket{\pm}$ with unknown coefficients. Show that by using the experimental results {eq}`eq-postulat-51` and {eq}`eq-postulat-53`, and phase conventions for the kets $\ket{S(\theta,\phi)\pm}$, it is possible to make the coefficient of $\ket{+}$ real and nonnegative in the expression for $\ket{S(\theta,\phi)+}$, and the coefficient of $\ket{-}$ real and nonnegative in the expression for $\ket{S(\theta,\phi)-}$, and to determine all coefficients apart from a single phase factor, say, $e^{i\beta}$, where $\beta$ is an as-yet-unknown function of $(\theta,\phi)$. Show that with these phase conventions, we have $\ket{S(0,0)+}=\ket{+}$, and $\ket{S(0,0)-}=\ket{-}$.
 
-\problempart{(b)}Now write out the operators $S(\theta,\phi)$ in terms of the basis operators $\ketbra{+}{+}$, $\ketbra{+}{-}$, etc., and in terms of the unknown phase $\beta$. Show that by changing the phase conventions for all kets $\ket{S(\theta,\phi)+}$, including $\ket{+}$, by a constant phase factor, independent of $(\theta,\phi)$, and similarly by changing all kets $\ket{S(\theta,\phi)-}$, including $\ket{-}$, by a (possibly different) constant phase factor, it is possible to make $\beta(\theta,\phi)$ vanish at one chosen value of $(\theta,\phi)$. Do this for $(\theta,\phi)=(\pi/2,0)$, so that $S_x=S(\pi/2,0)$ will have real matrix elements in the $\ket{\pm}$ basis.
+**(b)** Now write out the operators $S(\theta,\phi)$ in terms of the basis operators $\ketbra{+}{+}$, $\ketbra{+}{-}$, etc., and in terms of the unknown phase $\beta$. Show that by changing the phase conventions for all kets $\ket{S(\theta,\phi)+}$, including $\ket{+}$, by a constant phase factor, independent of $(\theta,\phi)$, and similarly by changing all kets $\ket{S(\theta,\phi)-}$, including $\ket{-}$, by a (possibly different) constant phase factor, it is possible to make $\beta(\theta,\phi)$ vanish at one chosen value of $(\theta,\phi)$. Do this for $(\theta,\phi)=(\pi/2,0)$, so that $S_x=S(\pi/2,0)$ will have real matrix elements in the $\ket{\pm}$ basis.
 
-\problempart{(c)} Now return to the case of arbitrary ${\hat{\mathbf{n}}}_1 =(\theta_1,\phi_1)$ and ${\hat{\mathbf{n}}}_2=(\theta_2,\phi_2)$, and try to use the experimental data {eq}`eq-postulat-51` and {eq}`eq-postulat-53` to determine the function $\beta(\theta,\phi)$. Is this function completely determined by the experimental data, or is there still some ambiguity?
+**(c)**  Now return to the case of arbitrary ${\hat{\mathbf{n}}}_1 =(\theta_1,\phi_1)$ and ${\hat{\mathbf{n}}}_2=(\theta_2,\phi_2)$, and try to use the experimental data {eq}`eq-postulat-51` and {eq}`eq-postulat-53` to determine the function $\beta(\theta,\phi)$. Is this function completely determined by the experimental data, or is there still some ambiguity?
 
 Finally, prove the formula,
 
@@ -605,11 +611,13 @@ Finally, prove the formula,
 S({\hat{\mathbf{n}}}) = {\hat{\mathbf{n}}}\cdot\Svec.
 :::
 
-\problempart{(d)} Were you able to find the last, unknown sign in $\mu_y$ in {eq}`eq-postulat-23`? If not, how do you think Pauli knew what sign to choose?
+**(d)**  Were you able to find the last, unknown sign in $\mu_y$ in {eq}`eq-postulat-23`? If not, how do you think Pauli knew what sign to choose?
 
 (prob-postulat-3)=
 
-**Problem \prbdpostulat-3..** 
+**Problem 3.** 
+
+In quantum mechanics the measurement of one observable introduces an uncontrollable and unpredictable disturbance in the value of any observable that does not commute with the one being measured, as discussed in Sec.~\secr\cn.6.  For example, a measurement of $\mu_z$ in a Stern-Gerlach apparatus causes the values of $\mu_x$ and $\mu_y$ to become completely undetermined.
 
 We can understand how this disturbance comes about in a classical model. To measure $\mu_z$, we must use a magnetic field in the $z$-direction, but this causes $\mu_x$ and $\mu_y$ to precess, so their values on emerging from the Stern-Gerlach apparatus are different from their values when they entered. If classical mechanics were valid, we could calculate the precession angle for any particular particle in the beam, and compensate for the evolution in $\mu_x$ and $\mu_y$. The beam has some spatial extent, however, so particles do not follow the same trajectory and their spins do not precess by the same angle, but if the size of the beam is made small enough the spread in these angles can be made as small as we like. In particular, it can be made $\ll 2\pi$, giving us a definite phase angle for the whole beam, and therefore known (and controllable) effects on $\mu_x$ and $\mu_y$ when we measure $\mu_z$.
 
@@ -624,6 +632,8 @@ ure for problem \prbrpostulat-4. A scattering experiment.
 
 (prob-postulat-4)=
 
-**Problem \prbdpostulat-4..** 
+**Problem 4.** 
+
+Measuring the Schr\"odinger wave function is not like measuring a classical field, such as an electric field.  Consider a scattering gedankenexperiment in which spinless particles of a given energy are directed at a target, as in the figure.  We wish to measure the wave function downstream from the scatter.  We assume the beam is described by a pure state, and that the incident wave is a plane wave (over a sufficiently large spatial region).  The beam is low density, so the particles do not interact with one another.  To measure $|\psi(\rvec)|^2$ over some volume of space, we just put a screen $S$ in a certain location, and gather enough statistics to get the probability density on this surface.  We then move the surface and measure again.
 
 Describe a modification to this gedankenexperiment by which the phase of the wave function $\psi(\rvec)$ can be measured on the screen, apart from the overall phase, which is nonphysical and can never be measured.

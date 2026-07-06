@@ -456,7 +456,7 @@ Quantum mechanics must go over to classical mechanics in the limit in which $\hb
 
 The potentials $V$ that are used in practice are often phenomenological models that represent guesses or hopes that some complicated physics can be represented by a potential. For example, we may try to represent the interaction of two atoms, or of a proton and a neutron, by a potential. Actually, atoms and nucleons are composite particles with internal structure, and their interactions can only be represented by a potential in an approximate manner.
 
-A large part of atomic, molecular and condensed matter physics can be understood in terms of the electrostatic interactions of charged particles. These are described by the potential {eq}`eq-classmech-24`, which can be regarded as “fundamental.” But effects involving spin, magnetic fields, relativistic corrections, the emission and absorption of radiation and other phenomena require other types of Hamiltonians. We will consider magnetic fields below in \secrtevolut-17, and the other generalizations will be taken up later in the course.
+A large part of atomic, molecular and condensed matter physics can be understood in terms of the electrostatic interactions of charged particles. These are described by the potential {eq}`eq-classmech-24`, which can be regarded as “fundamental.” But effects involving spin, magnetic fields, relativistic corrections, the emission and absorption of radiation and other phenomena require other types of Hamiltonians. We will consider magnetic fields below in {ref}`sec-tevolut-17`, and the other generalizations will be taken up later in the course.
 
 The multiparticle generalization of {eq}`eq-tevolut-47` is straightforward. Let there be $N$ particles with masses $m_i$, positions $\xvec_i$ and momenta $\pvec_i$, and assume that they interact by means of a potential. Then the classical Hamiltonian is
 
@@ -548,7 +548,7 @@ The current looks like the real part of the expectation value of $\vvec$, but it
 
 Notice that if $\psi(\xvec,t)$ is an energy eigenfunction $\psi_n(\xvec) e^{-iE_nt/\hbar}$, then $\rho$ is independent of time and the continuity equation reduces to $\del\cdot\Jvec=0$. Also, if the Hamiltonian is of the kinetic-plus-potential form, then time-reversal invariance (see {ref}`ch-topicsoned`{} and \timerev) implies that the energy eigenfunctions can be chosen to be real. In that case, $\Jvec=0$.
 
-The definition of the probability current depends on the system. For the case considered here, a single particle moving in 3-dimensional space, the probability current $\Jvec$ is a 3-vector. In an $N$-particle system the probability current is a $3N$-vector on the $3N$-dimensional configuration space. Also, even for a single particle, the definition is modified in the presence of magnetic fields, as we shall explain in \secrtevolut-17 below, or when there is spin.
+The definition of the probability current depends on the system. For the case considered here, a single particle moving in 3-dimensional space, the probability current $\Jvec$ is a 3-vector. In an $N$-particle system the probability current is a $3N$-vector on the $3N$-dimensional configuration space. Also, even for a single particle, the definition is modified in the presence of magnetic fields, as we shall explain in {ref}`sec-tevolut-17` below, or when there is spin.
 
 (sec-tevolut-15)=
 
@@ -962,7 +962,7 @@ This is correct. The Schr\"odinger wave function $\psi(\xvec,t)$ is not like a c
 
 ## Another Interpretation of Gauge Transformations
 
-In the interpretation given in \secrtevolut-19, both the wave function $\psi(\xvec,t)$ and the abstract state vector $\ket{\psi(t)}$ change under a gauge transformation. We cannot alter the fact that the wave function depends on the gauge, but there is another interpretation in which the abstract state vector is invariant. That is, we use {eq}`eq-tevolut-82` and {eq}`eq-tevolut-84` to write
+In the interpretation given in {ref}`sec-tevolut-19`, both the wave function $\psi(\xvec,t)$ and the abstract state vector $\ket{\psi(t)}$ change under a gauge transformation. We cannot alter the fact that the wave function depends on the gauge, but there is another interpretation in which the abstract state vector is invariant. That is, we use {eq}`eq-tevolut-82` and {eq}`eq-tevolut-84` to write
 
 :::{math}
 :label: eq-tevolut-92
@@ -978,11 +978,15 @@ where
 
 In other words, we regard the gauge transforation as a change in the phase conventions for the position eigenkets.
 
-\problems
+(sec-tevolut-problems)=
+
+## Problems
 
 (prob-tevolut-1)=
 
-**Problem \prbdtevolut-1..** 
+**Problem 1.** 
+
+Consider the Hamiltonian for a particle of charge $q$ in an electromagnetic field:
 
 :::{math}
 :label: eq-tevolut-94
@@ -991,7 +995,7 @@ H={1\over2m}\Bigl[ \pvec-{q\over c}\Avec(\xvec,t)\Bigr]^2 +q\Phi(\xvec,t),
 
 where we allow all fields to be space- and time-dependent.
 
-\problempart{(a)} Define the kinetic momentum operator $\pivec$ by
+**(a)**  Define the kinetic momentum operator $\pivec$ by
 
 :::{math}
 :label: eq-tevolut-95
@@ -1000,7 +1004,7 @@ where we allow all fields to be space- and time-dependent.
 
 Notice that $\pivec$ has an explicit time dependence, due to the $\Avec$ term. Work out the commutation relations, $[x_i,\pi_j]$ and $[\pi_i,\pi_j]$. Use these to work out the Heisenberg equations of motion for the operators $\xvec$, $\pivec$. Then eliminate $\pivec$, and find an expression for $\ddot\xvec$ (the Heisenberg analog of the Newton-Lorentz equations).
 
-\problempart{(b)} By taking expectation values, show that if $\Bvec$ is uniform in space and $\Evec$ has the form,
+**(b)**  By taking expectation values, show that if $\Bvec$ is uniform in space and $\Evec$ has the form,
 
 :::{math}
 :label: eq-tevolut-96
@@ -1011,18 +1015,22 @@ where $a_i$ and $b_{ij}$ are constants, then the expectation value of $\xvec$ fo
 
 (prob-tevolut-2)=
 
-**Problem \prbdtevolut-2..** 
+**Problem 2.** 
+
+Consider a particle of charge $q$ moving in an electric and magnetic field.  The Hamiltonian is (\eqr\cn.69).  Let $\rho(\xvec,t) = |\psi(\xvec,t)|^2$, and let $\Jvec$ be given by Eq.~(\eqr\cn.57), where the velocity operator $\vvec$ is defined by Eq.~(\eqr\cn.75).  Show that $\rho$ and $\Jvec$ satisfy the continuity equation.
 
 (prob-tevolut-3)=
 
-**Problem \prbdtevolut-3..** 
+**Problem 3.** 
+
+In this problem we consider the spreading of wave packets of a free particle in one dimension.  The Hamiltonian is
 
 :::{math}
 :label: eq-tevolut-97
 H={p^2\over 2m}.
 :::
 
-\problempart{(a)} Let the wave function at $t=0$ be
+**(a)**  Let the wave function at $t=0$ be
 
 :::{math}
 :label: eq-tevolut-98
@@ -1031,11 +1039,11 @@ H={p^2\over 2m}.
 
 where $C$ and $L$ are constants. Assuming $C$ is real and positive, normalize the wave function and find $C$. See Appendix~\gaussint. Then determine $\xpecval{x}$, $\xpecval{p}$ and $\Delta x$, the last one being the dispersion (or standard deviation), see {eq}`eq-postulat-40`.
 
-\problempart{(b)} Compute the initial momentum space wave function $\phi_0(p)$, and from that compute $\Delta p$ (do the latter calculation in momentum space). Compare $\Delta x \Delta p$ to the minimum value allowed by the uncertainty principle.
+**(b)**  Compute the initial momentum space wave function $\phi_0(p)$, and from that compute $\Delta p$ (do the latter calculation in momentum space). Compare $\Delta x \Delta p$ to the minimum value allowed by the uncertainty principle.
 
-\problempart{(c)} Now compute $\phi(p,t)$ for any time $t$. Use it to find $\xpecval{p}$ and $\Delta p$ for any time $t$.
+**(c)**  Now compute $\phi(p,t)$ for any time $t$. Use it to find $\xpecval{p}$ and $\Delta p$ for any time $t$.
 
-\problempart{(d)} Now compute $\psi(x,t)$ for any time $t$. Express your answer in terms of the quantity,
+**(d)**  Now compute $\psi(x,t)$ for any time $t$. Express your answer in terms of the quantity,
 
 :::{math}
 :label: eq-tevolut-99
@@ -1044,8 +1052,10 @@ D=L+{it\hbar\over 2mL}
 
 (a useful abbreviation). Then find $\xpecval{x}$ and $\Delta x$ for any time $t$. Notice what happens to the product $\Delta x \Delta p$ for times $t>0$.
 
-\problempart{(e)} If you had not done a detailed calculation you could estimate $\Delta x$ as a function of $t$ by using the uncertainty principle. Do this and compare to the results of the detailed calculation.
+**(e)**  If you had not done a detailed calculation you could estimate $\Delta x$ as a function of $t$ by using the uncertainty principle. Do this and compare to the results of the detailed calculation.
 
 (prob-tevolut-4)=
 
-**Problem \prbdtevolut-4..**
+**Problem 4.**
+
+Show that if $A$ and $B$ are constants of motion with no explicit time dependence, then so is $[A,B]$.  See Sec.~\secr\cn.10.  This suggests that if we have two constants of motion, then we can generate an infinite sequence of constants of motion just by taking commutators.  Does this work?  Try it in the case central force motion, where both $L_x$ and $L_y$ commute with the Hamiltonian.

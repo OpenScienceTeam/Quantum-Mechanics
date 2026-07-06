@@ -543,12 +543,18 @@ In the case of hydrogen the Dirac equation gives results that are in agreement w
 
 Perhaps the most important point of these results concerns our narrative on the development of our understanding of the Dirac equation. The ingredients in the Dirac equation are the simplest that can be conceived for a relativistic wave equation for a particle with spin. The implementation of the Dirac algebra is the simplest, and the coupling to the electromagnetic field is minimal. The fact that such a large amount of physically correct detail, in excellent agreement with experiment, emerges from these assumptions is impressive evidence that the Dirac equation is an important and largely correct step in the merging of quantum mechanics with special relativity. Nothing we have said so far, however, sheds any light on the meaning of the negative energy solutions of the Dirac equation, which are the main conceptual difficulty that must be solved before we have a fully satisfactory framework for understanding relativistic quantum mechanics. The next few sets of notes outline the resolution of this problem.
 
-\problems
+(sec-foldyw-problems)=
+
+## Problems
 
 (prob-foldyw-1)=
 
-**Problem \prbdfoldyw-1..** 
+**Problem 1.** 
+
+Equation~(\eqr\cn.49) gives the effective 2-component Hamiltonian for the upper two components of the transformed Dirac wave function $\psi''$.  In a similar manner write out the effective 2-component Hamiltonian for the lower two components.  Is it identical with or related to any realistic 2-component wave equation of the Pauli type?
 
 (prob-foldyw-2)=
 
-**Problem \prbdfoldyw-2..**
+**Problem 2.**
+
+Specialize Eq.~(\eqr\covariance.116) to the case of the neutron, as an example of a problem with an anomalous magnetic moment.  Remember that $q=0$, which simplifies the calculation.  Carry out a Foldy-Wouthuysen transformation to fourth order, as in these notes.

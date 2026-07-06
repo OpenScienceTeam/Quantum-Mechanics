@@ -207,14 +207,14 @@ Actually, Figs.~{ref}`fig-zeeman-1` are valid for any $s$ or $p$ set of states, 
 
 ## Case II.  $H_Z \gg H_SO$, $H_SO$ not Negligible
 
-Now we consider the case that $H_Z$ is much larger than the fine structure terms $H_FS$, as in \secrzeeman-4, but not so large that those corrections can be neglected. Thus we will take the new unperturbed Hamiltonian to be
+Now we consider the case that $H_Z$ is much larger than the fine structure terms $H_FS$, as in {ref}`sec-zeeman-4`, but not so large that those corrections can be neglected. Thus we will take the new unperturbed Hamiltonian to be
 
 :::{math}
 :label: eq-zeeman-18
 H_0= {p^2 \over 2m} + V(r) +H_Z,
 :::
 
-with $H_FS$ as a perturbation. Notice that this $H_0$ is the entire Hamiltonian of \secrzeeman-4.
+with $H_FS$ as a perturbation. Notice that this $H_0$ is the entire Hamiltonian of {ref}`sec-zeeman-4`.
 
 More precisely, we will take $H_1$ to be the spin-orbit term only, and ignore the relativistic kinetic energy and Darwin corrections. This is not realistic, because all three fine structure terms are of the same order of magnitude, but we do it for simplicity. As for the spin-orbit term, we write
 
@@ -230,14 +230,14 @@ so that
 H_1=H_SO= f(r) \Lvec\cdot\Svec.
 :::
 
-In the following we concentrate mainly on hydrogen, with a few comments about the alkalis. Some of the eigenstates of $H_0$ are degenerate, as we have seen in \secrzeeman-4, so we must think about degenerate perturbation theory. We can only use the uncoupled basis, since the coupled basis is not an eigenbasis of $H_0$. Thus we must look at the matrix elements
+In the following we concentrate mainly on hydrogen, with a few comments about the alkalis. Some of the eigenstates of $H_0$ are degenerate, as we have seen in {ref}`sec-zeeman-4`, so we must think about degenerate perturbation theory. We can only use the uncoupled basis, since the coupled basis is not an eigenbasis of $H_0$. Thus we must look at the matrix elements
 
 :::{math}
 :label: eq-zeeman-21
 \matrixelement{n\ell m_\ell m_s}{H_SO} {n\ell'm'_\ell m'_s},
 :::
 
-where we put primes to cover the degenerate eigenspaces of $H_0$. For example, in the $n=2$ levels of hydrogen, we found in \secrzeeman-4 that there were three 2-fold degenerate levels of $H_0$ (see Figs.~{ref}`fig-zeeman-1`a and {ref}`fig-zeeman-1`b). However, we see right away that $[H_SO,L^2]=0$, so the prime on $\ell$ is not necessary, and in fact we can carry out the perturbation analysis in subspaces of given $\ell$ separately. This is what we must do anyway in the case of the alkalis, where there is no degeneracy in $\ell$ in the unperturbed system. In the case of the $n=2$ levels of hydrogen, we see that we have only one 2-fold degeneracy, that between the $\ket{n\ell m_\ell m_s} = \ket{2,1,-1,\frac{1}{2}}$ and $\ket{2,1,1,-\frac{1}{2}}$ states. This makes one $2\times 2$ matrix. Let us look at the off-diagonal element,
+where we put primes to cover the degenerate eigenspaces of $H_0$. For example, in the $n=2$ levels of hydrogen, we found in {ref}`sec-zeeman-4` that there were three 2-fold degenerate levels of $H_0$ (see Figs.~{ref}`fig-zeeman-1`a and {ref}`fig-zeeman-1`b). However, we see right away that $[H_SO,L^2]=0$, so the prime on $\ell$ is not necessary, and in fact we can carry out the perturbation analysis in subspaces of given $\ell$ separately. This is what we must do anyway in the case of the alkalis, where there is no degeneracy in $\ell$ in the unperturbed system. In the case of the $n=2$ levels of hydrogen, we see that we have only one 2-fold degeneracy, that between the $\ket{n\ell m_\ell m_s} = \ket{2,1,-1,\frac{1}{2}}$ and $\ket{2,1,1,-\frac{1}{2}}$ states. This makes one $2\times 2$ matrix. Let us look at the off-diagonal element,
 
 :::{math}
 :label: eq-zeeman-22
@@ -327,7 +327,7 @@ The final matrix element of $S_z$ is not entirely trivial to evaluate in a reaso
 
 ## The Projection Theorem
 
-In this we adopt the general notation for a standard angular momentum basis, $\ket{\gamma jm}$, which was used in {ref}`ch-repsamos`. Compared to the notation used in \secrzeeman-6, the correspondences are
+In this we adopt the general notation for a standard angular momentum basis, $\ket{\gamma jm}$, which was used in {ref}`ch-repsamos`. Compared to the notation used in {ref}`sec-zeeman-6`, the correspondences are
 
 :::{math}
 :label: eq-zeeman-32
@@ -437,13 +437,17 @@ It might seem surprising that the energy shifts should be proportional to $m_j$,
 
 a generalization of Eq. {eq}`eq-spinmagf-12` (with $q=-e$).
 
-The reason for this is that all vector operators are proportional to any given vector operator on a single irreducible subspace under rotations. See Prob. {ref}`prob-wigeck-2`(a). The angular momentum $\Jvec$ is a convenient reference vector operator, so all vector operators, including $\Lvec+2\Svec$, are proportional to $\Jvec$ on a single irreducible subspace. In the limit of weak magnetic field, the Zeeman Hamiltonian does not mix irreducible subspaces, that is, it only involves a single set of states $\ket{n\ell jm_j}$ with the same $n$, $\ell$ and $j$ but with different $m_j$, so the energy shifts are proportional to $m_j$. For stronger fields, for example, one strong enough to overwhelm the fine structure splitting as in \secrzeeman-5, the dependence of the energy levels on the magnetic quantum numbers is more complicated. The same would happen in a nucleus if the magnetic field were strong enough to mix more than one eigenspace of the nuclear Hamiltonian, although that would require extraordinarily large magnetic fields by ordinary standards.
+The reason for this is that all vector operators are proportional to any given vector operator on a single irreducible subspace under rotations. See Prob. {ref}`prob-wigeck-2`(a). The angular momentum $\Jvec$ is a convenient reference vector operator, so all vector operators, including $\Lvec+2\Svec$, are proportional to $\Jvec$ on a single irreducible subspace. In the limit of weak magnetic field, the Zeeman Hamiltonian does not mix irreducible subspaces, that is, it only involves a single set of states $\ket{n\ell jm_j}$ with the same $n$, $\ell$ and $j$ but with different $m_j$, so the energy shifts are proportional to $m_j$. For stronger fields, for example, one strong enough to overwhelm the fine structure splitting as in {ref}`sec-zeeman-5`, the dependence of the energy levels on the magnetic quantum numbers is more complicated. The same would happen in a nucleus if the magnetic field were strong enough to mix more than one eigenspace of the nuclear Hamiltonian, although that would require extraordinarily large magnetic fields by ordinary standards.
 
-\problems
+(sec-zeeman-problems)=
+
+## Problems
 
 (prob-zeeman-1)=
 
-**Problem \prbdzeeman-1..** 
+**Problem 1.** 
+
+The projection theorem  is useful in evaluating matrix elements for the Zeeman effect and for the hyperfine structure of hydrogen.
 
 Show that if $\Avec$ is a vector operator, then
 
@@ -463,9 +467,11 @@ where the notation of {ref}`ch-repsamos`\ is used.
 
 (prob-zeeman-2)=
 
-**Problem \prbdzeeman-2..** 
+**Problem 2.** 
 
-In these notes we have studied various limiting cases. In \secrzeeman-8 we studied the case that $B$ is so weak that the spin-orbit term dominates the Zeeman term. There we found (see {eq}`eq-zeeman-41` that the energy shifts were
+In this problem we aim to do a realistic calculation of the effect of magnetic fields on the $n=2$ states of hydrogen.  (For simplicity we will set $Z=1$ throughout.)  We will allow the magnetic field to take on any value, so that we will not assume that the Zeeman term is necessarily small or large in comparison to the fine structure terms.  (We will, however, ignore the Lamb shift.)
+
+In these notes we have studied various limiting cases. In {ref}`sec-zeeman-8` we studied the case that $B$ is so weak that the spin-orbit term dominates the Zeeman term. There we found (see {eq}`eq-zeeman-41` that the energy shifts were
 
 :::{math}
 :label: eq-zeeman-46
@@ -479,7 +485,7 @@ where $g$ is the Land\'e $g$-factor,
 g=1+{j(j+1) + s(s+1) - \ell(\ell+1) \over 2j(j+1)}.
 :::
 
-Next, when $B$ is so strong that the spin-orbit term can be neglected (\secrzeeman-4), we found {eq}`eq-zeeman-17` for the energy shifts. Some books (e.g., Sakurai) do similar calculations, but they ignore the Darwin and relativistic kinetic energy corrections, which is not realistic because they are of the same order of magnitude as the spin-orbit term.
+Next, when $B$ is so strong that the spin-orbit term can be neglected ({ref}`sec-zeeman-4`), we found {eq}`eq-zeeman-17` for the energy shifts. Some books (e.g., Sakurai) do similar calculations, but they ignore the Darwin and relativistic kinetic energy corrections, which is not realistic because they are of the same order of magnitude as the spin-orbit term.
 
 Consider therefore the Hamiltonian,
 
@@ -518,19 +524,21 @@ where $B_0$ is defined by {eq}`eq-zeeman-4`. This definition is useful for the p
 Graph of solutions to Prob. \prbrzeeman-2. The Zeeman energy shift $\Delta E$ is measured relative to the $n=2$ level of hydrogen in the electrostatic model, which is $-1/2\cdot2^2$ in atomic units. The fine structure energy shifts at zero field strength are $-(5/128)\alpha^2$ for the $2s_{1/2}$ and $2p_{1/2}$ levels, where $\alpha$ is the fine structure constant, and $-(1/128)\alpha^2$ for the $2p_{3/2}$ levels. The model ignores the Lamb shift, which is why the $2s_{1/2}$ and $2p_{1/2}$ levels are degenerate in the figure at zero field strength. Including the Lamb shift would modify the picture slightly.
 :::
 
-\problempart{(a)} Out of the list of operators, $L^2$, $L_x$, $L_y$, $L_z$, $S^2$, $S_x$, $S_y$, $S_z$, $J^2$, $J_x$, $J_y$, $J_z$, $\pi$, indicate which commute with $H_0$ and which commute with the entire Hamiltonian $H$. Use this information to choose a convenient basis in the 8-dimensional subspace of the $n=2$ degenerate energy levels of $H_0$, for which the perturbing Hamiltonian will be as diagonal as possible.
+**(a)**  Out of the list of operators, $L^2$, $L_x$, $L_y$, $L_z$, $S^2$, $S_x$, $S_y$, $S_z$, $J^2$, $J_x$, $J_y$, $J_z$, $\pi$, indicate which commute with $H_0$ and which commute with the entire Hamiltonian $H$. Use this information to choose a convenient basis in the 8-dimensional subspace of the $n=2$ degenerate energy levels of $H_0$, for which the perturbing Hamiltonian will be as diagonal as possible.
 
-\problempart{(b)} Let $\Delta E$ be the difference between the true energy levels of $H$ (including the perturbation) and the 8-fold degenerate level $E_2=-1/8=-1/(2\cdot2^2)$ of $H_0$. Find all eight levels as a function of $x$ in atomic units.
+**(b)**  Let $\Delta E$ be the difference between the true energy levels of $H$ (including the perturbation) and the 8-fold degenerate level $E_2=-1/8=-1/(2\cdot2^2)$ of $H_0$. Find all eight levels as a function of $x$ in atomic units.
 
-\problempart{(c)} Expand these results out for small $x$, and show that they agree with {eq}`eq-zeeman-46`. Also expand the results for large $x$, and show that the results agree with {eq}`eq-zeeman-17`.
+**(c)**  Expand these results out for small $x$, and show that they agree with {eq}`eq-zeeman-46`. Also expand the results for large $x$, and show that the results agree with {eq}`eq-zeeman-17`.
 
 See {ref}`fig-zeeman-3`, a plot of the answers. The figure reveals a typical behavior of energy levels in various versions of the Zeeman effect. Notice that energy levels cross as the parameter (in this case, the magnetic field strength) is varied. Notice also that the fine structure splitting is overwhelmed by the Zeeman energy shifts at relatively small values of the parameter $x$. We might have expected this to occur around $x\approx 1$, based on the scalings we have introduced, but the quantum numbers introduce additional dimensionless factors that reduce the value to something closer to $x\approx 0.03$, which corresponds to a magnetic field of about $4 \,KG = 0.4 \,T$.
 
 (prob-zeeman-3)=
 
-**Problem \prbdzeeman-3..** 
+**Problem 3.** 
 
-\problempart{(a)} Since $\Avec$ is a vector operator, the Wigner-Eckart theorem says
+This is another approach to the proof of the projection theorem, one which uses  the Wigner-Eckart theorem.   In the following we let $\Avec$ and $\Bvec$ be vector operators, which for simplicity we assume to be Hermitian.   This means that $A_i^\dagger=A_i$, $B_i^\dagger=B_i$, for all three Cartesian components of $\Avec$ and $\Bvec$.
+
+**(a)**  Since $\Avec$ is a vector operator, the Wigner-Eckart theorem says
 
 :::{math}
 :label: eq-zeeman-52
@@ -560,9 +568,9 @@ Show that
 \reducedme{\gamma'j'}{(fA)}{\gamma j}= \sum_\Gamma \reducedme{\gamma'j'}{f}{\Gamma j'} \reducedme{\Gamma j'}{A}{\gamma j}.
 :::
 
-\problempart{(b)} For the special case $\Avec=\Jvec$, work out an explicit formula for the reduced matrix element, $\reducedme{\gamma' j'}{J}{\gamma j}$. **Hint:** Take the $q=0$ component, $J_0=J_z$, and use {eq}`eq-jjcouple-72a` to evaluate the Clebsch-Gordan coefficient explicitly. Then solve for the reduced matrix element.
+**(b)**  For the special case $\Avec=\Jvec$, work out an explicit formula for the reduced matrix element, $\reducedme{\gamma' j'}{J}{\gamma j}$. **Hint:** Take the $q=0$ component, $J_0=J_z$, and use {eq}`eq-jjcouple-72a` to evaluate the Clebsch-Gordan coefficient explicitly. Then solve for the reduced matrix element.
 
-\problempart{(c)} Since $\Avec$ and $\Bvec$ are vector operators, $\Avec\cdot\Bvec$ is a scalar operator. Express the reduced matrix element of the scalar $\Avec\cdot\Bvec$ in terms of the reduced matrix elements of $\Avec$ and $\Bvec$. **Hint:** Note that
+**(c)**  Since $\Avec$ and $\Bvec$ are vector operators, $\Avec\cdot\Bvec$ is a scalar operator. Express the reduced matrix element of the scalar $\Avec\cdot\Bvec$ in terms of the reduced matrix elements of $\Avec$ and $\Bvec$. **Hint:** Note that
 
 :::{math}
 :label: eq-zeeman-56
@@ -571,7 +579,7 @@ Show that
 
 where we use {eq}`eq-wigeck-9`.
 
-\problempart{(d)} Now show that
+**(d)**  Now show that
 
 :::{math}
 :label: eq-zeeman-57
@@ -589,7 +597,9 @@ which is the projection theorem.
 
 (prob-zeeman-4)=
 
-**Problem \prbdzeeman-4..** 
+**Problem 4.** 
+
+The wave function of spin-$\fract1/2$ particle can be considered to be a 2-component column spinor,
 
 :::{math}
 :label: eq-zeeman-59
@@ -610,11 +620,11 @@ In this notation, the normalization integral can be written
 \int d^3\xvec \, \psi^\dagger(\xvec) \psi(\xvec) = 1.
 :::
 
-\problempart{(a)} The magnetic moment operator of an electron is given by {eq}`eq-spinmagf-16`, and that of a neutron by {eq}`eq-spinmagf-24`. Find the expectation value of the magnetic moment operator for an electron and for a neutron, when the wave function satisfies $\psi_-(\xvec)=0$, that is, the particle is polarized as “spin up.” Express your answer in terms of $g$-factors and other physical constants.
+**(a)**  The magnetic moment operator of an electron is given by {eq}`eq-spinmagf-16`, and that of a neutron by {eq}`eq-spinmagf-24`. Find the expectation value of the magnetic moment operator for an electron and for a neutron, when the wave function satisfies $\psi_-(\xvec)=0$, that is, the particle is polarized as “spin up.” Express your answer in terms of $g$-factors and other physical constants.
 
 In this case the expectation value of the magnetic moment vector has only a $z$-component. We consider this $z$-component to be “the magnetic moment” (that is, a scalar value) of the electron or neutron.
 
-\problempart{(b)} Iron has a density of 7.87 $gm/cm^3$, and an atomic weight of 55.8. Assuming each iron atom has an average of one electron aligned in the $z$-direction, find the magnetization $\Mvec$. (The magnetization is defined as the dipole moment per unit volume in both SI and Gaussian units. See Appendix~\emunits. The Gaussian unit of magnetization is $Gauss$, and the SI unit is $J/\\textTesla-m^3$, which is also an $Ampere/m$. One $Ampere/m$ is the same magnetization as as $10^{-3}\,Gauss$.)
+**(b)**  Iron has a density of 7.87 $gm/cm^3$, and an atomic weight of 55.8. Assuming each iron atom has an average of one electron aligned in the $z$-direction, find the magnetization $\Mvec$. (The magnetization is defined as the dipole moment per unit volume in both SI and Gaussian units. See Appendix~\emunits. The Gaussian unit of magnetization is $Gauss$, and the SI unit is $J/\\textTesla-m^3$, which is also an $Ampere/m$. One $Ampere/m$ is the same magnetization as as $10^{-3}\,Gauss$.)
 
 A uniformly magnetized sphere has a magnetic field given by
 
@@ -627,15 +637,19 @@ in Gaussian units. Compute the magnetic field strength inside a uniformly magnet
 
 Iron actually has four $3d$ electrons whose spins can be aligned. If you multiply your answer by 4, you will get a value close to but somewhat larger than the practical saturation field strength in an iron core magnet. This number is important to experimentalists, for example, particle physicists who must bend particle beams with magnetic fields. To achieve much higher field strengths requires superconductors, which produce them by means of massive currents, without the aid of any substance of high permeability as a core.
 
-\problempart{(c)} A neutron star has a density of $4\times 10^{14} \, gm/cm^3$. Find the magnetic field inside a uniformly magnetized sphere of such material, assuming each neutron is aligned with the magnetic field.
+**(c)**  A neutron star has a density of $4\times 10^{14} \, gm/cm^3$. Find the magnetic field inside a uniformly magnetized sphere of such material, assuming each neutron is aligned with the magnetic field.
 
 (prob-zeeman-5)=
 
-**Problem \prbdzeeman-5..** 
+**Problem 5.** 
+
+The Land\'e $g$-factor gives the proportionality between $\muvec$ and $\Jvec$ on a single irreducible subspace of the atomic Hilbert space with quantum numbers $\ell$ and $j$.  Given that the magnetic moment operator $\muvec$ is proportional to $\Lvec+2\Svec$, it would be logical that if $\ell=0$ then the Land\'e $g$-factor should become equal to the electron $g$-factor, whereas if $\ell\to\infty$, then it should become equal to the $g$-factor for orbital motion, which is 1.  Show that this is true.
 
 (prob-zeeman-6)=
 
-**Problem \prbdzeeman-6..** 
+**Problem 6.** 
+
+The deuteron is a bound state of a proton and a neutron.  It is the simplest compound nucleus.  Here are the experimental facts.
 
 The deuteron has only one bound state, the ground state, with energy $E_0=-2.2\,MeV$. It has spin~1 and $g$-factor,
 
@@ -685,7 +699,7 @@ which by convention uses the proton mass, even for the neutron and other particl
 
 which serves to define $g_d$, the deuteron $g$-factor. It is like the Land\'e $g$-factor, which applies to atoms, but one difference is that even very powerful magnetic fields are “weak” by nuclear standards. Our problem will be to explain the observed value of $g_d$ in terms of a 2-body model of the deuteron.
 
-\problempart{(a)} It is shown in Prob. {ref}`prob-variational-2` that the ground state of a central force problem is always an $s$-wave (with $\ell=0$). If deuterium is a central force problem, then its one and only ground state must have $\ell=0$. Then we can ignore $\Lvec$ in {eq}`eq-zeeman-65` and just concentrate on the spin degrees of freedom. (Take the Hilbert space to be just the product of the two spin Hilbert spaces, with $\Ivec=\Svec_p+\Svec_n$.) The perturbing (Zeeman) Hamiltonian is just the interaction of the two spins with the magnetic field,
+**(a)**  It is shown in Prob. {ref}`prob-variational-2` that the ground state of a central force problem is always an $s$-wave (with $\ell=0$). If deuterium is a central force problem, then its one and only ground state must have $\ell=0$. Then we can ignore $\Lvec$ in {eq}`eq-zeeman-65` and just concentrate on the spin degrees of freedom. (Take the Hilbert space to be just the product of the two spin Hilbert spaces, with $\Ivec=\Svec_p+\Svec_n$.) The perturbing (Zeeman) Hamiltonian is just the interaction of the two spins with the magnetic field,
 
 :::{math}
 :label: eq-zeeman-69
@@ -696,13 +710,13 @@ The spins must be in the triplet state, since we know that $i=1$.
 
 Use the projection theorem to find an expression for the $g$-factor of the deuteron in this model. Evaluate the expression numerically.
 
-\problempart{(b)} You should get an answer that is pretty good but not perfect. Call this answer $g_{d0}$, the first stab at a theoretical prediction of the $g$-factor of the deuteron.
+**(b)**  You should get an answer that is pretty good but not perfect. Call this answer $g_{d0}$, the first stab at a theoretical prediction of the $g$-factor of the deuteron.
 
 We conclude that the deuteron is not exactly a central force problem. But the calculation of part (a) shows that the ground state wave function of the deuteron is probably mostly an $s$-wave (because the agreement is pretty good), but that there must be contributions from orbital angular momentum values $\ell\ne0$. Mixing of different $\ell$ values in an energy eigenstate means that $L^2$ is not a good quantum number; if the system is not central force, then this is no surprise.
 
 Hydrogen is not a central force problem, either, if we include the fine structure. We know that fine structure corrections are essentially relativistic, and are of order $(v/c)^2$ compared to nonrelativistic energies. Take the observed binding energy of the deuteron and assume it gives an estimate of the kinetic energy of the proton or neutron as they orbit one another. Use this to obtain an estimate of $v/c$, and compare it to the $v/c$ of the electron in the ground state of hydrogen. Use this to estimate the momentum of the proton or neutron in its orbit around the other particle, and then use the uncertainty princple to estimate the radius of the orbit. You should find a value somewhat larger than the radius of the proton, which is about $1.3\times10^{-13}\,cm$. This is because the deuteron is only weakly bound, and the wave function tunnels significantly into the classically forbidden region.
 
-\problempart{(c)} Henceforth we must include the spatial degrees of freedom in our model, and we cannot ignore $\Lvec$ in {eq}`eq-zeeman-65`. The orbital motion of the proton, a charged particle, must contribute to the magnetic moment of the deuteron.
+**(c)**  Henceforth we must include the spatial degrees of freedom in our model, and we cannot ignore $\Lvec$ in {eq}`eq-zeeman-65`. The orbital motion of the proton, a charged particle, must contribute to the magnetic moment of the deuteron.
 
 Let $\ket{\psi}$ be the normalized ground state of deuterium. This is an eigenstate of $I^2$ and $I_z$ with quantum numbers $i=1$ and $m_i$, respectively. Project this onto the eigenspaces of $L^2$, and call the projected vectors $c_\ell\ket{\psi_\ell}$, where $\ket{\psi_\ell}$ is normalized. That is, write
 
@@ -731,7 +745,7 @@ Show that the ground state $\psi$ is an eigenstate of $S^2$, where
 
 is the total spin of the proton-neutron system. Note that $\Ivec=\Lvec+\Svec$.
 
-\problempart{(d)} In atoms, the Zeeman Hamiltonian is given by
+**(d)**  In atoms, the Zeeman Hamiltonian is given by
 
 :::{math}
 :label: eq-zeeman-73
@@ -751,4 +765,4 @@ that is, with an orbital $g$ factor of $1/2$. This is because the orbital operat
 
 Compute the energy shift in terms of the unknown coefficients $c_\ell$. Assume $\Bvec=B{\hat{\mathbf{z}}}$, and notice that the $\Lvec$ term vanishes on an $s$-wave. Explain why the cross terms vanish. For the other terms use the projection theorem, and choose your angular momentum carefully. Find an expression for $g_d$ in terms of the coefficients $c_\ell$.
 
-\problempart{(e)} Plug in the experimental value of $g_d$ and find the probability that the deuteron is not in an $s$-wave. By the way, the nonvanishing electric quadrupole moment also shows that the deuteron is not purely an $s$-wave.
+**(e)**  Plug in the experimental value of $g_d$ and find the probability that the deuteron is not in an $s$-wave. By the way, the nonvanishing electric quadrupole moment also shows that the deuteron is not purely an $s$-wave.

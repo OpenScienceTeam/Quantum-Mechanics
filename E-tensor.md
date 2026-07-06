@@ -45,7 +45,7 @@ exist, are nonsingular, and are inverses of each other,
 \pop{x^{\prime\, i}}{x^j} \frac{\partial x^j}{\partial x^{\prime\, k}} = \delta^i_k.
 :::
 
-Here we use the summation convention (see \secrtensor-3). For example, the two coordinate systems on physical space, $(x,y,z)$ and $(r,\theta,\phi)$, are related by the equations,
+Here we use the summation convention (see {ref}`sec-tensor-3`). For example, the two coordinate systems on physical space, $(x,y,z)$ and $(r,\theta,\phi)$, are related by the equations,
 
 :::{math}
 :label: eq-tensor-3
@@ -139,7 +139,7 @@ v_\phi &= {\hat{\boldsymbol{\phi}}}\cdot\vvec = r\sin\theta \,\dot\phi, \\
 
 which are often used in problems in mechanics. {eq}`eq-tensor-10` is equivalent to {eq}`eq-vecident-27c`.
 
-Although we put an upper index on the coordinates, for example, $x^i$, these do not form a contravariant vector, at least not in general, curvilinear coordinates. That is because coordinate transformations are nonlinear in general, as exemplified by {eq}`eq-tensor-3` or {eq}`eq-tensor-4`. For the special case of rectilinear coordinates see \secrtensor-13.
+Although we put an upper index on the coordinates, for example, $x^i$, these do not form a contravariant vector, at least not in general, curvilinear coordinates. That is because coordinate transformations are nonlinear in general, as exemplified by {eq}`eq-tensor-3` or {eq}`eq-tensor-4`. For the special case of rectilinear coordinates see {ref}`sec-tensor-13`.
 
 (sec-tensor-6)=
 
@@ -230,7 +230,7 @@ The *Kronecker delta* $\delta^i_j$ is a mixed tensor. That is, suppose we define
 \delta^{\prime\, i}_j = \pop{x^{\prime\, i}}{x^k} \, \frac{\partial x^\ell}{\partial x^{\prime\, j}} \,\delta^k_\ell = \pop{x^{\prime\, i}}{x^k} \, \frac{\partial x^k}{\partial x^{\prime\, j}} = \delta^i_j,
 :::
 
-which follows from {eq}`eq-tensor-2`. But this only works if we define the Kronecker delta with mixed indices. If we attempt to define an object such as $\delta_{ij}$ or $\delta^{ij}$ as having the value $1$ if $i=j$ and $0$ if $i\ne j$, requiring these values in all coordinate systems, then the resulting object does not transform as a tensor (either a purely covariant or purely contravariant tensor of rank 2). But see however \secrtensor-14, for the special case of orthonormal coordinates on a Euclidean space, where $\delta_{ij}$ does transform as a tensor.
+which follows from {eq}`eq-tensor-2`. But this only works if we define the Kronecker delta with mixed indices. If we attempt to define an object such as $\delta_{ij}$ or $\delta^{ij}$ as having the value $1$ if $i=j$ and $0$ if $i\ne j$, requiring these values in all coordinate systems, then the resulting object does not transform as a tensor (either a purely covariant or purely contravariant tensor of rank 2). But see however {ref}`sec-tensor-14`, for the special case of orthonormal coordinates on a Euclidean space, where $\delta_{ij}$ does transform as a tensor.
 
 When writing the Kronecker delta as a mixed tensor, $\delta^i_j$, we do not bother to place one index before the other (or to use dots as place holders), since the tensor is symmetric in $i$ and $j$.
 
@@ -422,7 +422,7 @@ The operator $\partial_i$ can be thought of as the gradient operator, which can 
 
 The divergence can be applied to any tensor with at least one contravariant index. As defined here, the divergence produces a tensor of rank one less than the original tensor, but this rule only works in rectilinear coordinates, where the derivatives of the Jacobian matrix vanish. A special case is the divergence of a vector field, which is a scalar.
 
-The curl in the usual sense is only meaningful in three-dimensional space, where it requires the properties of the Levi-Civita symbol (see \secrtensor-15).
+The curl in the usual sense is only meaningful in three-dimensional space, where it requires the properties of the Levi-Civita symbol (see {ref}`sec-tensor-15`).
 
 (sec-tensor-14)=
 
@@ -597,7 +597,7 @@ The identity {eq}`eq-tensor-51` is the one used most often, for boiling down two
 \Avec\cross(\del\cross\Bvec) = (\del\Bvec)\cdot\Avec -\Avec\cdot\del\Bvec.
 :::
 
-In this identity we use a notation in which $\del\Bvec$ is interpreted as a matrix, see \secrtensor-17. Other identities with two cross products or curls include
+In this identity we use a notation in which $\del\Bvec$ is interpreted as a matrix, see {ref}`sec-tensor-17`. Other identities with two cross products or curls include
 
 :::{math}
 :label: eq-tensor-56
@@ -821,7 +821,7 @@ That is, the components of the contravariant metric tensor are the same, numeric
 
 If the quantity {eq}`eq-tensor-72` is an invariant, then so is its negative. There is no physical significance to the choice of the overall sign of this quantity; the only thing that matters is the opposite signs with which the spatial and time coordinates enter. In these Notes we will use the metric given by {eq}`eq-tensor-74`, but many books would define $g_{\mu\nu}$ with an opposite sign. Our sign convention follows that of Jackson, *Classical Electrodynamics*, 3rd edition, and is commonly used in the physics literature on special relativity. Unfortunately, it gives rise to some notational difficulties.
 
-As pointed out in \secrtensor-14, in three-dimensional, Euclidean space with orthonormal coordinates, there is no need to maintain the distinction between contravariant and covariant indices, and we normally just use lower indices everywhere, for example, in expressing the components $p_i$ of the usual momentum vector $\pvec$. But $\pvec$ is also the spatial part of the contravariant 4-momentum vector $p^\mu$ in special relativity, that is,
+As pointed out in {ref}`sec-tensor-14`, in three-dimensional, Euclidean space with orthonormal coordinates, there is no need to maintain the distinction between contravariant and covariant indices, and we normally just use lower indices everywhere, for example, in expressing the components $p_i$ of the usual momentum vector $\pvec$. But $\pvec$ is also the spatial part of the contravariant 4-momentum vector $p^\mu$ in special relativity, that is,
 
 :::{math}
 :label: eq-tensor-82
@@ -946,24 +946,32 @@ m {d^2 x^\mu\over d\tau^2} = \dod{p^\mu}{\tau} = {q\over c}F^\mu{}_\nu\, \dod{x^
 
 Here $p^\mu$ is the kinetic momentum defined in {eq}`eq-tensor-82` and $\tau$ is the proper time.
 
-\problems
+(sec-tensor-problems)=
+
+## Problems
 
 (prob-tensor-1)=
 
-**Problem \prbdtensor-1.** 
+**Problem 1.** 
+
+Show that the contraction of a contravariant vector times a covariant vector transforms as a scalar.  See Eq.~(\eqr\cn.18).
 
 (prob-tensor-2)=
 
-**Problem \prbdtensor-2..** 
+**Problem 2.** 
 
-\problempart{(a)} Show that the metric tensor $g_{ij}$, defined by {eq}`eq-tensor-23` in all coordinate systems, transforms as a second-rank, purely covariant tensor.
+Some problems on the metric tensor.
 
-\problempart{(b)} Given that $g_{ij}$ transforms as a second-rank, purely covariant tensor, show that $g^{ij}$, defined by {eq}`eq-tensor-24`, transforms as a second-rank, purely contravariant tensor.
+**(a)**  Show that the metric tensor $g_{ij}$, defined by {eq}`eq-tensor-23` in all coordinate systems, transforms as a second-rank, purely covariant tensor.
 
-\problempart{(c)} Tensors $g_{ij}$ and $g^{ij}$ are regarded as the purely covariant and purely contravariant versions of the metric tensor. What do we get if we raise the index on one of the components of $g_{ij}$, to obtain a mixed version of the metric tensor? What do we get if we raise both indices on $g_{ij}$?
+**(b)**  Given that $g_{ij}$ transforms as a second-rank, purely covariant tensor, show that $g^{ij}$, defined by {eq}`eq-tensor-24`, transforms as a second-rank, purely contravariant tensor.
 
-\problempart{(d)} Prove {eq}`eq-tensor-31`.
+**(c)**  Tensors $g_{ij}$ and $g^{ij}$ are regarded as the purely covariant and purely contravariant versions of the metric tensor. What do we get if we raise the index on one of the components of $g_{ij}$, to obtain a mixed version of the metric tensor? What do we get if we raise both indices on $g_{ij}$?
+
+**(d)**  Prove {eq}`eq-tensor-31`.
 
 (prob-tensor-3)=
 
-**Problem \prbdtensor-3.} Let $A^i$ be a contravariant vector, and let $B_i{}^j$ be defined by {eq}`eq-tensor-33`.  Show that under general (curvilinear coordinate) transformations, $B_i{.**
+**Problem 3.**
+
+Let $A^i$ be a contravariant vector, and let $B_i{}^j$ be defined by Eq.~(\eqr\cn.33).  Show that under general (curvilinear coordinate) transformations, $B_i{}^j$ does not transform as a (mixed) tensor, but that under linear transformations it does.

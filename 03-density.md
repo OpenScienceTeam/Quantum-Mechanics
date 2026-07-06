@@ -205,7 +205,7 @@ Pure and mixed states in quantum mechanics are similar in many respects to coher
 
 ## A Complete and Minimal Description of the Physics
 
-The density operator contains a complete and minimal description of the information available about the given system (more precisely, about the ensemble of identically prepared systems). The description is complete because, as discussed above, knowledge of $\rho$ suffices to calculate the outcome of any statistical measurement. The description is minimal because $\rho$ can be measured (see \secrdensity-18). There are no phase or other conventions involved in determining the density operator. Therefore the density operator contains the physics, all the physics, and nothing but the physics. This is in contrast to wave functions or state vectors, which are subject to phase conventions (and which in any case only work for pure states). It is easy to see from the definitions {eq}`eq-density-15` and {eq}`eq-density-16` that the density operator is independent of the phase conventions inherent in its constituent state vectors.
+The density operator contains a complete and minimal description of the information available about the given system (more precisely, about the ensemble of identically prepared systems). The description is complete because, as discussed above, knowledge of $\rho$ suffices to calculate the outcome of any statistical measurement. The description is minimal because $\rho$ can be measured (see {ref}`sec-density-18`). There are no phase or other conventions involved in determining the density operator. Therefore the density operator contains the physics, all the physics, and nothing but the physics. This is in contrast to wave functions or state vectors, which are subject to phase conventions (and which in any case only work for pure states). It is easy to see from the definitions {eq}`eq-density-15` and {eq}`eq-density-16` that the density operator is independent of the phase conventions inherent in its constituent state vectors.
 
 (sec-density-8)=
 
@@ -304,7 +304,7 @@ But this is the same density operator as in {eq}`eq-density-24`, obtained under 
 
 There is another important lesson contained in this result, namely, that there is no unique decomposition of a given density operator into a set of pure states with probability weights. Such a decomposition into pure states and associated weights can be carried out in many different ways. But since the density operator contains all the physics that can be measured on a given ensemble of systems, one cannot determine by any physical measurement which pure states and associated weights are the “real” ones. The reality is the density operator itself.
 
-This point would be easier to understand if we had not defined the density operator in the first place in terms of pure states and associated weights [{eq}`eq-density-15` and {eq}`eq-density-16`]. We did this because you have probably spent more time thinking about wave functions than density operators, so you have some feel or intuition for wave functions. Mixed states may be the norm in real experiments, but pure states are the norm in first courses in quantum mechanics and homework problems. But our presentation has been circular: we defined the density operator in terms of pure states, and then defined a pure state in terms of the density operator. A more satisfactory approach would be to incorporate density operators into the postulates of quantum mechanics from the outset, and then to “derive” pure states as a special case. We will, in fact, present a revised and final version of the postulates of quantum mechanics in \secrdensity-19, formulated in terms of the density operator, and you should regard these as a satisfactory starting point for understanding the measurement process in quantum mechanics.
+This point would be easier to understand if we had not defined the density operator in the first place in terms of pure states and associated weights [{eq}`eq-density-15` and {eq}`eq-density-16`]. We did this because you have probably spent more time thinking about wave functions than density operators, so you have some feel or intuition for wave functions. Mixed states may be the norm in real experiments, but pure states are the norm in first courses in quantum mechanics and homework problems. But our presentation has been circular: we defined the density operator in terms of pure states, and then defined a pure state in terms of the density operator. A more satisfactory approach would be to incorporate density operators into the postulates of quantum mechanics from the outset, and then to “derive” pure states as a special case. We will, in fact, present a revised and final version of the postulates of quantum mechanics in {ref}`sec-density-19`, formulated in terms of the density operator, and you should regard these as a satisfactory starting point for understanding the measurement process in quantum mechanics.
 
 This point has interesting implications in some practical situations. Consider, for example, a scattering experiment, in which a beam of particles is directed at a target. As you know, in mathematical treatments of scattering theory, it is common to speak of a plane wave incident on a target, which is scattered into a scattered wave. This is done for reasons of mathematical simplicity, but note that a plane wave is not normalizable and cannot represent the quantum state of a real particle. A more sophisticated approach uses wave packets, which is somewhat closer to real physics because wave packets are normalizable and can represent physically realizable states (but pure ones). But when we are faced with a real accelerator, an obvious question is, what actually is the wave function of the particles coming out? Is it a plane wave, a wave packet, or something else? And how would we know? The answer is that in most cases the state of the particles emerging from an accelerator is not a pure state at all, but rather a statistical mixture, which must be represented by a density operator. Since the density operator has no unique decomposition into pure states, the question about the “real” wave function of the particles is meaningless.
 
@@ -345,13 +345,13 @@ that is, we have measured
 P(\xvec) = \rho(\xvec,\xvec).
 :::
 
-The $\xvec$-space matrix elements of $\rho$ given in {eq}`eq-density-29` actually constitute the *correlation function* of the quantum wave function. Generally speaking, the correlation function of a wave field is the statistical average of a product like $\psi(\xvec) \psi(\xvec')^\cc$, for example, one can talk about the correlation function of the electric field in optics. Thus, before we attempt to measure the phase $\phi$ in {eq}`eq-density-27`, we should make sure that we have a pure state. One way to do this would be to measure the off-diagonal elements of $\rho$, thereby determining $\rho$ as an operator, and then decide whether it represents a pure state. See \secrdensity-14.
+The $\xvec$-space matrix elements of $\rho$ given in {eq}`eq-density-29` actually constitute the *correlation function* of the quantum wave function. Generally speaking, the correlation function of a wave field is the statistical average of a product like $\psi(\xvec) \psi(\xvec')^\cc$, for example, one can talk about the correlation function of the electric field in optics. Thus, before we attempt to measure the phase $\phi$ in {eq}`eq-density-27`, we should make sure that we have a pure state. One way to do this would be to measure the off-diagonal elements of $\rho$, thereby determining $\rho$ as an operator, and then decide whether it represents a pure state. See {ref}`sec-density-14`.
 
 (sec-density-13)=
 
 ## General Properties of the Density Operator (Continued)
 
-In the following (and for the rest of the course) we will adopt the point of view that the density operator is the primary object and that pure states are just a special case. This is certainly how it is in real experiments, but it means that our original “definitions” of the density operator, in {eq}`eq-density-15` and {eq}`eq-density-16`, are not satisfactory, because they express the density operator in terms of a statistical ensemble of pure states. Nevertheless, those equations do give a useful perspective on the density operator, which is directly applicable in situations such as the gedankenexperiment we considered earlier in which the beam of atoms was polarized in a random direction. Moreover, as shown in \secrdensity-10, they lead to three important properties of the density operator: it is Hermitian, it is nonnegative definite, and it has unit trace.
+In the following (and for the rest of the course) we will adopt the point of view that the density operator is the primary object and that pure states are just a special case. This is certainly how it is in real experiments, but it means that our original “definitions” of the density operator, in {eq}`eq-density-15` and {eq}`eq-density-16`, are not satisfactory, because they express the density operator in terms of a statistical ensemble of pure states. Nevertheless, those equations do give a useful perspective on the density operator, which is directly applicable in situations such as the gedankenexperiment we considered earlier in which the beam of atoms was polarized in a random direction. Moreover, as shown in {ref}`sec-density-10`, they lead to three important properties of the density operator: it is Hermitian, it is nonnegative definite, and it has unit trace.
 
 To pursue this idea, we now ask, if an operator $\rho$ has these three properties, can it be represented as a statistical mixture of pure states? That is, do there exist weights and state vectors such that {eq}`eq-density-15` or {eq}`eq-density-16` is true? The answer is yes, as we now show.
 
@@ -385,7 +385,7 @@ so that the $p_n$ are nonnegative numbers that sum to unity and can be interpret
 
 which is a special case of {eq}`eq-density-16`. This proves the assertion.
 
-We see that an arbitrary density operator can actually be represented in terms of a discrete, orthonormal set of pure states and associated weights; but we emphasize again that in the general representation of a density operator in terms of pure states, as in {eq}`eq-density-16`, there is no requirement that the states $\ket{\psi_i}$ be orthogonal (nor do they have to belong to a discrete family, as we have seen in the example discussed in \secrdensity-3). We also emphasize that the decomposition of $\rho$ into pure states and weights is not unique. Nevertheless, since such a decomposition always exists, it is never wrong to assume such a representation of a density operator for the purpose of calculation or of understanding its properties.
+We see that an arbitrary density operator can actually be represented in terms of a discrete, orthonormal set of pure states and associated weights; but we emphasize again that in the general representation of a density operator in terms of pure states, as in {eq}`eq-density-16`, there is no requirement that the states $\ket{\psi_i}$ be orthogonal (nor do they have to belong to a discrete family, as we have seen in the example discussed in {ref}`sec-density-3`). We also emphasize that the decomposition of $\rho$ into pure states and weights is not unique. Nevertheless, since such a decomposition always exists, it is never wrong to assume such a representation of a density operator for the purpose of calculation or of understanding its properties.
 
 (sec-density-14)=
 
@@ -624,11 +624,15 @@ where $P_I$ is the projection operator corresponding to interval $I$, as in {eq}
 
 We will not present the revision of postulate~6 here, but rather leave it as an exercise.
 
-\problems
+(sec-density-problems)=
+
+## Problems
 
 (prob-density-1)=
 
-**Problem \prbddensity-1.} The projection postulate of quantum mechanics says that if a system is described by a pure state $\ket{\psi.** 
+**Problem 1.** 
+
+The projection postulate of quantum mechanics says that if a system is described by a pure state $\ket{\psi}$ (here assumed to be normalized), then after a measurement of the operator $A$ producing eigenvalue $a_n$, the system is described by the (normalized) state
 
 :::{math}
 :label: eq-density-58
@@ -641,11 +645,15 @@ Suppose instead the system is described initially by a density operator $\rho$ (
 
 (prob-density-2)=
 
-**Problem \prbddensity-2..** 
+**Problem 2.** 
+
+Show that if $\rho$ is a density operator, then $\tr\rho^2\le1$, with equality if and only if $\rho$ represents a pure state.
 
 (prob-density-3)=
 
-**Problem \prbddensity-3..** 
+**Problem 3.** 
+
+Here is another approach to the density operator. Suppose we have a total system $t$ which is composed of a subsystem $s$ of interest, plus the rest $r$ of the total system.  For example, let system $s$ be an atom.  Then system $r$ could be another microscopic system which has interacted with the atom; it could be a second, identical atom, with both atoms flying apart and carrying spin correlations as in an Einstein-Podolsky-Rosen experiment; it could be a heat bath; it could be a macroscopic measuring apparatus; it could be the rest of the universe.  System $r$ may interact with system $s$ only for certain time intervals, as we wish (in other words, we may wish to assume that systems $s$ and $r$ are noninteracting at certain times).
 
 Let $\ket{n}^{(s)}$ and $\ket{m}^{(r)}$ be bases of kets in the Hilbert spaces for the subsystem of interest and the rest of the system, respectively, so that the product kets $\ket{n}^{(s) }\ket{m}^{(r)}$ are basis kets for the Hilbert space for the total system. Let spaces $\ES_s$, $\ES_r$ and $\ES_t$ be the Hilbert spaces for the system of interest, the rest of the system, and the total system, respectively.
 

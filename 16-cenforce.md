@@ -138,7 +138,7 @@ which is the usual one for the one-dimensional Schr\"odinger equation apart from
 
 ## Separation of Variables
 
-The usual way of deriving the radial Schr\"odinger equation in introductory courses is to separate the three-dimensional Schr\"odinger equation in spherical coordinates. The results are the same as in \secrcenforce-2. The method of separation of variables, when it works, is a powerful one for solving multidimensional partial differential equations that sometimes leads to exact solutions that would be difficult to find otherwise. Most wave equations are not separable in any coordinate system, however. Fortunately, many common model problems are separable in at least one coordinate system, while many others are close to a separable system and can be treated by perturbation theory. If this is not so, then usually numerical techniques will be required to find solutions. Some systems are separable in more than one coordinate system, for example, the Schr\"odinger equation for all central force problems in three dimensions is separable in spherical coordinates, while the free particle is also separable in rectangular coordinates and the hydrogen atom is also separable in confocal parabolic coordinates.
+The usual way of deriving the radial Schr\"odinger equation in introductory courses is to separate the three-dimensional Schr\"odinger equation in spherical coordinates. The results are the same as in {ref}`sec-cenforce-2`. The method of separation of variables, when it works, is a powerful one for solving multidimensional partial differential equations that sometimes leads to exact solutions that would be difficult to find otherwise. Most wave equations are not separable in any coordinate system, however. Fortunately, many common model problems are separable in at least one coordinate system, while many others are close to a separable system and can be treated by perturbation theory. If this is not so, then usually numerical techniques will be required to find solutions. Some systems are separable in more than one coordinate system, for example, the Schr\"odinger equation for all central force problems in three dimensions is separable in spherical coordinates, while the free particle is also separable in rectangular coordinates and the hydrogen atom is also separable in confocal parabolic coordinates.
 
 In all cases, separability is related to the existence of constants of the motion, that is, operators that commute with the Hamiltonian that are related to some symmetry of the system. If the Schr\"odinger equation for some multidimensional system is not separable in any coordinate system, it probably means that the system does not possess any continuous symmetries at all. It may possess discrete symmetries, such as parity and time reversal, but these do not lead to separability of the wave equation in any coordinates. If the Schr\"odinger equation is separable in more than one coordinate system, it means that the system respects a larger symmetry group than that needed to ensure the solvability of the problem at all. For example, all central force problems in quantum mechanics are separable in spherical coordinates, which corresponds to the $SO(3)$ symmetry of the system under rotations. But the free particle is also invariant under translations, so the free particle Schr\"odinger equation is also separable in rectangular coordinates, while the hydrogen atom, which possesses an $SO(4)$ symmetry group, is separable also in confocal parabolic coordinates.
 
@@ -157,7 +157,7 @@ Assuming there are bound states, let us denote their discrete eigenvalues by $E_
 \psi_{n\ell m}(r,\theta,\phi) = R_{n\ell}(r) Y_{\ell m} (\theta,\phi).
 :::
 
-The radial Schr\"odinger equation shares some features with the usual one-dimensional Schr\"odinger equation, for example, if $f(r)$ vanishes anywhere on the interval $0\le r < \infty$ then the eigenfunctions are nondegenerate. See {ref}`sec-topicsoned-2`. But for realistic potentials $f(r)$ goes as $r^{\ell+1}$ as $r\to0$ (see \secrcenforce-5), so $f(0)=0$ and the radial eigenfunctions are nondegenerate, in both the bound and unbound cases. Of course the bound eigenfunctions also go to zero as $r\to\infty$. We see that the discrete eigenvalues $E_{n\ell}$ are distinct, that is, nondegenerate, for a given value of $\ell$. The nondegeneracy we are referring to here concerns the eigenvalues and eigenfunctions of the radial Schr\"odinger equation for a given value of $\ell$, regarded as a one-dimensional wave equation.
+The radial Schr\"odinger equation shares some features with the usual one-dimensional Schr\"odinger equation, for example, if $f(r)$ vanishes anywhere on the interval $0\le r < \infty$ then the eigenfunctions are nondegenerate. See {ref}`sec-topicsoned-2`. But for realistic potentials $f(r)$ goes as $r^{\ell+1}$ as $r\to0$ (see {ref}`sec-cenforce-5`), so $f(0)=0$ and the radial eigenfunctions are nondegenerate, in both the bound and unbound cases. Of course the bound eigenfunctions also go to zero as $r\to\infty$. We see that the discrete eigenvalues $E_{n\ell}$ are distinct, that is, nondegenerate, for a given value of $\ell$. The nondegeneracy we are referring to here concerns the eigenvalues and eigenfunctions of the radial Schr\"odinger equation for a given value of $\ell$, regarded as a one-dimensional wave equation.
 
 When we consider the three-dimensional Schr\"odinger equation, however, and include the angular quantum numbers, then degeneracies appear. That is, the energies $E_{n\ell}$ are at least $(2\ell+1)$-fold degenerate because they do not depend on $m$. Physically this is due to the fact that the energy of the system does not depend on the orientation. The quantum number $m$ indicates the projection of the angular momentum $\Lvec$ onto the $z$-axis. But if we rotate our system (or the axes), this projection changes. Therefore the energy eigenvalues cannot depend on $m$.
 
@@ -380,7 +380,7 @@ It will be left as an exercise to work out the details of the WKB approximations
 
 ## Two-Body Central Force Motion
 
-We return to the discussion of \secrcenforce-2. If the source of the force field is not infinitely massive, then a coordinate system attached to it is not an inertial frame and we must take into account the dynamics of the force center itself. That is, we must deal with a two-body problem, which we describe in an arbitrary (“lab”) inertial frame. We let $\xvec_1$ and $\xvec_2$ be the coordinates of the two particles with respect to this frame, with masses $m_1$ and $m_2$, respectively. We assume the force is described by a potential
+We return to the discussion of {ref}`sec-cenforce-2`. If the source of the force field is not infinitely massive, then a coordinate system attached to it is not an inertial frame and we must take into account the dynamics of the force center itself. That is, we must deal with a two-body problem, which we describe in an arbitrary (“lab”) inertial frame. We let $\xvec_1$ and $\xvec_2$ be the coordinates of the two particles with respect to this frame, with masses $m_1$ and $m_2$, respectively. We assume the force is described by a potential
 
 :::{math}
 :label: eq-cenforce-34
@@ -809,7 +809,7 @@ To account for the case $\ell\ne0$, we must include the centrifugal potential. B
 {\ell(\ell+1)\hbar^2 \over 2Mr^2} \to {\ell(\ell+1)\hbar^2 \over 2Mr_0^2} = {\ell(\ell+1)\hbar^2 \over 2I},
 :::
 
-where $I$ is the moment of inertia in the equilibrium position. We see the appearance of the energies of the rigid rotor, derived in an intuitive way in \secrcenforce-10. The replacement {eq}`eq-cenforce-80` will become less accurate as $n$ increases (because the vibrational wave function is more spread out), or as $\ell$ increases (because the centrifugal potential becomes more rapidly varying in $r$).
+where $I$ is the moment of inertia in the equilibrium position. We see the appearance of the energies of the rigid rotor, derived in an intuitive way in {ref}`sec-cenforce-10`. The replacement {eq}`eq-cenforce-80` will become less accurate as $n$ increases (because the vibrational wave function is more spread out), or as $\ell$ increases (because the centrifugal potential becomes more rapidly varying in $r$).
 
 With the replacements {eq}`eq-cenforce-75` and {eq}`eq-cenforce-80`, the radial Schr\"odinger equation becomes
 
@@ -825,7 +825,7 @@ This is a harmonic oscillator with shifted origin and a constant term ($-V_0$ pl
 E_{n\ell} = -V_0 + \Bigl(n+{1\over2}\Bigr)\hbar\omega_v + {\ell(\ell+1)\hbar^2 \over 2I}.
 :::
 
-This is only valid for small $n$ and $\ell$, but it does give an easy and roughly accurate picture of the rotational and vibrational spectrum of the molecule. Notice that the energies have the general form predicted for central force potential in \secrcenforce-4, that is, they depend on both $n$ and $\ell$.
+This is only valid for small $n$ and $\ell$, but it does give an easy and roughly accurate picture of the rotational and vibrational spectrum of the molecule. Notice that the energies have the general form predicted for central force potential in {ref}`sec-cenforce-4`, that is, they depend on both $n$ and $\ell$.
 
 Let's examine the spacing between rotational energy levels in order to estimate the energy of the photon emitted or absorbed in a rotational transition. We define $\Delta E_rot$ as the spacing between the $\ell=0$ and $\ell=1$ levels, or,
 
@@ -840,20 +840,24 @@ The molecule has three different energy scales: that of $K_0$, involved in elect
 
 Greenhouse gases absorb infrared radiation from the earth by making vibrational transitions in molecules. These are not usually diatomic molecules, because the stretching vibrations of molecular bonds typically have too high a frequency. In addition, the main molecular species in the atmosphere, $N_2$ and $O_2$, are homonuclear diatomics without a permanent electric dipole moment. Instead, the greenhouse culprits are mainly $CO_2$ and $H_2O$, triatomics that have bending and twisting modes of lower frequency.
 
-\problems
+(sec-cenforce-problems)=
+
+## Problems
 
 (prob-cenforce-1)=
 
-**Problem \prbdcenforce-1..** 
+**Problem 1.** 
+
+Consider central force motion in two dimensions. The wave function is $\psi(x,y) = \psi(\rho,\phi)$, where $(\rho,\phi)$ are plane polar coordinates specified by
 
 :::{math}
 :label: eq-cenforce-84
 x=\rho\cos\phi, \qquad y=\rho\sin\phi.
 :::
 
-\problempart{(a)} Find the most general function $\psi(\rho,\phi)$ that is an eigenfunction of $L_z$. Express it in terms of a radial wave function $R(\rho)$, along the lines of what is done in the notes for the three-dimensional case. What is the spectrum of $L_z$?
+**(a)**  Find the most general function $\psi(\rho,\phi)$ that is an eigenfunction of $L_z$. Express it in terms of a radial wave function $R(\rho)$, along the lines of what is done in the notes for the three-dimensional case. What is the spectrum of $L_z$?
 
-\problempart{(b)} Consider a central force Hamiltonian in two dimensions,
+**(b)**  Consider a central force Hamiltonian in two dimensions,
 
 :::{math}
 :label: eq-cenforce-85
@@ -864,7 +868,7 @@ where $\pvec=(p_x,p_y)$. In this problem $m_0$ is the mass of the particle, whil
 
 By expressing the Laplacian in polar coordinates and using the result of part~(a), find a radial wave equation for $R(\rho)$ that will determine energy eigenfunctions and eigenvalues.
 
-\problempart{(c)} Define a modified radial wave function by
+**(c)**  Define a modified radial wave function by
 
 :::{math}
 :label: eq-cenforce-86
@@ -873,23 +877,27 @@ f(\rho) = \rho^a R(\rho),
 
 where $a$ is a power to be determined. Determine $a$ by requiring that the modified radial wave equation should look like the one-dimensional Schr\"odinger equation, apart from the range of the variable $\rho$ and the presence of the centrifugal potential.
 
-\problempart{(d)} Consider the case of the free particle. Express the radial eigenfunctions $R(\rho)$ in terms of ordinary Bessel functions, $J_\nu(x)$, and in terms of the energy and the quantum number of $L_z$. You will have to look up the differential equation for ordinary Bessel functions.
+**(d)**  Consider the case of the free particle. Express the radial eigenfunctions $R(\rho)$ in terms of ordinary Bessel functions, $J_\nu(x)$, and in terms of the energy and the quantum number of $L_z$. You will have to look up the differential equation for ordinary Bessel functions.
 
-\problempart{(e)} For any potential that is not too badly behaved near the origin, find the dependence of the radial eigenfunction $R(\rho)$ near $\rho=0$. Verify that the free particle solutions of part~(d) satisfy this condition.
+**(e)**  For any potential that is not too badly behaved near the origin, find the dependence of the radial eigenfunction $R(\rho)$ near $\rho=0$. Verify that the free particle solutions of part~(d) satisfy this condition.
 
 (prob-cenforce-2)=
 
-**Problem \prbdcenforce-2..** 
+**Problem 2.** 
 
-\problempart{(a)} The potential well is illustrated in {ref}`fig-cenforce-8`, with $V_0 = 11\,eV$, $r_0 = 1.1\, {\rm\AA}$. Approximate the potential near the bottom of the well by {eq}`eq-cenforce-75`, with some vibrational frequency $\omega_v$. By assuming that $V(r)=0$ (dissociation) when $r-r_0=r_0$, solve {eq}`eq-cenforce-75` numerically for $\omega_v$. Compare to the experimental value, which is $\nu=6.5\times 10^{13}\\textHz$. Note that $\omega=2\pi\nu$. How well does the order-of-magnitude estimate {eq}`eq-cenforce-77` work? See {ref}`tbl-cenforce-1` for $\omega_0$.
+A good physicist has a feel for orders of magnitude of various physical quantities.  Let's look at some real numbers for the carbon monoxide molecule (CO).  We'll see if it is effective as a greenhouse gas, scattering infrared photons either by making vibrational or rotational transitions.
 
-\problempart{(b)} What is the probability that the CO molecule is in the $n=1$ vibrational state at $300$ Kelvins? A typical infrared photon trying to escape the earth's atmosphere has an energy of 300K. There is not much CO in the atmosphere (good thing, since it's poisonous), but if there were, would it be efficient at absorbing or scattering photons by making vibrational transitions? Such absorption or scattering would impede the escape of heat from the earth, creating a greenhouse effect.
+**(a)**  The potential well is illustrated in {ref}`fig-cenforce-8`, with $V_0 = 11\,eV$, $r_0 = 1.1\, {\rm\AA}$. Approximate the potential near the bottom of the well by {eq}`eq-cenforce-75`, with some vibrational frequency $\omega_v$. By assuming that $V(r)=0$ (dissociation) when $r-r_0=r_0$, solve {eq}`eq-cenforce-75` numerically for $\omega_v$. Compare to the experimental value, which is $\nu=6.5\times 10^{13}\\textHz$. Note that $\omega=2\pi\nu$. How well does the order-of-magnitude estimate {eq}`eq-cenforce-77` work? See {ref}`tbl-cenforce-1` for $\omega_0$.
 
-\problempart{(c)} A CO molecules makes a transition from the $\ell=1$ to the $\ell=0$ rotational state. What is the frequency (in Hertz) of the photon emitted? Compare to the vibrational frequency in part (a), and note the rough estimates made in \secrcenforce-11. What is the most probable value of $\ell$ in CO gas at 300K? Absorption or scattering of photons by rotational transitions is most probable when $\Delta\ell=1$, and falls off rapidly for higher values of $\Delta\ell$. Is CO at 300K effective at scattering typical infrared photons at 300K, by making rotational transitions?
+**(b)**  What is the probability that the CO molecule is in the $n=1$ vibrational state at $300$ Kelvins? A typical infrared photon trying to escape the earth's atmosphere has an energy of 300K. There is not much CO in the atmosphere (good thing, since it's poisonous), but if there were, would it be efficient at absorbing or scattering photons by making vibrational transitions? Such absorption or scattering would impede the escape of heat from the earth, creating a greenhouse effect.
+
+**(c)**  A CO molecules makes a transition from the $\ell=1$ to the $\ell=0$ rotational state. What is the frequency (in Hertz) of the photon emitted? Compare to the vibrational frequency in part (a), and note the rough estimates made in {ref}`sec-cenforce-11`. What is the most probable value of $\ell$ in CO gas at 300K? Absorption or scattering of photons by rotational transitions is most probable when $\Delta\ell=1$, and falls off rapidly for higher values of $\Delta\ell$. Is CO at 300K effective at scattering typical infrared photons at 300K, by making rotational transitions?
 
 (prob-cenforce-3)=
 
-**Problem \prbdcenforce-3.}  Consider the helium atom in a lab frame.  The positions of the nucleus, electron 1 and electron 2 are $\xvec_n$, $\xvec_{e1}$ and $\xvec_{e2.** 
+**Problem 3.** 
+
+Consider the helium atom in a lab frame.  The positions of the nucleus, electron 1 and electron 2 are $\xvec_n$, $\xvec_{e1}$ and $\xvec_{e2}$ respectively.  The mass of the nucleus is $M$ and that of the electron is $m$.  Thus the laboratory Hamiltonian is
 
 :::{math}
 :label: eq-cenforce-87

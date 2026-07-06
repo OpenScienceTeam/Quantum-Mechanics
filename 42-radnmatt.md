@@ -253,7 +253,7 @@ But this implies that the probability goes negative for times $t>1/A_E$, as illu
 1 \ll t \ll {1\over A_E},
 :::
 
-measured in atomic units. Physically, $t$ must be large compared to an orbital period and small compared to the lifetime of the excited state. As we will see in \secrradnmatt-9, $A_E$ is of order $\alpha^3\sim 10^{-6}$ in atomic units for electric dipole transitions in hydrogen, and even smaller for other types. Thus there is plenty of room for the condition {eq}`eq-radnmatt-25` on $t$ to be met. (In other systems or circumstances the conditions may not be so favorable.)
+measured in atomic units. Physically, $t$ must be large compared to an orbital period and small compared to the lifetime of the excited state. As we will see in {ref}`sec-radnmatt-9`, $A_E$ is of order $\alpha^3\sim 10^{-6}$ in atomic units for electric dipole transitions in hydrogen, and even smaller for other types. Thus there is plenty of room for the condition {eq}`eq-radnmatt-25` on $t$ to be met. (In other systems or circumstances the conditions may not be so favorable.)
 
 Our theory breaks down for times comparable to $1/A_E$ because our calculation of the transition probability in {ref}`ch-tdpt`{} did not take into account the depletion of probability from the initial state. To deal with the behavior atomic systems on a time scale comparable to or larger than $1/A_E$, more powerful techniques must be used than time-dependent perturbation theory. We will see the need for this later when we take up resonance fluorescence.
 
@@ -853,25 +853,35 @@ A^{E1} = {4\over 3} {e^2\omega^3 \over \hbar c^3} I_r^2 |\braket{\ell'0}{\ell100
 
 A standard reference for the material in these notes is Bethe and Salpeter, *Quantum Mechanics of One- and Two-Electron Atoms*, which includes tables of dipole transition rates.
 
-\problems
+(sec-radnmatt-problems)=
+
+## Problems
 
 (prob-radnmatt-1)=
 
-**Problem \prbdradnmatt-1.}  The perturbation expansion {eq}`eq-radnmatt-6` is valid if $E_wave \ll E_nucleus.** 
+**Problem 1.** 
+
+The perturbation expansion (\eqr\cn.6) is valid if $E_{\rm wave} \ll E_{\rm nucleus}$.  Compute the energy flux (in watts per square cm) of light for which the rms electric field of the light wave is equal to the electric field strength due to the proton in a hydrogen atom at the Bohr radius.  There is current experimental interest in the physics that arises at such high fields.  The fields are created by focussing laser light onto a small region.
 
 (prob-radnmatt-2)=
 
-**Problem \prbdradnmatt-2. Compute the lifetime of the 21~cm transition in Hydrogen, $1s_{1/2} \; (f=1) \to 1s_{1/2.** 
+**Problem 2.** 
+
+Compute the lifetime of the 21~cm transition in Hydrogen, $1s_{1/2} \; (f=1) \to 1s_{1/2} \; (f=0)$.  Here $f$ is the total angular momentum $\Fvec=\Lvec+\Svec+\Ivec$, orbital plus spin for the electron plus spin for the proton.  The splitting between the energy levels is given by Eq.~(\eqr\hyperfine.50), where $g_N$ is the proton $g$-factor, $\mu_N$ and $\mu_B$ are the nuclear and Bohr magnetons, respectively, and $a_0$ is the Bohr radius.  Assume the upper state is unpolarized (equal probabilities of being in the different magnetic substates).  The lifetime is the inverse of the Einstein $A$ coefficient.  This lifetime determines the radio power radiated by galactic clouds of atomic hydrogen.
 
 (prob-radnmatt-3)=
 
-**Problem \prbdradnmatt-3.} A hydrogen atom is at distance $D$ from a hot blue star with radius $R$ and surface temperature $T$, which radiates significantly in the ultraviolet.  Assume $D\gg R$, so that the light coming from the star is concentrated in a narrow range of solid angles.  Assume the surface of the star radiates as a blackbody. Assume the atom is unpolarized.  When the atom absorbs a photon, taking it from the $1s$ state to the $2p$ state, it absorbs the photon momentum and suffers a recoil; then in short order ($\sim 10^{-9.** 
+**Problem 3.** 
+
+A hydrogen atom is at distance $D$ from a hot blue star with radius $R$ and surface temperature $T$, which radiates significantly in the ultraviolet.  Assume $D\gg R$, so that the light coming from the star is concentrated in a narrow range of solid angles.  Assume the surface of the star radiates as a blackbody. Assume the atom is unpolarized.  When the atom absorbs a photon, taking it from the $1s$ state to the $2p$ state, it absorbs the photon momentum and suffers a recoil; then in short order ($\sim 10^{-9}$ sec), it reemits a photon and drops back into the ground state.  But since the reemission of the photon is isotropic (for an unpolarized atom), the average momentum transferred by the emitted photon is zero. In this way, the atom feels an effective force because of the absorption of photons from the star.  Find an expression for this force in terms of $D$, $R$, $T$, and other appropriate parameters.  Ignore all atomic states except the $1s$ and $2p$.
 
 (prob-radnmatt-4)=
 
-**Problem \prbdradnmatt-4.}  The matter Hamiltonian {eq}`eq-radnmatt-5` is not a special case of the Hamiltonian {eq}`eq-radnmatt-3`, because the potential $U(r)$ in {eq}`eq-radnmatt-5` is an external, $c$-number potential introduced in an *ad hoc.** 
+**Problem 4.** 
 
-\problempart{(a)* Consider a two-particle system with masses }$m_1$ and $m_2$ and charges $q_1=e$ and $q_2=-e$. This covers the case of hydrogen, for which $m_1\gg m_2$, and positronium (a bound state of an electron and a positron), for which $m_1=m_2$. Write the matter Hamiltonian as
+The matter Hamiltonian (\eqr\cn.5) is not a special case of the Hamiltonian (\eqr\cn.3), because the potential $U(r)$ in (\eqr\cn.5) is an external, $c$-number potential introduced in an {\it ad hoc} manner to describe the interaction of the atomic electron with the nucleus, assumed to be infinitely massive and situated at the origin of the coordinates.  It is certainly plausible that (\eqr\cn.5) should represent the dynamics of the atomic electron interacting with the electrostatic field of the nucleus and with the quantized electromagnetic field, but it would be nice to actually derive (\eqr\cn.5) from (\eqr\cn.3), taking into account both the dynamics of the electron and that of the nucleus.
+
+**(a)**  Consider a two-particle system with masses }$m_1$ and $m_2$ and charges $q_1=e$ and $q_2=-e$. This covers the case of hydrogen, for which $m_1\gg m_2$, and positronium (a bound state of an electron and a positron), for which $m_1=m_2$. Write the matter Hamiltonian as
 
 :::{math}
 :label: eq-radnmatt-88
@@ -887,7 +897,7 @@ Perform a transformation from the particle positions ($\rvec_1$,$\rvec_2$) and m
 H_matt = {P^2\over 2M} + {1\over 2\mu}\Bigl[\pvec + {e\over c}\Avec(\Rvec)\Bigr]^2 -{e^2\over r}.
 :::
 
-\problempart{(b)} This is similar to the Hamiltonian {eq}`eq-radnmatt-5`. Differences include the center-of-mass kinetic energy term $P^2/2M$, present here but absent in {eq}`eq-radnmatt-5`; the replacement of $m$ in {eq}`eq-radnmatt-5` by $\mu$ here; and the fact that the Hilbert space contains the center-of-mass degrees of freedom as well as those of the electron and the electromagntic field. Write the total Hamiltonian (matter plus field) in the form
+**(b)**  This is similar to the Hamiltonian {eq}`eq-radnmatt-5`. Differences include the center-of-mass kinetic energy term $P^2/2M$, present here but absent in {eq}`eq-radnmatt-5`; the replacement of $m$ in {eq}`eq-radnmatt-5` by $\mu$ here; and the fact that the Hilbert space contains the center-of-mass degrees of freedom as well as those of the electron and the electromagntic field. Write the total Hamiltonian (matter plus field) in the form
 
 :::{math}
 :label: eq-radnmatt-90
@@ -919,6 +929,6 @@ H_2 &= {e^2\over 2\mu c^2}\,\Avec(\Rvec)^2, .
 
 Write the eigenstates of $H_0$ as a product of a matter times a field part, where the matter eigenstate has the form $\ket{X\Kvec}$, where $X$ refers to an atomic state and $\Kvec$ is an eigenstate of the center-of-mass Hamiltonian (with $\Pvec=\hbar\Kvec$). Notice that there three classes of degrees of freedom now, the relative coordinates in the atom, the center of mass coordinates, and the field.
 
-Assume the system is initially in the excited atomic state $B$ with no photons in the field, as in \secrradnmatt-3, and with the initial center of mass momentum $\hbar\Kvec_i=0$. Use first-order time-dependent perturbation theory to compute the differential transition rate as in {eq}`eq-radnmatt-21`, with $M_{BA}$ replaced by the electric dipole approximation as in {eq}`eq-radnmatt-50`. You want the rate at which photons make transitions into a small cone, but you do not care about the center of mass momentum, so you should sum over all values of $\Kvec$ in the final state.
+Assume the system is initially in the excited atomic state $B$ with no photons in the field, as in {ref}`sec-radnmatt-3`, and with the initial center of mass momentum $\hbar\Kvec_i=0$. Use first-order time-dependent perturbation theory to compute the differential transition rate as in {eq}`eq-radnmatt-21`, with $M_{BA}$ replaced by the electric dipole approximation as in {eq}`eq-radnmatt-50`. You want the rate at which photons make transitions into a small cone, but you do not care about the center of mass momentum, so you should sum over all values of $\Kvec$ in the final state.
 
-Show that in addition to the physics discussed in Secs.~\secrradnmatt-3 and \secrradnmatt-8, we find the fact that the atom as a whole recoils upon the emission of the photon. The photon frequency is no longer $\omega=\omega_{BA}$, but rather there is a correction, which is small since $\hbar\omega\ll Mc^2$. Compute this correction as a function of $\omega_{BA}$ to first order in small quantities. This correction is the Doppler shift due to the recoil of the atom. It is certainly small, but important in some applications, for example, in laser cooling of atomic gases and in the M\"ossbauer effect (see {ref}`sec-transfop-12`).
+Show that in addition to the physics discussed in Secs.~{ref}`sec-radnmatt-3` and {ref}`sec-radnmatt-8`, we find the fact that the atom as a whole recoils upon the emission of the photon. The photon frequency is no longer $\omega=\omega_{BA}$, but rather there is a correction, which is small since $\hbar\omega\ll Mc^2$. Compute this correction as a function of $\omega_{BA}$ to first order in small quantities. This correction is the Doppler shift due to the recoil of the atom. It is certainly small, but important in some applications, for example, in laser cooling of atomic gases and in the M\"ossbauer effect (see {ref}`sec-transfop-12`).

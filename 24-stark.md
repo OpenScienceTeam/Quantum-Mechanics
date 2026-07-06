@@ -471,11 +471,15 @@ where, as explained in {ref}`ch-cenforce`, the radial wave function $R_{n\ell}(r
 
 However, rotational states (for different values of $\ell$) are separated by energies that are typically in the far infrared or microwave range of frequencies, and as $\ell$ increases, the states alternate in parity. So for sufficiently strong applied electric field, there is a strong mixing of rotational states of opposite parity (even and odd $\ell$), and the molecule begins to behave as if it has a permanent electric dipole moment.
 
-\problems
+(sec-stark-problems)=
+
+## Problems
 
 (prob-stark-1)=
 
-**Problem \prbdstark-1..** 
+**Problem 1.** 
+
+Consider the linear Stark effect on the $n=3$ levels of hydrogen.  Use the electrostatic model for hydrogen and ignore the electron spin.  Also ignore fine structure.  Without evaluating any radial or angular integrals, show that the energy shifts have the form,
 
 :::{math}
 :label: eq-stark-42
@@ -488,7 +492,9 @@ Indicate the degeneracies of these levels. Can you guarantee that these degenera
 
 (prob-stark-2)=
 
-**Problem \prbdstark-2.} As explained in \secrstark-13, if a hydrogen atom in the $2s_{1/2}$ state is placed in an external electric field, the energy eigenstates become mixtures of the $2s_{1/2}$ and $2p_{1/2}$ states, so as time progresses the amplitude moves out of the metastable $2s_{1/2}$ state and into the $2p_{1/2}$ state, which decays rapidly.  However, due to the Lamb shift, the $2s_{1/2}$ and $2p_{1/2.** 
+**Problem 2.** 
+
+As explained in Sec.~\secr\cn.13, if a hydrogen atom in the $2s_{1/2}$ state is placed in an external electric field, the energy eigenstates become mixtures of the $2s_{1/2}$ and $2p_{1/2}$ states, so as time progresses the amplitude moves out of the metastable $2s_{1/2}$ state and into the $2p_{1/2}$ state, which decays rapidly.  However, due to the Lamb shift, the $2s_{1/2}$ and $2p_{1/2}$ states are not exactly degenerate, and it requires some minimum electric field strength to overcome the splitting.  This problem analyzes the mixing between these states as a function of electric field strength.  It calls on some knowledge of the fine structure of hydrogen and of the Lamb shift, which are explained in Notes~\finestruc.
 
 Use “nearly degenerate perturbation theory” (see \pertth.16) to analyze the effect of an external electric field on the }$2s_{1/2}$ and $2p_{1/2}$ levels of hydrogen. This is not a model calculation like that done in class, where we looked at the Stark effect on the $n=2$ levels of hydrogen in the electrostatic model; rather, we want to know what would happen in real hydrogen. Thus, you should use the fine structure model of hydrogen, including the spin, and take into account the Lamb shift, which suppresses the $2p_{1/2}$ level about 1.06~GHz below the $2s_{1/2}$ level. The $2p_{3/2}$ level is 10.9~GHz above the $2p_{1/2}$ level, and can be ignored for the purpose of this problem. We ignore the hyperfine structure in this problem. See {ref}`sec-finestruc-17` and Fig.~\figr\finestruc.3.
 

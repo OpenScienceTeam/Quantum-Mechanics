@@ -413,9 +413,9 @@ But since $K_Q^\hc$ has the same effect on the basis kets as $K$, and since both
 
 ## Time Reversal in Spinless Systems
 
-In the case of a spinless particle, we decided in \secrtimerev-3 that the time-reversal operator has the effect of complex conjugating the wave function $\psi(\xvec)$. Let us reconsider the case of spinless systems from the standpoint of the axioms that $\Theta$ is supposed to satisfy, and see if we can rederive this result. Once we have done that, we will turn to particles with spin.
+In the case of a spinless particle, we decided in {ref}`sec-timerev-3` that the time-reversal operator has the effect of complex conjugating the wave function $\psi(\xvec)$. Let us reconsider the case of spinless systems from the standpoint of the axioms that $\Theta$ is supposed to satisfy, and see if we can rederive this result. Once we have done that, we will turn to particles with spin.
 
-In the case of a spinless particle moving in three dimensions, the ket space is $\ES = \mathspan\{\ket{\xvec}\}$ and the wave functions are $\psi(\xvec)$. The time-reversal operator $\Theta$, whatever it is, can be factored into $LK$, where $K=K_\xvec$ is the complex conjugation operator in the position representation, and where $L$ is unitary. Let us begin by finding what $K$ does to the operators $\xvec$ and $\pvec$ under conjugation. We recall from \secrtimerev-9 that $K=K^\hc=K^{-1}$. Tracking the effect of $K\xvec K^\hc$ on a wave function, we have
+In the case of a spinless particle moving in three dimensions, the ket space is $\ES = \mathspan\{\ket{\xvec}\}$ and the wave functions are $\psi(\xvec)$. The time-reversal operator $\Theta$, whatever it is, can be factored into $LK$, where $K=K_\xvec$ is the complex conjugation operator in the position representation, and where $L$ is unitary. Let us begin by finding what $K$ does to the operators $\xvec$ and $\pvec$ under conjugation. We recall from {ref}`sec-timerev-9` that $K=K^\hc=K^{-1}$. Tracking the effect of $K\xvec K^\hc$ on a wave function, we have
 
 :::{math}
 :label: eq-timerev-44
@@ -600,7 +600,7 @@ Altogether, we can satisfy the requirement {eq}`eq-timerev-50` by defining
 
 where $e^{-i\pi S_y/\hbar}$ and $K$ commute because the matrix for $e^{-i\pi S_y/\hbar}$ in the standard basis is real.
 
-Comparing the approach of this to that in \secrtimerev-11, we see that the operator $\Theta$ defined by {eq}`eq-timerev-64` must be the same as that defined in {eq}`eq-timerev-59`, for some choice of $\eta$. In fact, with some additional trouble one can show that $\eta=1$ works (although this is not a very important fact, since $\eta$ is nonphysical anyway).
+Comparing the approach of this to that in {ref}`sec-timerev-11`, we see that the operator $\Theta$ defined by {eq}`eq-timerev-64` must be the same as that defined in {eq}`eq-timerev-59`, for some choice of $\eta$. In fact, with some additional trouble one can show that $\eta=1$ works (although this is not a very important fact, since $\eta$ is nonphysical anyway).
 
 (sec-timerev-13)=
 
@@ -679,7 +679,7 @@ First, any kinetic-plus-potential Hamiltonian in three dimensions,
 H={\pvec^2\over 2m} + V(\xvec),
 :::
 
-commutes with time reversal, because the kinetic energy is even in the momentum and the position vector is invariant. We emphasize that the potential need not be a central force potential. The motion of a charged particle in a given electrostatic field, discussed in \secrtimerev-3, is an example of such a system. More generally, kinetic-plus-potential Hamiltonians for any number of particles in any number of dimensions commute with time reversal.
+commutes with time reversal, because the kinetic energy is even in the momentum and the position vector is invariant. We emphasize that the potential need not be a central force potential. The motion of a charged particle in a given electrostatic field, discussed in {ref}`sec-timerev-3`, is an example of such a system. More generally, kinetic-plus-potential Hamiltonians for any number of particles in any number of dimensions commute with time reversal.
 
 The easiest way to break time-reversal invariance is to introduce a external magnetic field. Then the kinetic energy becomes
 
@@ -911,7 +911,7 @@ instead of {eq}`eq-timerev-96`. This is a ket version of {eq}`eq-orbamsph-57`.
 
 where we commute $K$ past the rotation and use $K^2=1$. The result is a total spin rotation of angle $2\pi$ about the $y$-axis. This rotation can be factored into a product of spin rotations, one for each particle, as in {eq}`eq-timerev-70`. For every boson, that is, for every particle with integer spin, the rotation by $2\pi$ is $+1$, while for every fermion, that is, for every particle of half-integer spin, the rotation by $2\pi$ is $-1$, because of the double-valued representation of the classical rotations for the case of half-integer angular momentum. Thus, the product {eq}`eq-timerev-98` is $+1$ if the system contains an even number of fermions, and $-1$ if it contains an odd number.
 
-This result has an application. Consider an arbitrarily complex system of possibly many spinning particles, in which the Hamiltonian is invariant under time reversal. One may think, for example, of the electronic motion in a solid or a molecule. There is no assumption that the system be invariant under rotations; this would not usually be the case, for example, in the electronic motion in the molecule. Suppose such a system has a nondegenerate energy eigenstate $\ket{\psi}$ with eigenvalue $E$, as in \secrtimerev-16, so that $\ket{\psi}$ satisfies {eq}`eq-timerev-88`. Now multiplying that equation by $\Theta$, we obtain
+This result has an application. Consider an arbitrarily complex system of possibly many spinning particles, in which the Hamiltonian is invariant under time reversal. One may think, for example, of the electronic motion in a solid or a molecule. There is no assumption that the system be invariant under rotations; this would not usually be the case, for example, in the electronic motion in the molecule. Suppose such a system has a nondegenerate energy eigenstate $\ket{\psi}$ with eigenvalue $E$, as in {ref}`sec-timerev-16`, so that $\ket{\psi}$ satisfies {eq}`eq-timerev-88`. Now multiplying that equation by $\Theta$, we obtain
 
 :::{math}
 :label: eq-timerev-99
@@ -934,22 +934,26 @@ For a period of time after the discovery of parity violation in 1954, it was bel
 
 There is much current speculation that the observed asymmetry between matter and antimatter in the universe is due to time-reversal violating effects shortly after the big bang. The idea is that matter and antimatter were created in almost equal measure, the small difference being due to $T$ violation. Later the matter and antimatter mostly annihilated, leaving behind only a small residue of matter, which however makes up the matter we see in the universe today, including ourselves. These are just speculations, but they show the importance of time reversal and other fundamental symmetries in current physical thinking.
 
-\problems
+(sec-timerev-problems)=
+
+## Problems
 
 (prob-timerev-1)=
 
-**Problem \prbdtimerev-1.}  This is a variation on Sakurai *Modern Quantum Mechanics.** 
+**Problem 1.** 
 
-\problempart{(a)* Let $U(\Rmat)$ be a rotation operator on the state space of any system (however complex). Show that $[\Theta,U(\Rmat)]=0$ for all $\Rmat$.
+This is a variation on Sakurai {\it Modern Quantum Mechanics}, problem 4.10, but improved.
 
-\problempart{(b)} Denote the basis states in a single irreducible subspace under rotations of any system by $\ket{jm}$. By considering $\Theta U(\Rmat)\ket{jm}$, show that
+**(a)**  Let $U(\Rmat)$ be a rotation operator on the state space of any system (however complex). Show that $[\Theta,U(\Rmat)]=0$ for all $\Rmat$.
+
+**(b)**  Denote the basis states in a single irreducible subspace under rotations of any system by $\ket{jm}$. By considering $\Theta U(\Rmat)\ket{jm}$, show that
 
 :::{math}
 :label: eq-timerev-100
 [D^j_{m'm}(\Rmat)]^\cc = (-1)^{m-m'} D^j_{-m',-m}(\Rmat).
 :::
 
-\problempart{(c)} Show that if $T^k_q$ is an irreducible tensor operator, then so is
+**(c)**  Show that if $T^k_q$ is an irreducible tensor operator, then so is
 
 :::{math}
 :label: eq-timerev-101
@@ -960,7 +964,9 @@ Operator $S^k$ is regarded as the Hermitian conjugate of $T^k$.
 
 (prob-timerev-2)=
 
-**Problem \prbdtimerev-2.}  This is Sakurai, *Modern Quantum Mechanics.** 
+**Problem 2.** 
+
+This is Sakurai, {\it Modern Quantum Mechanics}, revised edition, problem 11, p.~283, or Sakurai and Napolitano (second edition), problem~11, p.~301.
 
 Suppose a spinless particle is bound to a fixed center by a potential $V(\xvec)$ so asymmetric that no energy level is degenerate. Using time-reversal invariance, prove
 
@@ -980,7 +986,9 @@ what kind of phase restrictions do we obtain on $F_{\ell m}(r)$?
 
 (prob-timerev-3)=
 
-**Problem \prbdtimerev-3..** 
+**Problem 3.** 
+
+Time-reversal symmetry is important in many applications in atomic, molecular, nuclear, and condensed matter physics.  The notes above have given just the basic facts.  In this this problem and the next several problems we will explore various aspects of time-reversal symmetry more deeply and rigorously.  In all cases we assume that we have an $n$-particle system of some kind, on which $\Theta$ is defined as in the notes above.  In particular, $\Theta$ is an antiunitary operator ($\Theta^\dagger\Theta =\Theta\Theta^\dagger=1$) that satisfies
 
 :::{math}
 :label: eq-timerev-104
@@ -1009,13 +1017,13 @@ The set $\{\ket{n}\}$ need not span the whole space (it need not be a basis). No
 
 Let $\Espace$ be the Hilbert space for a system, and let $\Sspace\subset\Espace$ be a subspace. We say that $\Sspace$ is *invariant* under $\Theta$ if for every $\ket{\psi}\in\Sspace$, $\Theta\ket{\psi}\in\Sspace$ (that is, $\Theta$ maps $\Sspace$ into itself).
 
-\problempart{(a)} Let $H$ be a Hamiltonian that is invariant under time reversal, that is, $\Theta^\dagger H\Theta = H$. Show that the bound state energy eigenspaces of $H$ are invariant under $\Theta$.
+**(a)**  Let $H$ be a Hamiltonian that is invariant under time reversal, that is, $\Theta^\dagger H\Theta = H$. Show that the bound state energy eigenspaces of $H$ are invariant under $\Theta$.
 
 In the following it is worthwhile keeping in mind two examples of subspaces invariant under $\Theta$, namely, the whole space ($\Sspace=\Espace$) and the energy eigenspaces of a $\Theta$-invariant Hamiltonian.
 
-\problempart{(b)} If $\Sspace$ is invariant under $\Theta$, show that it is also invariant under $\Theta^\dagger$. (Hint: Use $\Theta^2=s$.)
+**(b)**  If $\Sspace$ is invariant under $\Theta$, show that it is also invariant under $\Theta^\dagger$. (Hint: Use $\Theta^2=s$.)
 
-\problempart{(c)} Let $\Sspace$ be invariant under $\Theta$, and let $\Aspace\subset\Sspace$ be a subspace of $\Sspace$ that is also invariant under $\Theta$. Let $\Bspace$ be the subspace of $\Sspace$ that is orthogonal to $\Aspace$, so that
+**(c)**  Let $\Sspace$ be invariant under $\Theta$, and let $\Aspace\subset\Sspace$ be a subspace of $\Sspace$ that is also invariant under $\Theta$. Let $\Bspace$ be the subspace of $\Sspace$ that is orthogonal to $\Aspace$, so that
 
 :::{math}
 :label: eq-timerev-107
@@ -1026,11 +1034,13 @@ Show that $\Bspace$ is also invariant under $\Theta$. Hint: a vector $\ket{\psi}
 
 (prob-timerev-4)=
 
-**Problem \prbdtimerev-4.} This problem continues Prob.~\prbrtimerev-3.  In this problem we consider the case of an even number of fermions, so that $s=+1$.  As in Prob.~\prbrtimerev-3, we let $\Sspace\subset\Espace$ be a $\Theta$-invariant subspace.  We assume that $\Sspace$ is not the trivial subspace $\{0\.** 
+**Problem 4.** 
 
-\problempart{(a)} Show that }$\Sspace$ contains a one-dimensional, invariant subspace. Hint: Let $\ket\psi\in\Sspace$ be any nonzero vector in $\Sspace$, and consider $\Theta\ket{\psi}$. Either $\ket{\psi}$ and $\Theta\ket{\psi}$ are linearly independent, or they are not. Consider the two cases.
+This problem continues Prob.~{ref}`prob-timerev-3`.  In this problem we consider the case of an even number of fermions, so that $s=+1$.  As in Prob.~{ref}`prob-timerev-3`, we let $\Sspace\subset\Espace$ be a $\Theta$-invariant subspace.  We assume that $\Sspace$ is not the trivial subspace $\{0\}$, that is, that $\dim\Sspace\ge1$.
 
-\problempart{(b)} Assuming that $\Sspace$ is $n$-dimensional where $n\ge1$ is finite, show that
+**(a)**  Show that }$\Sspace$ contains a one-dimensional, invariant subspace. Hint: Let $\ket\psi\in\Sspace$ be any nonzero vector in $\Sspace$, and consider $\Theta\ket{\psi}$. Either $\ket{\psi}$ and $\Theta\ket{\psi}$ are linearly independent, or they are not. Consider the two cases.
+
+**(b)**  Assuming that $\Sspace$ is $n$-dimensional where $n\ge1$ is finite, show that
 
 :::{math}
 :label: eq-timerev-108
@@ -1041,13 +1051,13 @@ where each $\Sspace_i$ is one-dimensional and the various $\Sspace_i$ are orthog
 
 If $\Sspace$ is infinite-dimensional, we will assume that the decomposition {eq}`eq-timerev-108` is still valid, with $n\to\infty$. (It is obvious that we can keep on splitting off invariant, one-dimensional subspaces for as long as we want.)
 
-\problempart{(c)} Show that a one-dimensional, $\Theta$-invariant subspace possesses a basis that is invariant under $\Theta$, that is, a vector $\ket{e}$ such that $\braket{e}{e}=1$ and $\Theta\ket{e}=\ket{e}$.
+**(c)**  Show that a one-dimensional, $\Theta$-invariant subspace possesses a basis that is invariant under $\Theta$, that is, a vector $\ket{e}$ such that $\braket{e}{e}=1$ and $\Theta\ket{e}=\ket{e}$.
 
 Thus, if we take $\Sspace=\Espace$, in the case $s=+1$ we have shown that the Hilbert space possesses an orthonormal basis of $\Theta$-invariant vectors; these might be used for diagonalizing a Hamiltonian. If we take $\Sspace$ to be an energy eigenspace of a $\Theta$-invariant Hamiltonian, then we have shown that a basis of orthonormal energy eigenvectors inside the eigenspace can be chosen to be invariant under $\Theta$.
 
-\problempart{(d)} If $H$ is $\Theta$-invariant, show that its matrix elements with respect to a $\Theta$-invariant basis are real. In the usual applications this is obvious in the case of spinless particles, because the Schr\"odinger equation is real and $\Theta$-invariant basis functions are real; but it is not so trivial when the particles have spin. Diagonalizing real matrices is easier than diagonalizing complex ones.
+**(d)**  If $H$ is $\Theta$-invariant, show that its matrix elements with respect to a $\Theta$-invariant basis are real. In the usual applications this is obvious in the case of spinless particles, because the Schr\"odinger equation is real and $\Theta$-invariant basis functions are real; but it is not so trivial when the particles have spin. Diagonalizing real matrices is easier than diagonalizing complex ones.
 
-\problempart{(e)} If we have any two orthonormal bases $\{\ket{e_n}\}$ and $\{\ket{f_n}\}$ on a subspace $\Sspace$, then these are related by an unitary transformation,
+**(e)**  If we have any two orthonormal bases $\{\ket{e_n}\}$ and $\{\ket{f_n}\}$ on a subspace $\Sspace$, then these are related by an unitary transformation,
 
 :::{math}
 :label: eq-timerev-109
@@ -1076,15 +1086,17 @@ We see that in the case $s=+1$, a basis can always be chosen such that the matri
 
 (prob-timerev-5)=
 
-**Problem \prbdtimerev-5..** 
+**Problem 5.** 
 
-\problempart{(a)} Let $\Sspace$ be an invariant subspace, that is, invariant under $\Theta$, with $\dim\Sspace\ge1$. Show tht $\Sspace$ does not contain any one-dimensional, invariant subspace.
+The problem is a continuation of Probs.~{ref}`prob-timerev-3` and {ref}`prob-timerev-4`.  It deals with the case of an odd number of fermions, for which $\Theta^2=s=-1$.
 
-Thus, $\dim\Sspace\ge2$. If $\Sspace$ is identified with an energy eigenspace, the conclusion is the same as that regarding Kramers degeneracy in \secrtimerev-18.
+**(a)**  Let $\Sspace$ be an invariant subspace, that is, invariant under $\Theta$, with $\dim\Sspace\ge1$. Show tht $\Sspace$ does not contain any one-dimensional, invariant subspace.
 
-\problempart{(b)} Let $\Sspace$ be a $\Theta$-invariant subspace as in part~(a), and let $\ket{\psi}$ be a nonzero vector in $\Sspace$. Also let $\ket{\phi}=\Theta\ket{\psi}$. Show that $\ket{\phi}\ne0$ and that $\braket{\phi}{\psi}=0$. Use these facts to show that $\Sspace$ possesses a two-dimensional, invariant subspace.
+Thus, $\dim\Sspace\ge2$. If $\Sspace$ is identified with an energy eigenspace, the conclusion is the same as that regarding Kramers degeneracy in {ref}`sec-timerev-18`.
 
-\problempart{(c)} Assuming that $\Sspace$ is $n$-dimensional where $n\ge1$ is finite, show that
+**(b)**  Let $\Sspace$ be a $\Theta$-invariant subspace as in part~(a), and let $\ket{\psi}$ be a nonzero vector in $\Sspace$. Also let $\ket{\phi}=\Theta\ket{\psi}$. Show that $\ket{\phi}\ne0$ and that $\braket{\phi}{\psi}=0$. Use these facts to show that $\Sspace$ possesses a two-dimensional, invariant subspace.
+
+**(c)**  Assuming that $\Sspace$ is $n$-dimensional where $n\ge1$ is finite, show that
 
 :::{math}
 :label: eq-timerev-112
@@ -1097,9 +1109,11 @@ If $\Sspace$ is infinite-dimensional, we will assume that the decomposition {eq}
 
 (prob-timerev-6)=
 
-**Problem \prbdtimerev-6..** 
+**Problem 6.** 
 
-\problempart{(a)} Work out $\Theta^\dagger H \Theta$ and $\Theta^\dagger K \Theta$, where
+This problem continues Prob.~{ref}`prob-parity-3`, using the same notation.
+
+**(a)**  Work out $\Theta^\dagger H \Theta$ and $\Theta^\dagger K \Theta$, where
 
 :::{math}
 :label: eq-timerev-113
@@ -1108,7 +1122,7 @@ H=H_0+H_{SO}.
 
 Note that $\Theta$ commutes with $\Pi$.
 
-\problempart{(b)} Let $\{\ket{\alpha,+}, \alpha=1,2,\ldots\}$ be an orthonormal basis in the subspace ${\cal E}_+$,
+**(b)**  Let $\{\ket{\alpha,+}, \alpha=1,2,\ldots\}$ be an orthonormal basis in the subspace ${\cal E}_+$,
 
 :::{math}
 :label: eq-timerev-114
@@ -1124,10 +1138,10 @@ We do not assume it is an energy eigenbasis; it may be a basis we will use for d
 
 According to {eq}`eq-timerev-106`, the set $\{\ket{\alpha,-}, \alpha=1,2,\ldots\}$ is orthonormal. Show that this set lies in the subspace ${\cal E}_-$. It is easy to show that it is actually a basis in ${\cal E}_-$; you may assume this.
 
-\problempart{(c)} To obtain the energy eigenstates we must diagonalize the Hamiltonian. Let us look at the matrix elements of $H$ in a four-dimensional space spanned by $\ket{\alpha,\pm}$ and $\ket{\beta,\pm}$ for fixed values of $\alpha$ and $\beta$. Put the basis vector in this order: $\ket{\alpha,+}$, $\ket{\beta,+}$, $\ket{\alpha,-}$ and $\ket{\beta,-}$.
+**(c)**  To obtain the energy eigenstates we must diagonalize the Hamiltonian. Let us look at the matrix elements of $H$ in a four-dimensional space spanned by $\ket{\alpha,\pm}$ and $\ket{\beta,\pm}$ for fixed values of $\alpha$ and $\beta$. Put the basis vector in this order: $\ket{\alpha,+}$, $\ket{\beta,+}$, $\ket{\alpha,-}$ and $\ket{\beta,-}$.
 
 The Hamiltonian matrix is $4\times4$. Find all restrictions on the 16 matrix elements that come from the properties and relations you have worked out among the operators $H$, $K$ and $\Theta$.
 
 Write out the matrix of the 16 matrix elements in terms of a set of real parameters $a$, $b$, $c$, etc. For example, you can write a complex number as $a+ib$, a real number as just $c$, etc.
 
-\problempart{(d)} Find the energy eigenvalues. Does Kramers degeneracy apply? By varying the positions of the nuclei (just the $x$ and $y$ components, since they must lie in the $x$-$y$ plane) we can vary the parameters $a$, $b$, etc. How many parameters must we vary for the energy eigenvalues to be completely (four-fold) degenerate?
+**(d)**  Find the energy eigenvalues. Does Kramers degeneracy apply? By varying the positions of the nuclei (just the $x$ and $y$ components, since they must lie in the $x$-$y$ plane) we can vary the parameters $a$, $b$, etc. How many parameters must we vary for the energy eigenvalues to be completely (four-fold) degenerate?

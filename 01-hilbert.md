@@ -28,7 +28,7 @@ Let us consider a wave function $\psi(x)$ for a one-dimensional quantum mechanic
 
 (which means that the integral is finite; usually when we write an integral without limits like the one above, we mean that the limits are $-\infty$ to $+\infty$, or over all of space if the integral is multidimensional). Wave functions that are not normalizable cannot represent physically realizable states, because the probability of finding a real particle somewhere in space must be unity. Nevertheless, wave functions that are not normalizable, such as the free particle energy eigenfunctions $e^{ikx}$, are definitely useful for some purposes, and we will have to say something about them later. For now, however, we will stick to normalizable wave functions.
 
-Mathematically speaking, the space of complex functions that are normalizable (or *square integrable*) in the sense of {eq}`eq-hilbert-1` constitutes a complex vector space. This is because if $\psi(x)$ is square-integrable, then so is $c\psi(x)$, where $c$ is any complex number, and if $\psi_1(x)$ and $\psi_2(x)$ are square-integrable, then so is $\psi_1(x) + \psi_2(x)$. Moreover, the space is infinite-dimensional (see \secrhilbert-29). This vector space is an example of a *Hilbert space*; in general, a Hilbert space is a complex, inner product vector space (a vector space upon which an inner or scalar product is defined) with certain additional properties that will not concern us in this course (see \secrhilbert-29). Often the term “Hilbert space” is defined to be an infinite-dimensional space, but in this course we will refer to any of the vector spaces of wave functions that occur in quantum mechanics as Hilbert spaces, even when finite-dimensional.
+Mathematically speaking, the space of complex functions that are normalizable (or *square integrable*) in the sense of {eq}`eq-hilbert-1` constitutes a complex vector space. This is because if $\psi(x)$ is square-integrable, then so is $c\psi(x)$, where $c$ is any complex number, and if $\psi_1(x)$ and $\psi_2(x)$ are square-integrable, then so is $\psi_1(x) + \psi_2(x)$. Moreover, the space is infinite-dimensional (see {ref}`sec-hilbert-29`). This vector space is an example of a *Hilbert space*; in general, a Hilbert space is a complex, inner product vector space (a vector space upon which an inner or scalar product is defined) with certain additional properties that will not concern us in this course (see {ref}`sec-hilbert-29`). Often the term “Hilbert space” is defined to be an infinite-dimensional space, but in this course we will refer to any of the vector spaces of wave functions that occur in quantum mechanics as Hilbert spaces, even when finite-dimensional.
 
 As you know, given a normalized wave function $\psi(x)$ in configuration space, $|\psi(x)|^2$ is the probability density for making measurements of position on an ensemble of systems. The wave function $\psi(x)$ is connected physically with position measurements. (See {ref}`sec-classmech-3` for the definition of “configuration space.”)
 
@@ -75,7 +75,7 @@ The sequence of coefficients $(c_1,c_2,\ldots)$ uniquely characterizes the state
 
 which is finite if $\psi(x)$ belongs to Hilbert space. This is another expression of conservation of probability. Mathematically speaking, the set of sequences $\{(c_1,c_2,\ldots)\}$ of complex numbers of finite norm is yet another example of a Hilbert space.
 
-Thus, we have three Hilbert spaces, the two spaces of wave functions, $\{\psi(x)\}$ and $\{\phi(p)\}$, and the space of sequences $\{(c_1,c_2,\ldots)\}$, all assumed to be normalizable. These Hilbert spaces are isomorphic, in the sense that the vectors of each space are related to one another by invertible, norm-preserving linear transformations, so they all contain the same information. (See \secrhilbert-29 for some mathematical points regarding Hilbert spaces of wave functions.) Therefore none of these spaces can be taken as more fundamental than the other; any calculation that can be carried out in one space (or in one *representation*, as we will say), can be carried out in another.
+Thus, we have three Hilbert spaces, the two spaces of wave functions, $\{\psi(x)\}$ and $\{\phi(p)\}$, and the space of sequences $\{(c_1,c_2,\ldots)\}$, all assumed to be normalizable. These Hilbert spaces are isomorphic, in the sense that the vectors of each space are related to one another by invertible, norm-preserving linear transformations, so they all contain the same information. (See {ref}`sec-hilbert-29` for some mathematical points regarding Hilbert spaces of wave functions.) Therefore none of these spaces can be taken as more fundamental than the other; any calculation that can be carried out in one space (or in one *representation*, as we will say), can be carried out in another.
 
 Psychologically, there is a tendency to think of wave functions $\psi(x)$ on configuration space as fundamental, probably because we are used to thinking of fields such as electric fields defined over physical space. This is also the bias imposed on us by our first courses in quantum mechanics, as well as the historical development of the subject. Also, we live in physical space, not momentum space. But the Schr\"odinger wave function is not really defined over physical space, rather it is defined over *configuration space*, which is the same only in the case of a single particle (see {ref}`sec-classmech-3`). Furthermore, completely apart from the mathematical equivalence of the different Hilbert spaces discussed above, the physical postulates of quantum mechanics show that the different wave functions discussed above correspond to the measurement of different sets of physical observables. They also show that there is a kind of democracy among the different physical observables one can choose to measure, as long as the set of observables is compatible and complete in a sense we will discuss later.
 
@@ -1058,14 +1058,14 @@ To show that the momentum operator $\hat p$ is Hermitian on the Hilbert space of
 \matrixelement{\psi}{\hat p}{\phi} = \int dx \, \psi^\cc \left(-i\hbar \frac{\partial \phi}{\partial x} \right) = \int dx \, \left(-i\hbar \pop{}{x}\right) (\psi^\cc \phi) + \int dx \, \left(i\hbar \frac{\partial \psi^\cc}{\partial x} \right) \phi,
 :::
 
-by integration by parts. The first integral vanishes if $\psi$ and $\phi$ go to zero as $x \to \pm\infty$, something we normally expect for normalizable wave functions (but see \secrhilbert-29). The final integral is
+by integration by parts. The first integral vanishes if $\psi$ and $\phi$ go to zero as $x \to \pm\infty$, something we normally expect for normalizable wave functions (but see {ref}`sec-hilbert-29`). The final integral is
 
 :::{math}
 :label: eq-hilbert-107
 \left[ \int dx \, \phi^\cc \left( -i\hbar \frac{\partial \psi}{\partial x}\right)\right]^\cc = \matrixelement{\phi}{\phat}{\psi}^\cc,
 :::
 
-which completes the proof. A similar proof can be given for Hamiltonians of the form $H=p^2/2m + V(x)$. More simply, once we know that $\xhat$ and $\phat$ are Hermitian, we can use the general rules presented in these notes (for example, {eq}`eq-hilbert-58` and \secrhilbert-25)) to conclude that the sum of any real function of $\xhat$ and any real function of $\phat$ is Hermitian.
+which completes the proof. A similar proof can be given for Hamiltonians of the form $H=p^2/2m + V(x)$. More simply, once we know that $\xhat$ and $\phat$ are Hermitian, we can use the general rules presented in these notes (for example, {eq}`eq-hilbert-58` and {ref}`sec-hilbert-25`)) to conclude that the sum of any real function of $\xhat$ and any real function of $\phat$ is Hermitian.
 
 (sec-hilbert-22)=
 
@@ -1453,11 +1453,15 @@ Regarding the first integral on the right in {eq}`eq-hilbert-106`, which must va
 
 The standard early reference for physicists on the formalism of quantum mechanics is P. A. M. Dirac, *The Principles of Quantum Mechanics*, 4th ed (Oxford University Press, Oxford, 1974), while for mathematicians it is John von Neumann, *Mathematical Foundations of Quantum Mechanics* (Princeton University Press, Princeton, 1955) (this is the English translation of the German original). Modern textbooks that devote more than the usual attention to mathematical questions include Albert Messiah, *Quantum Mechanics* vols. I and II (John Wiley, New York, 1966) (translation of French original), and Leslie E. Ballentine, *Quantum Mechanics: A Modern Development* (World Scientific, Singapore, 1998). The standard modern reference on the mathematics of quantum mechanics is Michael Reed and Barry Simon, *Functional Analysis* revised ed (Academic Press, New York, 1980), and, by the same authors, *Fourier Analysis, Self-Adjointness* (Academic Press, New York, 1975). See also *Quantum Mechanics in Hilbert Space* by Eduard Prugove\v cki (Dover, Mineola, New York, 1981).
 
-\problems
+(sec-hilbert-problems)=
+
+## Problems
 
 (prob-hilbert-1)=
 
-**Problem \prbdhilbert-1..** 
+**Problem 1.** 
+
+Consider the $2\times2$ matrices:
 
 :::{math}
 :label: eq-hilbert-144
@@ -1466,7 +1470,7 @@ I = \begin{pmatrix}1 & 0 \\ 0 & 1\\\end{pmatrix}, \quad \sigma_x = \begin{pmatri
 
 Matrices $\sigma_x$, $\sigma_y$ and $\sigma_z$ are called the *Pauli matrices*. We will also denote them $\sigma_1$, $\sigma_2$, $\sigma_3$.
 
-\problempart{(a)} Show that
+**(a)**  Show that
 
 :::{math}
 :label: eq-hilbert-145
@@ -1507,7 +1511,7 @@ We think of $\sigmavec$ as a “vector” of $2\times 2$ matrices.
 
 Two vector operators are considered to commute if all of their components commute. Note that in general, $\Avec \cdot \Bvec \ne \Bvec \cdot \Avec$, and $\Avec \times \Bvec \ne -\Bvec \times \Avec$.
 
-\problempart{(b)} Let ${\hat{\mathbf{n}}}$ be an arbitrary unit vector and $\theta$ an arbitrary angle. Show that
+**(b)**  Let ${\hat{\mathbf{n}}}$ be an arbitrary unit vector and $\theta$ an arbitrary angle. Show that
 
 :::{math}
 :label: eq-hilbert-150
@@ -1518,9 +1522,11 @@ In this course we will often drop the $I$, it being understood that a scalar lik
 
 (prob-hilbert-2)=
 
-**Problem \prbdhilbert-2..** 
+**Problem 2.** 
 
-\problempart{(a)} Consider two operators $A$, $B$ that do not necessarily commute. Show that
+Lie algebraic techniques for operators.
+
+**(a)**  Consider two operators $A$, $B$ that do not necessarily commute. Show that
 
 :::{math}
 :label: eq-hilbert-151
@@ -1529,7 +1535,7 @@ e^A B e^{-A} = B + [A,B] + {1\over 2!} [A,[A,B]] + {1\over 3!} [A,[A,[A,B]]] + \
 
 Hint: Replace $A$ by $\lambda A$, where $\lambda$ is a parameter, and let the left-hand side be $F(\lambda)$. Find a differential equation satisfied by $F(\lambda)$, and solve it. Alternatively, expand $F(\lambda)$ in a Taylor series in $\lambda$.
 
-\problempart{(b)} Let $A(t)$ be an operator that depends on time. Derive the following operator identity:
+**(b)**  Let $A(t)$ be an operator that depends on time. Derive the following operator identity:
 
 :::{math}
 :label: eq-hilbert-152
@@ -1547,9 +1553,11 @@ where $X$ is an arbitrary operator. Also, $L_A^0(X) = X$. Do not assume that $A$
 
 (prob-hilbert-3)=
 
-**Problem \prbdhilbert-3..** 
+**Problem 3.** 
 
-\problempart{(a)} If $A$ and $B$ are square matrices, show that
+Pauli matrices and traces.
+
+**(a)**  If $A$ and $B$ are square matrices, show that
 
 :::{math}
 :label: eq-hilbert-154
@@ -1558,9 +1566,9 @@ where $X$ is an arbitrary operator. Also, $L_A^0(X) = X$. Do not assume that $A$
 
 Also prove {eq}`eq-hilbert-140`.
 
-\problempart{(b)} Show that $\tr\sigma_i=0$. It may be easiest just to use the definitions {eq}`eq-hilbert-144`. Then use {eq}`eq-hilbert-145` to find a simple expression for $\tr(\sigma_i\sigma_j)$.
+**(b)**  Show that $\tr\sigma_i=0$. It may be easiest just to use the definitions {eq}`eq-hilbert-144`. Then use {eq}`eq-hilbert-145` to find a simple expression for $\tr(\sigma_i\sigma_j)$.
 
-\problempart{(c)} The set of four $2\times2$ matrices, $(I,\sigmavec)$ form a basis in the space of $2\times2$ matrices, that is, an arbitrary $2\times2$ matrix can be expressed as a linear combination of these four matrices. Thus, if $M$ is an arbitrary $2\times2$ matrix, it can be expressed as
+**(c)**  The set of four $2\times2$ matrices, $(I,\sigmavec)$ form a basis in the space of $2\times2$ matrices, that is, an arbitrary $2\times2$ matrix can be expressed as a linear combination of these four matrices. Thus, if $M$ is an arbitrary $2\times2$ matrix, it can be expressed as
 
 :::{math}
 :label: eq-hilbert-155
@@ -1569,7 +1577,7 @@ M = aI + \bvec\cdot\sigmavec,
 
 This follows from the fact that $I$ and the three $\sigma_i$ are linearly independent, as can be seen just by looking at the four matrices. Find neat expressions for the expansion coefficients, $a$ and $\bvec=(b_1,b_2,b_3)$. Do this by taking traces, or by multiplying by a Pauli matrix and then taking traces. Also show that $M$ is Hermitian if and only if $a$, $\bvec$ are real.
 
-\problempart{(d)} Now suppose that $M$ is nonzero in only the $(r,s)$ slot, where it has a 1. That is, let
+**(d)**  Now suppose that $M$ is nonzero in only the $(r,s)$ slot, where it has a 1. That is, let
 
 :::{math}
 :label: eq-hilbert-156
@@ -1580,15 +1588,17 @@ Use this in {eq}`eq-hilbert-155` to find a nice expression for $(\sigma_m)_{ij}(
 
 (prob-hilbert-4)=
 
-**Problem \prbdhilbert-4..** 
+**Problem 4.** 
 
-\problempart{(a)} Show that {eq}`eq-hilbert-48` follows from {eq}`eq-hilbert-47`.
+Some easy proofs from the notes.
 
-\problempart{(b)} Prove {eq}`eq-hilbert-55`, {eq}`eq-hilbert-58`, and {eq}`eq-hilbert-59`.
+**(a)**  Show that {eq}`eq-hilbert-48` follows from {eq}`eq-hilbert-47`.
 
-\problempart{(c)} Prove that the product of two Hermitian operators is Hermitian if and only if they commute.
+**(b)**  Prove {eq}`eq-hilbert-55`, {eq}`eq-hilbert-58`, and {eq}`eq-hilbert-59`.
 
-\problempart{(d)} Show that
+**(c)**  Prove that the product of two Hermitian operators is Hermitian if and only if they commute.
+
+**(d)**  Show that
 
 :::{math}
 :label: eq-hilbert-157
@@ -1597,28 +1607,32 @@ Use this in {eq}`eq-hilbert-155` to find a nice expression for $(\sigma_m)_{ij}(
 
 (prob-hilbert-5)=
 
-**Problem \prbdhilbert-5..** 
+**Problem 5.** 
+
+The problem of finding the eigenkets and eigenbras of an arbitrary operator is more complicated and full of exceptions than in the case of Hermitian operators.  There are, however, other classes of operators that share many of the nice properties of Hermitian operators.  These include anti-Hermitian and unitary operators.
 
 We define an operator to be *normal* if it commutes with its Hermitian conjugate, $[A,A^\hc]=0$. Notice that Hermitian, anti-Hermitian, and unitary operators are normal. In the following you may assume that you are working on a finite-dimensional Hilbert space.
 
-\problempart{(a)} Show that if $A$ is normal, and $A\ket{u}=a\ket{u}$ for some nonzero $\ket{u}$, then $A^\hc\ket{u}=a^\cc\ket{u}$. Thus, the eigenbras of $A$ are the Hermitian conjugates of the eigenkets, and the left spectrum is identical to the right spectrum. Hint: it is not necessary to introduce orthonormal bases or anything of the kind.
+**(a)**  Show that if $A$ is normal, and $A\ket{u}=a\ket{u}$ for some nonzero $\ket{u}$, then $A^\hc\ket{u}=a^\cc\ket{u}$. Thus, the eigenbras of $A$ are the Hermitian conjugates of the eigenkets, and the left spectrum is identical to the right spectrum. Hint: it is not necessary to introduce orthonormal bases or anything of the kind.
 
-\problempart{(b)} Show that the eigenspaces corresponding to distinct eigenvalues of a normal operator are orthogonal. This is a generalization of the easy and familiar proof for Hermitian operators.
+**(b)**  Show that the eigenspaces corresponding to distinct eigenvalues of a normal operator are orthogonal. This is a generalization of the easy and familiar proof for Hermitian operators.
 
 (prob-hilbert-6)=
 
-**Problem \prbdhilbert-6..** 
+**Problem 6.** 
 
-\problempart{(a)} If $A$ is an observable, show that
+Some things that will be needed in subsequent problems.  In parts (a)--(c) of this problem you may assume that you are working on a finite-dimensional Hilbert space.
+
+**(a)**  If $A$ is an observable, show that
 
 :::{math}
 :label: eq-hilbert-158
 P_n = \prod_{k\ne n} {A-a_k \over a_n - a_k},
 :::
 
-where $P_n$ is the projector onto the $n$-th eigenspace of $A$. This shows that the projector $P_n$ is a function of the operator $A$ (see \secrhilbert-25).
+where $P_n$ is the projector onto the $n$-th eigenspace of $A$. This shows that the projector $P_n$ is a function of the operator $A$ (see {ref}`sec-hilbert-25`).
 
-\problempart{(b)} Show that if
+**(b)**  Show that if
 
 :::{math}
 :label: eq-hilbert-159
@@ -1629,11 +1643,15 @@ for all $\ket{\psi}$, then $A=0$. ($A$ is not necessarily Hermitian.) Would this
 
 (prob-hilbert-7)=
 
-**Problem (c)} Let $U$ be a linear operator, and let $\ket{\psi'} = U\ket{\psi}$.  Show that $\braket{\psi'}{\psi'} = \braket{\psi}{\psi}$ for all kets $\ket{\psi.** 
+**Problem (c).**
+
+Let $U$ be a linear operator, and let $\ket{\psi'} = U\ket{\psi}$.  Show that $\braket{\psi'}{\psi'} = \braket{\psi}{\psi}$ for all kets $\ket{\psi}$ if and only if $U$ is unitary.
 
 (prob-hilbert-8)=
 
-**Problem (d)} Consider now the Hilbert space for a particle moving in one dimension, which is infinite-dimensional.  Let $\ket{n.** 
+**Problem (d).**
+
+Consider now the Hilbert space for a particle moving in one dimension, which is infinite-dimensional.  Let $\ket{n}$ be the usual harmonic oscillator eigenbasis, with $n=0,1,\ldots$.  Define an operator $U$ by
 
 :::{math}
 :label: eq-hilbert-160
@@ -1653,4 +1671,6 @@ This problem shows that in an infinite dimensional Hilbert space, if an operator
 
 (prob-hilbert-9)=
 
-**Problem \prbdhilbert-7.}  Let $V$ be a real vector space with a positive definite scalar product.  If $x$ and $y$ are vectors in $V$, we denote their scalar product by $(x,y)$.  This is like the scalar product $\braket{x}{y.**
+**Problem 7.**
+
+Let $V$ be a real vector space with a positive definite scalar product.  If $x$ and $y$ are vectors in $V$, we denote their scalar product by $(x,y)$.  This is like the scalar product $\braket{x}{y}$ in the Hilbert spaces of quantum mechanics, except only real coefficients are allowed when forming linear combinations of vectors.  We interpret $(x,x)$ as the square of the length of the vector $x$.  Show that the Schwarz inequality (\eqr\cn.28) implies that the shortest distance between two points is a straight line.

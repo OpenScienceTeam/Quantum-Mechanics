@@ -19,7 +19,7 @@ It is obvious that there must be some subtlety in the classical limit of quantum
 
 ## The WKB Ansatz
 
-As mentioned the WKB method can be applied to any wave system in which the wavelength is small compared to typical scale lengths of the system, so we have a wide choice of systems with which to illustrate the method. We will begin with the time-independent Schr\"odnger equation in three dimensions for a particle moving in a potential $V(\xvec)$, because the multidimensional case makes certain aspects of the classical limit more vivid. Another interesting case would be the time-dependent Schr\"odinger equation, for which see \secrwkb-4. This offers an intuitive presentation of the WKB ansatz, which is a description of how the wave function depends on $\hbar$, and the beginnings of the classical picture associated with it.
+As mentioned the WKB method can be applied to any wave system in which the wavelength is small compared to typical scale lengths of the system, so we have a wide choice of systems with which to illustrate the method. We will begin with the time-independent Schr\"odnger equation in three dimensions for a particle moving in a potential $V(\xvec)$, because the multidimensional case makes certain aspects of the classical limit more vivid. Another interesting case would be the time-dependent Schr\"odinger equation, for which see {ref}`sec-wkb-4`. This offers an intuitive presentation of the WKB ansatz, which is a description of how the wave function depends on $\hbar$, and the beginnings of the classical picture associated with it.
 
 The time-independent Schr\"odinger equation that we will use is
 
@@ -492,7 +492,7 @@ The classical meaning of the functions $p(x)$ and $A(x)$ may be seen in {ref}`fi
 
 We spoke previously of a swarm or ensemble of classical particles that represents the WKB wave, such that the momentum of the particle at position $\xvec$ is $\pvec(\xvec)$ (in three dimensions). From {ref}`fig-wkb-5`, we see that in the one-dimensional case there are really two swarms, one with particles going to the right and one with them going to the left. If the positions and momenta of these particles are plotted in phase space, then they lie on the line $H=E$, that is, they all have the same classical energy. This, in fact, is the meaning of the Hamilton-Jacobi equation {eq}`eq-wkb-44`.
 
-The amplitude solution {eq}`eq-wkb-48` also has a classical interpretation. As explained in \secrwkb-3, $A(x)^2$ is the same as the quantum probability density $\rho(x)=|\psi(x)|^2$ in the WKB approximation (neglecting $O(\hbar^2)$ and higher terms in the expansion {eq}`eq-wkb-21`), and it has an interpretation in terms of the density of the ensemble or swarm of classical particles. In the one-dimensional case, this classical density can be understood from another standpoint, which we now discuss. The density in question is only normalizable in the case of an oscillator, so we consider that case, and refer to {ref}`fig-wkb-6`.
+The amplitude solution {eq}`eq-wkb-48` also has a classical interpretation. As explained in {ref}`sec-wkb-3`, $A(x)^2$ is the same as the quantum probability density $\rho(x)=|\psi(x)|^2$ in the WKB approximation (neglecting $O(\hbar^2)$ and higher terms in the expansion {eq}`eq-wkb-21`), and it has an interpretation in terms of the density of the ensemble or swarm of classical particles. In the one-dimensional case, this classical density can be understood from another standpoint, which we now discuss. The density in question is only normalizable in the case of an oscillator, so we consider that case, and refer to {ref}`fig-wkb-6`.
 
 The top of the figure is the potential energy curve for the Morse oscillator, which is often used to model the stretching of molecular bonds. The potential rises rapidly to the left, corresponding to the strong repulsion of atoms that are brought close together, and gradually to the right, representing the attractive force between atoms as they are pulled apart, a force that dies off slowly as the distance increases. In the middle is a potential well, in which the oscillations represent molecular vibrations. We use the Morse potential here because it is a strongly nonlinear oscillator that presents features not present in the harmonic oscillator.
 
@@ -804,7 +804,7 @@ Finally, we can eliminate $(c_a,c_b)$ between {eq}`eq-wkb-71` and {eq}`eq-wkb-79
 
 ## The Connection Rules
 
-We now summarize the connection rules, first for the case of the classically allowed region to the left of the turning point. This is the case analyzed in \secrwkb-7. The potential is sketched in {ref}`fig-wkb-7`, with turning point $x_r$.
+We now summarize the connection rules, first for the case of the classically allowed region to the left of the turning point. This is the case analyzed in {ref}`sec-wkb-7`. The potential is sketched in {ref}`fig-wkb-7`, with turning point $x_r$.
 
 In region I, the classically allowed region where $x<x_r$ and $E>V(x)$, $p(x)$ is real and positive and is given by {eq}`eq-wkb-49`. The action $S$ is given by {eq}`eq-wkb-52`, which we now write with a slight change of notation,
 
@@ -861,7 +861,7 @@ or
 
 :::
 
-Next we consider the case of the a turning point separating a classically forbidden region (III) to the left, and a classically allowed region (IV) to the right, as illustrated in {ref}`fig-wkb-10`. The turning point is $x_\ell$, which is not to be confused with the turning point $x_r$ in {ref}`fig-wkb-7`. The analysis of this case is similar to what we did in \secrwkb-7, so we shall skip all details and simply quote the results.
+Next we consider the case of the a turning point separating a classically forbidden region (III) to the left, and a classically allowed region (IV) to the right, as illustrated in {ref}`fig-wkb-10`. The turning point is $x_\ell$, which is not to be confused with the turning point $x_r$ in {ref}`fig-wkb-7`. The analysis of this case is similar to what we did in {ref}`sec-wkb-7`, so we shall skip all details and simply quote the results.
 
 :::{figure} images/wkb-fig10.png
 :label: fig-wkb-10
@@ -1269,13 +1269,13 @@ Orbit in phase space for the particle in a box. The particle bounces back and fo
 :::
 
 
-The WKB wave function, however, is only approximate. It is plotted along with the exact wave function for $n=8$ in {ref}`fig-wkb-15`. The WKB wave functions in the figure are those shown in {eq}`eq-wkb-108a`, with coefficients determined as in \secrwkb-10, and with a normalization determined as in Prob.~\prbrwkb-2(a).
+The WKB wave function, however, is only approximate. It is plotted along with the exact wave function for $n=8$ in {ref}`fig-wkb-15`. The WKB wave functions in the figure are those shown in {eq}`eq-wkb-108a`, with coefficients determined as in {ref}`sec-wkb-10`, and with a normalization determined as in Prob.~\prbrwkb-2(a).
 
 (sec-wkb-12)=
 
 ## Other Types of Turning Points
 
-The intuitive idea behind the Bohr-Sommerfeld quantization rule was explained in \secrwkb-10: as the particle goes around its orbit, it accumulates a phase of $(1/\hbar)\int p\,dx$, as well as a phase of $-\pi/2$ at each turning point. But if the turning point is at a hard wall, the phase shift is $-\pi$ instead of $-\pi/2$. That is because $e^{-i\pi}=-1$, so the reflected wave cancels the incident wave at the wall, where the boundary conditions require $\psi=0$.
+The intuitive idea behind the Bohr-Sommerfeld quantization rule was explained in {ref}`sec-wkb-10`: as the particle goes around its orbit, it accumulates a phase of $(1/\hbar)\int p\,dx$, as well as a phase of $-\pi/2$ at each turning point. But if the turning point is at a hard wall, the phase shift is $-\pi$ instead of $-\pi/2$. That is because $e^{-i\pi}=-1$, so the reflected wave cancels the incident wave at the wall, where the boundary conditions require $\psi=0$.
 
 For example, consider the particle in a box, with potential
 
@@ -1526,20 +1526,24 @@ Z(\beta)={1\over(2\pi\hbar)^f} \int d^fx \, d^fp \, e^{-\beta H(x,p)}.
 
 This is the classical approximation to the partition function, which was known, apart from the normalization $(2\pi\hbar)^f$, before the advent of quantum mechanics.
 
-\problems
+(sec-wkb-problems)=
+
+## Problems
 
 (prob-wkb-1)=
 
-**Problem \prbdwkb-1..** 
+**Problem 1.** 
+
+In this problem we work with one-dimensional, kinetic-plus-potential Hamiltonians,
 
 :::{math}
 :label: eq-wkb-152
 H={p^2 \over 2m} + V(x).
 :::
 
-\problempart{(a)} Prove {eq}`eq-wkb-105` when the motion is governed by the Hamiltonian {eq}`eq-wkb-152`.
+**(a)**  Prove {eq}`eq-wkb-105` when the motion is governed by the Hamiltonian {eq}`eq-wkb-152`.
 
-\problempart{(b)} A classical charged particle in periodic motion radiates at the frequency $\omega$ of the motion as well as all higher harmonics $k\omega$, $k=2,3,\ldots$. In many cases the power radiated at higher harmonics is small, but the general principle holds. This follows from standard methods of classical electromagnetic theory, applied to a particle in periodic motion.
+**(b)**  A classical charged particle in periodic motion radiates at the frequency $\omega$ of the motion as well as all higher harmonics $k\omega$, $k=2,3,\ldots$. In many cases the power radiated at higher harmonics is small, but the general principle holds. This follows from standard methods of classical electromagnetic theory, applied to a particle in periodic motion.
 
 In quantum mechanics, the frequency of the radiation emitted by a particle is $\Delta E/\hbar$, where $\Delta E$ is the energy difference between an initial and final state. This follows from the Einstein relation $E=\hbar\omega$ for the energy of a photon and the Bohr notion that mechanical systems (atoms etc) have discrete energy levels. This part of the argument was understood in the days of the old quantum theory, well before modern quantum mechanics had been developed.
 
@@ -1549,11 +1553,13 @@ Notice that if the power radiated in higher harmonics of the classical problem i
 
 (prob-wkb-2)=
 
-**Problem \prbdwkb-2..** 
+**Problem 2.** 
 
-\problempart{(a)} Integrate the square of the WKB wave function $\psi$ between the two turning points to obtain the normalization constant. The wave function blows up at the turning points, but you can do the integral anyway. Write out the normalized wave function. (The damped waves in the classically forbidden regions can be ignored.) Replace $\cos^2$ by the average value $1/2$ in the integrand before doing the integral. Express the normalization constant both in terms of the classical period $T$ and the quantity $\partial E_n/\partial n$, where $n$ is treated as a continuous quantity.
+Consider the Bohr-Sommerfeld quantization of a 1-dimensional oscillator in a potential $V(x)$.
 
-\problempart{(b)} Now assume the potential well is symmetric, $V(-x)=V(x)$, with $V(0)=0$. Show that
+**(a)**  Integrate the square of the WKB wave function $\psi$ between the two turning points to obtain the normalization constant. The wave function blows up at the turning points, but you can do the integral anyway. Write out the normalized wave function. (The damped waves in the classically forbidden regions can be ignored.) Replace $\cos^2$ by the average value $1/2$ in the integrand before doing the integral. Express the normalization constant both in terms of the classical period $T$ and the quantity $\partial E_n/\partial n$, where $n$ is treated as a continuous quantity.
+
+**(b)**  Now assume the potential well is symmetric, $V(-x)=V(x)$, with $V(0)=0$. Show that
 
 :::{math}
 :label: eq-wkb-153
@@ -1571,7 +1577,9 @@ Carry your calculations only out to leading order in $\hbar$.
 
 (prob-wkb-3)=
 
-**Problem \prbdwkb-3..** 
+**Problem 3.** 
+
+Consider the potential energy illustrated in Fig.~\figr\cn.19.
 
 :::{figure} images/wkb-fig19.png
 :label: fig-wkb-19
@@ -1609,7 +1617,9 @@ Estimate the ratio $\psi_in/\psi_out$ of the wave function inside and outside th
 
 (prob-wkb-4)=
 
-**Problem \prbdwkb-4..** 
+**Problem 4.** 
+
+The radial wave equation in 3-dimensional problems with central force potentials looks like a 1-dimensional Schr\"odinger equation,
 
 :::{math}
 :label: eq-wkb-158
@@ -1625,17 +1635,19 @@ U(r) = {\ell(\ell+1)\hbar^2 \over 2mr^2} + V(r).
 
 See {ref}`ch-cenforce`. Therefore one-dimensional WKB theory can be applied to the radial wave equation. It can be shown that more accurate results are obtained in the WKB treatment if the quantity $\ell(\ell+1)$ in the centrifugal potential is replaced by $(\ell+\frac{1}{2})^2$. This is called the *Langer modification*. Just accept this fact for the purposes of this problem; the justification has to do with the singularity of the centrifugal potential as $r\to0$.
 
-\problempart{(a)} Take the case of a free particle, $V(r)=0$. Find the WKB solution in the classically allowed region. For boundary conditions in the classically forbidden region near $r=0$, just assume that there is only a growing wave (as $r$ increases). Evaluate all functions explicitly; use the abbreviation $k=\sqrt{2mE}/\hbar$. Take the limit $r\to\infty$, and reconcile the result with the asymptotic forms of the spherical Bessel function $j_\ell(\rho)$, quoted by Sakurai in his Eq.~(A.5.15). (Sakurai's $\rho=kr$.)
+**(a)**  Take the case of a free particle, $V(r)=0$. Find the WKB solution in the classically allowed region. For boundary conditions in the classically forbidden region near $r=0$, just assume that there is only a growing wave (as $r$ increases). Evaluate all functions explicitly; use the abbreviation $k=\sqrt{2mE}/\hbar$. Take the limit $r\to\infty$, and reconcile the result with the asymptotic forms of the spherical Bessel function $j_\ell(\rho)$, quoted by Sakurai in his Eq.~(A.5.15). (Sakurai's $\rho=kr$.)
 
-\problempart{(b)} Consider a potential $V(r)$ which is not zero, but which approaches 0 as $r\to\infty$. Since the particle approaches a free particle as $r\to\infty$, we might expect the solution at large $r$ to look like a free particle solution, but with a phase shift. Explicitly, if the free particle solution has the form $f(r) = \cos(kr +\alpha_f)$ as $r\to\infty$, where $\alpha_f$ is the phase shift for the free particle, and the solution in the presence of the potential has the form $f(r) = \cos(kr +\alpha_p)$ as $r\to\infty$, where $\alpha_p$ is the phase shift in the presence of the potential, then we define $\delta=\alpha_p-\alpha_f$ as the phase shift in the potential scattering, measured relative to the phase shift of a free particle. Use WKB theory to write down an expression for $\delta$, which will involve the limit of a certain quantity as $r\to\infty$.
+**(b)**  Consider a potential $V(r)$ which is not zero, but which approaches 0 as $r\to\infty$. Since the particle approaches a free particle as $r\to\infty$, we might expect the solution at large $r$ to look like a free particle solution, but with a phase shift. Explicitly, if the free particle solution has the form $f(r) = \cos(kr +\alpha_f)$ as $r\to\infty$, where $\alpha_f$ is the phase shift for the free particle, and the solution in the presence of the potential has the form $f(r) = \cos(kr +\alpha_p)$ as $r\to\infty$, where $\alpha_p$ is the phase shift in the presence of the potential, then we define $\delta=\alpha_p-\alpha_f$ as the phase shift in the potential scattering, measured relative to the phase shift of a free particle. Use WKB theory to write down an expression for $\delta$, which will involve the limit of a certain quantity as $r\to\infty$.
 
-\problempart{(c)} Does this limit exist? It can be shown that it does if $V(r)$ falls off more rapidly as $r\to\infty$ than the centrifugal potential, i.e., more rapidly than $1/r^2$; the limit also exists when the true potential falls off exactly as fast as the centrifugal potential, i.e., as $1/r^2$. Therefore consider the case that $V(r)$ approaches 0 as $1/r^\alpha$, where $0< \alpha < 2$. Show that the phase shift exists only if $1 < \alpha < 2$. In particular, in the important case of the Coulomb potential ($\alpha=1$), the phase shift does not exist (the asymptotic form of the radial wave function $f$ is more complicated than a phase-shifted free particle solution).
+**(c)**  Does this limit exist? It can be shown that it does if $V(r)$ falls off more rapidly as $r\to\infty$ than the centrifugal potential, i.e., more rapidly than $1/r^2$; the limit also exists when the true potential falls off exactly as fast as the centrifugal potential, i.e., as $1/r^2$. Therefore consider the case that $V(r)$ approaches 0 as $1/r^\alpha$, where $0< \alpha < 2$. Show that the phase shift exists only if $1 < \alpha < 2$. In particular, in the important case of the Coulomb potential ($\alpha=1$), the phase shift does not exist (the asymptotic form of the radial wave function $f$ is more complicated than a phase-shifted free particle solution).
 
 (prob-wkb-5)=
 
-**Problem \prbdwkb-5..** 
+**Problem 5.** 
 
-\problempart{(a)} Write down the Schr\"odinger equation and solve it in terms of Airy functions. Let $z_n$ be the $n$-th root of the Airy function, that is, $\Ai(z_n)=0$, where the roots satisfy
+Consider a quantum particle bouncing off the floor.  The vertical coordinate is $x$, and $V(x)=mgx$.  The floor at $x=0$ acts like a hard wall.
+
+**(a)**  Write down the Schr\"odinger equation and solve it in terms of Airy functions. Let $z_n$ be the $n$-th root of the Airy function, that is, $\Ai(z_n)=0$, where the roots satisfy
 
 :::{math}
 :label: eq-wkb-160
@@ -1649,18 +1661,20 @@ Express the energy eigenvalues as a dimensionless multiple of the reference ener
 K = \Bigl({mg^2\hbar^2\over 2}\Bigr)^{1/3}.
 :::
 
-\problempart{(b)} For the classical bouncing ball, sketch the orbits in phase space. Let $h=E/mg$ be the height to which the ball bounces (but don't confuse $h$ with $\hbar$). Find the Bohr-Sommerfeld approximations to the energy eigenvalues $E_n$, $n=0,1,\ldots$. Express your answer as a dimensionless multiple of $K$. The first three zeroes of the Airy function are $-2.33811$, $-4.08795$ and $-5.52056$. Compare the Bohr-Sommerfeld approximation to the exact eigenvalues for the first three eigenstates.
+**(b)**  For the classical bouncing ball, sketch the orbits in phase space. Let $h=E/mg$ be the height to which the ball bounces (but don't confuse $h$ with $\hbar$). Find the Bohr-Sommerfeld approximations to the energy eigenvalues $E_n$, $n=0,1,\ldots$. Express your answer as a dimensionless multiple of $K$. The first three zeroes of the Airy function are $-2.33811$, $-4.08795$ and $-5.52056$. Compare the Bohr-Sommerfeld approximation to the exact eigenvalues for the first three eigenstates.
 
 (prob-wkb-6)=
 
-**Problem \prbdwkb-6..** 
+**Problem 6.** 
+
+Consider the isotropic harmonic oscillator in two dimensions,
 
 :::{math}
 :label: eq-wkb-162
 H={p_x^2 + p_y^2 \over 2m} + {m\omega^2\over 2}(x^2+y^2).
 :::
 
-Let the number of energy levels less than or equal to a given energy $E$ be $N(E)$. Degenerate energy levels are counted with their multiplicity. This is a function that increases in steps, but a continuous approximation to it can be obtained by the rule that each quantum state occupies a single Planck cell, as explained in \secrwkb-13. Evaluate the integral,
+Let the number of energy levels less than or equal to a given energy $E$ be $N(E)$. Degenerate energy levels are counted with their multiplicity. This is a function that increases in steps, but a continuous approximation to it can be obtained by the rule that each quantum state occupies a single Planck cell, as explained in {ref}`sec-wkb-13`. Evaluate the integral,
 
 :::{math}
 :label: eq-wkb-163
@@ -1673,7 +1687,9 @@ Next, given that $E$ is exactly an energy eigenvalue, evaluate $N(E)$ exactly, a
 
 (prob-wkb-7)=
 
-**Problem \prbdwkb-7..** 
+**Problem 7.** 
+
+Let $S(\xvec)$ be a solution of the Hamilton-Jacobi equation (\eqr\cn.25), and define a momentum field $\pvec=\pvec(\xvec)=\del S(\xvec)$, as in Eq.~(\eqr\cn.10).   The Hamiltonian for this problem is Eq.~(\eqr\cn.2).   In terms of the momentum field we define a velocity field,
 
 :::{math}
 :label: eq-wkb-164
@@ -1711,7 +1727,9 @@ The conclusion is this: If the ensemble of classical particles implied by $S(\xv
 
 (prob-wkb-8)=
 
-**Problem \prbdwkb-8..** 
+**Problem 8.** 
+
+The Coulomb potential in the hydrogen atom is $V(r)=-e^2/r$.  It has an infinite number of bound states, but other potentials have only a finite number.  The bound energy levels in the hydrogen atom are
 
 :::{math}
 :label: eq-wkb-168
@@ -1720,7 +1738,7 @@ E_n=-{me^4\over 2\hbar^2 n^2},
 
 and they are $n^2$-fold degenerate. See {ref}`ch-hydrogen`. The principal quantum number $n$ takes on the values $n=1,2,\ldots$.
 
-\problempart{(a)} Using the method of \secrwkb-13, estimate the number of energy levels less than a given energy $E$, where $E<0$. Do this in the following way. You need to evaluate the integral,
+**(a)**  Using the method of {ref}`sec-wkb-13`, estimate the number of energy levels less than a given energy $E$, where $E<0$. Do this in the following way. You need to evaluate the integral,
 
 :::{math}
 :label: eq-wkb-169
@@ -1743,7 +1761,7 @@ This is an integral over a 6-dimensional region of the classical phase space. Fi
 
 Since we are only interested in $E<0$ I suggest you define $K=-E$ so that $K=|E|>0$. This will help avoid sign errors.
 
-\problempart{(b)} Now take the exact energy levels {eq}`eq-wkb-168`, and let $\nu$ be an estimate for the energy level that most closely satisfies $E_\nu=E$. You may assume that $E_1 < E < 0$, and that $\nu$ is fairly large, since we are only making asymptotic estimates here ($E_1$ is the ground state energy). Then estimate the sum
+**(b)**  Now take the exact energy levels {eq}`eq-wkb-168`, and let $\nu$ be an estimate for the energy level that most closely satisfies $E_\nu=E$. You may assume that $E_1 < E < 0$, and that $\nu$ is fairly large, since we are only making asymptotic estimates here ($E_1$ is the ground state energy). Then estimate the sum
 
 :::{math}
 :label: eq-wkb-172
@@ -1752,6 +1770,6 @@ Since we are only interested in $E<0$ I suggest you define $K=-E$ so that $K=|E|
 
 where $g_n$ is the degeneracy of $E_n$, and compare it to the results of part~(a). You may make the estimate by replacing the sum by an integral.
 
-\problempart{(c)} You will see from this calculation that the reason that the Coulomb potential possesses an infinite number of bound states is that it has a long-range tail, which dies off only as $1/r$. It does not come from the singularity at $r=0$. Suppose we have a potential that dies off as $1/r^\alpha$ as $r\to\infty$, where $\alpha$ is a positive power. This includes the Coulomb potential (for $\alpha=1$) as well as potentials that die more or less rapidly than the Coulomb potential. This is only the asymptotic (large $r$) form of the potential, we make no assumptions about what the potential does for small $r$.
+**(c)**  You will see from this calculation that the reason that the Coulomb potential possesses an infinite number of bound states is that it has a long-range tail, which dies off only as $1/r$. It does not come from the singularity at $r=0$. Suppose we have a potential that dies off as $1/r^\alpha$ as $r\to\infty$, where $\alpha$ is a positive power. This includes the Coulomb potential (for $\alpha=1$) as well as potentials that die more or less rapidly than the Coulomb potential. This is only the asymptotic (large $r$) form of the potential, we make no assumptions about what the potential does for small $r$.
 
 For $\alpha>1$ the potential dies off more rapidly than the Coulomb potential, and it's logical that at some value of $\alpha$ the number of bound states will stop being infinite and will become finite. Find the value of $\alpha$ for which the number of bound states is infinite, but above which the number is finite.

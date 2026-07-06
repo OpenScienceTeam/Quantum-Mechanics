@@ -691,7 +691,7 @@ This is the stationary phase approximation for multidimensional integrals.
 
 ## The Stationary Phase Approximation Applied to the Path Integral
 
-Now we return to the discretized version of the path integral, {eq}`eq-pathint-25`, and perform the stationary phase approximation on it. In comparison with the mathematical notes in \secrpathint-13, we set $\kappa=\hbar$ because we are interested in the classical limit in which $\hbar$ is small. Then the quantity $\varphi$ of \secrpathint-13 becomes the discretized version of the action integral,
+Now we return to the discretized version of the path integral, {eq}`eq-pathint-25`, and perform the stationary phase approximation on it. In comparison with the mathematical notes in {ref}`sec-pathint-13`, we set $\kappa=\hbar$ because we are interested in the classical limit in which $\hbar$ is small. Then the quantity $\varphi$ of {ref}`sec-pathint-13` becomes the discretized version of the action integral,
 
 :::{math}
 :label: eq-pathint-63
@@ -735,7 +735,7 @@ This is a discretized version of Newton's laws,
 m{d^2 \bar x(\tau) \over d\tau^2} = -V'(\bar x),
 :::
 
-so that ${\bar x}(\tau)$ is a classical path, satisfying ${\bar x}(0)=x_0$, ${\bar x}(t)=x$. (We use $\tau$ for the variable time upon which ${\bar x}$ depends to distinguish it from $t$, the final time in the path integral.) In deriving {eq}`eq-pathint-67` and {eq}`eq-pathint-68`, we have effectively carried out a discretized version of the usual demonstration that Hamilton's principle {eq}`eq-pathint-30` is equivalent to Newton's laws. This was done in the continuum limit in \secrpathint-9, where we showed that $T_1$ vanishes for all $\delta x(t)$ if and only if Newton's laws are satisfied, and more generally (for any Lagrangian) in {ref}`sec-classmech-7`. Thus in the limit $N\to\infty$ the discretized action $\varphi$ becomes Hamilton's principal function evaluated along the classical orbit ${\bar x}(\tau)$ which is the solution of {eq}`eq-pathint-68`,
+so that ${\bar x}(\tau)$ is a classical path, satisfying ${\bar x}(0)=x_0$, ${\bar x}(t)=x$. (We use $\tau$ for the variable time upon which ${\bar x}$ depends to distinguish it from $t$, the final time in the path integral.) In deriving {eq}`eq-pathint-67` and {eq}`eq-pathint-68`, we have effectively carried out a discretized version of the usual demonstration that Hamilton's principle {eq}`eq-pathint-30` is equivalent to Newton's laws. This was done in the continuum limit in {ref}`sec-pathint-9`, where we showed that $T_1$ vanishes for all $\delta x(t)$ if and only if Newton's laws are satisfied, and more generally (for any Lagrangian) in {ref}`sec-classmech-7`. Thus in the limit $N\to\infty$ the discretized action $\varphi$ becomes Hamilton's principal function evaluated along the classical orbit ${\bar x}(\tau)$ which is the solution of {eq}`eq-pathint-68`,
 
 :::{math}
 :label: eq-pathint-69
@@ -996,7 +996,7 @@ We may now gather together all the pieces of the Van Vleck formula for the free 
 K(x,x_0,t) = \left( {m\over 2\pi i\hbar t} \right)^{1/2} \exp \Bigl[{i\over \hbar} {m(x-x_0)^2 \over 2t} \Bigr].
 :::
 
-This is the same result as {eq}`eq-pathint-10`. You will appreciate that the derivation in \secrpathint-3 was much easier; this is an example of what people mean when they say that the path integral is harder to use than the Schr\"odinger equation.
+This is the same result as {eq}`eq-pathint-10`. You will appreciate that the derivation in {ref}`sec-pathint-3` was much easier; this is an example of what people mean when they say that the path integral is harder to use than the Schr\"odinger equation.
 
 (sec-pathint-18)=
 
@@ -1214,11 +1214,15 @@ Z(\beta) =  \sqrt{\ds{\ds m\over\ds 2\pi\beta\hbar^2}} \, \int dx_0 \, e^{-\beta
 
 This result is most easily obtained by classical statistical mechanics. It was known to Boltzmann. By taking into account larger deviations of the path from its initial point we can find quantum corrections to the partition function (effectively expanding in powers of $\beta$).
 
-\problems
+(sec-pathint-problems)=
+
+## Problems
 
 (prob-pathint-1)=
 
-**Problem \prbdpathint-1.} The propagator can not only be used for advancing wave functions in time, but also sometimes in space. Consider a beam of particles of energy $E$ in three dimensions launched at a screen in the plane $z=0$.  The particles are launched in the $z$-direction.  The screen has holes in it that allow some particles to go through.  We assume that the wave function at $z=0$ is $\psi(x,y,0) = 1$ when $(x,y)$ lies inside a hole, and $\psi(x,y,0)=0$ when $(x,y)$ is not in a hole.  This is what would happen if we took the plane wave $e^{ikz.** 
+**Problem 1.** 
+
+The propagator can not only be used for advancing wave functions in time, but also sometimes in space. Consider a beam of particles of energy $E$ in three dimensions launched at a screen in the plane $z=0$.  The particles are launched in the $z$-direction.  The screen has holes in it that allow some particles to go through.  We assume that the wave function at $z=0$ is $\psi(x,y,0) = 1$ when $(x,y)$ lies inside a hole, and $\psi(x,y,0)=0$ when $(x,y)$ is not in a hole.  This is what would happen if we took the plane wave $e^{ikz}$ and just cut it off at the edges of the holes.  In other words, $\psi(x,y,0)$ is the ``characteristic function'' of the holes.  Suppose also that the region $z>0$ is vacuum.  With an extra physical assumption, this information is enough to determine the value of the wave function in the region $z>0$.
 
 Define a wave number by
 
@@ -1252,7 +1256,7 @@ where
 \del_\perp^2 = {\partial^2 \over \partial x^2} +{\partial^2 \over \partial y^2}.
 :::
 
-\problempart{(a)} Consider now the equation
+**(a)**  Consider now the equation
 
 :::{math}
 :label: eq-pathint-125
@@ -1279,7 +1283,7 @@ This is called the paraxial approximation. Now define a new wave function $\phi$
 
 and derive a wave equation for $\phi$.
 
-\problempart{(b)} Now write an integral giving $\phi(x,y,z)$ for $z>0$ in terms of $\phi(x,y,0)$. Suppose for simplicity there is one hole, and it lies inside the radius $\rho=a$, where
+**(b)**  Now write an integral giving $\phi(x,y,z)$ for $z>0$ in terms of $\phi(x,y,0)$. Suppose for simplicity there is one hole, and it lies inside the radius $\rho=a$, where
 
 :::{math}
 :label: eq-pathint-128
@@ -1288,7 +1292,7 @@ and derive a wave equation for $\phi$.
 
 Show that if $z\gg a^2/\lambda$, then $\phi(x,y,z)$ is proportional to the 2-dimensional Fourier transform of the hole (that is, of its characteristic function). This is the Fraunhofer region in diffraction theory. Smaller values of $z$ lie in the Fresnel region, which is more difficult mathematically because the integral is harder to do.
 
-\problempart{(c)} Suppose the hole is a circle of radius $a$ centered on the origin. Evaluate the integral explicitly and obtain an expression for $\psi(x,y,z)$ for $z$ in the Fraunhofer (large $z$) region. You may find the following identities useful:
+**(c)**  Suppose the hole is a circle of radius $a$ centered on the origin. Evaluate the integral explicitly and obtain an expression for $\psi(x,y,z)$ for $z$ in the Fraunhofer (large $z$) region. You may find the following identities useful:
 
 :::{math}
 :label: eq-pathint-129
@@ -1308,7 +1312,9 @@ This problem can be used to calculate the forward scattering amplitude in hard s
 
 (prob-pathint-2)=
 
-**Problem \prbdpathint-2..** 
+**Problem 2.** 
+
+In classical mechanics, any two Lagrangians that differ by a total time derivative produce the same equations of motion.  For example, in one dimension, $L$ and $L'$, defined by
 
 :::{math}
 :label: eq-pathint-131
@@ -1322,7 +1328,7 @@ give the same equations of motion. This is easily verified by using both $L$ and
 \dod{}{t}\left(\frac{\partial L}{\partial \xdot}\right) = \frac{\partial L}{\partial x}.
 :::
 
-\problempart{(a)} Let $L_0$ be the classical Lagrangian for a free particle,
+**(a)**  Let $L_0$ be the classical Lagrangian for a free particle,
 
 :::{math}
 :label: eq-pathint-133
@@ -1338,7 +1344,7 @@ L_g(x,\xdot) = {m\over 2}\xdot^2 -mgx.
 
 According to the principle of equivalence, motion in an accelerated frame is physically indistinguishable from motion in a uniform gravitational field. Consider a region of space free of gravitational fields, where the particle motion in an inertial frame with coordinate $x$ is described by Lagrangian $L_0(x,\xdot)$. Let $y$ be the coordinate in a frame that is accelerated at constant acceleration $g$ in the $+x$ direction. Assume that the origins of the inertial frame ($x$) and accelerated frame ($y$) coincide at $t=0$. Transform $L_0(x,\xdot)$ to the $y$ coordinate, and show that the result is $L_g(y,\ydot)$ plus the exact time derivative of a function $f(y,t)$. Determine the function $f(y,t)$.
 
-\problempart{(b)} Let $H_0$ and $H_g$ be the quantum Hamiltonians for a free particle and a particle in a uniform gravitational field,
+**(b)**  Let $H_0$ and $H_g$ be the quantum Hamiltonians for a free particle and a particle in a uniform gravitational field,
 
 :::{math}
 :label: eq-pathint-135
@@ -1363,9 +1369,11 @@ Use the path integral to find the propagator of a particle in a uniform gravitat
 
 (prob-pathint-3)=
 
-**Problem \prbdpathint-3..** 
+**Problem 3.** 
 
-\problempart{(a)} For the classical harmonic oscillator with Lagrangian,
+In this problem we use the van Vleck formula (\eqr\cn.84) to find the propagator for the harmonic oscillator.
+
+**(a)**  For the classical harmonic oscillator with Lagrangian,
 
 :::{math}
 :label: eq-pathint-138
@@ -1374,7 +1382,7 @@ L = {m \dot x^2 \over 2} - {m\omega^2 x^2\over 2},
 
 find values of $(x,x_0,t)$ such that there exists a unique path; no path at all; more than one path. Let $\tau$ be a variable intermediate time, $0\le\tau\le t$, and assume the path $x(\tau)$ satisfy $x(0)=x_0$, $x(t)=x$.
 
-\problempart{(b)} Compute Hamilton's principal function $S(x,x_0,t)$ for the harmonic oscillator, and verify the generating function relations,
+**(b)**  Compute Hamilton's principal function $S(x,x_0,t)$ for the harmonic oscillator, and verify the generating function relations,
 
 :::{math}
 :label: eq-pathint-139
@@ -1383,19 +1391,25 @@ p=\frac{\partial S}{\partial x},\qquad p_0=-\frac{\partial S}{\partial x_0},\qqu
 
 which are equivalent to {eq}`eq-pathint-46`. Do this for some time $t$ such that there exists only one classical path.
 
-\problempart{(c)} We saw in \secrpathint-17 that the action is minimum along the classical orbits of the free particle. Let $x(\tau)$ be a classical orbit in the harmonic oscillator, satisfying $x(0)=x_0$, $x(t)=x$ for given values of $(x,x_0,t)$. Consider a modified path, $x(\tau)+\delta x(\tau)$, where $\delta x(\tau)$ vanishes at $\tau=0$ and $\tau=t$. For the operator $B$ in {eq}`eq-pathint-83` find its eigenvalues $\beta_n$ and eigenfunctions $\xi_n(\tau)$. Show that if $t<\pi/\omega$, then all eigenvalues are positive, and the action is a minimum. For other values of time $t$, show that the number of negative eigenvalues of $B$ is the largest integer less than $\omega t/\pi$. Thus, for $t>\pi/\omega$, the classical path is not a minimum of the action functional, but rather a saddle point.
+**(c)**  We saw in {ref}`sec-pathint-17` that the action is minimum along the classical orbits of the free particle. Let $x(\tau)$ be a classical orbit in the harmonic oscillator, satisfying $x(0)=x_0$, $x(t)=x$ for given values of $(x,x_0,t)$. Consider a modified path, $x(\tau)+\delta x(\tau)$, where $\delta x(\tau)$ vanishes at $\tau=0$ and $\tau=t$. For the operator $B$ in {eq}`eq-pathint-83` find its eigenvalues $\beta_n$ and eigenfunctions $\xi_n(\tau)$. Show that if $t<\pi/\omega$, then all eigenvalues are positive, and the action is a minimum. For other values of time $t$, show that the number of negative eigenvalues of $B$ is the largest integer less than $\omega t/\pi$. Thus, for $t>\pi/\omega$, the classical path is not a minimum of the action functional, but rather a saddle point.
 
 (prob-pathint-4)=
 
 **Problem (d).** 
 
+Put the pieces together, and write out the Van Vleck expression for the propagator of the harmonic oscillator, $K(x,x_0,t)$.
+
 (prob-pathint-5)=
 
-**Problem (e)} Think of the complex time plane, and consider $K(x,x_0,t)$ for times on the real axis satisfying $0< t <\pi/\omega$. Analytically continue the expression for $K$ in this time interval down onto the negative imaginary time axis, set $t=-i\hbar\beta$, and get an expression for the matrix elements of the Boltzmann operator, $\matrixelement{x}{e^{-\beta H}}{x_0.** 
+**Problem (e).**
+
+Think of the complex time plane, and consider $K(x,x_0,t)$ for times on the real axis satisfying $0< t <\pi/\omega$. Analytically continue the expression for $K$ in this time interval down onto the negative imaginary time axis, set $t=-i\hbar\beta$, and get an expression for the matrix elements of the Boltzmann operator, $\matrixelement{x}{e^{-\beta H}}{x_0}$ for a harmonic oscillator in thermal equilibrium.  Take the trace to get the partition function $Z(\beta)$.  See if the answer agrees with the partition function of the harmonic oscillator, as found in your typical book on statistical mechanics.
 
 (prob-pathint-6)=
 
 **Problem 4..** 
+
+The classical Lagrangian for a particle of charge $q$ in a given, external, electric and magnetic field $\Evec(\xvec,t)$ and $\Bvec(\xvec,t)$ is
 
 :::{math}
 :label: eq-pathint-140
@@ -1417,13 +1431,15 @@ where $\Avec$ and $\Phi$ are related to $\Evec$ and $\Bvec$ by {eq}`eq-tevolut-6
 \end{aligned}
 :::
 
-The interesting thing about this path integral is that the vector potential $\Avec$ is evaluated at the midpoint of the discretized interval $[\xvec_j,\xvec_{j+1}]$. Use an analysis like that presented in \secrpathint-18 to show that this discretized path integral is equivalent to the Schr\"odinger equation for a particle in a magnetic field. Show that this would not be so if the vector potential were evaluated at either end of the interval $[\xvec_j,\xvec_{j+1}]$ (it must be evaluated at the midpoint). Show that it does not matter which end of the interval the scalar potential is evaluated at.
+The interesting thing about this path integral is that the vector potential $\Avec$ is evaluated at the midpoint of the discretized interval $[\xvec_j,\xvec_{j+1}]$. Use an analysis like that presented in {ref}`sec-pathint-18` to show that this discretized path integral is equivalent to the Schr\"odinger equation for a particle in a magnetic field. Show that this would not be so if the vector potential were evaluated at either end of the interval $[\xvec_j,\xvec_{j+1}]$ (it must be evaluated at the midpoint). Show that it does not matter which end of the interval the scalar potential is evaluated at.
 
 The delicacy of the points at which the vector potential must be evaluated is related to the fact that the action integrals in the exponent of the Feynman path integral are not really ordinary Riemann sums, because the paths themselves are not differentiable. Instead, they obey the $\Delta x \sim (\Delta t)^{1/2}$ rule discussed in the notes. Casual notation such as {eq}`eq-pathint-29` glosses over such details.
 
 (prob-pathint-7)=
 
-**Problem \prbdpathint-4..** 
+**Problem 4.** 
+
+Let us write the path integral for a charged particle moving in given electric and magnetic fields $\Evec(\xvec,t)$ and $\Bvec(\xvec,t)$, given in all detail in Eq.~(\eqr\cn.141), in a simplified notation,
 
 :::{math}
 :label: eq-pathint-142

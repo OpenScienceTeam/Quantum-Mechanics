@@ -346,7 +346,7 @@ which has the general solution
 \psi_{\ell\ell}(r,\theta,\phi) = F_{\ell\ell}(r,\theta) e^{i\ell\phi},
 :::
 
-where $F_{\ell\ell}(r,\theta)$ is an arbitrary function. By the theory of {ref}`ch-repsamos`\ we know that $\ell$ must be a nonnegative integer or half-integer, but in fact {eq}`eq-orbamsph-38` shows that $\ell$ must be an integer since otherwise the wave function $\psi_{\ell\ell}$ would not be single-valued. Wave functions in quantum mechanics are single-valued functions of position because $\psi(\xvec)$ is just the expansion of the state $\ket{\psi}$ with respect to the position eigenbasis, and the basis kets $\ket{\xvec}$ are single-valued. This is the same conclusion we reached earlier at the end of \secrorbamsph-2. Thus we have determined the $\phi$-dependence of the function $\psi_{\ell\ell}(r,\theta,\phi)$.
+where $F_{\ell\ell}(r,\theta)$ is an arbitrary function. By the theory of {ref}`ch-repsamos`\ we know that $\ell$ must be a nonnegative integer or half-integer, but in fact {eq}`eq-orbamsph-38` shows that $\ell$ must be an integer since otherwise the wave function $\psi_{\ell\ell}$ would not be single-valued. Wave functions in quantum mechanics are single-valued functions of position because $\psi(\xvec)$ is just the expansion of the state $\ket{\psi}$ with respect to the position eigenbasis, and the basis kets $\ket{\xvec}$ are single-valued. This is the same conclusion we reached earlier at the end of {ref}`sec-orbamsph-2`. Thus we have determined the $\phi$-dependence of the function $\psi_{\ell\ell}(r,\theta,\phi)$.
 
 To get the $\theta$-dependence, we call on the $L_+$-equation {eq}`eq-orbamsph-26`, using {eq}`eq-orbamsph-28` for $L_+$ in spherical coordinates. Applying this to the form {eq}`eq-orbamsph-38` for $\psi_{\ell\ell}$, the $\phi$-derivatives can be carried out, whereupon we find
 
@@ -716,7 +716,7 @@ where the coefficients $C_{\ell m}$ characterize the charge distribution and are
 C_{\ell m}= \sqrt{\ds 4\pi\over\ds 2\ell+1} \int d^3\xvec'\, \rho(\xvec')\,r^{\prime\ell} \, Y_{\ell m}^\cc (\theta',\phi').
 :::
 
-Since $r^{\prime\ell} Y_{\ell m}^\cc(\theta',\phi')$ is a homogeneous polynomial in $(x',y',z')$ of degree $\ell$ (see \secrorbamsph-8), the coefficients $C_{\ell m}$ are moments of degree $\ell$ of the charge distribution. {eq}`eq-orbamsph-79` is the multipole expansion of the potential in spherical coordinates. The terms fall off with distance as $1/r^{\ell+1}$, so that at large distances the first nonvanishing term dominates.
+Since $r^{\prime\ell} Y_{\ell m}^\cc(\theta',\phi')$ is a homogeneous polynomial in $(x',y',z')$ of degree $\ell$ (see {ref}`sec-orbamsph-8`), the coefficients $C_{\ell m}$ are moments of degree $\ell$ of the charge distribution. {eq}`eq-orbamsph-79` is the multipole expansion of the potential in spherical coordinates. The terms fall off with distance as $1/r^{\ell+1}$, so that at large distances the first nonvanishing term dominates.
 
 The multipole expansion in rectangular coordinates is also useful. Expanding $1/|\xvec-\xvec'|$ directly in powers of $\xvec'$, assuming $r'<r$, we obtain
 
@@ -825,17 +825,23 @@ Such operators are useful when the system is invariant under rotations of the in
 
 The standard angular momentum basis for a multiparticle system is best constructed by means of coupling of angular momenta, a topic covered in {ref}`ch-jjcouple`.
 
-\problems
+(sec-orbamsph-problems)=
+
+## Problems
 
 (prob-orbamsph-1)=
 
-**Problem \prbdorbamsph-1.}  Consider wave functions $f(\theta,\phi)$ on the unit sphere, as in \secrorbamsph-5.  Using the differential operators in \secrorbamsph-4, find the simultaneous eigenfunction of $L^2$ and $L_z$ with eigenvalues $2\hbar^2$ and $\hbar$, respectively (that is, the case $\ell=1$).  Normalize this wave function but leave leave a phase factor that will be determined later.  Now apply $L_-$ twice to this state fill out the standard basis vectors in an irreducible subspace.  The wave functions are proportional to $Y_{1m}$ for $m=1,0,-1$.  By requiring $Y_{10}$ to be real and positive at the north pole, determine the phase.  Compare your answers to a table of $Y_{\ell m.** 
+**Problem 1.** 
+
+Consider wave functions $f(\theta,\phi)$ on the unit sphere, as in Sec.~\secr\cn.5.  Using the differential operators in Sec.~\secr\cn.4, find the simultaneous eigenfunction of $L^2$ and $L_z$ with eigenvalues $2\hbar^2$ and $\hbar$, respectively (that is, the case $\ell=1$).  Normalize this wave function but leave leave a phase factor that will be determined later.  Now apply $L_-$ twice to this state fill out the standard basis vectors in an irreducible subspace.  The wave functions are proportional to $Y_{1m}$ for $m=1,0,-1$.  By requiring $Y_{10}$ to be real and positive at the north pole, determine the phase.  Compare your answers to a table of $Y_{\ell m}$'s.  (See Sec.~\secr\cn.7.)
 
 (prob-orbamsph-2)=
 
-**Problem \prbdorbamsph-2..** 
+**Problem 2.** 
 
-\problempart{(a)} Consider a spinless particle moving in three-dimensional space. It was shown \secrorbamsph-6 that the standard angular momentum basis consists of wavefunctions of the form }$u_n(r) Y_{\ell m}(\theta,\phi)$, where $u_n(r)$ is an arbitrary basis of radial wave functions. The wave functions being referred to here are configuration space wave functions, $\psi(\xvec)$ or $\psi (r,\theta ,\phi)$. Consider the wave functions $\phi(\pvec)$ in the momentum representation. Let $(p,\beta,\alpha)$ be spherical coordinates in momentum space, that is,
+Some problems concerning orbital angular momentum in the momentum representation.
+
+**(a)**  Consider a spinless particle moving in three-dimensional space. It was shown {ref}`sec-orbamsph-6` that the standard angular momentum basis consists of wavefunctions of the form }$u_n(r) Y_{\ell m}(\theta,\phi)$, where $u_n(r)$ is an arbitrary basis of radial wave functions. The wave functions being referred to here are configuration space wave functions, $\psi(\xvec)$ or $\psi (r,\theta ,\phi)$. Consider the wave functions $\phi(\pvec)$ in the momentum representation. Let $(p,\beta,\alpha)$ be spherical coordinates in momentum space, that is,
 
 :::{math}
 :label: eq-orbamsph-94
@@ -849,7 +855,7 @@ p_z &= p \cos\beta. \\
 
 Find the form of the wavefunctions that make up the standard angular momentum basis in momentum space.
 
-\problempart{(b)} Let $\psi(\xvec)$ be a wave function in three dimensions, and let $\psi'(\xvec)$ be the rotated wave function corresponding to rotation matrix $\Rmat \in SO(3)$. Use {eq}`eq-orbamsph-13` and the usual expression for the momentum space wave function,
+**(b)**  Let $\psi(\xvec)$ be a wave function in three dimensions, and let $\psi'(\xvec)$ be the rotated wave function corresponding to rotation matrix $\Rmat \in SO(3)$. Use {eq}`eq-orbamsph-13` and the usual expression for the momentum space wave function,
 
 :::{math}
 :label: eq-orbamsph-95
@@ -858,7 +864,7 @@ Find the form of the wavefunctions that make up the standard angular momentum ba
 
 to find a relation between $\phi'(\pvec)$ and $\phi(\pvec)$.
 
-\problempart{(c)} A useful formula in scattering theory is the expansion of a plane wave in terms of free particle solutions of definite angular momentum. It is
+**(c)**  A useful formula in scattering theory is the expansion of a plane wave in terms of free particle solutions of definite angular momentum. It is
 
 :::{math}
 :label: eq-orbamsph-96
@@ -871,8 +877,10 @@ Suppose $\psi(\xvec) = u(r) Y_{\ell m}(\theta,\phi)$. Show that $\phi(\pvec) = v
 
 (prob-orbamsph-3)=
 
-**Problem \prbdorbamsph-3..** 
+**Problem 3.** 
 
-\problempart{(a)} Suppose unitary operators $U(\Rmat)$ on some Hilbert space satisfy the representation property, {eq}`eq-spinrot-4`. By taking matrix elements with respect to a standard angular momentum basis $\ket{jm}$, translate that condition into an equivalent condition in terms of $D$-matrices.
+A problem on the addition theorem for spherical harmonics.
 
-\problempart{(b)} Show that the addition theorem for spherical harmonics, {eq}`eq-orbamsph-71`, is a special case of the preceding result.
+**(a)**  Suppose unitary operators $U(\Rmat)$ on some Hilbert space satisfy the representation property, {eq}`eq-spinrot-4`. By taking matrix elements with respect to a standard angular momentum basis $\ket{jm}$, translate that condition into an equivalent condition in terms of $D$-matrices.
+
+**(b)**  Show that the addition theorem for spherical harmonics, {eq}`eq-orbamsph-71`, is a special case of the preceding result.

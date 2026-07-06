@@ -138,7 +138,7 @@ Here is an application. Consider the double well oscillator, whose potential is 
 A double well potential (heavy line). Also shown are the approximate ground state wave functions in the left and right wells.
 :::
 
-As shown in \secrtopicsoned-2, however, there cannot be an exact degeneracy. Now since the Hamiltonian commutes with parity, by Theorem {ref}`thm-hilbert-5` the eigenstates of $H$, which are nondegenerate, must also be eigenstates of parity. Since $\psi_\ell$ and $\psi_r$ are not eigenstates of parity, to get the energy eigenstates we must form symmetric and antisymmetric linear combinations,
+As shown in {ref}`sec-topicsoned-2`, however, there cannot be an exact degeneracy. Now since the Hamiltonian commutes with parity, by Theorem {ref}`thm-hilbert-5` the eigenstates of $H$, which are nondegenerate, must also be eigenstates of parity. Since $\psi_\ell$ and $\psi_r$ are not eigenstates of parity, to get the energy eigenstates we must form symmetric and antisymmetric linear combinations,
 
 :::{math}
 :label: eq-topicsoned-11
@@ -164,11 +164,15 @@ Odd eigenfunction in double well potential.
 
 But which one of them is the ground state, and which the excited state? According to the rules we have presented, the symmetric state in {ref}`fig-topicsoned-4` has no node, and must be the ground state, while the antisymmetric state in {ref}`fig-topicsoned-5` has one node and must be the first excited state.
 
-\problems
+(sec-topicsoned-problems)=
+
+## Problems
 
 (prob-topicsoned-1)=
 
-**Problem \prbdtopicsoned-1..** 
+**Problem 1.** 
+
+A $\delta$-function potential is often a useful model, especially in one-dimensional problems.  The potential
 
 :::{math}
 :label: eq-topicsoned-12

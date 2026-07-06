@@ -751,7 +751,7 @@ where $dw/d\Omega$ is the transition rate per unit solid angle, a quantity that 
 
 Notice that the factors of $t$ have canceled in {eq}`eq-tdpt-72`, but the right-hand side still depends on $t$ through $\Delta_t(\omega)$. If, however, $t$ is large enough that $\Delta_t(\omega)$ can be replaced by $\delta(\omega)$, then the right hand side does become independent of $t$, and the transition rate is meaningful. We see that at short times we do not have a transition rate, but that at longer times we do.
 
-For now let us assume that $t$ is large enough that $\Delta_t(\omega)$ can be replaced by $\delta(\omega)$, since this gives the simplest answer. This condition will be examined quantitatively in \secrtdpt-15. Then using {eq}`eq-tdpt-67`, we can transform $\delta(\omega)$ by the rules for $\delta$-functions,
+For now let us assume that $t$ is large enough that $\Delta_t(\omega)$ can be replaced by $\delta(\omega)$, since this gives the simplest answer. This condition will be examined quantitatively in {ref}`sec-tdpt-15`. Then using {eq}`eq-tdpt-67`, we can transform $\delta(\omega)$ by the rules for $\delta$-functions,
 
 :::{math}
 :label: eq-tdpt-73
@@ -885,7 +885,7 @@ This line of physical reasoning is essentially classical, but it suggests that a
 
 ## Two-Body Central Force Scattering
 
-A variation on the analysis of \secrtdpt-14 is two-body scattering from a central force potential. The two-body Hamiltonian is
+A variation on the analysis of {ref}`sec-tdpt-14` is two-body scattering from a central force potential. The two-body Hamiltonian is
 
 :::{math}
 :label: eq-tdpt-87
@@ -899,18 +899,18 @@ where we have transformed the lab coordinates and momenta to center-of-mass and 
 H_CM = {\Pvec^2 \over 2M}, \qquad H_rel = {\pvec^2 \over 2\mu} + U(r).
 :::
 
-To compute the cross it is easiest to work with $H_rel$ and to ignore $H_CM$. Then we have an effective one-body problem that can be analyzed by the same method as in \secrtdpt-14, with $\xvec$ replaced by $\rvec$ and $m$ replaced by $\mu$. Also, $\pvec$ is now interpreted as the momentum conjugate to $\rvec$, which was discussed in \secrtdpt-13.
+To compute the cross it is easiest to work with $H_rel$ and to ignore $H_CM$. Then we have an effective one-body problem that can be analyzed by the same method as in {ref}`sec-tdpt-14`, with $\xvec$ replaced by $\rvec$ and $m$ replaced by $\mu$. Also, $\pvec$ is now interpreted as the momentum conjugate to $\rvec$, which was discussed in {ref}`sec-tdpt-13`.
 
-We take $H_0=\pvec^2/2\mu$ and $H_1=U(r)$. The unperturbed eigenstates are plane waves $\ket{\kvec}$ of momentum $\pvec=\hbar\kvec$, as in \secrtdpt-14, normalized to a box of volume $V$,
+We take $H_0=\pvec^2/2\mu$ and $H_1=U(r)$. The unperturbed eigenstates are plane waves $\ket{\kvec}$ of momentum $\pvec=\hbar\kvec$, as in {ref}`sec-tdpt-14`, normalized to a box of volume $V$,
 
 :::{math}
 :label: eq-tdpt-89
 \psi_\kvec(\rvec) = \braket{\rvec}{\kvec} = {e^{i\kvec\cdot\rvec} \over \sqrt{V}},
 :::
 
-exactly as in {eq}`eq-tdpt-63`. Physically, $\kvec$ can be interpreted as $\kvec_2 = -\kvec_1$ when the lab frame is identified with the center-of-mass frame, as discussed in \secrtdpt-13.
+exactly as in {eq}`eq-tdpt-63`. Physically, $\kvec$ can be interpreted as $\kvec_2 = -\kvec_1$ when the lab frame is identified with the center-of-mass frame, as discussed in {ref}`sec-tdpt-13`.
 
-We compute the probability of making a transition $\ket{\kvec_i} \to \ket{\kvec}$, and then sum over all $\kvec$ lying in a small cone centered on some $\kvec_f$, as in \secrtdpt-14. The physical situation can be visualized as in {ref}`fig-tdpt-6`, which shows the initial and final wave vectors of both particles as seen in the center-of-mass frame.
+We compute the probability of making a transition $\ket{\kvec_i} \to \ket{\kvec}$, and then sum over all $\kvec$ lying in a small cone centered on some $\kvec_f$, as in {ref}`sec-tdpt-14`. The physical situation can be visualized as in {ref}`fig-tdpt-6`, which shows the initial and final wave vectors of both particles as seen in the center-of-mass frame.
 
 :::{figure} images/tdpt-fig06.png
 :label: fig-tdpt-6
@@ -919,7 +919,7 @@ We compute the probability of making a transition $\ket{\kvec_i} \to \ket{\kvec}
 Two-body scattering as seen in the center-of-mass frame. Particle 2 comes in from the left, particle 1 from the right. The initial and final wave vectors of the two particles as seen in the center of mass frame are shown and expressed in terms of the initial and final wave vectors $\kvec_i$ and $\kvec_f$ of the center-of-mass motion.
 :::
 
-Finally, to compute the differential cross we divide the differential transition rate by the incident flux, defined as $J=nv$ as in \secrtdpt-13, where $n=1/V$ (one incident particle in the box of volume $V$, where particle 2 can be thought of as the incident particle), and where $v=p/\mu$ is the relative velocity. Alternatively, we can think of two particles in a box of volume $V$, so that $n_1=n_2=1/V$, whereupon the integral in {eq}`eq-tdpt-57`, taken over the box, gives $(1/V^2)V = 1/V$. The conversion from transition rate to cross is the same in either case. The final differential cross is given by {eq}`eq-tdpt-80`, with $m$ replaced by $\mu$. As {ref}`fig-tdpt-6` makes clear, the cross is measured in the center-of-mass frame.
+Finally, to compute the differential cross we divide the differential transition rate by the incident flux, defined as $J=nv$ as in {ref}`sec-tdpt-13`, where $n=1/V$ (one incident particle in the box of volume $V$, where particle 2 can be thought of as the incident particle), and where $v=p/\mu$ is the relative velocity. Alternatively, we can think of two particles in a box of volume $V$, so that $n_1=n_2=1/V$, whereupon the integral in {eq}`eq-tdpt-57`, taken over the box, gives $(1/V^2)V = 1/V$. The conversion from transition rate to cross is the same in either case. The final differential cross is given by {eq}`eq-tdpt-80`, with $m$ replaced by $\mu$. As {ref}`fig-tdpt-6` makes clear, the cross is measured in the center-of-mass frame.
 
 All of this assumes that the two particles are distinguishable. If they are identical, then it is necessary to use properly symmetrized or antisymmetrized wave functions (including the spin), as discussed in {ref}`ch-identpart`. See Prob.~\prbrtdpt-1. In this case one finds interference terms in the cross between the direct and exchanged matrix elements.
 
@@ -1225,7 +1225,7 @@ using our normalization conventions for the Fourier transform and $\qvec$ as the
 
 This result depends on several parameters ($A$, $m$, $\kappa$ and $k$), and it is valid only for certain ranges of them. The details can be worked out by the method of \lippschw.7.
 
-If we set $A=Q_bQ_t$ and take the limit $M\to0$, the Yukawa cross {eq}`eq-tdpt-122` goes over to the Rutherford cross . As discussed in \secrtdpt-18, however, this cannot be regarded as a valid derivation of the Rutherford cross .
+If we set $A=Q_bQ_t$ and take the limit $M\to0$, the Yukawa cross {eq}`eq-tdpt-122` goes over to the Rutherford cross . As discussed in {ref}`sec-tdpt-18`, however, this cannot be regarded as a valid derivation of the Rutherford cross .
 
 (sec-tdpt-21)=
 
@@ -1233,15 +1233,19 @@ If we set $A=Q_bQ_t$ and take the limit $M\to0$, the Yukawa cross {eq}`eq-tdpt-1
 
 Here are some other applications of time-dependent perturbation theory that we will consider later in the course. As an example of an atom interacting with a classical light wave, we shall study the photoelectric effect in {ref}`ch-photelec`. In the photoelectric effect, a high energy photon, described by a classical light wave, ejects an electron from an atom, leaving behind a positive ion. Later we will consider the emission and absorption of radiation by an atom using the quantized theory of the electromagnetic field, that is, we will study the emission and absorption of photons. A similar example, one that requires second-order time-dependent perturbation theory, is the scattering of photons by matter. Later still we will consider a variety of relativistic processes that are applications of time-dependent perturbation theory, including relativistic scattering of charged particles and the creation and annihilation of electron-positron pairs.
 
-\problems
+(sec-tdpt-problems)=
+
+## Problems
 
 (prob-tdpt-1)=
 
-**Problem \prbdtdpt-1..** 
+**Problem 1.** 
 
-\problempart{(a)} In classical mechanics we can always distinguish particles by placing little spots of paint on them. Suppose we have two particles in classical mechanics that are identical apart from insignificant spots of blue and green paint. (The spots have no effect on the scattering.) Suppose the differential cross in the center-of-mass system for the detection of blue particles is $(d\sigma/d\Omega)(\theta,\phi)$. What is the differential cross $(d\sigma/d\Omega)_dc(\theta,\phi)$ for the detection of particles when we don't care about the color?
+Some questions involving the scattering of identical particles.
 
-\problempart{(b)} Consider the scattering of two identical particles of spin $s$ in quantum mechanics. Work in the center-of-mass system, and let $\mu=m/2$ be the reduced mass. Consider in particular three cases: $s=0$, $s=\frac{1}{2}$, and $s=1$. Organize the eigenstates of $H_0=p^2/2\mu$ as tensor products of spatial states times spin states; make the spin states eigenstates of $S^2$ and $S_z$, where $\Svec=\Svec_1+\Svec_2$, and make the spatial states properly symmetrized or antisymmetrized plane waves. Let the initial spin state be $\ket{S_i M_{Si}}$ and the final one be $\ket{S_f M_{Sf}}$. Since potential scattering cannot flip the spin, the cross will be proportional to $\delta(S_i,S_f) \delta(M_{Si},M_{Sf})$. Find the differential cross in terms of
+**(a)**  In classical mechanics we can always distinguish particles by placing little spots of paint on them. Suppose we have two particles in classical mechanics that are identical apart from insignificant spots of blue and green paint. (The spots have no effect on the scattering.) Suppose the differential cross in the center-of-mass system for the detection of blue particles is $(d\sigma/d\Omega)(\theta,\phi)$. What is the differential cross $(d\sigma/d\Omega)_dc(\theta,\phi)$ for the detection of particles when we don't care about the color?
+
+**(b)**  Consider the scattering of two identical particles of spin $s$ in quantum mechanics. Work in the center-of-mass system, and let $\mu=m/2$ be the reduced mass. Consider in particular three cases: $s=0$, $s=\frac{1}{2}$, and $s=1$. Organize the eigenstates of $H_0=p^2/2\mu$ as tensor products of spatial states times spin states; make the spin states eigenstates of $S^2$ and $S_z$, where $\Svec=\Svec_1+\Svec_2$, and make the spatial states properly symmetrized or antisymmetrized plane waves. Let the initial spin state be $\ket{S_i M_{Si}}$ and the final one be $\ket{S_f M_{Sf}}$. Since potential scattering cannot flip the spin, the cross will be proportional to $\delta(S_i,S_f) \delta(M_{Si},M_{Sf})$. Find the differential cross in terms of
 
 :::{math}
 :label: eq-tdpt-123
@@ -1250,15 +1254,17 @@ Here are some other applications of time-dependent perturbation theory that we w
 
 where $\tilde U$ is defined as in {eq}`eq-tdpt-78`. Use the fact that $U(\xvec)=U(-\xvec)$ to simplify the result as much as possible. Use notation like that in {eq}`eq-tdpt-80`.
 
-\problempart{(c)} For the three cases $s=0$, $s=\frac{1}{2}$, $s=1$, assume that the initial state is unpolarized and that we do not care about the final spin state. Find the differential cross in terms of the quantities $a=|\tilde U_+|^2$, $b=|\tilde U_-|^2$, and $c=\Re (\tilde U^\cc_+ \tilde U_-)$.
+**(c)**  For the three cases $s=0$, $s=\frac{1}{2}$, $s=1$, assume that the initial state is unpolarized and that we do not care about the final spin state. Find the differential cross in terms of the quantities $a=|\tilde U_+|^2$, $b=|\tilde U_-|^2$, and $c=\Re (\tilde U^\cc_+ \tilde U_-)$.
 
-\problempart{(d)} Work out the answer for the case of Coulomb scattering of two electrons, and compare to the classical Rutherford formula, {eq}`eq-tdpt-113`. Express your answer in a notation similar to that of {eq}`eq-tdpt-113`. The cross term you get in applying the results of part (c) to Coulomb scattering is actually incorrect; the trouble is that plane waves do not adequately represent the unbound Coulomb wave functions, which have long range, logarithmic phase shifts. The correct answer is called the Mott cross , which we will discuss later in class.
+**(d)**  Work out the answer for the case of Coulomb scattering of two electrons, and compare to the classical Rutherford formula, {eq}`eq-tdpt-113`. Express your answer in a notation similar to that of {eq}`eq-tdpt-113`. The cross term you get in applying the results of part (c) to Coulomb scattering is actually incorrect; the trouble is that plane waves do not adequately represent the unbound Coulomb wave functions, which have long range, logarithmic phase shifts. The correct answer is called the Mott cross , which we will discuss later in class.
 
 Although the result obtained in this problem for Coulomb scattering is not correct, the calculation does show that in the case of identical particles the cross involves interference terms between direct and exchange amplitudes. Also, there are other problems, for example, the scattering of two neutrons or two identical atoms, for which the technique gives answers that are correct in the appropriate range of parameters.
 
 (prob-tdpt-2)=
 
-**Problem \prbdtdpt-2..** 
+**Problem 2.** 
+
+A basic rule of nonrelativistic interactions is that electrostatic forces cannot flip spins.  The reason is that spins respond to magnetic fields, not electric fields.  The cross section (\eqr\cn.80) applies to a charged particle scattered by an electrostatic potential, and in the derivation we assumed that the particle was spinless. But if we had taken spin into account we would have reached the conclusion that the cross section is the same as (\eqr\cn.80) as long as the final spin state is the same as the initial spin state; and the cross section for flipping the spin is zero.  This is under the assumption that the perturbing Hamiltonian is the potential $H_1=U(\xvec)$.
 
 If we take into account relativistic corrections, however, then there is a small probability for flipping the spin.
 
@@ -1270,9 +1276,11 @@ This problem gives an example of *inelastic scattering*, in which the internal s
 
 (prob-tdpt-3)=
 
-**Problem \prbdtdpt-3..** 
+**Problem 3.** 
 
-Let the electrostatic potential of the scatterer be $\Phi(\xvec)$, as in \secrtdpt-17. If we wish the form factor to suppress the small angle scattering, then we should require that $f(\qvec)=0$ at $\qvec=0$. Show that this implies that the total charge in the distribution $\rho(\xvec)$ vanishes. This makes sense: if the total charge vanishes, then at large distances there is no Coulomb tail to $\Phi(\xvec)$.
+The $q^4=16k^4\sin^4(\theta/2)$ that appears in the denominator of the Rutherford cross section (\eqr\cn.113) means that there is a large cross section for scattering by small angles, where the momentum transfer is small.   Speaking classically, this is obviously due to the small angle scattering that particles experience at large impact parameters.   Since the Coulomb potential dies off only slowly with distance, there is still significant scattering even at large impact parameters.
+
+Let the electrostatic potential of the scatterer be $\Phi(\xvec)$, as in {ref}`sec-tdpt-17`. If we wish the form factor to suppress the small angle scattering, then we should require that $f(\qvec)=0$ at $\qvec=0$. Show that this implies that the total charge in the distribution $\rho(\xvec)$ vanishes. This makes sense: if the total charge vanishes, then at large distances there is no Coulomb tail to $\Phi(\xvec)$.
 
 The form factor can be expanded in powers of $\qvec$ for small $\qvec$,
 

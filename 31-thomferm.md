@@ -279,11 +279,15 @@ The Thomas-Fermi model is crude on several accounts. When we derived the equatio
 
 These limitations are obvious in the results, for the Thomas-Fermi model gives no hint of the shell structure that we know exists in atoms. In fact, the Thomas-Fermi model generally does a poor job of describing the properties of the outermost electrons (which are involved in the ionization potential, the chemical properties of the atom, its shell structure, etc.), and of the properties of the electron cloud near the nucleus. (In reality the electron density approaches a finite value as $r\to0$, but in the Thomas-Fermi model it diverges as $r^{-3/2}$.) But the Thomas-Fermi model does a fair job of describing the electron density at intermediate radii, and gives moderately good results for the average properties of atoms, such as the average binding energy or rms charge radius. Therefore it is useful for such applications as calculations of the slowing down of particles passing through matter (an important subject in experimental physics). The Thomas-Fermi model is also useful as a starting approximation for more sophisticated atomic models, such as the Hartree-Fock approximation.
 
-\problems
+(sec-thomferm-problems)=
+
+## Problems
 
 (prob-thomferm-1)=
 
-**Problem \prbdthomferm-1.}  Let $f(x)$ be the solution of the Thomas-Fermi equation {eq}`eq-thomferm-22` with initial condition $f(0)=1$ that asymptotes to the $x$-axis as $x\to\infty$.  Assuming that $f$ has an expansion in inverse powers of $x$, show that the leading power is $x^{-3.** 
+**Problem 1.** 
+
+Let $f(x)$ be the solution of the Thomas-Fermi equation (\eqr\cn.22) with initial condition $f(0)=1$ that asymptotes to the $x$-axis as $x\to\infty$.  Assuming that $f$ has an expansion in inverse powers of $x$, show that the leading power is $x^{-3}$, and that
 
 :::{math}
 :label: eq-thomferm-29
@@ -296,9 +300,11 @@ Now consider a neutral atom of charge $Z$. The Thomas-Fermi solution for a neutr
 
 (prob-thomferm-2)=
 
-**Problem \prbdthomferm-2..** 
+**Problem 2.** 
 
-\problempart{(a)} Show that
+Consider the Thomas-Fermi model for a neutral atom.  There are three contributions to the total energy; they are $E_1$, the kinetic energy of the electrons; $E_2$, the potential energy of interaction of the electrons with the nucleus; and $E_3$, the potential energy of interaction of the electrons with each other.
+
+**(a)**  Show that
 
 :::{math}
 :label: eq-thomferm-30
@@ -314,7 +320,7 @@ J=\int_0^\infty \Bigl(\dod{f}{x}\Bigr)^2 \,dx = 0.454,
 
 and where $b$ is defined by {eq}`eq-thomferm-21`.
 
-\problempart{(b)} The structure equations of the Thomas-Fermi atom can be derived from a variational principle, instead of by balancing forces. To do this, we regard the total energy of the Thomas-Fermi atom as a functional of the electron number density, $n(r)$. The electron fluid is assumed to obey the zero-temperature equation of state of a Fermi-Dirac ideal gas. The particular function $n(r)$ that minimizes the total energy, subject to the constraint that the total number of electrons be constant,
+**(b)**  The structure equations of the Thomas-Fermi atom can be derived from a variational principle, instead of by balancing forces. To do this, we regard the total energy of the Thomas-Fermi atom as a functional of the electron number density, $n(r)$. The electron fluid is assumed to obey the zero-temperature equation of state of a Fermi-Dirac ideal gas. The particular function $n(r)$ that minimizes the total energy, subject to the constraint that the total number of electrons be constant,
 
 :::{math}
 :label: eq-thomferm-32

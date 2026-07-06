@@ -687,7 +687,7 @@ Ultimately we will see that the negative energy solutions of the free particle D
 
 ## Central Force Motion and Complete Sets of Commuting Observables
 
-In the case of a central force potential the time-independent Dirac equation can be reduced to a pair of one-dimensional, first-order, coupled radial wave equations, a generalization of the single second-order radial wave equation that arises in the nonrelativistic theory (see {eq}`eq-cenforce-7` and {eq}`eq-cenforce-11` for the latter). In some cases the Dirac radial wave equations can be solved in terms of standard special functions of mathematical physics. The main example that we are interested in is the Coulomb potential, but part of the analysis applies to any central force problem so we treat that first. The Coulomb potential (for hydrogen-like atoms) is covered in Secs.~\secrspdirac-16--18. For the rest of these notes we use natural units ($\hbar=c=1$), except at the end where we restore ordinary units when presenting results.
+In the case of a central force potential the time-independent Dirac equation can be reduced to a pair of one-dimensional, first-order, coupled radial wave equations, a generalization of the single second-order radial wave equation that arises in the nonrelativistic theory (see {eq}`eq-cenforce-7` and {eq}`eq-cenforce-11` for the latter). In some cases the Dirac radial wave equations can be solved in terms of standard special functions of mathematical physics. The main example that we are interested in is the Coulomb potential, but part of the analysis applies to any central force problem so we treat that first. The Coulomb potential (for hydrogen-like atoms) is covered in Secs.~{ref}`sec-spdirac-16`--18. For the rest of these notes we use natural units ($\hbar=c=1$), except at the end where we restore ordinary units when presenting results.
 
 We seek the energy eigenvalues and eigenfunctions of the Dirac Hamiltonian in a central force potential, that is, we wish to solve
 
@@ -1451,11 +1451,15 @@ where we drop the constant prefactors seen on the right in {eq}`eq-spdirac-141` 
 
 The normalization of the Dirac wave functions may also be obtained in closed form; it may be found in the references.
 
-\problems
+(sec-spdirac-problems)=
+
+## Problems
 
 (prob-spdirac-1)=
 
-**Problem \prbdspdirac-1..** 
+**Problem 1.** 
+
+Show that $u(p,\pm s)$ and $v(p,\pm s)$ are eigenspinors of $\sslash\gamma_5$ with eigenvalue $\pm 1$.  Thus we can define spin projectors,
 
 :::{math}
 :label: eq-spdirac-145
@@ -1466,15 +1470,19 @@ which project out the positive and negative spin components of an arbitrary 4-sp
 
 (prob-spdirac-2)=
 
-**Problem \prbdspdirac-2..** 
+**Problem 2.** 
 
-\problempart{(a)} Prove {eq}`eq-spdirac-41b`, {eq}`eq-spdirac-41c` and {eq}`eq-spdirac-42`.
+The orthonormality and completeness relations (\eqr\cn.41), (\eqr\cn.42) and (\eqr\cn.46) will be important in future applications.
 
-\problempart{(b)} Prove {eq}`eq-spdirac-46a`. It may help to note that the $D$ matrix for a pure boost is Hermitian, and that $D(\pvec)^{-1} = D(-\pvec)$.
+**(a)**  Prove {eq}`eq-spdirac-41b`, {eq}`eq-spdirac-41c` and {eq}`eq-spdirac-42`.
+
+**(b)**  Prove {eq}`eq-spdirac-46a`. It may help to note that the $D$ matrix for a pure boost is Hermitian, and that $D(\pvec)^{-1} = D(-\pvec)$.
 
 (prob-spdirac-3)=
 
-**Problem \prbdspdirac-3..** 
+**Problem 3.** 
+
+Show that
 
 :::{math}
 :label: eq-spdirac-146
@@ -1489,13 +1497,17 @@ that is, the positive and negative energy projectors are the first and second te
 
 (prob-spdirac-4)=
 
-**Problem \prbdspdirac-4..** 
+**Problem 4.** 
+
+In Sec.~\secr\dirac.9 we carried out a nonrelativistic approximation on the Dirac equation.  The essence of the approximation was Eq.~(\eqr\dirac.46), which expresses the lower two components $\chi$ of the Dirac spinor in terms of the upper two components $\phi$.  Notice that this equation has a relative error of order $(v/c)^2$, when the solution of the Dirac equation has an energy which is $+mc^2$ plus a small (nonrelativistic) correction of order $(v/c)^2$.
 
 Apply this approximation to the Dirac current $J^\mu=c\psibar\gamma^\mu\psi$ to get the probability density and probability current in the Pauli theory, to order $(v/c)^2$. See if the answer includes a magnetization current. See {ref}`sec-jjcouple-6`.
 
 (prob-spdirac-5)=
 
-**Problem \prbdspdirac-5..** 
+**Problem 5.** 
+
+An arbitrary free particle solution of the Dirac equation is a linear combination of the positive and negative energy solutions, which we can write as
 
 :::{math}
 :label: eq-spdirac-147
@@ -1508,7 +1520,9 @@ Compute the expectation value of the velocity operator $\vvec=c\alphavec$ to get
 
 (prob-spdirac-6)=
 
-**Problem \prbdspdirac-6..** 
+**Problem 6.** 
+
+Consider a Dirac electron ($q=-e$) in a uniform magnetic field, $\Bvec = B_0 \zvechat$.  Choose the gauge,
 
 :::{math}
 :label: eq-spdirac-148
@@ -1561,9 +1575,9 @@ E=(n+\frac{1}{2})\hbar\omega,
 
 where $n=0,1,2,\ldots$ is the Landau level. The energy is independent of the quantum number $p_y$. The wave function is like a ridge in the $x$-$y$ plane, centered on $x=-p_y/m\omega$ (i.e., on $\xi=0$), and running in the $y$-direction.
 
-\problempart{(a)} Solve the Dirac equation for the relativistic electron in the same magnetic field. This time you must include the $z$-motion and the spin. Express the energy in terms of the quantum numbers $(n,p_y,p_z,m_s)$. Write out explicitly a complete set of positive energy solutions as 4-component spinors. You need not normalize these solutions, and you may ignore the negative energy solutions.
+**(a)**  Solve the Dirac equation for the relativistic electron in the same magnetic field. This time you must include the $z$-motion and the spin. Express the energy in terms of the quantum numbers $(n,p_y,p_z,m_s)$. Write out explicitly a complete set of positive energy solutions as 4-component spinors. You need not normalize these solutions, and you may ignore the negative energy solutions.
 
-\problempart{(b)} Consider the motion of a Dirac electron in the field,
+**(b)**  Consider the motion of a Dirac electron in the field,
 
 :::{math}
 :label: eq-spdirac-155

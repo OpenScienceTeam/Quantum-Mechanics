@@ -468,7 +468,7 @@ This expression for the energy density of the black body radiation is closely re
 
 ## The Schr\"odinger and Heisenberg Pictures
 
-So far we have identified the state space for the free electromagnetic field and some observables acting on this space that correspond to definite physical measurements, including the energy $H$, momentum $\Pvec$ and the various fields $\Avec$, $\Evec$ and $\Bvec$. Measurements of the fields involve some issues that we will explore in \secrquantemf-12.
+So far we have identified the state space for the free electromagnetic field and some observables acting on this space that correspond to definite physical measurements, including the energy $H$, momentum $\Pvec$ and the various fields $\Avec$, $\Evec$ and $\Bvec$. Measurements of the fields involve some issues that we will explore in {ref}`sec-quantemf-12`.
 
 In this discussion up to this point it has been assumed that we are working in the Schr\"odinger picture. Thus, operators such as $H$ and $\Evec(\xvec)$ are fixed, time-independent operators that act on the state space, while state vectors in that space evolve in time, leading to a time-dependence of the expectation values of these opertors, as well as of other statistics of measurements (dispersions, correlation functions, etc).
 
@@ -533,7 +533,7 @@ We see that Maxwell's equations are valid as they stand in quantum electrodynami
 
 ## The Limit $V\to\infty$
 
-The box normalization we have been using up to this point is mostly a matter of mathematical convenience, which allows us to describe the modes of the field by a discrete index $\lambda=(\kvec\mu)$, where $\kvec$ is discrete. But apart from applications like those in \secrquantemf-9 it is nonphysical, and moreover it makes certain topics, such as the angular momentum of the field, impossible to discuss. This is because the angular momentum is the generator of rotations, and the boxes are not invariant under rotations. Therefore, in preparation for subsequent developments, we consider now the changes that take place in our formalism when we take the limit $V\to\infty$.
+The box normalization we have been using up to this point is mostly a matter of mathematical convenience, which allows us to describe the modes of the field by a discrete index $\lambda=(\kvec\mu)$, where $\kvec$ is discrete. But apart from applications like those in {ref}`sec-quantemf-9` it is nonphysical, and moreover it makes certain topics, such as the angular momentum of the field, impossible to discuss. This is because the angular momentum is the generator of rotations, and the boxes are not invariant under rotations. Therefore, in preparation for subsequent developments, we consider now the changes that take place in our formalism when we take the limit $V\to\infty$.
 
 The rules for taking the limit $V\to\infty$, thereby converting Fourier series into Fourier integrals, were given by {eq}`eq-classemf-35`--{eq}`eq-classemf-37`. We now apply these rules to the Fourier expansions {eq}`eq-quantemf-22`--{eq}`eq-quantemf-24` for the fields $\Avec$, $\Evec_\perp$, and $\Bvec$. First we change notation for the polarization vectors,
 
@@ -653,7 +653,7 @@ where we have replaced the $\mu$-sum by 2 and the angular integration by $4\pi$.
 \matrixelement{0}{\Evec(\xvec)^2}{0} = {\hbar c \over 2\pi} \, K^4 \to \infty \quad as \quad K\to\infty.
 :::
 
-We should not be surprised by this infinite result, since $E^2/8\pi$ is one term in the energy density of the field, and the vacuum zero-point energy density is infinite, as noted in \secrquantemf-5. Although we threw away the zero-point energy in the Hamiltonian, it reappears in the computation of the dispersion in the measured value of the electric field strength.
+We should not be surprised by this infinite result, since $E^2/8\pi$ is one term in the energy density of the field, and the vacuum zero-point energy density is infinite, as noted in {ref}`sec-quantemf-5`. Although we threw away the zero-point energy in the Hamiltonian, it reappears in the computation of the dispersion in the measured value of the electric field strength.
 
 How do we reconcile this result with the fact that real measurements of $\Evec$ always give a finite value? One way to understand this is to note that real measuring devices occupy a finite volume, and hence measure the average of $\Evec$ over some region.
 
@@ -686,7 +686,7 @@ e^{i\kvec\cdot\xvec - i\kvec'\cdot\xvec'} \to e^{i\kvec\cdot(\xvec-\xvec')},
 so altogether we have
 :::{math}
 :label: eq-quantemf-71
-\matrixelement{0}{{\bar{\Evec}}^2}{0} &= {1\over {\cal V}^2} \int_{\cal R}d^3\xvec \, \int_{\cal R}d^3\xvec' \, (2\pi\hbar) \int {d^3\kvec\over(2\pi)^3} \, 2\omega \, e^{i\kvec\cdot(\xvec-\xvec')},
+\matrixelement{0}{{\bar{\Evec}}^2}{0} = {1\over {\cal V}^2} \int_{\cal R}d^3\xvec \, \int_{\cal R}d^3\xvec' \, (2\pi\hbar) \int {d^3\kvec\over(2\pi)^3} \, 2\omega \, e^{i\kvec\cdot(\xvec-\xvec')},
 :::
 
 where the polarization sum has been replaced by 2.
@@ -1082,17 +1082,23 @@ We will now make some comments about the various complete sets of commuting obse
 
 None of these three obvious choices for the CSCO for the states of a massive free particle, $(\kvec,S_z)$, $(k,L^2,L_z,S_z)$, or $(k,L^2,J^2,J_z)$, will work for a photon, because they all include one or more operators that are meaningless when the mass is zero. If we wish plane wave states, then we must replace $S_z$ with something else. The helicity $\Omega$ is convenient, and this leads to the plane wave, helicity eigenstates, for which the CSCO is $(\kvec,\Omega)$. These are the photon states created by our creation operators $a^\hc_\mu(\kvec)$ [with the choice {eq}`eq-quantemf-80` for polarization vectors]. If we wish eigenstates of angular momentum, then we can include $J^2$ and $J_z$ in the CSCO, but we must replace $L^2$ which may be used for a massive particle. It turns out there are two convenient substitutes for $L^2$, one being the helicity $\Omega$, and the other being parity $\pi$. Thus, we obtain two possible CSCO's for describing photons of definite angular momentum, $(k,J^2,J_z,\Omega)$ and $(k,J^2,J_z,\pi)$. The latter choice is the more popular, because we are often interested in the conservation (or violation) of parity, as well as angular momentum. The single photon wave functions $\fvec(\xvec)$ which are simultaneous eigenfunctions of $(k,J^2,J_z,\pi)$ are called the *vector multipole fields*, and are discussed in Jackson's book. They are messier to work with than plane waves, but necessary when a proper understanding of the conservation of angular momentum is desired.
 
-\problems
+(sec-quantemf-problems)=
+
+## Problems
 
 (prob-quantemf-1)=
 
-**Problem \prbdquantemf-1.} Sakurai in his book *Advanced Quantum Mechanics.** 
+**Problem 1.** 
+
+Sakurai in his book {\it Advanced Quantum Mechanics} refers to the Chicago FM radio station WFMT, which broadcasts at a frequency of 98.7MHz with a power of 135kW.   Assuming the radiation from the antenna is isotropic (it is not), find the distance from the antenna at which the number of photons per cubic wavelength is 1.   This is the distance at which the signal is so weak that it is comparable to quantum fluctuations.
 
 (prob-quantemf-2)=
 
-**Problem \prbdquantemf-2..** 
+**Problem 2.** 
 
-\problempart{(a)* Given any density operator $\rho$, the entropy is defined by {eq}`eq-density-36` and {eq}`eq-density-37`. Show that if the system is in thermal equilibrium with a heat bath, so that the density operator is given by {eq}`eq-density-38`, then
+Some questions on black body radiation.
+
+**(a)**  Given any density operator $\rho$, the entropy is defined by {eq}`eq-density-36` and {eq}`eq-density-37`. Show that if the system is in thermal equilibrium with a heat bath, so that the density operator is given by {eq}`eq-density-38`, then
 
 :::{math}
 :label: eq-quantemf-110
@@ -1101,7 +1107,7 @@ F=E-TS = -kT \log Z,
 
 where $F$ is the Helmholtz free energy.
 
-\problempart{(b)} Compute $\log Z$ and hence $F$ for black body radiation in a box of volume $V$. Assume the linear dimensions of the box are large compared to the average wavelength, so the $\kvec$-sum can be replaced by an integral. Then use
+**(b)**  Compute $\log Z$ and hence $F$ for black body radiation in a box of volume $V$. Assume the linear dimensions of the box are large compared to the average wavelength, so the $\kvec$-sum can be replaced by an integral. Then use
 
 :::{math}
 :label: eq-quantemf-111
@@ -1114,7 +1120,9 @@ If an ordinary gas is subjected to an isothermal expansion (we increase $V$ whil
 
 (prob-quantemf-3)=
 
-**Problem \prbdquantemf-3.}  Assuming the zero-point energy of the electromagnetic field is real, we obtain a finite value of the energy density (or mass density, using $E=mc^2$) if we cut off the $\kvec$-sum in {eq}`eq-quantemf-15` at the Planck length (see {eq}`eq-spatialdof-67`.  That is, take $k_max = 1/L_Planck$.  Calculate this mass density in $gm/cm.** 
+**Problem 3.** 
+
+Assuming the zero-point energy of the electromagnetic field is real, we obtain a finite value of the energy density (or mass density, using $E=mc^2$) if we cut off the $\kvec$-sum in Eq.~(\eqr\cn.15) at the Planck length (see Eq.~(\eqr\spatialdof.67)).  That is, take $k_{\rm max} = 1/L_{\rm Planck}$.  Calculate this mass density in ${\rm gm}/{\rm cm}^3$.
 
 The observed value of the cosmological constant $\Lambda$ is $1.1\times 10^{-52\, m^{-2}}\$. According to general relativity, this corresponds to a mass density of
 
@@ -1127,7 +1135,9 @@ where $G$ is Newton's constant of gravitation. Compare this mass density to the 
 
 (prob-quantemf-4)=
 
-**Problem \prbdquantemf-4..** 
+**Problem 4.** 
+
+In the quantum electrodynamics, the electric and magnetic fields (at some position $\xvec$) are represented by Hermitian operators, since they are observables.   Actually, there are six Hermitian operators in $\Evec(\xvec)$ and $\Bvec(\xvec)$, because the two vectors have three components each.   Can these observables be measured simultaneously to infinite precision?   To answer this question, we must compute commutators.  Find the commutator $[E_i(\xvec),E_j(\xvec')]$, where $\xvec$ and $\xvec'$ are two spatial points.  You may do this for the free field, which is all we have considered in these notes.   Also compute $[B_i(\xvec),B_j(\xvec')]$ and $[E_i(\xvec),B_j(\xvec')]$.   You may use box normalization for this calculation.
 
 **Hints:** Use the resolution of the identity, {eq}`eq-classemf-53`. The following identity is also useful:
 
@@ -1150,4 +1160,6 @@ This is the Fourier series for the $\delta$-function.
 
 (prob-quantemf-5)=
 
-**Problem \prbdquantemf-5.}  Compute the distance $L$ between the plates of a capacitor at which the Casimir pressure {eq}`eq-quantemf-20` is one atmosphere.   One atmosphere is $1.01\times 10^5\, N/m^2 = 1.01\times 10^6\, dyne/{\rm cm.**
+**Problem 5.**
+
+Compute the distance $L$ between the plates of a capacitor at which the Casimir pressure (\eqr\cn.20) is one atmosphere.   One atmosphere is $1.01\times 10^5\, {\rm N}/{\rm m}^2 = 1.01\times 10^6\, {\rm dyne}/{\rm cm}^2$.

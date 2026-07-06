@@ -556,7 +556,7 @@ In fact we can say that all physical observables (Hamiltonians and others) invol
 
 ## The Symmetrization Postulate and the Pauli Exclusion Principle
 
-The usual statement of the Pauli exclusion principle is that no two electrons can occupy the same state. This refers of course to the case of identical fermions. It is important to understand that the “states” in question are *single-particle* states, and that when we talk about electrons being “in” such states we are implicitly thinking of a multiparticle state that is a properly antisymmetrized tensor product of such single particle states, that is, it is a Slater determinant as in {eq}`eq-hartfock-39`. The Slater determinant vanishes if any two single particle states $\ket{\lambda}$ are identical, since in that case two columns of the determinant are equal. As remarked in \secrhartfock-7, the more general condition is that the Slater determinant vanishes if the set of single particle orbitals is linearly dependent.
+The usual statement of the Pauli exclusion principle is that no two electrons can occupy the same state. This refers of course to the case of identical fermions. It is important to understand that the “states” in question are *single-particle* states, and that when we talk about electrons being “in” such states we are implicitly thinking of a multiparticle state that is a properly antisymmetrized tensor product of such single particle states, that is, it is a Slater determinant as in {eq}`eq-hartfock-39`. The Slater determinant vanishes if any two single particle states $\ket{\lambda}$ are identical, since in that case two columns of the determinant are equal. As remarked in {ref}`sec-hartfock-7`, the more general condition is that the Slater determinant vanishes if the set of single particle orbitals is linearly dependent.
 
 It is important to realize that such multiparticle fermion states (Slater determinants of single particle orbitals) are not the most general multiparticle states. While an arbitrary physical, multiparticle fermion state (one lying in the physical subspace) can always be written as a linear combination of Slater determinants, it is unlikely that the actual multiparticle states occurring in the real world have the form of a single Slater determinant. Slater determinants, that is, multiparticle fermion states in which it is meaningful to talk about the (single particle) “states” that the electrons are “in,” are much more common in theory or in vague or elementary descriptions of physical phenomena than they are in the real world. For example, these notes are devoted to Hartree-Fock theory, but the Slater determinant used in Hartree-Fock theory is only a trial wave function, and the actual wave functions of real atoms (ground states or otherwise) never have the form of a single Slater determinant.
 
@@ -674,7 +674,7 @@ Let us take the case $i=2$ for the matrix element in {eq}`eq-hartfock-68`, and w
 \end{aligned}
 :::
 
-where we express action of the permutation $P$ on the Hartree state $\ket{\Phi_H}$ as in \secrhartfock-9. The operator in the center of this matrix element, namely $h_2$, only acts on the variables for particle 2, and therefore only involves the bra $\bra{2}^{(2)}$ on the left and the ket $\ket{P_2}^{(2)}$ on the right. All other single particle bras and kets pass right through $h_2$, and combine with each other in accordance with the orthonormality condition $\braket{\lambda}{\mu}=\delta_{\lambda\mu}$. Thus, the matrix element becomes,
+where we express action of the permutation $P$ on the Hartree state $\ket{\Phi_H}$ as in {ref}`sec-hartfock-9`. The operator in the center of this matrix element, namely $h_2$, only acts on the variables for particle 2, and therefore only involves the bra $\bra{2}^{(2)}$ on the left and the ket $\ket{P_2}^{(2)}$ on the right. All other single particle bras and kets pass right through $h_2$, and combine with each other in accordance with the orthonormality condition $\braket{\lambda}{\mu}=\delta_{\lambda\mu}$. Thus, the matrix element becomes,
 
 :::{math}
 :label: eq-hartfock-70
@@ -1018,23 +1018,29 @@ It should also be understood that the electron configuration does not refer to t
 
 An interesting fact about the Hartree-Fock equations is that the averaging procedure described above is actually unnecessary in the case of completely filled subshells, for example, beryllium with $1s^22s^2$ or neon with $1s^22s^22p^6$. In this case, self-consistent solutions exist in the form of central field eigenfunctions. That is, with orbitals of this form, the direct and exchange potentials are automatically invariant under both spatial and spin rotations. See Prob.~\prbrhartfock-2.
 
-\problems
+(sec-hartfock-problems)=
+
+## Problems
 
 (prob-hartfock-1)=
 
-**Problem \prbdhartfock-1.}  Show that the Slater determinant $\ket{\Phi}$ in {eq}`eq-hartfock-39` is normalized if the orbitals $\ket{\lambda.** 
+**Problem 1.** 
+
+Show that the Slater determinant $\ket{\Phi}$ in Eq.~(\eqr\cn.39) is normalized if the orbitals $\ket{\lambda}$ are orthonormal.
 
 (prob-hartfock-2)=
 
-**Problem \prbdhartfock-2..** 
+**Problem 2.** 
+
+The Hartree-Fock equations can be solved by iteration.  A simplification is to average the potentials over angles and spins after they are computed in terms of some approximate orbitals, to make the Schr\"odinger equation for the next iteration of orbitals into a central force problem.  However, this averaging is not necessary in the case of completely filled subshells; in this case, rotationally invariant potentials and central force orbitals are self-consistent.
 
 It is a familiar fact that a three-dimensional central force Hamiltonian }$H=p^2/2m+V(r)$ has eigenfunctions in the form $R_{n\ell}(r) Y_{\ell m}(\Omega)$, and that the energies only depend on $n$ and $\ell$. It turns out that these facts are true for any rotationally invariant Hamiltonian in three dimensions (that is, $H$ need not have the simple kinetic-plus-potential form). This is important in Hartree-Fock theory, because the exchange potential is not an ordinary potential.
 
-\problempart{(a)} In Hartree-Fock theory, the direct potential is given in terms of the orbitals $u_\lambda(\rvec)$ by {eq}`eq-hartfock-91`. Suppose that the orbitals are central force orbitals so $\lambda=(n\ell m_\ell m_s)$, and suppose that all subshells are filled. Show that the direct potential is then rotationally invariant, that is, it only depends on $r=|\rvec|$.
+**(a)**  In Hartree-Fock theory, the direct potential is given in terms of the orbitals $u_\lambda(\rvec)$ by {eq}`eq-hartfock-91`. Suppose that the orbitals are central force orbitals so $\lambda=(n\ell m_\ell m_s)$, and suppose that all subshells are filled. Show that the direct potential is then rotationally invariant, that is, it only depends on $r=|\rvec|$.
 
 Hint: It is easiest to solve this as a problem in electrostatics. The potential will be rotationally invariant if the charge density is rotationally invariant. To prove the latter fact, use the addition theorem for spherical harmonics, {eq}`eq-orbamsph-71`. Once the charge density is known the potential can be determined by Gauss's law.
 
-\problempart{(b)} An operator $\Khat$ is rotationally invariant if it commutes with all rotation operators,
+**(b)**  An operator $\Khat$ is rotationally invariant if it commutes with all rotation operators,
 
 :::{math}
 :label: eq-hartfock-104
@@ -1079,7 +1085,9 @@ Parts (a) and (b) of this problem show that in the case of complete subshells, i
 
 (prob-hartfock-3)=
 
-**Problem \prbdhartfock-3..** 
+**Problem 3.** 
+
+Delta-function potentials are popular in theoretical models for the following reason.  Short-range potentials give rise to $s$-wave scattering at sufficiently low energies.  The condition is $\lambda \gg R$, where $\lambda$ is the de~Broglie wavelength of the incident wave, and $R$ is the range of the potential.  In this case only the one term $\ell=0$ contributes to the partial wave expansion of the scattering amplitude, and the amplitude itself is characterized by a single parameter, the $\ell=0$ phase shift $\delta_0$.  Any other short range potential with the same value of $\delta_0$ will behave the same insofar as low energy scattering is concerned.  For this reason we often replace a real potential by a delta function, multiplied by some strength parameter $g$ that we can adjust to make the phase shift $\delta_0$ come out right, since this is mathematically simpler than the true potential.
 
 In Bose-Einstein condensates (cold gases of bosonic atoms), the temperature and density are such that for atom-atom scattering $\lambda\gg R$, where $R$ is the radius of the atom and where $\lambda$, the de~Broglie wavelength, is comparable to the interparticle separation (this is required for the condensation). Thus replacing the atom-atom potential by a $\delta$-function is a good approximation.
 

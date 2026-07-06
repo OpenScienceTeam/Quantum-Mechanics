@@ -708,7 +708,7 @@ These are also real, as is easily shown by swapping the variables of integration
 
 where $\xvec\approx\xvec_1\approx\xvec_2$. That is, the numerator is positive in such regions. (The rigorous proof that $K_{nl}>0$ is given in an appendix to Slater's books on atomic physics.)
 
-The fact that $K_{n\ell}$ is positive has a simple physical interpretation, however. Since the energy shifts {eq}`eq-helium-47` are $J_{n\ell} \pm K_{n\ell}$, it means that the ortho states (with the $-$ sign) are lower in energy than the para states (with the $+$ sign). This is one of the qualitative features of the exact spectrum of helium noted in \secrhelium-7. One can understand why this is so as follows. Let $\Psi(\xvec_1,\xvec_2)$ be the wave function of the two electrons. For ortho states, $\Psi(\xvec_1,\xvec_2) = -\Psi(\xvec_2 ,\xvec_1)$. But when $\xvec_1=\xvec_2$, this means $\Psi=0$. For ortho states, the two-electron wave function vanishes when the two electrons are on top of each other, that is, the wave function has a node at $\xvec_1=\xvec_2$. For para states, on the other hand, the wave function has an anti-node, that is, it is a maximum at $\xvec_1=\xvec_2$. (In using the words “node” and “anti-node” we are applying one-dimensional terminology to the six-dimensional problem at hand, but the terminology does convey the right idea.) But since the electrons repel one another and do not like to be on top of one another, the electrostatic energy of interaction is larger in para states than in ortho states.
+The fact that $K_{n\ell}$ is positive has a simple physical interpretation, however. Since the energy shifts {eq}`eq-helium-47` are $J_{n\ell} \pm K_{n\ell}$, it means that the ortho states (with the $-$ sign) are lower in energy than the para states (with the $+$ sign). This is one of the qualitative features of the exact spectrum of helium noted in {ref}`sec-helium-7`. One can understand why this is so as follows. Let $\Psi(\xvec_1,\xvec_2)$ be the wave function of the two electrons. For ortho states, $\Psi(\xvec_1,\xvec_2) = -\Psi(\xvec_2 ,\xvec_1)$. But when $\xvec_1=\xvec_2$, this means $\Psi=0$. For ortho states, the two-electron wave function vanishes when the two electrons are on top of each other, that is, the wave function has a node at $\xvec_1=\xvec_2$. For para states, on the other hand, the wave function has an anti-node, that is, it is a maximum at $\xvec_1=\xvec_2$. (In using the words “node” and “anti-node” we are applying one-dimensional terminology to the six-dimensional problem at hand, but the terminology does convey the right idea.) But since the electrons repel one another and do not like to be on top of one another, the electrostatic energy of interaction is larger in para states than in ortho states.
 
 :::{figure} images/helium-fig07.png
 :label: fig-helium-7
@@ -721,20 +721,20 @@ A schematic illustration of the effects of the perturbation on the $N=2$ levels 
 
 A qualitative feature shown in {ref}`fig-helium-7` is the fact that the direct integrals $J_{n\ell}$ are an increasing function of $\ell$. This is responsible for the “staircase effect,” that is, the fact that the $P$ levels are higher than the $S$ levels. A similar effect can be seen in the alkalis (see Fig.~\figr\hydrogen.3 for the case of sodium), and the explanation is the same: as the angular momentum of one electron is increased, it moves further away from the nucleus, and the nuclear charge is more effectively screened by the other electron(s) (one, in the case of helium; the core electrons, in the case of the alkalis).
 
-We see that all the qualitative features of the excited states of real helium, discussed in \secrhelium-7, are explained by perturbation theory. These are the absence of any $1^3S$ state; the fact that the ortho states are lower in energy than the singlet states; and the fact that the energy is an increasing function of $L$ (the staircase effect). From a quantitative standpoint, however, perturbation theory, as we have outlined it, is less satisfactory, which is why we do not attempt to evaluate the direct and exchange integrals explicitly. The variational method does better from a quantitative standpoint.
+We see that all the qualitative features of the excited states of real helium, discussed in {ref}`sec-helium-7`, are explained by perturbation theory. These are the absence of any $1^3S$ state; the fact that the ortho states are lower in energy than the singlet states; and the fact that the energy is an increasing function of $L$ (the staircase effect). From a quantitative standpoint, however, perturbation theory, as we have outlined it, is less satisfactory, which is why we do not attempt to evaluate the direct and exchange integrals explicitly. The variational method does better from a quantitative standpoint.
 
 (sec-helium-12)=
 
 ## Variational Treatment of Ground State
 
-The unperturbed ground state was represented in ket language in \secrhelium-10 as $\ket{100\,100}$. In wave function language it is the product of two hydrogen-like ground state orbitals (see {eq}`eq-helium-31`,
+The unperturbed ground state was represented in ket language in {ref}`sec-helium-10` as $\ket{100\,100}$. In wave function language it is the product of two hydrogen-like ground state orbitals (see {eq}`eq-helium-31`,
 
 :::{math}
 :label: eq-helium-53
 \Psi_{1s^2}(\xvec_1,\xvec_2) = {Z^3\over\pi}\, e^{-Z(r_1+r_2)}.
 :::
 
-where the subscript $1s^2$ refers to the electron configuration of the ground state. The unperturbed energy ($-4$) is rather badly off. The reason was explained in \secrhelium-8: the two electrons repel one another, and the true charge cloud stays somewhat further away from the nucleus than indicated by {eq}`eq-helium-53`.
+where the subscript $1s^2$ refers to the electron configuration of the ground state. The unperturbed energy ($-4$) is rather badly off. The reason was explained in {ref}`sec-helium-8`: the two electrons repel one another, and the true charge cloud stays somewhat further away from the nucleus than indicated by {eq}`eq-helium-53`.
 
 Equivalently, we can say that each electron partially screens the nucleus from the other, so that each electron sees an effective nuclear charge $Z_e$ that is somewhat less than the true nuclear charge $Z$. Since only one electron is doing the screening and the screening is only partial, we would expect any reasonable measure of $Z_e$ to lie between $Z-1$ and $Z$. This suggests that we use as a trial wave function the product of two hydrogen-like ground-state orbitals in a Coulomb field with effective charge $Z_e$, that is,
 
@@ -800,7 +800,7 @@ where we proceed as in the previous paragraph to reduce the two-particle matrix 
 2(Z_e-Z)Z_e = 2Z_e^2 - 2ZZ_e.
 :::
 
-As for the final term in {eq}`eq-helium-55`, the inter-electron potential $1/r_{12}$, this depends on the coordinates of both particles and so its expectation value cannot be reduced to a single-particle matrix element as in the case of the other terms. However, the expectation value in question is the same one we calculated earlier in our perturbation analysis of the ground state (in \secrhelium-10) except for the replacement of $Z$ by $Z_e$. Therefore the answer follows immediately from {eq}`eq-helium-41`,
+As for the final term in {eq}`eq-helium-55`, the inter-electron potential $1/r_{12}$, this depends on the coordinates of both particles and so its expectation value cannot be reduced to a single-particle matrix element as in the case of the other terms. However, the expectation value in question is the same one we calculated earlier in our perturbation analysis of the ground state (in {ref}`sec-helium-10`) except for the replacement of $Z$ by $Z_e$. Therefore the answer follows immediately from {eq}`eq-helium-41`,
 
 :::{math}
 :label: eq-helium-60
@@ -873,23 +873,29 @@ where the $(1)$ superscript refers to the results of first order perturbation th
 :::
 {ref}`tbl-helium-4` summarizes the results of both perturbation theory and the variational method for the ground states of $He$ and $H^-$. In the case of helium we see that the variational method has closed about two thirds of the distance between the results of first order perturbation theory and the exact ground state energy. In the case of $H^-$ the variational result is disappointing, in that the estimate of the ground state energy ($-0.473$) is still above the continuum threshold of $-0.5$. If we did not know that $H^-$ exists as a bound state, we would not yet have a theoretical proof that it does. To give that, it would be necessary to find a more complicated trial wave function (with more or different parameters), such that the expectation value of the energy would be less than $-0.5$. From a physical standpoint, it is clear what is wrong with our trial wave function {eq}`eq-helium-54`: it does not incorporate the tendency of the electrons to stay on opposite sides of the nucleus, that is, it does not incorporate any correlation in the positions of the two electrons. With a trial wave function that does take this effect into account, it is possible to obtain a variational estimate that is less than $-0.5$, thereby providing a theoretical proof of the existence of $H^-$ as a bound state.
 
-The variational method has been applied to the ground state of helium and helium-like atoms with much more sophisticated and complicated trial wave functions than we have considered here. The original calculations along these lines were carried out by Hylleraas, and with modern computers it is possible to go much further. By such means the ground state energy of the Hamiltonian {eq}`eq-helium-1` for $Z=2$ and other values of $Z$ has been obtained to many significant figures. The accuracy obtained is far beyond that needed to show the difference between the ground state energy of the Hamiltonian {eq}`eq-helium-1` and the experimental ground state energy of helium, which are not equal because the Hamiltonian {eq}`eq-helium-1` omits a number of small effects, as discussed in \secrhelium-2.
+The variational method has been applied to the ground state of helium and helium-like atoms with much more sophisticated and complicated trial wave functions than we have considered here. The original calculations along these lines were carried out by Hylleraas, and with modern computers it is possible to go much further. By such means the ground state energy of the Hamiltonian {eq}`eq-helium-1` for $Z=2$ and other values of $Z$ has been obtained to many significant figures. The accuracy obtained is far beyond that needed to show the difference between the ground state energy of the Hamiltonian {eq}`eq-helium-1` and the experimental ground state energy of helium, which are not equal because the Hamiltonian {eq}`eq-helium-1` omits a number of small effects, as discussed in {ref}`sec-helium-2`.
 
-\problems
+(sec-helium-problems)=
+
+## Problems
 
 (prob-helium-1)=
 
-**Problem \prbdhelium-1..** 
+**Problem 1.** 
 
-\problempart{(a)}How would this diagram be different if the electron were a spin~0 particle? If it were a spin~$\frac{3}{2}$ particle? You do not need to be quantitative, but if some levels go up or down, say which ones and which way. If some levels appear or disappear, say which ones. What are the degeneracies of the levels in actual helium? What would they be if the electron were a spin-0 particle?
+The bound states of helium are shown in Fig.~\figr\cn.3.
 
-\problempart{(b)} The electric dipole operator for a multielectron atom is defined by {eq}`eq-stark-12`, where the charges are the electrons (with $q=-e)$. Electric dipole transitions between two states are governed by the matrix element of the electric dipole operator between the states in question. Explain why there are no electric dipole transitions between ortho and para eigenstates of the Hamiltonian {eq}`eq-helium-1`.
+**(a)** How would this diagram be different if the electron were a spin~0 particle? If it were a spin~$\frac{3}{2}$ particle? You do not need to be quantitative, but if some levels go up or down, say which ones and which way. If some levels appear or disappear, say which ones. What are the degeneracies of the levels in actual helium? What would they be if the electron were a spin-0 particle?
+
+**(b)**  The electric dipole operator for a multielectron atom is defined by {eq}`eq-stark-12`, where the charges are the electrons (with $q=-e)$. Electric dipole transitions between two states are governed by the matrix element of the electric dipole operator between the states in question. Explain why there are no electric dipole transitions between ortho and para eigenstates of the Hamiltonian {eq}`eq-helium-1`.
 
 **Remark:** The eigenstates of the Hamiltonian {eq}`eq-helium-1` are not exactly the eigenstates of real helium because of the neglect of small terms, notably, the fine structure terms. When these are included, it turns out that electric dipole transitions are allowed between ortho and para states, but the amplitude is small and the lines are very weak. For this reason, it was thought at one time on spectroscopic grounds that parahelium and orthohelium were two different species of helium. The weak spectral lines connecting the ortho and para states are called “intercombination lines.”
 
 (prob-helium-2)=
 
-**Problem \prbdhelium-2..** 
+**Problem 2.** 
+
+This problem was borrowed from Eugene Commins. Consider a simple ``one-dimensional'' hydrogen atom that obeys the equation,
 
 :::{math}
 :label: eq-helium-66
@@ -898,14 +904,14 @@ The variational method has been applied to the ground state of helium and helium
 
 [Units such that $m=\hbar=1$, and the Coulomb potential is replaced by $-Z\delta(x)$].
 
-\problempart{(a)} Find the ground state energy and wave function $\psi_0(x)$, and verify that
+**(a)**  Find the ground state energy and wave function $\psi_0(x)$, and verify that
 
 :::{math}
 :label: eq-helium-67
 \xpecval{T} = -E = - {1\over2} \xpecval{V}.
 :::
 
-\problempart{(b)} Now consider the one-dimensional “helium” atom which obeys
+**(b)**  Now consider the one-dimensional “helium” atom which obeys
 
 :::{math}
 :label: eq-helium-68
@@ -914,9 +920,9 @@ H\psi(x_1,x_2) = -{1\over 2} {\partial^2 \psi \over \partial x_1^2} - {1\over 2}
 
 where $x_1$, $x_2$ are the coordinates of the two “electrons” on the $x$-axis. First treat $\delta(x_1-x_2)$ as a perturbation and find the ground state energy to first order. Compare to 3-dimensional helium.
 
-\problempart{(c)} Now employ the variational method with a trial wave function analogous to that used in class for the ground state of 3-dimensional helium. Find the best value of $\xpecval{H}$ and compare to 3-dimensional helium.
+**(c)**  Now employ the variational method with a trial wave function analogous to that used in class for the ground state of 3-dimensional helium. Find the best value of $\xpecval{H}$ and compare to 3-dimensional helium.
 
-\problempart{(d)} For one-dimensional “helium,” take a trial wave function of the form
+**(d)**  For one-dimensional “helium,” take a trial wave function of the form
 
 :::{math}
 :label: eq-helium-69
@@ -932,7 +938,7 @@ where $u(x)$ is the variational parameter (that is, the whole function, as in Ha
 
 where the ellipsis indicates omitted terms.
 
-\problempart{(e)} The desired solution must be normalizable (in fact, we demand that it be normalized), so we must have
+**(e)**  The desired solution must be normalizable (in fact, we demand that it be normalized), so we must have
 
 :::{math}
 :label: eq-helium-71
@@ -941,9 +947,9 @@ where the ellipsis indicates omitted terms.
 
 Show that this can only be satisfied if $\epsilon<0$. Hint: To solve the equation, make the change of notation, $u\to x$, $x\to t$, and interpret it as a one-dimensional problem in classical mechanics.
 
-\problempart{(f)} Find the normalized solution $u(x)$ and the pseudo-eigenvalue $\epsilon$.
+**(f)**  Find the normalized solution $u(x)$ and the pseudo-eigenvalue $\epsilon$.
 
-\problempart{(g)} Find the variational estimate of the ground state energy of one-dimensional “helium”. Hint: Note that
+**(g)**  Find the variational estimate of the ground state energy of one-dimensional “helium”. Hint: Note that
 
 :::{math}
 :label: eq-helium-72
@@ -954,8 +960,10 @@ Does your new estimate improve on the results of part (a)? Would you expect it t
 
 (prob-helium-3)=
 
-**Problem \prbdhelium-3..** 
+**Problem 3.** 
 
-\problempart{(a)} The exchange integral $K_{n\ell}$ defined in {eq}`eq-helium-51` depends on two hydrogen-like orbitals. It is easily generalized to any two single-particle orbitals (recall that “orbital” means a single-particle wave function). Show that if the two orbitals have no spatial overlap, then the exchange integral vanishes. Then use your knowledge of hydrogen-like orbitals to explain the dependence of the exchange integral on $n$ for fixed $\ell$, and on $\ell$ for fixed $n$.
+A problem on the excited states of helium.
 
-\problempart{(b)} Go to {\tt http://physics.nist.gov/PhysRefData/ASD/levels\_form.html} and check your predictions using the experimental data on the first several excited states of helium. Enter “He I” for the atom (this is neutral helium). You will see that some of the levels have a fine structure, which we did not discuss in detail in class. This should not prevent you from checking your predictions.
+**(a)**  The exchange integral $K_{n\ell}$ defined in {eq}`eq-helium-51` depends on two hydrogen-like orbitals. It is easily generalized to any two single-particle orbitals (recall that “orbital” means a single-particle wave function). Show that if the two orbitals have no spatial overlap, then the exchange integral vanishes. Then use your knowledge of hydrogen-like orbitals to explain the dependence of the exchange integral on $n$ for fixed $\ell$, and on $\ell$ for fixed $n$.
+
+**(b)**  Go to {\tt http://physics.nist.gov/PhysRefData/ASD/levels\_form.html} and check your predictions using the experimental data on the first several excited states of helium. Enter “He I” for the atom (this is neutral helium). You will see that some of the levels have a fine structure, which we did not discuss in detail in class. This should not prevent you from checking your predictions.
